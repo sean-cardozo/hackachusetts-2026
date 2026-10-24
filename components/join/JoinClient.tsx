@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useAppState } from "@/components/AppState";
 import Button from "@/components/Button";
 import SampleBadge from "@/components/SampleBadge";
+import { ROUND_FALLBACK_PCT } from "@/components/plan";
 import { EmptyState } from "@/components/StateViews";
 import { useToast } from "@/components/Toast";
 import { formatDollars, formatPercent } from "@/lib/format";
@@ -347,6 +348,7 @@ function RoundCard({
 
 function SavingsLine({ round: r, status }: { round: RoundView; status: RoundStatus }) {
   let text: string | null = null;
+  let basis = r.savingsBasis;
   if (status === "closed" && r.savedUsd !== undefined) {
     const p = savingsPct(r, r.savedUsd);
     text = `Saved ${formatDollars(r.savedUsd)}${p !== null ? ` (${formatPercent(p)})` : ""}`;
@@ -360,6 +362,11 @@ function SavingsLine({ round: r, status }: { round: RoundView; status: RoundStat
     text = `Est. ${formatDollars(low)} to ${formatDollars(high)}/yr${
       pl !== null && ph !== null ? ` (${formatPercent(pl)} to ${formatPercent(ph)})` : ""
     }`;
+  } else if (status !== "missed" && status !== "closed" && r.userSpendUsd > 0) {
+    // No estimate in the data: same 8-14% rule the Summary and Award pages use.
+    const [lo, hi] = ROUND_FALLBACK_PCT;
+    text = `Est. ${formatDollars((r.userSpendUsd * lo) / 100)} to ${formatDollars((r.userSpendUsd * hi) / 100)}/yr (${formatPercent(lo)} to ${formatPercent(hi)})`;
+    basis = `Your spend on the round's drugs x estimated ${lo}-${hi}%`;
   }
   if (!text) return null;
   return (
@@ -369,7 +376,7 @@ function SavingsLine({ round: r, status }: { round: RoundView; status: RoundStat
         <SampleBadge />
       </div>
       {status !== "closed" && status !== "awarded" ? (
-        <div className="text-[12px] text-muted">{r.savingsBasis}</div>
+        <div className="text-[12px] text-muted">{basis}</div>
       ) : null}
     </div>
   );
