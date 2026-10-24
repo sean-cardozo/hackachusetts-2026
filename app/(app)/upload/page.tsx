@@ -14,6 +14,9 @@ export default function UploadPage() {
     name: baseName(d.name),
     strength: d.strength,
     form: d.form,
+    nadac: d.nadac,
+    nadacSource: d.nadacSource,
+    nadacEffectiveDate: d.nadacEffectiveDate,
   }));
   const demo = loadUploadDemo();
 

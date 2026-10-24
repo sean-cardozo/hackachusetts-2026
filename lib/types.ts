@@ -102,7 +102,16 @@ export type StandardField =
   | "wholesaler"
   | "onHand"
   | "countDate"
-  | "expirationDate";
+  | "expirationDate"
+  // Invoice-line fields (wholesaler purchase exports).
+  | "quantity"
+  | "invoiceDate"
+  | "packageUnit"
+  | "unitCostPerPackage"
+  | "extendedCost"
+  | "transactionType"
+  | "creditReason"
+  | "invoiceId";
 
 export type ConfidenceLabel = "High" | "Medium" | "Low";
 
@@ -128,6 +137,16 @@ export type UploadRow = {
   onHand?: number;
   countDate?: string;
   expirationDate?: string;
+  /** Packages shipped on an invoice line. Credits are recognised by transactionType. */
+  quantity?: number;
+  invoiceDate?: string;
+  packageUnit?: string;
+  /** Price of one package (not one unit). */
+  unitCostPerPackage?: number;
+  extendedCost?: number;
+  transactionType?: string;
+  creditReason?: string;
+  invoiceId?: string;
 };
 
 export type MatchStatus = "matched" | "needs-review" | "unmatched";

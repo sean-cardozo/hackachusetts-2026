@@ -111,6 +111,14 @@ const STANDARD_FIELDS = [
   "onHand",
   "countDate",
   "expirationDate",
+  "quantity",
+  "invoiceDate",
+  "packageUnit",
+  "unitCostPerPackage",
+  "extendedCost",
+  "transactionType",
+  "creditReason",
+  "invoiceId",
 ] as const satisfies readonly StandardField[];
 
 const LABELS = ["High", "Medium", "Low"] as const satisfies readonly ConfidenceLabel[];

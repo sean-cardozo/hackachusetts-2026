@@ -1,15 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Button from "@/components/Button";
 import { buttonClass } from "@/components/Button";
+import GapPill from "@/components/GapPill";
+import LiveBadge from "@/components/LiveBadge";
+import SampleBadge from "@/components/SampleBadge";
 import { ErrorState } from "@/components/StateViews";
-import { mapColumns, matchDrugs, parseUpload, toUploadRows } from "@/lib/match";
-import type { RawRow } from "@/lib/match";
+import { formatDollars } from "@/lib/format";
+import {
+  aggregateInvoiceLines,
+  mapColumns,
+  matchProducts,
+  parseUpload,
+  toUploadRows,
+} from "@/lib/match";
+import type { ProductMatch, RawRow } from "@/lib/match";
 import type { ColumnMapping, DrugMatch, StandardField } from "@/lib/types";
 
-export type UploadCatalogDrug = { id: string; name: string; strength: string; form: string };
+export type UploadCatalogDrug = {
+  id: string;
+  name: string;
+  strength: string;
+  form: string;
+  /** NADAC benchmark per unit in dollars, or null when none is available. */
+  nadac: number | null;
+  nadacSource: "live" | "fallback";
+  nadacEffectiveDate: string | null;
+};
 
 type Props = {
   catalog: UploadCatalogDrug[];
@@ -19,7 +38,14 @@ type Props = {
 
 type Kind = "purchases" | "inventory";
 
-type Parsed = { fileName: string; headers: string[]; rows: RawRow[]; mappings: ColumnMapping[] };
+type Parsed = {
+  fileName: string;
+  headers: string[];
+  rows: RawRow[];
+  mappings: ColumnMapping[];
+  /** Where the column mapping came from. */
+  mapSource: "Rule-based" | "AI" | "Edited by you";
+};
 
 const FIELD_LABELS: Record<StandardField, string> = {
   drugName: "Drug name",
@@ -32,6 +58,14 @@ const FIELD_LABELS: Record<StandardField, string> = {
   onHand: "Units on hand",
   countDate: "Count date",
   expirationDate: "Expiration date",
+  quantity: "Packages shipped",
+  invoiceDate: "Invoice date",
+  packageUnit: "Package unit",
+  unitCostPerPackage: "Price per package",
+  extendedCost: "Extended cost",
+  transactionType: "Transaction type",
+  creditReason: "Credit reason",
+  invoiceId: "Invoice number",
 };
 
 const TEMPLATE_HEADERS = [
@@ -44,7 +78,7 @@ const TEMPLATE_HEADERS = [
   "Wholesaler (optional)",
 ];
 
-const PAGE_ROWS = 50;
+const LIST_ROWS = 100;
 
 function csvCell(value: string | number | undefined): string {
   const s = value === undefined ? "" : String(value);
@@ -223,14 +257,24 @@ function MappingTable({
 // Main component
 // ---------------------------------------------------------------------------
 
+type Analysis = { products: ProductMatch[]; lineCount: number; skipped: number };
+
+/** Price per unit: 4 decimals under $1, otherwise 2. */
+function unitMoney(v: number): string {
+  if (!Number.isFinite(v) || v <= 0) return "n/a";
+  return `$${v.toFixed(v < 1 ? 4 : 2)}`;
+}
+
 export default function UploadClient({ catalog, demoHeaders, demoItems }: Props) {
   const [purchases, setPurchases] = useState<Parsed | null>(null);
   const [inventory, setInventory] = useState<Parsed | null>(null);
   const [errors, setErrors] = useState<Record<Kind, string | null>>({ purchases: null, inventory: null });
-  const [confirmed, setConfirmed] = useState<Record<number, { drugId: string; name: string }>>({});
-  const [showAll, setShowAll] = useState(false);
+  const [confirmed, setConfirmed] = useState<Record<string, string>>({}); // product key -> drug id
+  const [analysis, setAnalysis] = useState<Analysis | null>(null);
+  const [matching, setMatching] = useState(false);
+  const [showAllNot, setShowAllNot] = useState(false);
 
-  const catalogForMatch = catalog;
+  const catalogById = useMemo(() => new Map(catalog.map((d) => [d.id, d])), [catalog]);
   const displayName = useCallback(
     (d: UploadCatalogDrug) => [d.name, d.strength].filter(Boolean).join(" "),
     [],
@@ -242,17 +286,37 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
       setErrors((e) => ({ ...e, [kind]: result.error }));
       return;
     }
+    const headers = result.headers;
     const parsed: Parsed = {
       fileName,
-      headers: result.headers,
+      headers,
       rows: result.rows,
-      mappings: mapColumns(result.headers),
+      mappings: mapColumns(headers),
+      mapSource: "Rule-based",
     };
     setErrors((e) => ({ ...e, [kind]: null }));
     if (kind === "purchases") {
       setConfirmed({});
-      setShowAll(false);
+      setShowAllNot(false);
+      setAnalysis(null);
       setPurchases(parsed);
+      // Ask the AI route once. Use its answer only when the model really answered.
+      void fetch("/api/ai/column-map", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ headers }),
+      })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((j: { source?: string; result?: ColumnMapping[] } | null) => {
+          if (!j || j.source !== "ai" || !Array.isArray(j.result) || j.result.length !== headers.length) return;
+          const aiMappings = j.result;
+          setPurchases((cur) =>
+            cur && cur.headers === headers && cur.mapSource === "Rule-based"
+              ? { ...cur, mappings: aiMappings, mapSource: "AI" }
+              : cur,
+          );
+        })
+        .catch(() => undefined);
     } else {
       setInventory(parsed);
     }
@@ -297,48 +361,79 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
         // A field belongs to one column only.
         return field && m.field === field ? { ...m, field: null, confidence: 0, label: "Low" as const } : m;
       });
-      return { ...cur, mappings };
+      return { ...cur, mappings, mapSource: "Edited by you" as const };
     });
     if (kind === "purchases") setConfirmed({});
   };
 
-  const rows = useMemo(
-    () => (purchases ? toUploadRows(purchases.rows, purchases.mappings) : []),
-    [purchases],
-  );
-  const autoMatches = useMemo(() => matchDrugs(rows, catalogForMatch), [rows, catalogForMatch]);
-  const matches = useMemo(
-    () =>
-      autoMatches.map((m): DrugMatch => {
-        const c = confirmed[m.rowIndex];
-        return c ? { ...m, status: "matched", corrected: c.name, drugId: c.drugId, confidence: 100 } : m;
-      }),
-    [autoMatches, confirmed],
-  );
-  const counts = useMemo(() => {
-    let matched = 0;
-    let review = 0;
-    let unmatched = 0;
-    for (const m of matches) {
-      if (m.status === "matched") matched++;
-      else if (m.status === "needs-review") review++;
-      else unmatched++;
-    }
-    return { matched, review, unmatched };
-  }, [matches]);
+  // Aggregate lines first, then match only the unique products. Runs after paint so
+  // the "Matching…" state shows while a large file is processed.
+  const mappings = purchases?.mappings;
+  const rawRows = purchases?.rows;
+  useEffect(() => {
+    if (!mappings || !rawRows) return;
+    setMatching(true);
+    const id = setTimeout(() => {
+      const agg = aggregateInvoiceLines(toUploadRows(rawRows, mappings));
+      setAnalysis({
+        products: matchProducts(agg.products, catalog),
+        lineCount: agg.lineCount,
+        skipped: agg.skipped,
+      });
+      setMatching(false);
+    }, 30);
+    return () => clearTimeout(id);
+  }, [mappings, rawRows, catalog]);
+
+  // Apply the user's confirmations on top of the automatic result.
+  const effective = useMemo(() => {
+    if (!analysis) return [];
+    return analysis.products.map((pm): ProductMatch => {
+      const drugId = confirmed[pm.product.key];
+      const d = drugId ? catalogById.get(drugId) : undefined;
+      if (!d) return pm;
+      const match: DrugMatch = {
+        ...pm.match,
+        status: "matched",
+        corrected: displayName(d),
+        drugId: d.id,
+        confidence: 100,
+      };
+      return { product: pm.product, match, note: undefined };
+    });
+  }, [analysis, confirmed, catalogById, displayName]);
+
+  const annual = (pm: ProductMatch) => pm.product.unitsPerMonth * pm.product.avgUnitPrice * 12;
+
+  const view = useMemo(() => {
+    const inCatalog = effective
+      .filter((pm) => pm.match.status !== "unmatched")
+      .sort((a, b) => annual(b) - annual(a));
+    const notIn = effective
+      .filter((pm) => pm.match.status === "unmatched")
+      .sort((a, b) => annual(b) - annual(a));
+    return {
+      inCatalog,
+      notIn,
+      matched: inCatalog.filter((pm) => pm.match.status === "matched").length,
+      review: inCatalog.filter((pm) => pm.match.status === "needs-review").length,
+      notInSpend: notIn.reduce((sum, pm) => sum + annual(pm), 0),
+    };
+  }, [effective]);
 
   const inventoryRows = useMemo(
     () => (inventory ? toUploadRows(inventory.rows, inventory.mappings).length : 0),
     [inventory],
   );
-
-  const confirmRow = (rowIndex: number, drugId: string) => {
-    const d = catalog.find((c) => c.id === drugId);
-    if (!d) return;
-    setConfirmed((cur) => ({ ...cur, [rowIndex]: { drugId, name: displayName(d) } }));
+  const confirmProduct = (key: string, drugId: string) => {
+    if (!catalogById.has(drugId)) return;
+    setConfirmed((cur) => ({ ...cur, [key]: drugId }));
   };
 
-  const visible = showAll ? matches : matches.slice(0, PAGE_ROWS);
+  const mappedCount = purchases ? purchases.mappings.filter((m) => m.field).length : 0;
+  const lowCount = purchases ? purchases.mappings.filter((m) => m.field && m.confidence < 90).length : 0;
+  const hasDrugColumn = purchases ? purchases.mappings.some((m) => m.field === "drugName") : false;
+  const notInShown = showAllNot ? view.notIn : view.notIn.slice(0, LIST_ROWS);
 
   return (
     <div className="mt-6 flex flex-col gap-6">
@@ -355,7 +450,7 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
         <Dropzone
           id="upload-purchases"
           title="Drop your purchase history CSV here"
-          hint="Columns we look for: drug name, strength, NDC (optional), package size, units purchased per month, unit price paid, wholesaler (optional)."
+          hint="A wholesaler purchase export works as it is: we find the columns and match the drugs for you. Or use drug name, strength, package size, units per month and unit price."
           onFile={(f) => void handleFile("purchases", f)}
         >
           <Button variant="primary" small onClick={useDemo}>
@@ -375,110 +470,194 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
             <p className="mb-0 mt-4 text-[13px] text-muted">
               File: <span className="font-mono">{purchases.fileName}</span>
             </p>
-            <MappingTable
-              parsed={purchases}
-              onChange={changeMapping("purchases")}
-              caption="Column mapping"
-            />
+            <p role="status" aria-live="polite" className="mb-0 mt-2 font-extrabold">
+              Auto-mapped {mappedCount} of {purchases.headers.length} columns
+              <span className="ml-2 text-[12.5px] font-normal text-muted">
+                ({purchases.mapSource}
+                {lowCount > 0 ? `, ${lowCount} to double-check` : ""})
+              </span>
+            </p>
+            <details className="mt-2">
+              <summary className="cursor-pointer text-[13.5px] font-bold text-accent-ink">
+                Review column mapping
+              </summary>
+              <MappingTable
+                parsed={purchases}
+                onChange={changeMapping("purchases")}
+                caption="Column mapping"
+              />
+            </details>
           </>
         ) : null}
       </div>
-
       {purchases ? (
         <div className="card p-5">
           <h2 className="section-title">Drug matching</h2>
-          <p
-            role="status"
-            aria-live="polite"
-            className="mb-3 mt-2 font-extrabold"
-          >
-            {matches.length} rows read: {counts.matched} matched, {counts.review} need review,{" "}
-            {counts.unmatched} unmatched
-          </p>
-          {matches.length === 0 ? (
-            <p className="m-0 text-muted">
-              No drug names found. Set one column to &quot;Drug name&quot; in the mapping above.
+          {!hasDrugColumn ? (
+            <p className="m-0 mt-2 text-muted">
+              No drug names found. Open &quot;Review column mapping&quot; above and set one column to
+              &quot;Drug name&quot;.
+            </p>
+          ) : matching || !analysis ? (
+            <p role="status" aria-live="polite" className="mb-0 mt-2 font-extrabold">
+              Matching…
             </p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse text-left text-[13.5px]">
-                <thead>
-                  <tr className="border-b-[1.5px] border-line-strong text-[12px] uppercase tracking-[0.06em] text-muted">
-                    <th scope="col" className="py-2 pr-3">Row</th>
-                    <th scope="col" className="py-2 pr-3">Your text</th>
-                    <th scope="col" className="py-2 pr-3">Matched to</th>
-                    <th scope="col" className="py-2 pr-3">Status</th>
-                    <th scope="col" className="py-2 pr-3">Confidence</th>
-                    <th scope="col" className="py-2">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {visible.map((m) => {
-                    const isConfirmed = Boolean(confirmed[m.rowIndex]);
-                    return (
-                      <tr key={m.rowIndex} className="border-b border-line align-top">
-                        <td className="py-2 pr-3 text-muted">{m.rowIndex + 1}</td>
-                        <td className="py-2 pr-3 font-mono text-[12.5px]">{m.original}</td>
-                        <td className="py-2 pr-3 font-bold">{m.corrected || "No match"}</td>
-                        <td className="py-2 pr-3">
-                          <StatusChip status={m.status} confirmed={isConfirmed} />
-                        </td>
-                        <td className="py-2 pr-3 font-bold">{isConfirmed ? "—" : `${m.confidence}%`}</td>
-                        <td className="py-2">
-                          {m.status === "needs-review" ? (
-                            <div className="flex flex-col items-start gap-1.5">
-                              {m.suggestions.map((s) => (
-                                <Button
-                                  key={s.drugId}
-                                  variant="secondary"
-                                  small
-                                  aria-label={`Confirm row ${m.rowIndex + 1} as ${s.name}`}
-                                  onClick={() => confirmRow(m.rowIndex, s.drugId)}
-                                >
-                                  {s.name} ({s.confidence}%)
-                                </Button>
-                              ))}
-                            </div>
-                          ) : null}
-                          {m.status === "unmatched" ? (
-                            <select
-                              aria-label={`Choose a drug for row ${m.rowIndex + 1}`}
-                              className="rounded-[10px] border-[1.5px] border-line-strong bg-surface px-2 py-1"
-                              defaultValue=""
-                              onChange={(e) => e.target.value && confirmRow(m.rowIndex, e.target.value)}
-                            >
-                              <option value="">Choose from catalog…</option>
-                              {catalog.map((d) => (
-                                <option key={d.id} value={d.id}>
-                                  {displayName(d)}
-                                </option>
-                              ))}
-                            </select>
-                          ) : null}
-                        </td>
+            <>
+              <p role="status" aria-live="polite" className="mb-1 mt-2 font-extrabold">
+                {analysis.lineCount.toLocaleString("en-US")} invoice lines,{" "}
+                {analysis.products.length.toLocaleString("en-US")} products: {view.matched} matched to your
+                pool catalog, {view.review} need review, {view.notIn.length.toLocaleString("en-US")} not in
+                the pool catalog (brand and long-tail)
+              </p>
+              {analysis.skipped > 0 ? (
+                <p className="m-0 text-[12.5px] text-muted">
+                  {analysis.skipped.toLocaleString("en-US")} lines were skipped because a quantity, package
+                  size or price was missing.
+                </p>
+              ) : null}
+              {view.inCatalog.length === 0 ? (
+                <p className="mb-0 mt-3 text-muted">
+                  No products matched the pool catalog. Check the column mapping above.
+                </p>
+              ) : (
+                <div className="mt-3 overflow-x-auto">
+                  <table className="w-full border-collapse text-left text-[13.5px]">
+                    <caption className="sr-only">Products matched to your pool catalog, largest annual spend first</caption>
+                    <thead>
+                      <tr className="border-b-[1.5px] border-line-strong text-[12px] uppercase tracking-[0.06em] text-muted">
+                        <th scope="col" className="py-2 pr-3">Product (as uploaded → catalog)</th>
+                        <th scope="col" className="py-2 pr-3 text-right">Units per month</th>
+                        <th scope="col" className="py-2 pr-3 text-right">You pay per unit</th>
+                        <th scope="col" className="py-2 pr-3 text-right">NADAC per unit</th>
+                        <th scope="col" className="py-2 pr-3">Gap</th>
+                        <th scope="col" className="py-2 pr-3 text-right">Annual spend</th>
+                        <th scope="col" className="py-2">Status</th>
                       </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+                    </thead>
+                    <tbody>
+                      {view.inCatalog.map((pm) => {
+                        const p = pm.product;
+                        const d = pm.match.drugId ? catalogById.get(pm.match.drugId) : undefined;
+                        const nadac = d?.nadac ?? null;
+                        const gap = nadac && nadac > 0 && p.avgUnitPrice > 0 ? ((p.avgUnitPrice - nadac) / nadac) * 100 : null;
+                        const isConfirmed = Boolean(confirmed[p.key]);
+                        return (
+                          <tr key={p.key} className="border-b border-line align-top">
+                            <td className="py-2 pr-3">
+                              <span className="font-mono text-[12.5px]">{p.displayName}</span>
+                              <span aria-hidden className="mx-1 text-muted">→</span>
+                              <span className="font-bold">{pm.match.corrected || "No match"}</span>
+                            </td>
+                            <td className="py-2 pr-3 text-right">{Math.round(p.unitsPerMonth).toLocaleString("en-US")}</td>
+                            <td className="py-2 pr-3 text-right">{unitMoney(p.avgUnitPrice)}</td>
+                            <td className="py-2 pr-3 text-right">
+                              {nadac !== null ? (
+                                <span className="inline-flex flex-col items-end gap-0.5">
+                                  <span>{unitMoney(nadac)}</span>
+                                  <span title={d?.nadacEffectiveDate ? `NADAC week of ${d.nadacEffectiveDate}` : undefined}>
+                                    {d?.nadacSource === "live" ? <LiveBadge /> : <SampleBadge />}
+                                  </span>
+                                </span>
+                              ) : (
+                                <span className="text-muted">n/a</span>
+                              )}
+                            </td>
+                            <td className="py-2 pr-3"><GapPill gapPct={gap} /></td>
+                            <td className="py-2 pr-3 text-right font-bold">{formatDollars(annual(pm), { compact: false })}</td>
+                            <td className="py-2">
+                              <StatusChip status={pm.match.status} confirmed={isConfirmed} />
+                              {pm.match.status === "needs-review" ? (
+                                <div className="mt-1.5 flex flex-col items-start gap-1.5">
+                                  {pm.match.suggestions.map((s) => (
+                                    <Button
+                                      key={s.drugId}
+                                      variant="secondary"
+                                      small
+                                      aria-label={`Confirm ${p.displayName} as ${s.name}`}
+                                      onClick={() => confirmProduct(p.key, s.drugId)}
+                                    >
+                                      {s.name} ({s.confidence}%)
+                                    </Button>
+                                  ))}
+                                </div>
+                              ) : (
+                                <div className="mt-1 text-[12px] text-muted">{isConfirmed ? "" : `${pm.match.confidence}% sure`}</div>
+                              )}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+              {view.notIn.length > 0 ? (
+                <details className="mt-4">
+                  <summary className="cursor-pointer text-[13.5px] font-bold text-accent-ink">
+                    {view.notIn.length.toLocaleString("en-US")} products not in the pool catalog ·{" "}
+                    {formatDollars(view.notInSpend, { compact: false })} a year, treated as brand/OTC spend
+                  </summary>
+                  <div className="mt-2 overflow-x-auto">
+                    <table className="w-full border-collapse text-left text-[13px]">
+                      <caption className="sr-only">Products not in the pool catalog, largest annual spend first</caption>
+                      <thead>
+                        <tr className="border-b-[1.5px] border-line-strong text-[12px] uppercase tracking-[0.06em] text-muted">
+                          <th scope="col" className="py-2 pr-3">Product</th>
+                          <th scope="col" className="py-2 pr-3 text-right">Annual spend</th>
+                          <th scope="col" className="py-2">Add to a catalog drug</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {notInShown.map((pm) => (
+                          <tr key={pm.product.key} className="border-b border-line align-top">
+                            <td className="py-1.5 pr-3">
+                              <span className="font-mono text-[12.5px]">{pm.product.displayName}</span>
+                              {pm.note ? <div className="text-[12px] text-muted">{pm.note}</div> : null}
+                            </td>
+                            <td className="py-1.5 pr-3 text-right">{formatDollars(annual(pm), { compact: false })}</td>
+                            <td className="py-1.5">
+                              <select
+                                aria-label={`Choose a drug for ${pm.product.displayName}`}
+                                className="rounded-[10px] border-[1.5px] border-line-strong bg-surface px-2 py-1"
+                                defaultValue=""
+                                onChange={(e) => e.target.value && confirmProduct(pm.product.key, e.target.value)}
+                              >
+                                <option value="">Choose from catalog…</option>
+                                {catalog.map((d) => (
+                                  <option key={d.id} value={d.id}>
+                                    {displayName(d)}
+                                  </option>
+                                ))}
+                              </select>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {!showAllNot && view.notIn.length > LIST_ROWS ? (
+                    <div className="mt-3">
+                      <Button variant="secondary" small onClick={() => setShowAllNot(true)}>
+                        Show all {view.notIn.length.toLocaleString("en-US")} products
+                      </Button>
+                    </div>
+                  ) : null}
+                </details>
+              ) : null}
+              <p className="mb-0 mt-3 text-[12.5px] text-muted">
+                Source: {purchases.mapSource === "AI" ? "AI column mapping" : "Rule-based column mapping"}, rule-based
+                drug matching on this device. Prices are per unit (tablet, capsule or inhaler).
+              </p>
+              <div className="mt-4">
+                <Link href="/compare" className={buttonClass("primary")}>
+                  See how your prices compare
+                </Link>
+              </div>
+            </>
           )}
-          {!showAll && matches.length > PAGE_ROWS ? (
-            <div className="mt-3">
-              <Button variant="secondary" small onClick={() => setShowAll(true)}>
-                Show all {matches.length} rows
-              </Button>
-            </div>
-          ) : null}
-          <p className="mb-0 mt-3 text-[12.5px] text-muted">Source: Rule-based matching on this device.</p>
-          <div className="mt-4">
-            <Link href="/compare" className={buttonClass("primary")}>
-              See how your prices compare
-            </Link>
-          </div>
         </div>
       ) : null}
-
       {/* Step 2 */}
       <div className="card p-5">
         <div className="flex items-baseline gap-3">
@@ -513,7 +692,6 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
           </>
         ) : null}
       </div>
-
       {/* Privacy */}
       <div className="card-accent p-5">
         <h2 className="section-title">Privacy</h2>

@@ -254,6 +254,54 @@ const SYNONYMS: Record<
     weak: ["asof", "asofdate"],
     guess: [],
   },
+  quantity: {
+    canonical: "quantityshipped",
+    strong: ["qtyshipped", "shippedqty", "qtyshp", "packagesshipped", "unitsshipped", "qtyreceived", "quantityreceived", "shipqty", "shippedquantity"],
+    weak: [],
+    guess: [],
+  },
+  invoiceDate: {
+    canonical: "invoicedate",
+    strong: ["invdate", "dateinvoiced", "invoicedt", "purchasedate", "dateofinvoice"],
+    weak: [],
+    guess: [],
+  },
+  packageUnit: {
+    canonical: "packageunit",
+    strong: ["pkgunit", "packunit", "packageuom", "pkguom", "uom", "unitofmeasure"],
+    weak: [],
+    guess: [],
+  },
+  unitCostPerPackage: {
+    canonical: "unitcostperpackage",
+    strong: ["costperpackage", "priceperpackage", "unitpriceperpackage", "costperpkg", "unitcostperpkg", "pkgcost", "packagecost", "packageprice", "pkgprice"],
+    weak: [],
+    guess: [],
+  },
+  extendedCost: {
+    canonical: "extendedcost",
+    strong: ["extcost", "extendedprice", "extprice", "extendedamount", "linetotal", "linecost", "lineamount", "totalcost"],
+    weak: [],
+    guess: [],
+  },
+  transactionType: {
+    canonical: "transactiontype",
+    strong: ["transtype", "trxtype", "txntype", "linetype", "documenttype", "doctype", "invoicetype"],
+    weak: [],
+    guess: [],
+  },
+  creditReason: {
+    canonical: "creditreason",
+    strong: ["returnreason", "creditmemoreason", "reasoncode", "creditcode"],
+    weak: [],
+    guess: [],
+  },
+  invoiceId: {
+    canonical: "invoiceid",
+    strong: ["invoicenumber", "invoiceno", "invoicenum", "invno", "invoiceref"],
+    weak: ["invoice"],
+    guess: [],
+  },
   expirationDate: {
     canonical: "expirationdate",
     strong: ["expdate", "expiry", "expirydate", "expiration", "expires", "expirationdt", "expiredate"],
@@ -264,10 +312,22 @@ const SYNONYMS: Record<
 
 const FIELDS = Object.keys(SYNONYMS) as StandardField[];
 
+/**
+ * Headers (normalized) that exist in wholesaler exports but carry nothing the
+ * matcher uses. They are mapped to "no field" so near-hit spelling rules cannot
+ * attach them to a real field (for example "qty_ordered" must not compete with
+ * "qty_shipped", and "wholesaler_item_number" is not the wholesaler name).
+ */
+const IGNORED_HEADERS = new Set([
+  "qtyordered", "quantityordered", "orderedqty", "orderdate", "ponumber", "pono",
+  "ordernumber", "orderno", "accountnumber", "accountno", "acctnumber", "lineno",
+  "linenumber", "wholesaleritemnumber", "wholesaleritemno", "itemnumber",
+]);
+
 /** Best field guess for one header, or null when nothing is close. */
 function guessField(header: string): { field: StandardField; confidence: number } | null {
   const norm = normalizeHeader(header);
-  if (!norm) return null;
+  if (!norm || IGNORED_HEADERS.has(norm)) return null;
 
   let best: { field: StandardField; confidence: number } | null = null;
   const offer = (field: StandardField, confidence: number) => {
@@ -376,6 +436,22 @@ export function toUploadRows(rawRows: RawRow[], mappings: ColumnMapping[]): Uplo
     if (countDate) row.countDate = countDate;
     const expirationDate = text(raw, "expirationDate");
     if (expirationDate) row.expirationDate = expirationDate;
+    const quantity = toNumber(text(raw, "quantity"));
+    if (quantity !== undefined) row.quantity = quantity;
+    const invoiceDate = text(raw, "invoiceDate");
+    if (invoiceDate) row.invoiceDate = invoiceDate;
+    const packageUnit = text(raw, "packageUnit");
+    if (packageUnit) row.packageUnit = packageUnit;
+    const unitCostPerPackage = toNumber(text(raw, "unitCostPerPackage"));
+    if (unitCostPerPackage !== undefined) row.unitCostPerPackage = unitCostPerPackage;
+    const extendedCost = toNumber(text(raw, "extendedCost"));
+    if (extendedCost !== undefined) row.extendedCost = extendedCost;
+    const transactionType = text(raw, "transactionType");
+    if (transactionType) row.transactionType = transactionType;
+    const creditReason = text(raw, "creditReason");
+    if (creditReason) row.creditReason = creditReason;
+    const invoiceId = text(raw, "invoiceId");
+    if (invoiceId) row.invoiceId = invoiceId;
     out.push(row);
   });
   return out;
@@ -563,7 +639,13 @@ function scoreAgainst(
   if (base >= 60) {
     // Strength and form only help (or hurt) when the name is already close.
     if (rowStrengths.length > 0 && p.strength) {
-      confidence += strengthAgrees(rowStrengths, p.strength) ? STRENGTH_BONUS : -STRENGTH_PENALTY;
+      // A matching strength only adds confidence when the name is already a
+      // close spelling (so "esomeprazole 20 mg" does not climb to "omeprazole 20 mg").
+      if (strengthAgrees(rowStrengths, p.strength)) {
+        if (fuzzyScore >= 80 || prefixScore > 0 || brandScore > 0) confidence += STRENGTH_BONUS;
+      } else {
+        confidence -= STRENGTH_PENALTY;
+      }
     }
     if (rowForms.length > 0 && p.formWords.length > 0) {
       confidence += rowForms.some((f) => p.formWords.includes(f)) ? FORM_BONUS : -FORM_PENALTY;
@@ -661,4 +743,335 @@ export function matchDrugs(rows: UploadRow[], catalog: CatalogDrug[]): DrugMatch
       suggestions,
     };
   });
+}
+
+// ---------------------------------------------------------------------------
+// 4. Invoice-line description parsing and aggregation
+// ---------------------------------------------------------------------------
+
+/** Salt and formulation words that do not change which drug a product is. */
+const SALT_WORDS = new Set([
+  "CALCIUM", "HYDROCHLORIDE", "HCL", "SODIUM", "HYCLATE", "MALEATE", "BESYLATE", "SULFATE",
+  "MAGNESIUM", "POTASSIUM", "TARTRATE", "SUCCINATE", "MESYLATE", "PHOSPHATE", "ACETATE",
+  "HYDROBROMIDE", "HBR", "MONOHYDRATE", "TRIHYDRATE", "DIHYDRATE", "FUMARATE", "CITRATE",
+  "BROMIDE", "DR", "HFA", "OPHTHALMIC",
+]);
+/** Extended-release markers. These change the product, so they are kept as a flag. */
+const EXTENDED_WORDS = new Set(["ER", "XR", "SR", "CR", "XL", "LA", "ODT"]);
+const FORM_WORDS: Record<string, string> = {
+  TABLET: "tablet", TABLETS: "tablet", TAB: "tablet", TABS: "tablet",
+  CAPSULE: "capsule", CAPSULES: "capsule", CAP: "capsule", CAPS: "capsule",
+  INHALER: "inhaler", SOLUTION: "solution", SUSPENSION: "suspension", CREAM: "cream",
+  OINTMENT: "ointment", GEL: "gel", PATCH: "patch", PEN: "pen", SPRAY: "spray",
+  INJECTION: "injection", POWDER: "powder", DROPS: "drops", SYRUP: "syrup", KIT: "kit",
+};
+
+export type ParsedDescription = {
+  /** Drug name with salt words and the extended-release marker removed, e.g. "ATORVASTATIN". */
+  name: string;
+  /** Drug name as written before the strength, e.g. "ATORVASTATIN CALCIUM". */
+  rawName: string;
+  /** Normalized strength such as "20 mg" or "90 mcg", or "" when none was found. */
+  strength: string;
+  /** Normalized form such as "tablet" or "capsule", or "" when none was found. */
+  form: string;
+  /** Pack text such as "90 TAB", "" when none was found. */
+  packText: string;
+  /** Labeler code after " - ", such as "BLW", "" when none was found. */
+  labeler: string;
+  /** True for ER, XR, SR and similar products. */
+  extended: boolean;
+  /** True for the "LT BRAND #0022" and "LONG-TAIL GENERIC #0220" placeholders. */
+  longTail: boolean;
+};
+
+/**
+ * Split a wholesaler description such as
+ * "ATORVASTATIN CALCIUM 20 MG TABLET 90 TAB - BLW" into its parts.
+ * Works on short names too ("Atorvastatin 20mg tab", "Lisinopril").
+ */
+export function parseDescription(text: string): ParsedDescription {
+  let s = (text ?? "").trim().replace(/\s+/g, " ");
+  let labeler = "";
+  const lm = /\s-\s([A-Za-z0-9]{2,6})$/.exec(s);
+  if (lm) {
+    labeler = lm[1].toUpperCase();
+    s = s.slice(0, lm.index).trim();
+  }
+  const longTail = /^(LT BRAND|LONG-TAIL)\b/i.test(s);
+
+  let strength = "";
+  let before = s;
+  let after = "";
+  const sm = /(\d+(?:\.\d+)?)\s*(mg|mcg|ug|g|ml|iu|%)(?![a-z])(?:\s*\/\s*(?:act|actuation|ml|hr|g|dose)\b)?/i.exec(s);
+  if (sm) {
+    const unit = sm[2].toLowerCase() === "ug" ? "mcg" : sm[2].toLowerCase();
+    strength = unit === "%" ? `${sm[1]}%` : `${sm[1]} ${unit}`;
+    before = s.slice(0, sm.index).trim();
+    after = s.slice(sm.index + sm[0].length);
+  }
+
+  // Form: first form word after the strength (or anywhere when there is no strength).
+  let form = "";
+  let packText = "";
+  const scan = sm ? after : s;
+  const fm = /\b(tablets?|tabs?|capsules?|caps?|inhaler|solution|suspension|cream|ointment|gel|patch|pen|spray|injection|powder|drops|syrup|kit)\b/i.exec(scan);
+  if (fm) {
+    form = FORM_WORDS[fm[1].toUpperCase()] ?? fm[1].toLowerCase();
+    if (!sm) before = s.slice(0, fm.index).trim();
+  }
+  const pm = /(\d+(?:\.\d+)?\s*[A-Za-z]{2,4})\s*$/.exec(scan);
+  if (pm && fm && pm.index > fm.index) packText = pm[1].toUpperCase();
+
+  // Name: drop punctuation, salts and extended-release markers.
+  const words = before.replace(/[,;]/g, " ").split(/\s+/).filter(Boolean);
+  let extended = false;
+  const kept: string[] = [];
+  for (const w of words) {
+    const up = w.toUpperCase();
+    if (EXTENDED_WORDS.has(up)) extended = true;
+    else if (!SALT_WORDS.has(up)) kept.push(w);
+  }
+  const name = (kept.length ? kept : words).join(" ");
+  return { name, rawName: before, strength, form, packText, labeler, extended, longTail };
+}
+
+export type ProductSummary = {
+  /** Grouping key: cleaned name, strength and form (lowercase). */
+  key: string;
+  /** First original description seen for this product. */
+  description: string;
+  /** Description without pack text and labeler, e.g. "ATORVASTATIN CALCIUM 20 mg tablet". */
+  displayName: string;
+  /** Cleaned drug name (salt words removed). */
+  drugName: string;
+  strength: string;
+  form: string;
+  /** Number of invoice lines (credits included). */
+  lines: number;
+  /** Packages bought, net of credits. */
+  packages: number;
+  /** Net units: packages x package size. */
+  unitsTotal: number;
+  /** Months in the file's invoice date range (at least 1). Same for every product. */
+  monthsCovered: number;
+  unitsPerMonth: number;
+  /** Net extended cost / net units, in dollars per unit. 0 when net units are 0. */
+  avgUnitPrice: number;
+  /** Net spend over the file's date range, in dollars. */
+  totalSpend: number;
+  wholesalers: string[];
+  /** Long-tail placeholder, or a brand: description starts with "LT BRAND" or labeler code is BRD. */
+  isBrandLike: boolean;
+  /** Description is a "LONG-TAIL ..." or "LT BRAND ..." placeholder. */
+  isLongTail: boolean;
+  /** Extended-release product. */
+  extended: boolean;
+};
+
+export type AggregateResult = {
+  products: ProductSummary[];
+  /** Rows that were aggregated (skipped ones excluded). */
+  lineCount: number;
+  /** Rows skipped because a quantity, package size or cost was missing or not a number. */
+  skipped: number;
+  monthsCovered: number;
+};
+
+function parseDate(value: string | undefined): number | undefined {
+  if (!value) return undefined;
+  const iso = /^(\d{4})-(\d{2})-(\d{2})/.exec(value);
+  const t = iso ? Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])) : Date.parse(value);
+  return Number.isFinite(t) ? t : undefined;
+}
+
+type Acc = {
+  summary: ProductSummary;
+  cost: number; // net dollars on invoice lines
+  monthlyUnits: number; // from monthly-summary rows (no invoice lines)
+  monthlyCost: number; // dollars per month on those rows
+  wholesalers: Set<string>;
+};
+
+/**
+ * Group invoice lines (or monthly summary rows) by product and total them.
+ *
+ * - Credits: a row whose transactionType contains CREDIT, RETURN or MEMO counts
+ *   as negative (packages and dollars), whatever sign the file used.
+ * - Price per unit = package cost / package size, so avgUnitPrice is net cost / net units.
+ * - Rows with only unitsPerMonth (and optionally pricePaid, a per-unit price)
+ *   are treated as monthly summaries and added as they are.
+ * - Rows with a missing or invalid number, or a package size of 0 or less, are skipped and counted.
+ */
+export function aggregateInvoiceLines(rows: UploadRow[]): AggregateResult {
+  // Date range over all rows.
+  let minT = Infinity;
+  let maxT = -Infinity;
+  for (const r of rows) {
+    const t = parseDate(r.invoiceDate);
+    if (t === undefined) continue;
+    if (t < minT) minT = t;
+    if (t > maxT) maxT = t;
+  }
+  const monthsCovered =
+    Number.isFinite(minT) && Number.isFinite(maxT)
+      ? Math.max(1, Math.round(((maxT - minT) / 86_400_000 + 1) / 30.4375 * 10) / 10)
+      : 1;
+
+  const map = new Map<string, Acc>();
+  let skipped = 0;
+  let lineCount = 0;
+  for (const r of rows) {
+    const p = parseDescription(r.drugName);
+    const strength = p.strength || (r.strength ? parseDescription(`x ${r.strength}`).strength || r.strength.toLowerCase() : "");
+    const hasInvoiceQty = r.quantity !== undefined;
+    const hasMonthly = r.unitsPerMonth !== undefined;
+    if (!p.name || (!hasInvoiceQty && !hasMonthly)) {
+      skipped++;
+      continue;
+    }
+    const credit = r.transactionType ? /credit|return|memo/i.test(r.transactionType) : false;
+    const sign = credit ? -1 : 1;
+    let packages = 0;
+    let units = 0;
+    let cost = 0;
+    let monthlyUnits = 0;
+    let monthlyCost = 0;
+    if (hasInvoiceQty) {
+      const qty = r.quantity as number;
+      const sizeText = r.packageSize ? Number(r.packageSize.replace(/[,\s]/g, "")) : NaN;
+      const size = Number.isFinite(sizeText) ? sizeText : 1; // no package size: one unit per package
+      const unitCost = r.unitCostPerPackage;
+      const ext = r.extendedCost;
+      if (size <= 0 || (ext === undefined && unitCost === undefined && r.pricePaid === undefined)) {
+        skipped++;
+        continue;
+      }
+      packages = credit ? -Math.abs(qty) : qty;
+      units = packages * size;
+      if (ext !== undefined) cost = credit ? -Math.abs(ext) : ext;
+      else if (unitCost !== undefined) cost = packages * (credit ? Math.abs(unitCost) : unitCost);
+      else cost = units * (r.pricePaid as number);
+    } else {
+      monthlyUnits = sign * (r.unitsPerMonth as number);
+      monthlyCost = monthlyUnits * (r.pricePaid ?? 0);
+    }
+    const form = p.form;
+    const key = `${p.name}|${strength}|${form}${p.extended ? "|er" : ""}`.toLowerCase();
+    let acc = map.get(key);
+    if (!acc) {
+      acc = {
+        summary: {
+          key,
+          description: r.drugName,
+          displayName: [p.rawName, strength, form].filter(Boolean).join(" "),
+          drugName: p.name,
+          strength,
+          form,
+          lines: 0,
+          packages: 0,
+          unitsTotal: 0,
+          monthsCovered,
+          unitsPerMonth: 0,
+          avgUnitPrice: 0,
+          totalSpend: 0,
+          wholesalers: [],
+          isBrandLike: p.longTail && /^LT BRAND/i.test(r.drugName) ? true : p.labeler === "BRD",
+          isLongTail: p.longTail,
+          extended: p.extended,
+        },
+        cost: 0,
+        monthlyUnits: 0,
+        monthlyCost: 0,
+        wholesalers: new Set<string>(),
+      };
+      map.set(key, acc);
+    }
+    const s = acc.summary;
+    s.lines++;
+    s.packages += packages;
+    s.unitsTotal += units;
+    acc.cost += cost;
+    acc.monthlyUnits += monthlyUnits;
+    acc.monthlyCost += monthlyCost;
+    if (r.wholesaler) acc.wholesalers.add(r.wholesaler);
+    lineCount++;
+  }
+
+  const products: ProductSummary[] = [];
+  for (const acc of Array.from(map.values())) {
+    const s = acc.summary;
+    s.wholesalers = Array.from(acc.wholesalers);
+    s.unitsPerMonth = s.unitsTotal / monthsCovered + acc.monthlyUnits;
+    const totalUnitsPerMonth = s.unitsTotal / monthsCovered + acc.monthlyUnits;
+    const dollarsPerMonth = acc.cost / monthsCovered + acc.monthlyCost;
+    s.avgUnitPrice = totalUnitsPerMonth > 0 ? dollarsPerMonth / totalUnitsPerMonth : 0;
+    s.totalSpend = dollarsPerMonth * monthsCovered;
+    products.push(s);
+  }
+  return { products, lineCount, skipped, monthsCovered };
+}
+
+export type ProductMatch = {
+  product: ProductSummary;
+  match: DrugMatch;
+  /** Plain-words reason when the product was left unmatched on purpose. */
+  note?: string;
+};
+
+/**
+ * Match aggregated products to the pool catalog (one match per product, not per line).
+ *
+ * - Long-tail placeholders ("LT BRAND #0022", "LONG-TAIL GENERIC ...") and extended-release
+ *   products are unmatched without scoring (the pool catalog holds the immediate-release drug).
+ * - Everything else goes through matchDrugs using the cleaned name, the form and the strength.
+ * - If the best catalog drug has a different strength (for example Atorvastatin 40 mg vs the
+ *   20 mg entry), the product is UNMATCHED with a note, not needs-review, so it never inflates
+ *   the matched numbers. The confidence of the near-miss is kept.
+ * match.rowIndex is the index in `products`.
+ */
+export function matchProducts(products: ProductSummary[], catalog: CatalogDrug[]): ProductMatch[] {
+  const catalogStrength = new Map<string, Strength | undefined>();
+  for (const c of catalog) catalogStrength.set(c.id, extractStrengths(tokenize(c.strength))[0]);
+
+  const scoreRows: UploadRow[] = [];
+  const scoreIndex: number[] = [];
+  const out: ProductMatch[] = new Array<ProductMatch>(products.length);
+  products.forEach((p, i) => {
+    if (p.isLongTail || p.extended) {
+      out[i] = {
+        product: p,
+        match: { rowIndex: i, original: p.displayName, corrected: "", status: "unmatched", confidence: 0, suggestions: [] },
+        note: p.isLongTail ? "Brand or long-tail item, not in the pool catalog" : "Extended-release product, not in the pool catalog",
+      };
+      return;
+    }
+    scoreIndex.push(i);
+    const row: UploadRow = { rowIndex: i, drugName: p.form ? `${p.drugName} ${p.form}` : p.drugName };
+    if (p.strength) row.strength = p.strength;
+    scoreRows.push(row);
+  });
+
+  const matches = matchDrugs(scoreRows, catalog);
+  matches.forEach((m, k) => {
+    const i = scoreIndex[k];
+    const p = products[i];
+    const match: DrugMatch = { ...m, rowIndex: i, original: p.displayName };
+    let note: string | undefined;
+    if (match.status !== "unmatched" && match.drugId && p.strength) {
+      const cs = catalogStrength.get(match.drugId);
+      const ps = extractStrengths(tokenize(p.strength));
+      if (cs && ps.length > 0 && !strengthAgrees(ps, cs)) {
+        note = `Same drug, different strength (${p.strength}), not in the pool catalog`;
+        out[i] = {
+          product: p,
+          match: { ...match, status: "unmatched", corrected: "", drugId: undefined, suggestions: [] },
+          note,
+        };
+        return;
+      }
+    }
+    out[i] = { product: p, match };
+  });
+  return out;
 }

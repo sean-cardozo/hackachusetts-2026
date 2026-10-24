@@ -36,6 +36,10 @@ Build the PharmaPool screens in waves. Wave 0 builds the shell and the data laye
   - [ ] 4.2 Award (review and submit) page at `/award`: every action from Compare, Swap and Join (approved swaps, opt-ins, award decision) is listed in a review queue with the count shown as a badge in the sidebar, then submitted at once.
     - _Requirements: 5.1, 6.1_
 
+- [x] 5. Automatic mapping for the store-001 invoice export
+  - [x] 5.1 Auto-map and auto-match the store-001 invoice-line export end to end: extend the column synonyms and standard fields for its 19 columns, aggregate invoice lines into per-product monthly units and price per unit, auto-apply the mapping and matching on the Upload page with no manual selecting by default, and show the results against the NADAC benchmark.
+    - _Requirements: 7.1, 7.3_
+
 ## Task Dependency Graph
 
 ```json
@@ -45,7 +49,8 @@ Build the PharmaPool screens in waves. Wave 0 builds the shell and the data laye
     { "id": 1, "tasks": ["2.1", "2.2", "2.3", "2.4", "2.5"] },
     { "id": 2, "tasks": ["3.1"] },
     { "id": 3, "tasks": ["3.2"] },
-    { "id": 4, "tasks": ["4.1", "4.2"] }
+    { "id": 4, "tasks": ["4.1", "4.2"] },
+    { "id": 5, "tasks": ["5.1"] }
   ]
 }
 ```

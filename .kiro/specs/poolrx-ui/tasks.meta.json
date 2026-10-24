@@ -201,6 +201,25 @@
         "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
         "timestamp": 1792872554375
       }
+    ],
+    "5.1 Auto-map and auto-match the store-001 invoice-line export end to end: extend the column synonyms and standard fields for its 19 columns, aggregate invoice lines into per-product monthly units and price per unit, auto-apply the mapping and matching on the Upload page with no manual selecting by default, and show the results against the NADAC benchmark.": [
+      {
+        "executionId": "126f39df-f632-404b-a7f2-661ddb587e8e",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792872678601
+      },
+      {
+        "executionId": "126f39df-f632-404b-a7f2-661ddb587e8e",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792873204713
+      }
+    ],
+    "5. Automatic mapping for the store-001 invoice export": [
+      {
+        "executionId": "126f39df-f632-404b-a7f2-661ddb587e8e",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792873204743
+      }
     ]
   }
 }
