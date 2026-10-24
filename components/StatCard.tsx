@@ -15,7 +15,7 @@ export default function StatCard({ label, value, sub, badge, emphasis }: StatCar
         <span className="text-[12px] font-bold uppercase tracking-[0.06em] text-muted">{label}</span>
         {badge}
       </div>
-      <div className="font-display text-[34px] uppercase leading-none tracking-[0.02em]">{value}</div>
+      <div className="font-display text-[34px] leading-none">{value}</div>
       {sub ? <div className="text-[12.5px] text-muted">{sub}</div> : null}
     </div>
   );

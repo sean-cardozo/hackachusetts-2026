@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Anton, Archivo, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
+import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import { ToastProvider } from "@/components/Toast";
 import { AppStateProvider } from "@/components/AppState";
 import AskPanel from "@/components/AskPanel";
 import { getAskContext, getFeedStatus } from "@/lib/data";
 
-const display = Anton({ subsets: ["latin"], weight: "400", variable: "--font-display" });
-const body = Archivo({
+const body = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-body",
 });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["500", "600"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   title: "PharmaPool",
@@ -32,15 +32,18 @@ export default function RootLayout({
   const nadacDate = feeds.find((f) => f.feed === "nadac")?.effectiveDate ?? undefined;
   const shortagesDate = feeds.find((f) => f.feed === "shortages")?.effectiveDate ?? undefined;
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body className="flex min-h-screen flex-col font-body">
+    <html lang="en" className={`${body.variable} ${mono.variable}`}>
+      <body className="font-body">
         <ToastProvider>
-          <Header status={status} nadacDate={nadacDate} shortagesDate={shortagesDate} />
-          <main className="mx-auto w-full max-w-[1280px] flex-1 px-6 py-8">
-            <AppStateProvider>{children}</AppStateProvider>
-          </main>
+          <Sidebar />
+          <div className="flex min-h-screen flex-col md:pl-[232px]">
+            <TopBar status={status} nadacDate={nadacDate} shortagesDate={shortagesDate} />
+            <main className="mx-auto w-full max-w-[1280px] flex-1 px-[clamp(16px,3vw,40px)] pb-[110px] pt-[34px]">
+              <AppStateProvider>{children}</AppStateProvider>
+            </main>
+            <Footer />
+          </div>
           <AskPanel context={askContext} />
-          <Footer />
         </ToastProvider>
       </body>
     </html>

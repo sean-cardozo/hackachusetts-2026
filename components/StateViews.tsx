@@ -45,7 +45,7 @@ export function ErrorState({
   return (
     <div
       role="alert"
-      className="flex flex-col items-center gap-3 rounded-[16px] border-[1.5px] border-bad bg-bad-soft p-8 text-center"
+      className="flex flex-col items-center gap-3 rounded-[14px] border-[1.5px] border-bad bg-bad-soft p-8 text-center"
     >
       <p className="m-0 font-bold text-bad">{message}</p>
       {onRetry ? (

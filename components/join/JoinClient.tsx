@@ -98,7 +98,7 @@ export default function JoinClient({ rounds, quotes, drugs, swaps }: Props) {
           className="card-accent mt-5 flex flex-wrap items-center justify-between gap-3 p-4"
         >
           <div>
-            <div className="font-display text-[22px] uppercase tracking-[0.02em]">
+            <div className="font-display text-[22px]">
               Decision needed
             </div>
             <div className="text-[13.5px]">
@@ -226,7 +226,7 @@ function RoundCard({
   return (
     <article className="card flex flex-col gap-3 p-5" aria-label={r.name}>
       <header className="flex flex-wrap items-start justify-between gap-2">
-        <h3 className="m-0 font-display text-[24px] uppercase leading-tight tracking-[0.02em]">
+        <h3 className="m-0 font-display text-[24px] leading-tight">
           {r.name}
         </h3>
         <SampleBadge />
@@ -356,7 +356,7 @@ function SavingsLine({ round: r, status }: { round: RoundView; status: RoundStat
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2">
-        <span className="font-display text-[22px] uppercase tracking-[0.02em]">{text}</span>
+        <span className="font-display text-[22px]">{text}</span>
         <SampleBadge />
       </div>
       {status !== "closed" && status !== "awarded" ? (

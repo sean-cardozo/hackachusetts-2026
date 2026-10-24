@@ -165,14 +165,14 @@ export default function DrugDrawer({
           <div className="h-[200px] w-full" role="img" aria-label={`Line chart of illustrative monthly price for ${drug.name}: your price versus NADAC`}>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={priceData} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
-                <CartesianGrid stroke="#eee5d7" vertical={false} />
+                <CartesianGrid stroke="#e3e8ef" vertical={false} />
                 <XAxis dataKey="m" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 11 }} width={52} tickFormatter={(v: number) => unitPrice(v)} domain={["auto", "auto"]} />
                 <Tooltip formatter={(v) => unitPrice(Number(v))} />
                 <Legend wrapperStyle={{ fontSize: 12 }} />
-                <Line type="monotone" dataKey="yours" name="Your price" stroke="#121212" strokeWidth={2.5} dot={false} isAnimationActive={false} />
+                <Line type="monotone" dataKey="yours" name="Your price" stroke="#0e2742" strokeWidth={2.5} dot={false} isAnimationActive={false} />
                 {drug.nadac !== null ? (
-                  <Line type="monotone" dataKey="nadac" name="NADAC" stroke="#ff7a00" strokeWidth={2.5} strokeDasharray="6 4" dot={false} isAnimationActive={false} />
+                  <Line type="monotone" dataKey="nadac" name="NADAC" stroke="#0f9f7a" strokeWidth={2.5} strokeDasharray="6 4" dot={false} isAnimationActive={false} />
                 ) : null}
               </LineChart>
             </ResponsiveContainer>
@@ -185,11 +185,11 @@ export default function DrugDrawer({
           <div className="h-[150px] w-full" role="img" aria-label={`Bar chart of illustrative monthly usage for ${drug.name}`}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={usageData} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
-                <CartesianGrid stroke="#eee5d7" vertical={false} />
+                <CartesianGrid stroke="#e3e8ef" vertical={false} />
                 <XAxis dataKey="m" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 11 }} width={52} />
                 <Tooltip />
-                <Bar dataKey="units" name="Units" fill="#121212" isAnimationActive={false} />
+                <Bar dataKey="units" name="Units" fill="#0f9f7a" isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
           </div>

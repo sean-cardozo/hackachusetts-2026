@@ -1,39 +1,46 @@
 ---
 inclusion: always
 ---
-# Theme steering — Hackachusetts (bright)
+# Theme steering — PharmaPool (clean healthcare SaaS)
 
-Source identity: the Hackachusetts logo — heavy white condensed caps on a black, Massachusetts-shaped plate, underlined by a bright orange paint stripe with drips. PharmaPool uses that identity in a **light-only** UI (no dark mode): bright warm-white ground, black type, orange as the single accent.
+Source identity: `reference/PharmaPool.dc.html`. Navy left sidebar, white workspace, one green-teal accent. Light theme only.
 
-## Tokens (CSS variables)
-| Token | Light (default) |
+## Tokens (app/globals.css, exposed as Tailwind colors of the same name)
+| token | value |
 |---|---|
-| --bg | #fffaf3 |
+| --bg | #f5f7fa |
 | --surface | #ffffff |
-| --surface-2 | #fbf5ec |
-| --line | #eee5d7 |
-| --line-strong | #c9bfae |
-| --ink | #121212 |
-| --muted | #5b554c |
-| --accent (orange) | #ff7a00 |
-| --accent-ink (orange text) | #a64b00 |
-| --accent-soft | #fff0de |
-| --good / --good-soft | #17804d / #e3f5ea |
-| --bad / --bad-soft | #c8352a / #fdeae6 |
+| --surface-2 | #f4f7fb |
+| --line | #e3e8ef |
+| --line-strong | #c5cfdb |
+| --ink | #0f1d33 |
+| --muted | #5a6779 |
+| --accent (green-teal) | #0f9f7a |
+| --accent-ink (accent text) | #0a7259 |
+| --accent-soft | #e7f6f0 |
+| --navy (sidebar) | #0e2742 |
+| --blue | #2563eb |
+| --good / --good-soft | #15803d / #e6f4ea |
+| --bad / --bad-soft | #c2362b / #fdecea |
+| --shadow | 0 20px 50px rgba(15,29,51,.16) |
 
-Rules: orange is the only accent. Don't use --accent for body-size text on white (contrast) — use --accent-ink. Text on orange fills is #111.
+Rules: green-teal is the only accent. Use --accent-ink, not --accent, for body-size text on white. Text on accent fills is white. Red and green always come with a word or an arrow, never color alone.
 
 ## Type
-- Display: **Anton** (Google Fonts), uppercase, letter-spacing .01–.04em. Page titles 44px, section titles 22–28px, hero numbers clamp(54px, 6.4vw, 96px).
-- Body/UI: **Archivo** 400–800. Base 14px. Numbers: `font-variant-numeric: tabular-nums`.
-- Mono (codes like "AB", file column names): JetBrains Mono.
+- **Plus Jakarta Sans** 400–800 for everything. Headings: weight 800, letter-spacing -0.015em, sentence case (no all-caps display type). Page titles 34px, section titles 22px, hero numbers clamp(44px, 5.2vw, 72px).
+- **JetBrains Mono** 500/600 for codes (TE ratings like "AB", NDCs, file column names).
+- Base 14px, line-height 1.45, `tabular-nums`.
 
-## Signature details
-- Header: white bar, 5px orange bottom border with 4–5 small orange "drips" (rounded-bottom rectangles 5–8px wide, 6–14px tall) hanging below it.
-- Hero savings number: black Anton, with a 10px orange bar underneath carrying 3 drips.
-- Wordmark: "PHARMA" in ink + "POOL" in orange, Anton.
-- Cards: white, 1.5px --line border, 14–20px radius. Emphasis cards: 2.5px --ink border. Accent cards: --accent-soft fill + 2–2.5px orange border.
-- Buttons: pill (999px). Primary = orange fill/#111 text, weight 800. Secondary = 1.5px --line-strong outline. Strong = --ink fill / --bg text.
-- Badges: Live = 1.5px orange outline, orange dot, --accent-ink text, uppercase 10.5px. Sample = 1.5px --line-strong outline, --muted text.
-- Focus: 2px orange outline, 2px offset. No default blue anywhere (links use --accent-ink).
-- No gradients, no emoji, no drop-shadow-heavy cards (one --shadow for drawers/dialogs only).
+## Shell
+- **Sidebar** (components/Sidebar.tsx): fixed, 232px, --navy. Wordmark (3×3 teal dot grid + "PharmaPool" 22px/800 white) and tagline. Group 1: the 4 tabs Summary, Compare, Swap, Join (24px stroke icon, label 14.5px/700, sub-label 11.5px). Divider rgba(255,255,255,.12). Group 2: Upload data, Data sources. Item: radius 10px, 3px left border; active = bg #18426b, white text, #34d3a6 left border, `aria-current="page"`; idle = #c3d0df. Footer card: "Stronger together…" on rgba(255,255,255,.07). Below md the sidebar stacks above the content.
+- **Top bar** (components/TopBar.tsx): sticky, white 95% + 8px blur, 1px --line bottom border. Page title, FreshnessChip (radius 10px, --surface-2, pulsing accent dot when live), pharmacy avatar + "Sample pharmacy".
+- Main: padding 34px clamp(16px,3vw,40px) 110px. Footer text unchanged. Ask PharmaPool stays a floating bottom-right primary button.
+- Only link to pages that exist. Do not add Award to the sidebar until that page is built.
+
+## Components
+- Cards: white, 1px --line border, 14px radius. Emphasis (`.card-strong`): 2px --ink border. Accent (`.card-accent`): --accent-soft fill + 1.5px accent border. Sub-tiles inside cards: 12px radius.
+- Buttons: 10px radius, weight 800, padding 10px 18px (small 8px 14px), press scale .95. Primary = accent fill / white text (hover --accent-ink). Secondary = 1.5px --line-strong outline. Strong = --ink fill / --bg text.
+- Badges and pills: 999px radius, 1.5px border, 10.5–12px weight 800. Live = accent outline + dot + --accent-ink text. Sample = --line-strong outline + --muted text.
+- Charts (Recharts): "With PharmaPool" and bars = #0f9f7a, "Actual" / your price = navy #0e2742, "Without" = gray #94a3b8 dashed, grid #e3e8ef.
+- Focus: 2px --accent outline, 2px offset.
+- No gradients, no emoji, no paint drips. One --shadow for drawers, dialogs and toasts only.

@@ -173,12 +173,12 @@ export default function AwardSection({
         </div>
         <div className="mt-1 flex flex-wrap items-baseline gap-3" aria-live="polite">
           {shownPct === null ? (
-            <span className="font-display text-[44px] uppercase leading-none">
+            <span className="font-display text-[44px] leading-none">
               Estimated {estLow}-{estHigh}%
             </span>
           ) : (
             <>
-              <span className="font-display text-[44px] uppercase leading-none">
+              <span className="font-display text-[44px] leading-none">
                 Quoted {formatPercent(shownPct)}
               </span>
               <s className="text-[18px] text-muted">Estimated {estLow}-{estHigh}%</s>
@@ -224,10 +224,10 @@ export default function AwardSection({
               className={`${isBest ? "card-accent" : "card"} flex flex-col gap-2 p-4`}
             >
               <header className="flex items-center justify-between gap-2">
-                <h3 className="m-0 font-display text-[24px] uppercase">Supplier {q.supplier}</h3>
+                <h3 className="m-0 font-display text-[24px]">Supplier {q.supplier}</h3>
                 <span className="flex items-center gap-1.5">
                   {isBest ? (
-                    <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] font-extrabold text-[#111]">
+                    <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] font-extrabold text-white">
                       Recommended
                     </span>
                   ) : null}
@@ -287,7 +287,7 @@ export default function AwardSection({
       {best ? (
         <div className="card mt-4 grid gap-5 p-5 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <h3 className="m-0 font-display text-[22px] uppercase">
+            <h3 className="m-0 font-display text-[22px]">
               Recommendation: Supplier {best.supplier}
             </h3>
             <p className="mt-2 text-[14px]">{reason?.text ?? fallbackReason}</p>
@@ -340,7 +340,7 @@ export default function AwardSection({
                     max={100}
                     value={weights[key]}
                     onChange={(e) => setWeights((w) => ({ ...w, [key]: Number(e.target.value) }))}
-                    className="w-full accent-[#ff7a00]"
+                    className="w-full accent-[#0f9f7a]"
                   />
                 </label>
               ))}
@@ -369,7 +369,7 @@ export default function AwardSection({
         {showSupplierView ? (
           <div className="mt-3 grid gap-4 md:grid-cols-2">
             <div className="card p-4">
-              <h3 className="m-0 font-display text-[20px] uppercase">Your view</h3>
+              <h3 className="m-0 font-display text-[20px]">Your view</h3>
               <ul className="mt-2 list-none p-0 text-[13.5px]">
                 {Object.keys(quotes.groupDemand).map((id) => (
                   <li key={id} className="flex justify-between py-0.5">
@@ -386,7 +386,7 @@ export default function AwardSection({
               </p>
             </div>
             <div className="card-accent p-4">
-              <h3 className="m-0 font-display text-[20px] uppercase">Supplier view</h3>
+              <h3 className="m-0 font-display text-[20px]">Supplier view</h3>
               <ul className="mt-2 list-none p-0 text-[13.5px]">
                 {Object.keys(quotes.groupDemand).map((id) => (
                   <li key={id} className="flex justify-between py-0.5">

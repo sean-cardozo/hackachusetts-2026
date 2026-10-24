@@ -3,21 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --bg: #fffaf3;
+  --bg: #f5f7fa;
   --surface: #ffffff;
-  --surface-2: #fbf5ec;
-  --line: #eee5d7;
-  --line-strong: #c9bfae;
-  --ink: #121212;
-  --muted: #5b554c;
-  --accent: #ff7a00;
-  --accent-ink: #a64b00;
-  --accent-soft: #fff0de;
-  --good: #17804d;
-  --good-soft: #e3f5ea;
-  --bad: #c8352a;
-  --bad-soft: #fdeae6;
-  --shadow: 0 20px 50px rgba(18, 18, 18, 0.16);
+  --surface-2: #f4f7fb;
+  --line: #e3e8ef;
+  --line-strong: #c5cfdb;
+  --ink: #0f1d33;
+  --muted: #5a6779;
+  --accent: #0f9f7a;
+  --accent-ink: #0a7259;
+  --accent-soft: #e7f6f0;
+  --navy: #0e2742;
+  --blue: #2563eb;
+  --good: #15803d;
+  --good-soft: #e6f4ea;
+  --bad: #c2362b;
+  --bad-soft: #fdecea;
+  --shadow: 0 20px 50px rgba(15, 29, 51, 0.16);
 }
 
 * {
@@ -85,28 +87,28 @@ input[type="range"] {
 
 @layer components {
   .font-display-caps {
-    @apply font-display uppercase tracking-[0.02em];
+    @apply font-display font-extrabold tracking-[-0.015em];
   }
   .page-title {
-    @apply font-display uppercase tracking-[0.02em] text-[44px] leading-[1.05] m-0;
+    @apply font-display font-extrabold tracking-[-0.015em] text-[34px] leading-[1.05] m-0;
   }
   .section-title {
-    @apply font-display uppercase tracking-[0.02em] text-[26px] leading-[1.1] m-0;
+    @apply font-display font-extrabold tracking-[-0.015em] text-[22px] leading-[1.15] m-0;
   }
   .card {
-    @apply bg-surface border-[1.5px] border-line rounded-[16px];
+    @apply bg-surface border border-line rounded-[14px];
   }
   .card-strong {
-    @apply bg-surface border-[2.5px] border-ink rounded-[16px];
+    @apply bg-surface border-2 border-ink rounded-[14px];
   }
   .card-accent {
-    @apply bg-accent-soft border-[2.5px] border-accent rounded-[16px];
+    @apply bg-accent-soft border-[1.5px] border-accent rounded-[14px];
   }
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-[14px] font-extrabold cursor-pointer no-underline whitespace-nowrap transition-transform active:scale-95;
+    @apply inline-flex items-center justify-center gap-2 rounded-[10px] px-[18px] py-[10px] text-[14px] font-extrabold cursor-pointer no-underline whitespace-nowrap transition-transform active:scale-95;
   }
   .btn-primary {
-    @apply bg-accent text-[#111] border-[1.5px] border-accent hover:text-[#111] hover:brightness-95;
+    @apply bg-accent text-white border-[1.5px] border-accent hover:text-white hover:bg-accent-ink hover:border-accent-ink;
   }
   .btn-secondary {
     @apply bg-surface text-ink border-[1.5px] border-line-strong hover:text-ink hover:bg-surface-2;
@@ -115,6 +117,14 @@ input[type="range"] {
     @apply bg-ink text-bg border-[1.5px] border-ink hover:text-bg hover:opacity-90;
   }
   .btn-sm {
-    @apply px-4 py-1.5 text-[13px];
+    @apply px-[14px] py-2 text-[13px];
+  }
+}
+
+@layer utilities {
+  /* Headings: Plus Jakarta Sans 800, slightly tight. No all-caps display type. */
+  .font-display {
+    font-weight: 800;
+    letter-spacing: -0.015em;
   }
 }

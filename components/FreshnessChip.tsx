@@ -12,14 +12,14 @@ export default function FreshnessChip({ status, nadacDate, shortagesDate }: Fres
   return (
     <span
       title={text}
-      className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-line bg-surface-2 px-3 py-1 text-[12px] font-semibold text-muted"
+      className="inline-flex items-center gap-2 min-w-0 cursor-help rounded-[10px] border border-line bg-surface-2 px-3 py-[7px] text-[12px] font-semibold text-muted"
     >
       <span
         aria-hidden
         className={`h-2 w-2 flex-none rounded-full ${live ? "bg-accent" : "bg-line-strong"}`}
-        style={live ? { animation: "ppPulse 1.6s ease-in-out infinite" } : undefined}
+        style={live ? { animation: "ppPulse 2s ease-in-out infinite" } : undefined}
       />
-      {text}
+      <span className="min-w-0 truncate">{text}</span>
     </span>
   );
 }

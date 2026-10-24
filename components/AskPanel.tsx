@@ -142,10 +142,10 @@ export default function AskPanel({ context }: { context: AskContext }) {
         <div
           role="dialog"
           aria-label="Ask PharmaPool"
-          className="fixed bottom-0 right-0 z-50 flex h-[600px] max-h-[100dvh] w-full flex-col overflow-hidden rounded-t-[18px] border-2 border-ink bg-surface shadow-pp sm:bottom-5 sm:right-5 sm:w-[390px] sm:rounded-[18px]"
+          className="fixed bottom-0 right-0 z-50 flex h-[600px] max-h-[100dvh] w-full flex-col overflow-hidden rounded-t-[18px] border border-line bg-surface shadow-pp sm:bottom-5 sm:right-5 sm:w-[390px] sm:rounded-[18px]"
         >
           <div className="flex items-center justify-between border-b-[1.5px] border-line px-4 py-3">
-            <h2 className="m-0 font-display text-[20px] uppercase tracking-[0.03em]">Ask PharmaPool</h2>
+            <h2 className="m-0 font-display text-[20px]">Ask PharmaPool</h2>
             <button type="button" onClick={close} className="btn btn-secondary btn-sm" aria-label="Close">
               Close
             </button>
@@ -220,7 +220,7 @@ export default function AskPanel({ context }: { context: AskContext }) {
                 maxLength={500}
                 aria-label="Your question"
                 placeholder="Ask a question"
-                className="min-w-0 flex-1 rounded-full border-[1.5px] border-line-strong bg-surface px-4 py-2 text-[14px]"
+                className="min-w-0 flex-1 rounded-[10px] border-[1.5px] border-line-strong bg-surface px-4 py-2 text-[14px]"
               />
               <button type="submit" className="btn btn-primary btn-sm" disabled={busy || !input.trim()}>
                 Send

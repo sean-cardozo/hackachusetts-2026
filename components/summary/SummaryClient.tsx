@@ -341,7 +341,7 @@ export default function SummaryClient(props: SummaryProps) {
               <span className="text-[14px] text-muted line-through">
                 Estimated {ESTIMATED_PCT[0]}{DASH}{ESTIMATED_PCT[1]}%
               </span>
-              <span className="font-display text-[34px] uppercase leading-none tabular-nums">Quoted {formatPercent(shown)}</span>
+              <span className="font-display text-[34px] leading-none tabular-nums">Quoted {formatPercent(shown)}</span>
               {quotedDollars !== null ? (
                 <span className="text-[13px] text-muted tabular-nums">
                   {formatDollars(quotedDollars)}/yr on {awardRound?.name ?? props.quotesRoundName}
@@ -402,12 +402,12 @@ export default function SummaryClient(props: SummaryProps) {
                     <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtAxis} width={56} domain={["auto", "auto"]} />
                     <Tooltip formatter={(v) => formatDollars(Number(v ?? 0))} />
                     <Area dataKey="bandBase" stackId="band" stroke="none" fill="transparent" isAnimationActive={false} legendType="none" tooltipType="none" />
-                    <Area dataKey="bandSize" stackId="band" stroke="none" fill="#ff7a00" fillOpacity={0.22} isAnimationActive={false} name="Savings band" />
-                    <Line dataKey="actual" name="Actual" stroke="#121212" strokeWidth={2.5} dot={false} isAnimationActive={false} />
-                    <Line dataKey="without" name="Without PharmaPool" stroke="#5b554c" strokeWidth={2} strokeDasharray="6 4" dot={false} isAnimationActive={false} />
-                    <Line dataKey="withMid" name="With PharmaPool" stroke="#ff7a00" strokeWidth={3} dot={false} isAnimationActive={false} />
+                    <Area dataKey="bandSize" stackId="band" stroke="none" fill="#0f9f7a" fillOpacity={0.22} isAnimationActive={false} name="Savings band" />
+                    <Line dataKey="actual" name="Actual" stroke="#0e2742" strokeWidth={2.5} dot={false} isAnimationActive={false} />
+                    <Line dataKey="without" name="Without PharmaPool" stroke="#94a3b8" strokeWidth={2} strokeDasharray="6 4" dot={false} isAnimationActive={false} />
+                    <Line dataKey="withMid" name="With PharmaPool" stroke="#0f9f7a" strokeWidth={3} dot={false} isAnimationActive={false} />
                     {todayLabel ? (
-                      <ReferenceLine x={todayLabel} stroke="#121212" strokeDasharray="2 3" label={{ value: "Today", position: "insideTopRight", fontSize: 11, fontWeight: 700 }} />
+                      <ReferenceLine x={todayLabel} stroke="#0f1d33" strokeDasharray="2 3" label={{ value: "Today", position: "insideTopRight", fontSize: 11, fontWeight: 700 }} />
                     ) : null}
                   </ComposedChart>
                 </ResponsiveContainer>
@@ -446,7 +446,7 @@ export default function SummaryClient(props: SummaryProps) {
           ].map((s) => (
             <Link key={s.name} href={s.href} className="card flex flex-col gap-1 p-4 no-underline hover:border-line-strong">
               <span className="text-[12px] font-bold uppercase tracking-[0.06em] text-muted">{s.name}</span>
-              <span className="font-display text-[30px] uppercase leading-none tabular-nums text-ink">
+              <span className="font-display text-[30px] leading-none tabular-nums text-ink">
                 {s.f ? `${dollarRange(s.f)}/yr` : "n/a"}
               </span>
               <span className="text-[14px] font-bold tabular-nums text-ink">{s.f ? pctRange(s.f) : ""}</span>
@@ -467,7 +467,7 @@ export default function SummaryClient(props: SummaryProps) {
               <span
                 aria-hidden
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display text-[18px] ${
-                  r.done ? "bg-good text-white" : "bg-accent text-[#111]"
+                  r.done ? "bg-good text-white" : "bg-accent text-white"
                 }`}
               >
                 {r.done ? "\u2713" : i + 1}

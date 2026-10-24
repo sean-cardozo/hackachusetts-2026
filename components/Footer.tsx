@@ -5,7 +5,7 @@ export default function Footer() {
         Benchmarks: CMS NADAC, FDA Orange Book, openFDA drug shortages. Member data anonymized and
         aggregated.
       </span>
-      <span className="font-display uppercase tracking-[0.04em] text-ink">
+      <span className="font-display text-ink">
         Pharma<span className="text-accent-ink">Pool</span> · Hackachusetts 2026
       </span>
     </footer>
