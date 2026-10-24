@@ -5,9 +5,10 @@ import FreshnessChip from "./FreshnessChip";
 
 const TITLES: Record<string, string> = {
   "/summary": "Summary",
-  "/compare": "Compare",
+  "/compare": "Re-negotiate",
   "/swap": "Swap",
   "/join": "Join",
+  "/award": "Award",
   "/upload": "Upload data",
   "/sources": "Data sources",
 };

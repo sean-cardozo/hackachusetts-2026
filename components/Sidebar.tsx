@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const ICONS = {
+  award: "M9 2h6a1 1 0 0 1 1 1v2H8V3a1 1 0 0 1 1-1z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 14l2 2 4-4",
   summary: "M3 3h7v9H3z M14 3h7v5h-7z M14 12h7v9h-7z M3 16h7v5H3z",
   compare: "M3 3v18h18 M18 17V9 M13 17V5 M8 17v-3",
   swap: "M17 2l4 4-4 4 M3 11v-1a4 4 0 0 1 4-4h14 M7 22l-4-4 4-4 M21 13v1a4 4 0 0 1-4 4H3",
@@ -15,12 +16,13 @@ const ICONS = {
 
 const TABS = [
   { href: "/summary", label: "Summary", sub: "Savings & actions", icon: ICONS.summary },
-  { href: "/compare", label: "Compare", sub: "vs. NADAC", icon: ICONS.compare },
-  { href: "/swap", label: "Swap", sub: "Equivalents", icon: ICONS.swap },
-  { href: "/join", label: "Join", sub: "Group rounds", icon: ICONS.join },
+  { href: "/compare", label: "Re-negotiate", sub: "Your prices vs. NADAC", icon: ICONS.compare },
+  { href: "/swap", label: "Swap", sub: "Brand to generic", icon: ICONS.swap },
+  { href: "/join", label: "Join", sub: "Pool with pharmacies", icon: ICONS.join },
 ] as const;
 
 const UTILS = [
+  { href: "/award", label: "Award", icon: ICONS.award },
   { href: "/upload", label: "Upload data", icon: ICONS.upload },
   { href: "/sources", label: "Data sources", icon: ICONS.sources },
 ] as const;

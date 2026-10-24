@@ -35,7 +35,7 @@ Rules: green-teal is the only accent. Use --accent-ink, not --accent, for body-s
 - **Sidebar** (components/Sidebar.tsx): fixed, 232px, --navy. Wordmark (3×3 teal dot grid + "PharmaPool" 22px/800 white) and tagline. Group 1: the 4 tabs Summary, Compare, Swap, Join (24px stroke icon, label 14.5px/700, sub-label 11.5px). Divider rgba(255,255,255,.12). Group 2: Upload data, Data sources. Item: radius 10px, 3px left border; active = bg #18426b, white text, #34d3a6 left border, `aria-current="page"`; idle = #c3d0df. Footer card: "Stronger together…" on rgba(255,255,255,.07). Below md the sidebar stacks above the content.
 - **Top bar** (components/TopBar.tsx): sticky, white 95% + 8px blur, 1px --line bottom border. Page title, FreshnessChip (radius 10px, --surface-2, pulsing accent dot when live), pharmacy avatar + "Sample pharmacy".
 - Main: padding 34px clamp(16px,3vw,40px) 110px. Footer text unchanged. Ask PharmaPool stays a floating bottom-right primary button.
-- Only link to pages that exist. Do not add Award to the sidebar until that page is built.
+- Group 2 order: Award, Upload data, Data sources. Only link to pages that exist.
 
 ## Components
 - Cards: white, 1px --line border, 14px radius. Emphasis (`.card-strong`): 2px --ink border. Accent (`.card-accent`): --accent-soft fill + 1.5px accent border. Sub-tiles inside cards: 12px radius.

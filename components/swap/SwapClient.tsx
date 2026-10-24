@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AppStateProvider, useAppState } from "@/components/AppState";
-import Button, { buttonClass } from "@/components/Button";
+import Button from "@/components/Button";
 import LiveBadge from "@/components/LiveBadge";
 import SampleBadge from "@/components/SampleBadge";
 import SourceTip from "@/components/SourceTip";
@@ -210,23 +210,6 @@ function SwapView({ swaps, genericsSpend, round, others }: Props) {
         ))}
       </div>
 
-      {round ? (
-        <div className="card-strong flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h2 className="section-title">Effect on the {round.name}</h2>
-            <p className="m-0 mt-1 text-muted">
-              Approved swaps let you join the {round.name} on the Join page.
-              {round.progress !== null
-                ? ` The round is at ${Math.round(round.progress)}% of its target (${round.status}).`
-                : ""}
-            </p>
-          </div>
-          <Link href="/join" className={buttonClass("strong")}>
-            Go to Join
-          </Link>
-        </div>
-      ) : null}
-
       <section aria-labelledby="other-equivalents" className="flex flex-col gap-3">
         <h2 id="other-equivalents" className="section-title">
           Other equivalents
@@ -242,7 +225,7 @@ function SwapView({ swaps, genericsSpend, round, others }: Props) {
                   <th className="px-4 py-2 font-bold">Equivalent manufacturer</th>
                   <th className="px-4 py-2 font-bold">TE code</th>
                   <th className="px-4 py-2 text-right font-bold">
-                    <span className="sr-only">Open in Compare</span>
+                    <span className="sr-only">Open in Re-negotiate</span>
                   </th>
                 </tr>
               </thead>
@@ -299,8 +282,8 @@ export default function SwapClient(props: Props) {
       <div>
         <h1 className="page-title">Swap</h1>
         <p className="mt-2 max-w-[720px] text-muted">
-          Switch to an FDA-rated equivalent product from another manufacturer so you can join a
-          buying round. You approve every swap before it&apos;s used.
+          Switch from a brand or higher-cost product to an FDA-rated equivalent generic. Same drug, lower
+          cost, no change for your patients. You approve every swap before it&apos;s used.
         </p>
       </div>
       <WithState {...props} />

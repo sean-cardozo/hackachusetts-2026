@@ -1,3 +1,4 @@
+import RequireUpload from "@/components/RequireUpload";
 import SummaryClient from "@/components/summary/SummaryClient";
 import type { SummaryProps } from "@/components/summary/SummaryClient";
 import { BRAND_SPEND, OTC_SPEND, getDrugViews, getQuotes, getRounds, getSwapOptions } from "@/lib/data";
@@ -39,6 +40,7 @@ export default function SummaryPage() {
       estLow: r.estSavingsUsd?.low ?? null,
       estHigh: r.estSavingsUsd?.high ?? null,
       userSpendUsd: r.userSpendUsd ?? null,
+      userJoined: Boolean(r.userJoined),
     })),
     drugs: drugs.map((d) => ({
       id: d.id,
@@ -62,5 +64,9 @@ export default function SummaryPage() {
     quotesRoundName: rounds.find((r) => r.id === quotes.roundId)?.name ?? "Diabetes & thyroid",
   };
 
-  return <SummaryClient {...props} />;
+  return (
+    <RequireUpload title="Summary">
+      <SummaryClient {...props} />
+    </RequireUpload>
+  );
 }

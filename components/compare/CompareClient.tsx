@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { useAppState } from "@/components/AppState";
 import { buttonClass } from "@/components/Button";
 import GapPill from "@/components/GapPill";
 import LiveBadge from "@/components/LiveBadge";
@@ -10,6 +9,7 @@ import RiskPill from "@/components/RiskPill";
 import SampleBadge from "@/components/SampleBadge";
 import SourceTip from "@/components/SourceTip";
 import StatCard from "@/components/StatCard";
+import { usePlan } from "@/components/PlanState";
 import { EmptyState } from "@/components/StateViews";
 import { useToast } from "@/components/Toast";
 import { formatDollars, formatPercent } from "@/lib/format";
@@ -124,19 +124,18 @@ export default function CompareClient({
   rounds: RoundView[];
   swapOptions: SwapOption[];
 }) {
-  const { state } = useAppState();
+  const { plan, setNegotiated, negotiateAll } = usePlan();
   const { toast } = useToast();
   const [open, setOpen] = useState<Record<string, boolean>>({ Cardio: true });
   const [drawerId, setDrawerId] = useState<string | null>(null);
   const [opener, setOpener] = useState<HTMLElement | null>(null);
 
   const cats = useMemo(() => buildCategories(drugs), [drugs]);
-  const swapApproved = (id: string) => state.swaps[id]?.approved === true;
 
   if (drugs.length === 0) {
     return (
       <section className="mx-auto w-full max-w-[1280px]">
-        <h1 className="page-title">Compare</h1>
+        <h1 className="page-title">Re-negotiate</h1>
         <div className="mt-6">
           <EmptyState title="No drugs to compare" description="Upload your purchases to see how your prices compare." />
         </div>
@@ -148,7 +147,12 @@ export default function CompareClient({
   const above = drugs.filter((d) => d.gapPct !== null && d.gapPct > 0).length;
   const under14 = drugs.filter((d) => d.daysOfSupply !== null && d.daysOfSupply < 14).length;
   const shortages = drugs.filter((d) => d.shortage.current).length;
-  const urgent = drugs.filter((d) => d.shortage.current && d.daysOfSupply !== null && d.daysOfSupply < 14);
+  const negotiated = new Set(plan.negotiated);
+  const canNegotiate = (d: DrugView) => d.gapPct !== null && d.gapPct > 0 && (d.savings?.high ?? 0) > 0;
+  const negotiable = drugs.filter(canNegotiate);
+  const pending = negotiable.filter((d) => !negotiated.has(d.id));
+  const negLow = negotiable.reduce((s, d) => s + (d.savings?.low ?? 0), 0);
+  const negHigh = negotiable.reduce((s, d) => s + (d.savings?.high ?? 0), 0);
   const drawerDrug = drugs.find((d) => d.id === drawerId) ?? null;
 
   const openDrawer = (id: string, el: HTMLElement) => {
@@ -159,26 +163,41 @@ export default function CompareClient({
   return (
     <section className="mx-auto flex w-full max-w-[1280px] flex-col gap-6">
       <div>
-        <h1 className="page-title">Compare</h1>
+        <h1 className="page-title">Re-negotiate</h1>
         <p className="mt-2 max-w-3xl text-muted">
-          Each drug priced against NADAC, the weekly CMS average of what pharmacies pay wholesalers. Open a
-          category to see its drugs, then pick a Next step.
+          Negotiate your own prices using a public benchmark. Each drug is priced against NADAC, the weekly CMS
+          average of what pharmacies pay wholesalers. Pick Negotiate on the drugs you overpay for: they go into
+          your plan on the Award page.
         </p>
       </div>
 
-      {urgent.length > 0 ? (
+      {negotiable.length > 0 ? (
         <div
-          role="alert"
-          className="flex flex-wrap items-center justify-between gap-3 rounded-[16px] border-[1.5px] border-bad bg-bad-soft px-5 py-3"
+          role="status"
+          className="card-accent flex flex-wrap items-center justify-between gap-3 px-5 py-4"
         >
-          <p className="m-0 font-bold text-bad">
-            <span aria-hidden>⚠ </span>
-            Shortage alert: {urgent.map((d) => `${d.name} (${Math.round(d.daysOfSupply ?? 0)} days of supply)`).join(", ")}{" "}
-            is on the FDA shortage list with under 14 days left.
+          <p className="m-0">
+            <strong>
+              {negotiable.length} of {drugs.length} drugs are priced above NADAC.
+            </strong>{" "}
+            Asking your wholesaler to match the benchmark is worth {formatDollars(negLow)}–{formatDollars(negHigh)}/yr.
           </p>
-          <Link href="/join" className={buttonClass("strong", true)}>
-            Join the round
-          </Link>
+          {pending.length > 0 ? (
+            <button
+              type="button"
+              className={buttonClass("primary", true)}
+              onClick={() => {
+                negotiateAll(pending.map((d) => d.id));
+                toast(`Added ${pending.length} drug${pending.length === 1 ? "" : "s"} to re-negotiate. See Award.`);
+              }}
+            >
+              Re-negotiate all
+            </button>
+          ) : (
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-good-soft px-4 py-2 text-[13px] font-extrabold text-good">
+              <span aria-hidden>✓</span> All in your plan
+            </span>
+          )}
         </div>
       ) : null}
 
@@ -253,7 +272,9 @@ export default function CompareClient({
                 </div>
                 {isOpen
                   ? c.drugs.map((d) => {
-                      const a = nextAction(d, rounds, swapApproved(d.id));
+                      // Price above NADAC: the step is to negotiate. Otherwise keep the round or reorder step.
+                      const a = nextAction(d, rounds, true);
+                      const isNeg = negotiated.has(d.id);
                       return (
                         <div key={d.id} role="row" className={`${GRID} bg-surface-2 px-4 py-2.5 text-[13.5px]`}>
                           <span role="cell" className="pl-6">
@@ -282,7 +303,20 @@ export default function CompareClient({
                           <span role="cell" className={NUM}><DosCell dos={d.daysOfSupply} /></span>
                           <span role="cell" className="text-center"><RiskPill risk={d.shortageRisk} /></span>
                           <span role="cell" className="text-right">
-                            {a.kind === "reorder" ? (
+                            {canNegotiate(d) ? (
+                              <button
+                                type="button"
+                                aria-pressed={isNeg}
+                                aria-label={isNeg ? `Negotiating: ${d.name}. Select to remove from your plan` : `Negotiate: ${d.name}`}
+                                className={buttonClass(isNeg ? "secondary" : "primary", true)}
+                                onClick={() => {
+                                  setNegotiated(d.id, !isNeg);
+                                  toast(isNeg ? `${d.name} removed from your plan` : `${d.name} added to re-negotiate`);
+                                }}
+                              >
+                                {isNeg ? <><span aria-hidden>✓ </span>Negotiating</> : "Negotiate"}
+                              </button>
+                            ) : a.kind === "reorder" ? (
                               <button type="button" className={buttonClass("secondary", true)} onClick={() => toast("Reorder noted (demo)")}>
                                 {a.label}
                               </button>

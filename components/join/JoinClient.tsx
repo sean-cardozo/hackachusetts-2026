@@ -9,15 +9,13 @@ import { EmptyState } from "@/components/StateViews";
 import { useToast } from "@/components/Toast";
 import { formatDollars, formatPercent } from "@/lib/format";
 import { projectedProgress, statusAfterOptIn } from "@/lib/calc";
-import type { QuotesView, RoundView } from "@/lib/data";
+import type { RoundView } from "@/lib/data";
 import type { RoundStatus } from "@/lib/types";
-import AwardSection from "./AwardSection";
 import { addHours, formatCountdown, savingsPct } from "./helpers";
 import type { JoinDrug, JoinSwap } from "./helpers";
 
 type Props = {
   rounds: RoundView[];
-  quotes: QuotesView;
   drugs: JoinDrug[];
   swaps: JoinSwap[];
 };
@@ -37,7 +35,7 @@ const CHIP_ICON: Partial<Record<RoundStatus, string>> = {
   "at-risk": "⚠ ",
 };
 
-export default function JoinClient({ rounds, quotes, drugs, swaps }: Props) {
+export default function JoinClient({ rounds, drugs, swaps }: Props) {
   const { state, optIn, removeOptIn, confirmOptIn } = useAppState();
   const { toast } = useToast();
   const [dialogRound, setDialogRound] = useState<RoundView | null>(null);
@@ -82,14 +80,13 @@ export default function JoinClient({ rounds, quotes, drugs, swaps }: Props) {
     toast(`You dropped out of ${r.name}.`);
   };
 
-  const diabetes = rounds.find((r) => r.id === quotes.roundId) ?? null;
-
   return (
     <div>
       <h1 className="page-title">Join</h1>
       <p className="mt-1 max-w-2xl text-muted">
-        Pool your buying with other Massachusetts pharmacies. Opt-ins are non-binding until the
-        round reaches its target.
+        Extra savings on top of your own deals: pool your volume with other Massachusetts pharmacies so
+        suppliers quote a better price. Opt-ins are non-binding until the round reaches its target. Rounds
+        you join go into your plan on the Award page.
       </p>
 
       {needsDecision.length > 0 ? (
@@ -145,7 +142,14 @@ export default function JoinClient({ rounds, quotes, drugs, swaps }: Props) {
                 const d = drugById.get(id);
                 return d ? d.name : id;
               })}
-              onJoin={() => setDialogRound(r)}
+              onJoin={() => {
+                if (r.drugs.length > 0) {
+                  setDialogRound(r);
+                  return;
+                }
+                optIn(r.id, 0);
+                toast(`You are in ${r.name}. Non-binding until the target is reached.`);
+              }}
               onConfirm={() => confirm(r)}
               onDrop={() => dropOut(r)}
             />
@@ -178,10 +182,6 @@ export default function JoinClient({ rounds, quotes, drugs, swaps }: Props) {
             setDialogRound(null);
           }}
         />
-      ) : null}
-
-      {diabetes ? (
-        <AwardSection quotes={quotes} round={diabetes} drugNames={quotes.products} />
       ) : null}
     </div>
   );
@@ -306,7 +306,7 @@ function RoundCard({
         </p>
       ) : null}
       {status === "quotes" ? (
-        <p className="m-0 text-[13.5px]">Supplier quotes are in. See the award section below.</p>
+        <p className="m-0 text-[13.5px]">Supplier quotes are in. Pick the supplier on the <Link href="/award">Award page</Link>.</p>
       ) : null}
 
       {r.pastConfirmRate !== null ? (
@@ -322,6 +322,15 @@ function RoundCard({
           ) : (
             <Button onClick={onJoin}>Opt in</Button>
           )
+        ) : null}
+        {!joined && !((status === "open" || status === "at-risk") && r.drugs.length > 0) ? (
+          <Button onClick={onJoin}>{status === "closed" || status === "missed" ? "Join next round" : "Join"}</Button>
+        ) : null}
+        {joined && status !== "open" && status !== "at-risk" && status !== "target" ? (
+          <span className="font-extrabold text-good">✓ You are in (non-binding)</span>
+        ) : null}
+        {joined && status === "at-risk" && r.drugs.length === 0 ? (
+          <span className="font-extrabold text-good">✓ You are in (non-binding)</span>
         ) : null}
         {status === "target" && joined && !confirmed ? (
           <>

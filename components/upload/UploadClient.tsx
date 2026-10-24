@@ -7,6 +7,7 @@ import { buttonClass } from "@/components/Button";
 import GapPill from "@/components/GapPill";
 import LiveBadge from "@/components/LiveBadge";
 import SampleBadge from "@/components/SampleBadge";
+import { usePlan } from "@/components/PlanState";
 import { ErrorState } from "@/components/StateViews";
 import { formatDollars } from "@/lib/format";
 import {
@@ -273,6 +274,12 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
   const [analysis, setAnalysis] = useState<Analysis | null>(null);
   const [matching, setMatching] = useState(false);
   const [showAllNot, setShowAllNot] = useState(false);
+  const { setUploaded } = usePlan();
+
+  // A purchase file that was read and matched unlocks the insight pages.
+  useEffect(() => {
+    if (analysis) setUploaded(true);
+  }, [analysis, setUploaded]);
 
   const catalogById = useMemo(() => new Map(catalog.map((d) => [d.id, d])), [catalog]);
   const displayName = useCallback(
@@ -510,6 +517,10 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
                 pool catalog, {view.review} need review, {view.notIn.length.toLocaleString("en-US")} not in
                 the pool catalog (brand and long-tail)
               </p>
+              <p className="m-0 text-[12.5px] text-muted">
+                The pool catalog is the {catalog.length} high-volume generics PharmaPool prices against NADAC in
+                this pilot. Everything else in your file is still counted, as brand and OTC spend.
+              </p>
               {analysis.skipped > 0 ? (
                 <p className="m-0 text-[12.5px] text-muted">
                   {analysis.skipped.toLocaleString("en-US")} lines were skipped because a quantity, package
@@ -650,7 +661,7 @@ export default function UploadClient({ catalog, demoHeaders, demoItems }: Props)
                 drug matching on this device. Prices are per unit (tablet, capsule or inhaler).
               </p>
               <div className="mt-4">
-                <Link href="/compare" className={buttonClass("primary")}>
+                <Link href="/summary" className={buttonClass("primary")} onClick={() => setUploaded(true)}>
                   See how your prices compare
                 </Link>
               </div>

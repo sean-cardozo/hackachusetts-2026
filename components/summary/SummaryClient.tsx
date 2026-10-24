@@ -20,7 +20,9 @@ import LiveBadge from "@/components/LiveBadge";
 import SampleBadge from "@/components/SampleBadge";
 import SourceTip from "@/components/SourceTip";
 import StatCard from "@/components/StatCard";
+import { usePlan } from "@/components/PlanState";
 import { EmptyState } from "@/components/StateViews";
+import { computePlan } from "@/components/plan";
 import { monthlySeries, savingsByStep, summaryFigures } from "@/lib/calc";
 import type { SavingsFigure } from "@/lib/calc";
 import { formatDollars, formatPercent } from "@/lib/format";
@@ -39,6 +41,7 @@ export type SummaryProps = {
     estLow: number | null;
     estHigh: number | null;
     userSpendUsd: number | null;
+    userJoined: boolean;
   }[];
   drugs: {
     id: string;
@@ -126,6 +129,32 @@ type Rec = {
 
 export default function SummaryClient(props: SummaryProps) {
   const { state, approvedSwapDrugIds } = useAppState();
+  const { plan: planState } = usePlan();
+  const plan = useMemo(
+    () =>
+      computePlan({
+        drugs: props.drugs,
+        negotiated: planState.negotiated,
+        swaps: props.swapOptions,
+        approvedSwapIds: approvedSwapDrugIds,
+        rounds: props.rounds,
+        joinedRoundIds: props.rounds.filter((r) => r.userJoined || state.optIns[r.id]).map((r) => r.id),
+      }),
+    [props.drugs, props.swapOptions, props.rounds, planState.negotiated, approvedSwapDrugIds, state.optIns],
+  );
+  // Join potential: every round you could join (ended ones count as their next round), valued like the plan.
+  const joinPotential = useMemo(
+    () =>
+      computePlan({
+        drugs: [],
+        negotiated: [],
+        swaps: [],
+        approvedSwapIds: [],
+        rounds: props.rounds,
+        joinedRoundIds: props.rounds.map((r) => r.id),
+      }).join,
+    [props.rounds],
+  );
 
   const approved = useMemo(() => new Set(approvedSwapDrugIds), [approvedSwapDrugIds]);
   const approvedExtras = props.swapOptions
@@ -195,6 +224,14 @@ export default function SummaryClient(props: SummaryProps) {
     if (vals.length === 0) return 0;
     return Math.max(0, Math.floor((Math.min(...vals) * 0.9) / 10000) * 10000);
   }, [chartData]);
+
+  // Re-negotiate potential: the same per-drug sum the Re-negotiate page shows (drugs above NADAC).
+  const negotiatePotential = useMemo<SavingsFigure>(() => {
+    const above = props.drugs.filter((d) => d.gapPct !== null && d.gapPct > 0 && (d.savingsHigh ?? 0) > 0);
+    const low = above.reduce((s, d) => s + (d.savingsLow ?? 0), 0);
+    const high = above.reduce((s, d) => s + (d.savingsHigh ?? 0), 0);
+    return { low, high, pctLow: pctOfSpend(low, total), pctHigh: pctOfSpend(high, total) };
+  }, [props.drugs, total]);
 
   // Shortage alert and stats.
   const shortages = props.drugs
@@ -267,7 +304,7 @@ export default function SummaryClient(props: SummaryProps) {
         title: "Review atorvastatin vs NADAC",
         detail: "You pay above the national average acquisition cost.",
         href: "/compare",
-        cta: "Compare prices",
+        cta: "Re-negotiate",
         done: false,
         savings: ator.savingsLow !== null && ator.savingsHigh !== null ? fig(ator.savingsLow, ator.savingsHigh) : null,
       });
@@ -438,20 +475,51 @@ export default function SummaryClient(props: SummaryProps) {
       </div>
 
       <div>
+        <div className="card-accent mb-4 flex flex-wrap items-center justify-between gap-3 px-5 py-4">
+          <div>
+            <div className="text-[12px] font-bold uppercase tracking-[0.06em] text-accent-ink">Your plan so far</div>
+            <div className="font-display text-[28px] leading-tight tabular-nums text-ink">
+              {plan.count > 0 ? `${dollarRange(plan.total)}/yr` : "$0/yr"}
+            </div>
+            <div className="text-[13px] text-muted">
+              {plan.count > 0
+                ? `${plan.count} action${plan.count === 1 ? "" : "s"}: ${plan.negotiate.items.length} to re-negotiate, ${plan.swap.items.length} swap${plan.swap.items.length === 1 ? "" : "s"}, ${plan.join.items.length} round${plan.join.items.length === 1 ? "" : "s"} joined. Updates as you act on each tab.`
+                : "Nothing chosen yet. Pick actions on Re-negotiate, Swap and Join."}
+            </div>
+          </div>
+          <Link href="/award" className={buttonClass("primary", true)}>
+            Review in Award
+          </Link>
+        </div>
         <h2 className="section-title mb-3">Savings by step</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {[
-            { name: "Compare", f: steps.compare, href: "/compare", sub: "Pay closer to NADAC on generics." },
+            {
+              name: "Re-negotiate",
+              f: negotiatePotential,
+              href: "/compare",
+              sub: "Negotiate your own prices with your wholesaler, using NADAC as the benchmark.",
+              inPlan: plan.negotiate,
+            },
             {
               name: "Swap potential",
               f: steps.swap.potential,
               href: "/swap",
-              sub:
-                steps.swap.potential.high > steps.swap.high
-                  ? `Sum of all available swaps. ${formatDollars(steps.swap.high)}/yr approved so far.`
-                  : "All available swaps approved.",
+              sub: "Switch from brand or higher-cost products to FDA-rated equivalent generics.",
+              inPlan: plan.swap,
             },
-            { name: "Join", f: steps.join, href: "/join", sub: "Pooled rounds with other pharmacies." },
+            {
+              name: "Join",
+              f: {
+                low: joinPotential.low,
+                high: joinPotential.high,
+                pctLow: pctOfSpend(joinPotential.low, total),
+                pctHigh: pctOfSpend(joinPotential.high, total),
+              },
+              href: "/join",
+              sub: "Extra savings from pooling your volume with other pharmacies.",
+              inPlan: plan.join,
+            },
           ].map((s) => (
             <Link key={s.name} href={s.href} className="card flex flex-col gap-1 p-4 no-underline hover:border-line-strong">
               <span className="text-[12px] font-bold uppercase tracking-[0.06em] text-muted">{s.name}</span>
@@ -460,6 +528,15 @@ export default function SummaryClient(props: SummaryProps) {
               </span>
               <span className="text-[14px] font-bold tabular-nums text-ink">{s.f ? pctRange(s.f) : ""}</span>
               <span className="text-[12.5px] text-muted">{s.sub}</span>
+              <span className="mt-1 border-t border-line pt-2 text-[12.5px] font-bold tabular-nums">
+                {s.inPlan.items.length > 0 ? (
+                  <span className="text-good">
+                    <span aria-hidden>✓ </span>In your plan: {dollarRange(s.inPlan)}/yr
+                  </span>
+                ) : (
+                  <span className="text-muted">Not in your plan yet</span>
+                )}
+              </span>
             </Link>
           ))}
         </div>

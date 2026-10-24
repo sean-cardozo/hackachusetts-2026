@@ -5,7 +5,7 @@ inclusion: always
 
 - Audience: independent pharmacy owners. Write in plain language, short sentences, no jargon without a tooltip.
 - Tooltip glossary: NADAC = "the national average price pharmacies pay wholesalers" (CMS, weekly). AB rating = "FDA says this product is therapeutically equivalent." Days of supply = "units on hand ÷ average daily usage."
-- Tabs are exactly: Summary (savings, chart, key recommendations), Compare, Swap, Join. Upload data and Data sources sit in the left sidebar under the tabs; Ask PharmaPool is a floating bottom-right button. Award lives in Join. Each page carries its own actions.
+- Tabs are exactly: Summary (savings, chart, key recommendations), Re-negotiate (route /compare: negotiate your own prices against the NADAC benchmark), Swap (brand or higher-cost product to an FDA-rated equivalent generic), Join (extra savings from pooling volume with other pharmacies). Award (check-out: the plan from Re-negotiate, Swap and Join with its estimated impact, plus the supplier award), Upload data and Data sources sit in the left sidebar under the tabs; no insights show until a purchase file is uploaded; Ask PharmaPool is a floating bottom-right button. Award lives in Join. Each page carries its own actions.
 - Every savings figure shows both $ and %.
 - Data provenance is always visible: `<LiveBadge>` for CMS/FDA data, `<SampleBadge>` for member/supplier data. Every benchmark value has a source tooltip with the effective date.
 - Never show color alone for status. Pair green/red with ▲/▼ and "above"/"below".

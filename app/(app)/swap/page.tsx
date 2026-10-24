@@ -1,3 +1,4 @@
+import RequireUpload from "@/components/RequireUpload";
 import SwapClient from "@/components/swap/SwapClient";
 import type { OtherEquivalent, SwapRow } from "@/components/swap/SwapClient";
 import { ErrorState } from "@/components/StateViews";
@@ -41,12 +42,14 @@ export default function SwapPage() {
     }
 
     return (
-      <SwapClient
-        swaps={swaps}
-        genericsSpend={genericsSpend}
-        round={roundInfo}
-        others={others}
-      />
+      <RequireUpload title="Swap">
+        <SwapClient
+          swaps={swaps}
+          genericsSpend={genericsSpend}
+          round={roundInfo}
+          others={others}
+        />
+      </RequireUpload>
     );
   } catch {
     return (
