@@ -40,6 +40,10 @@ Backend library, sample data and AI helper route for PharmaPool. Work only in th
   - Create `.env.example` and `docs/BACKEND.md`. Run `npx vitest --run`, `npx tsc --noEmit` and `npm run build` and fix any problems in files owned by this spec.
   - _Requirements: 6.1, 6.2_
 
+- [x] 7. Re-base sample prices on real NADAC
+  - Set the price paid in `data/sample/drugs.json` and in the store-001 invoice export (and its labeled ground-truth copy) to the real NADAC unit price from `data/cache/nadac.json` plus a markup of 8 to 18 percent, set `nadacFallback` to the same real value where the cache price is per each, update the affected tests and `docs/BACKEND.md`, and report the new gaps and savings.
+    - _Requirements: 2.1, 2.3_
+
 ## Task Dependency Graph
 
 ```json
@@ -50,7 +54,8 @@ Backend library, sample data and AI helper route for PharmaPool. Work only in th
     { "id": 2, "tasks": ["2.2", "3.2", "4.2"] },
     { "id": 3, "tasks": ["3.3", "5.1"] },
     { "id": 4, "tasks": ["5.2"] },
-    { "id": 5, "tasks": ["6"] }
+    { "id": 5, "tasks": ["6"] },
+    { "id": 6, "tasks": ["7"] }
   ]
 }
 ```

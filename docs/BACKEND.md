@@ -163,7 +163,9 @@ npm run dev            # start the app on http://localhost:3000
 
 The numbers in the sample data are the design values after the x6 scale, and two of them differ from the text in the design:
 
-- The 10 sample drugs add up to $899,849 a year (price paid x units per month x 12). The design text says about $920k.
+- The prices are now real NADAC plus a synthetic markup (task 7). `price paid` = the real CMS NADAC unit price from `data/cache/nadac.json` (week of 2026-10-21) x (1 + a markup of 8 to 18 percent), and `nadacFallback` is that same real NADAC. The old hand-typed prices were far above NADAC (atorvastatin 0.092 vs 0.02858, a 222 percent gap); that issue is fixed (atorvastatin gap is now about 18 percent). Albuterol is priced per GM in the cache, so its reference stays 21.85 per inhaler and paid is 24.04.
+- Because of that, the 10 sample drugs now add up to $694,349 a year (price paid x units per month x 12), not $899,849. The design text says about $920k; the sample no longer matches that text. The total spend (with brand $3.1M and OTC $280k) is $4,074,349.
+- The store-001 invoice export and its labeled copy were re-based the same way for the 10 catalog drugs only (`python3 data/synthetic/rebase_prices.py`, see `data/synthetic/README.md`).
 - The Cardio round progress in the sample data is 5,650,000 of 6,000,000 units (94.2%). The design text also says 91% and 942,000 of 1,000,000 units (942,000 x 6 would be 5,652,000).
 
 The sample data uses the scaled values. If the design is updated, change the files in `data/sample/` and the tests in `tests/sample.test.ts`.

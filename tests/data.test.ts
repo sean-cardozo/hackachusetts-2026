@@ -54,17 +54,19 @@ describe("getDrugViews", () => {
       expect(v.nadacSource).toBe("fallback");
       expect(v.nadac).toBe(v.nadacFallback);
     }
-    // Against the sample fallback the atorvastatin gap is (0.092 - 0.0605) / 0.0605 = 52.1 %.
+    // The fallback is the real cache NADAC (0.02858), so the atorvastatin gap is
+    // (0.0337 - 0.02858) / 0.02858 = 17.9 %.
     const gap = fb.find((v) => v.id === "atorvastatin-20")?.gapPct as number;
-    expect(gap).toBeGreaterThan(51);
-    expect(gap).toBeLessThan(53);
+    expect(gap).toBeGreaterThan(17);
+    expect(gap).toBeLessThan(19);
   });
 
   it("gives atorvastatin a sensible positive gap with the cache", () => {
     const gap = byId("atorvastatin-20").gapPct as number;
     console.info(`atorvastatin gap (${byId("atorvastatin-20").nadacSource}): ${gap.toFixed(1)}%`);
-    expect(gap).toBeGreaterThan(40);
-    expect(gap).toBeLessThan(300);
+    // Price paid is the real NADAC plus an 18 % markup, so the gap is about 18 % (8 to 20 % allowed).
+    expect(gap).toBeGreaterThan(8);
+    expect(gap).toBeLessThan(20);
   });
 
   it("flags amoxicillin and albuterol as shortages", () => {
@@ -112,8 +114,8 @@ describe("getDrugViews", () => {
 describe("getSummaryInputs", () => {
   it("returns finite figures with dollars and percent", () => {
     const { figures, steps, series } = getSummaryInputs([]);
-    expect(figures.totalSpend).toBeGreaterThan(4_000_000);
-    expect(figures.totalSpend).toBeLessThan(4_600_000);
+    expect(figures.totalSpend).toBeGreaterThan(4_050_000);
+    expect(figures.totalSpend).toBeLessThan(4_100_000);
     const all = [
       figures.total,
       figures.breakdown.generics.savings,

@@ -1,6 +1,6 @@
 {
   "kind": "sample",
-  "note": "Synthetic member inventory. Source: .kiro/specs/poolrx/design.md (Sample data). unitsPerMonth and onHand are the design values multiplied by 6 (about $920k/yr generic spend). nadacFallback is the NADAC unit price from the design table and is used only when the live NADAC cache is missing.",
+  "note": "Synthetic member inventory. Source: .kiro/specs/poolrx/design.md (Sample data). unitsPerMonth and onHand are the design values multiplied by 6. Prices are real NADAC plus a synthetic markup: nadacFallback is the real CMS NADAC unit price from data/cache/nadac.json (week of 2026-10-21, price per each), and paid = nadacFallback x (1 + a markup of 8 to 18 percent, fixed per drug). Albuterol is priced per GM in the cache, so its nadacFallback stays 21.85 per inhaler and paid is 21.85 x 1.10. nadacFallback is used only when the live NADAC cache is missing or unusable.",
   "scaleFactor": 6,
   "countDate": "2026-10-22",
   "items": [
@@ -12,11 +12,11 @@
       "category": "Cardio",
       "mfr": "Sandoz",
       "unitsPerMonth": 58800,
-      "paid": 0.092,
+      "paid": 0.0337,
       "onHand": 44400,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0605
+      "nadacFallback": 0.02858
     },
     {
       "id": "lisinopril-10",
@@ -26,11 +26,11 @@
       "category": "Cardio",
       "mfr": "Unichem",
       "unitsPerMonth": 45600,
-      "paid": 0.048,
+      "paid": 0.021,
       "onHand": 41400,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0262
+      "nadacFallback": 0.01797
     },
     {
       "id": "amlodipine-5",
@@ -40,11 +40,11 @@
       "category": "Cardio",
       "mfr": "Camber",
       "unitsPerMonth": 53400,
-      "paid": 0.039,
+      "paid": 0.0118,
       "onHand": 60600,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0181
+      "nadacFallback": 0.01015
     },
     {
       "id": "metformin-500",
@@ -54,11 +54,11 @@
       "category": "Diabetes",
       "mfr": "Zydus",
       "unitsPerMonth": 85200,
-      "paid": 0.031,
+      "paid": 0.0166,
       "onHand": 100800,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0158
+      "nadacFallback": 0.01483
     },
     {
       "id": "sertraline-50",
@@ -68,11 +68,11 @@
       "category": "Mental health",
       "mfr": "Lupin",
       "unitsPerMonth": 35400,
-      "paid": 0.054,
+      "paid": 0.0397,
       "onHand": 14100,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0379
+      "nadacFallback": 0.03484
     },
     {
       "id": "amoxicillin-500",
@@ -82,11 +82,11 @@
       "category": "Antibiotics",
       "mfr": "Aurobindo",
       "unitsPerMonth": 25800,
-      "paid": 0.118,
+      "paid": 0.0872,
       "onHand": 7740,
       "countDate": "2026-10-22",
       "hasShortage": true,
-      "nadacFallback": 0.0921
+      "nadacFallback": 0.07925
     },
     {
       "id": "albuterol-90",
@@ -96,7 +96,7 @@
       "category": "Respiratory",
       "mfr": "Cipla",
       "unitsPerMonth": 1860,
-      "paid": 26.4,
+      "paid": 24.04,
       "onHand": 2100,
       "countDate": "2026-10-22",
       "hasShortage": true,
@@ -110,11 +110,11 @@
       "category": "GI",
       "mfr": "Dr. Reddy's",
       "unitsPerMonth": 32400,
-      "paid": 0.071,
+      "paid": 0.0344,
       "onHand": 28800,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0546
+      "nadacFallback": 0.03045
     },
     {
       "id": "levothyroxine-50",
@@ -124,11 +124,11 @@
       "category": "Thyroid",
       "mfr": "Amneal",
       "unitsPerMonth": 37200,
-      "paid": 0.112,
+      "paid": 0.0437,
       "onHand": 31800,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.1186
+      "nadacFallback": 0.04006
     },
     {
       "id": "gabapentin-300",
@@ -138,11 +138,11 @@
       "category": "Pain",
       "mfr": "Ascend",
       "unitsPerMonth": 48600,
-      "paid": 0.044,
+      "paid": 0.0364,
       "onHand": 59400,
       "countDate": "2026-10-22",
       "hasShortage": false,
-      "nadacFallback": 0.0465
+      "nadacFallback": 0.03283
     }
   ],
   "swapExtras": {

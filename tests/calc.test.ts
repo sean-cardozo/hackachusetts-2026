@@ -73,11 +73,10 @@ describe("spend, benchmark and gap", () => {
     expect(gapPct(0.1, undefined)).toBeNull();
   });
 
-  it("generic spend of the 10 sample drugs is about $920k a year (design says ≈; actual is $899,848.80)", () => {
+  it("generic spend of the 10 sample drugs is $694,348.56 a year (real NADAC plus 8 to 18 percent; the design's hand-typed prices gave $899,848.80)", () => {
     const drugs = loadDrugs().items;
     const spend = drugs.reduce((s, d) => s + annualSpend(d.paid, d.unitsPerMonth)!, 0);
-    expect(spend).toBeCloseTo(899_848.8, 1);
-    expect(Math.abs(spend - 920_000) / 920_000).toBeLessThan(0.03);
+    expect(spend).toBeCloseTo(694_348.56, 1);
   });
 });
 
@@ -333,11 +332,11 @@ describe("summary figures, savings by step and monthly series", () => {
     expect(SWAP_EXTRAS_TOTAL).toBe(4370 * 6);
   });
 
-  it("summaryFigures: total spend is about $4.3M", () => {
+  it("summaryFigures: total spend is about $4.07M (generics $694k + brand $3.1M + OTC $280k)", () => {
     const f = summaryFigures(input);
     expect(f.totalSpend).toBeCloseTo(gSpend + BRAND + OTC, 4);
-    expect(f.totalSpend).toBeGreaterThan(4_250_000);
-    expect(f.totalSpend).toBeLessThan(4_400_000);
+    expect(f.totalSpend).toBeGreaterThan(4_050_000);
+    expect(f.totalSpend).toBeLessThan(4_100_000);
     expect(f.incomplete).toBe(false);
     expect(f.includedSwapExtras).toBe(SWAP_EXTRAS_TOTAL);
   });

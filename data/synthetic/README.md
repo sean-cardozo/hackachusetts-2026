@@ -53,7 +53,7 @@ benchmark (NADAC) price, shortage and substitution flags. The product should der
 - **Synthetic:** all NDCs (labeler codes 900xx/902xx are placeholders, not FDA assignments), generic manufacturers,
   wholesalers (Atlas / Coastal / Summit are fictional), and the 850 long-tail items (`LT Brand #0031`, etc.),
   which carry ~83% of dollars.
-- **Approximate:** benchmark (NADAC) prices and national fill counts are rough values, not the CMS file.
+- **Approximate:** benchmark (NADAC) prices and national fill counts are rough values, not the CMS file (except for the 10 catalog drugs, see "Price re-base (real NADAC)").
 
 ## Regenerate or make more stores
 
@@ -63,3 +63,31 @@ python generate_store.py   # writes invoice_lines.csv, product_master.csv, class
 
 Edit the `STORE` dict (store id, Rx volume, price multiplier, seed) to create other stores. `calibrated_build()`
 rescales long-tail prices so totals land on the NCPA-average target.
+
+## Price re-base (real NADAC)
+
+The first version priced the 10 catalog drugs from rough NADAC numbers, so several sat below the real NADAC.
+`rebase_prices.py` re-prices only those drugs (atorvastatin 20 mg, lisinopril 10 mg, amlodipine 5 mg, metformin
+500 mg, sertraline 50 mg, amoxicillin 500 mg, albuterol HFA 90 mcg, omeprazole DR 20 mg, levothyroxine 50 mcg,
+gabapentin 300 mg; 173 invoice lines, the same lines `lib/match.ts` matches to the pool catalog):
+
+- unit price = real NADAC from `data/cache/nadac.json` x (1 + markup), markup 8 to 18 percent
+  (NADAC x (1 + 8 to 18 percent markup): larger chains pay less, a single independent store is mid-to-high).
+  Base markup per drug: atorvastatin 18, lisinopril 17, amlodipine 16, metformin 12, sertraline 14,
+  amoxicillin 10, omeprazole 13, levothyroxine 9, gabapentin 11, albuterol 10. Each invoice month moves it by up
+  to +/- 2 points (deterministic, a hash of drug and month), never outside 8 to 18.
+- `unit_cost_per_package` = round(unit price x package_size, 2); `extended_cost` = qty_shipped x unit cost.
+  Credits keep their sign (none of the 10 drugs has a credit line).
+- In the labeled copy, `nadac_per_unit`, `nadac_extended` and `variance_vs_nadac` of those lines are refreshed
+  to the real NADAC. Every other column and every other line is unchanged.
+- Albuterol is priced per GM in the cache, so the reference 21.85 per inhaler is used for it.
+
+```bash
+python3 data/synthetic/rebase_prices.py   # edits store001_upload_export.csv and the labeled copy in place
+```
+
+The script is idempotent (the result depends only on the NADAC cache and the line), so it can be re-run on the
+current files. The originals are not copied into the repo (they are 4.7 MB); git history holds them.
+Not updated: the `store001_summary_workbook.xlsx`, the product master (no prices) and `generate_store.py`
+(still the old calibration; do not re-run it over these files, it would undo the re-base and change the 4.345M total).
+Net purchases in the export moved from $4,345,050 to $4,347,433 (the 10 drugs were mostly priced below real NADAC before); the headline table above shows the original figure.

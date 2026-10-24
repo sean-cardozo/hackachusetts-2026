@@ -29,6 +29,23 @@ const text = readFileSync(
   "utf8",
 );
 
+// Real NADAC unit prices from the cache (price per each). Albuterol is priced per GM in the
+// cache, so the 21.85 per inhaler reference from data/sample/drugs.json is used for it.
+const nadacCache = JSON.parse(
+  readFileSync(path.join(__dirname, "..", "data", "cache", "nadac.json"), "utf8"),
+) as { byDrug: Record<string, { nadac: number }> };
+const NADAC_UNIT: Record<string, number> = {
+  "atorvastatin-20": nadacCache.byDrug["atorvastatin-20mg-tablet"].nadac,
+  "lisinopril-10": nadacCache.byDrug["lisinopril-10mg-tablet"].nadac,
+  "amlodipine-5": nadacCache.byDrug["amlodipine-5mg-tablet"].nadac,
+  "metformin-500": nadacCache.byDrug["metformin-500mg-tablet"].nadac,
+  "sertraline-50": nadacCache.byDrug["sertraline-50mg-tablet"].nadac,
+  "amoxicillin-500": nadacCache.byDrug["amoxicillin-500mg-capsule"].nadac,
+  "albuterol-90": 21.85,
+  "omeprazole-20": nadacCache.byDrug["omeprazole-20mg-dr-capsule"].nadac,
+  "levothyroxine-50": nadacCache.byDrug["levothyroxine-50mcg-tablet"].nadac,
+  "gabapentin-300": nadacCache.byDrug["gabapentin-300mg-capsule"].nadac,
+};
 // header -> expected [field, minimum confidence]
 const EXPECTED: Record<string, string | null> = {
   account_number: null,
@@ -103,6 +120,12 @@ describe("store-001 upload export", () => {
       expect(hit!.product.unitsPerMonth, c.id).toBeGreaterThan(0);
       expect(hit!.product.avgUnitPrice, c.id).toBeGreaterThan(0);
       expect(hit!.product.avgUnitPrice, c.id).toBeLessThan(50);
+      // Task 7: the export is priced at the real NADAC (week of the cache) plus 8 to 18 percent.
+      // A little slack (7.5 to 18.5) covers rounding of the package price to cents.
+      const nadac = NADAC_UNIT[c.id];
+      const ratio = hit!.product.avgUnitPrice / nadac;
+      expect(ratio, c.id).toBeGreaterThanOrEqual(1.075);
+      expect(ratio, c.id).toBeLessThanOrEqual(1.185);
     }
     // Different strengths are not matched to the 20 mg entry.
     const a40 = matches.find((m) => m.product.drugName === "ATORVASTATIN" && m.product.strength === "40 mg");

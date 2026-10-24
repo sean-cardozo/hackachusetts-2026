@@ -55,12 +55,19 @@ describe("drugs", () => {
     expect(daysOfSupply(s.onHand, s.unitsPerMonth)).toBe(12);
   });
 
-  it("scaled annual spend of the 10 drugs is about $920k", () => {
-    // The design says "≈ $920k/yr". The design's own table values give $899,848.80
-    // (2.2% below 920k), so the tolerance is 3%, not 2%.
+  it("annual spend of the 10 drugs is $694,348.56 with the real-NADAC prices", () => {
+    // Task 7 re-based "paid" on the real NADAC (week of 2026-10-21) plus a 8 to 18 percent
+    // markup. The design table's hand-typed prices gave $899,848.80 (and "about $920k"); the
+    // real prices are lower, so the total moved to $694,348.56.
     const total = drugs.reduce((sum, d) => sum + annualSpend(d.paid, d.unitsPerMonth)!, 0);
-    expect(total).toBeCloseTo(899_848.8, 1);
-    expect(Math.abs(total - 920_000) / 920_000).toBeLessThanOrEqual(0.03);
+    expect(total).toBeCloseTo(694_348.56, 1);
+  });
+  it("paid is the fallback NADAC plus a markup of 8 to 18 percent for every drug", () => {
+    for (const d of drugs) {
+      const markup = (d.paid / d.nadacFallback - 1) * 100;
+      expect(markup, d.id).toBeGreaterThanOrEqual(8);
+      expect(markup, d.id).toBeLessThanOrEqual(18.5); // 4-decimal rounding of tiny prices
+    }
   });
 });
 
