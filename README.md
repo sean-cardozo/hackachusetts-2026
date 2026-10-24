@@ -4,6 +4,8 @@ Helps independent pharmacies cut drug costs: renegotiate prices, swap to generic
 
 Built at Hackachusetts powered by Kiro (Sundai Week 146), October 24, 2026. Track: **Healthcare & Biotech**.
 
+**Try it live:** https://pharmapool-eight.vercel.app (no login needed). Start on **Upload data** and click **Use demo file**.
+
 ## What it does
 
 An independent pharmacy uploads 12 months of purchase history from its wholesaler. PharmaPool matches every invoice line to a drug, prices it against public benchmarks and shows three ways to save:
@@ -45,6 +47,7 @@ npm start
 ## Try the demo (2 minutes)
 
 1. Open **Upload data** in the left sidebar and click **Use demo file** (a fictional 12-month wholesaler export, 7,762 invoice lines).
+   To upload a real CSV instead, use `data/synthetic/store-001/store001_upload_export.csv` from this repo.
 2. Click **See how your prices compare** to open the Summary.
 3. On **Re-negotiate**, click **Re-negotiate all** or **Negotiate** on a drug.
 4. On **Swap**, approve a swap. On **Join**, opt in to a round.
