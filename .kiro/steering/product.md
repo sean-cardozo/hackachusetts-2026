@@ -1,41 +1,20 @@
-# Product: Pharmacy Buying Pool
+---
+inclusion: always
+---
+# Product steering — PharmaPool
 
-## Users
-Purchasing managers at small, independent pharmacy chains in Massachusetts. Not CVS, Walgreens or other national chains.
+- Audience: independent pharmacy owners. Write in plain language, short sentences, no jargon without a tooltip.
+- Tooltip glossary: NADAC = "the national average price pharmacies pay wholesalers" (CMS, weekly). AB rating = "FDA says this product is therapeutically equivalent." Days of supply = "units on hand ÷ average daily usage."
+- Tabs are exactly: Summary (savings, chart, key recommendations), Compare, Swap, Join. Upload and Data sources are header buttons; Ask PharmaPool is a floating bottom-right button. Award lives in Join. Each page carries its own actions.
+- Every savings figure shows both $ and %.
+- Data provenance is always visible: `<LiveBadge>` for CMS/FDA data, `<SampleBadge>` for member/supplier data. Every benchmark value has a source tooltip with the effective date.
+- Never show color alone for status. Pair green/red with ▲/▼ and "above"/"below".
+- Savings are ranges until quotes arrive ("$16.9k–$28.7k"); after quotes they become a single quoted figure.
+- Swaps always require explicit owner approval. Copy: "You approve every swap before it's used."
+- Opt-in copy: "Non-binding. When the round reaches its target, you'll have 48 hours to confirm or drop out."
+- Privacy copy must appear on the upload surface verbatim (see BRIEF.md).
+- Every screen implements empty, loading, error and success states.
+- Ask PharmaPool answers only from the user's data + benchmark feeds, and cites the source.
 
-## Problem
-Slow-moving generic prescription drugs. Bulk price tiers need volume that these small chains do not have alone. So they either pay more per unit, or they buy big packs and tie up cash in stock that may expire.
-
-## Solution
-Chains commit their weekly needs to a shared pool. The pooled demand is what gets them a better price.
-
-The flow is one chain of steps:
-1. Upload: a chain uploads its purchase history and stock. The app cleans it and matches each line to a standard drug code (NDC).
-2. Compare: each drug is compared to the government benchmark price (NADAC). The app also shows days of supply and FDA shortage alerts.
-3. Swap: the app may suggest an FDA-rated equivalent product so more chains can buy the same thing.
-4. Commit: the chain commits a quantity. Commitments are non-binding until the pool reaches its volume target. Then the chain has 48 hours to confirm.
-5. Quote: when the pool reaches its volume target, the app sends one combined request for quotes to suppliers.
-6. Award: the app compares the quotes (price, delivery, shortage history) and recommends a winner. Estimated savings become quoted savings.
-7. Order and split: one purchase order goes to the winner. A licensed partner hub splits it per chain.
-
-## Outputs
-- Estimated price savings per chain.
-- Which products each chain can save on.
-- Suggested order frequency (weekly, every 2 weeks, monthly).
-- A split plan per chain with savings.
-
-## Safeguards
-- No patient data in any upload.
-- No chain sees another chain's prices. Only pooled totals are shared.
-
-## Out of scope
-- Payments.
-- Real sign-in (demo mode only: a switcher for Chains A to E and the Pool Operator).
-- Real DSCSA drug tracing.
-- Pack break-down or repackaging (needs FDA registration; the licensed hub handles any splitting).
-
-## Business model (for the pitch, not built)
-Members pay a share of the savings actually realized. No supplier fees, so no conflict of interest.
-
-## Hackathon context
-Hackachusetts, Healthcare track. Must be built with Kiro. About 3 hours of build time left on the day of the event.
+- Estimated savings cover all purchases (~$4.3M): generics (deepest %), brand (1–2.5% via wholesaler tier, prompt-pay, shared rebates), OTC & supplies (8–14%).
+- Rounds can miss their target; show "At risk" with pace and "Target missed" states honestly.
