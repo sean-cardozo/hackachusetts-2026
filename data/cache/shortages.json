@@ -2,10 +2,123 @@
   "feed": "shortages",
   "source": "openFDA drug shortages",
   "cadence": "daily",
-  "fetchedAt": "2026-10-24T19:23:54.144Z",
+  "fetchedAt": "2026-10-24T19:27:52.095Z",
   "effectiveDate": "2026-10-23",
   "status": "live",
-  "items": [],
+  "items": [
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-23",
+      "dosageForm": "Tablet",
+      "company": "Teva Pharmaceuticals USA, Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-23",
+      "dosageForm": "Tablet",
+      "company": "Teva Pharmaceuticals USA, Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-17",
+      "dosageForm": "Tablet",
+      "company": "Accord Healthcare Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-17",
+      "dosageForm": "Tablet",
+      "company": "Accord Healthcare Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-16",
+      "dosageForm": "Tablet",
+      "company": "Cheplapharm Arzneimittel GmbH"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-02",
+      "dosageForm": "Tablet",
+      "company": "Aurobindo Pharma USA"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-10-02",
+      "dosageForm": "Tablet",
+      "company": "Aurobindo Pharma USA"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-09-02",
+      "dosageForm": "Tablet",
+      "company": "Prinston Pharmaceutical, Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-09-02",
+      "dosageForm": "Tablet",
+      "company": "Prinston Pharmaceutical, Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-09-02",
+      "dosageForm": "Tablet",
+      "company": "Prinston Pharmaceutical, Inc."
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-06-01",
+      "dosageForm": "Tablet",
+      "company": "Rubicon Research Private Limited"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-06-01",
+      "dosageForm": "Tablet",
+      "company": "Rubicon Research Private Limited"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-06-01",
+      "dosageForm": "Tablet",
+      "company": "Rubicon Research Private Limited"
+    },
+    {
+      "drugKey": "clonazepam-0-5mg-tablet",
+      "ingredient": "Clonazepam",
+      "status": "current",
+      "updated": "2026-06-01",
+      "dosageForm": "Tablet",
+      "company": "Rubicon Research Private Limited"
+    }
+  ],
   "history": {
     "atorvastatin-20mg-tablet": {
       "currentCount": 0,
@@ -88,6 +201,214 @@
       "last3yCount": 0
     },
     "prednisone-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "clopidogrel-75mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "carvedilol-12-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "pravastatin-40mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "rosuvastatin-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "warfarin-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "spironolactone-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "atenolol-50mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "clonidine-0-1mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "valsartan-80mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "benazepril-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "propranolol-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "glimepiride-2mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "pioglitazone-30mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "citalopram-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "fluoxetine-20mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "buspirone-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "alprazolam-0-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "lorazepam-1mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "clonazepam-0-5mg-tablet": {
+      "currentCount": 14,
+      "last3yCount": 14
+    },
+    "zolpidem-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "quetiapine-100mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "aripiprazole-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "amitriptyline-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "lamotrigine-100mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "topiramate-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "levetiracetam-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "cyclobenzaprine-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "tramadol-50mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "meloxicam-15mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "ibuprofen-800mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "naproxen-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "methocarbamol-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "baclofen-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "tizanidine-4mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "ondansetron-4mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "famotidine-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "azithromycin-250mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "ciprofloxacin-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "cephalexin-500mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "doxycycline-hyclate-100mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "levofloxacin-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "fluconazole-150mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "acyclovir-400mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "allopurinol-100mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "tamsulosin-0-4mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "finasteride-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "dexamethasone-4mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "hydroxyzine-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "oxybutynin-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "meclizine-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "promethazine-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "methylprednisolone-4mg-tablet": {
       "currentCount": 0,
       "last3yCount": 0
     }

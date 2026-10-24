@@ -9,56 +9,70 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fffaf3;--surface:#ffffff;--surface-2:#fbf5ec;--line:#eee5d7;--line-strong:#c9bfae;--ink:#121212;--muted:#5b554c;--accent:#ff7a00;--accent-ink:#a64b00;--accent-soft:#fff0de;--good:#17804d;--good-soft:#e3f5ea;--bad:#c8352a;--bad-soft:#fdeae6;--shadow:0 18px 50px rgba(60,40,10,.16)}
-html,body{margin:0;background:#fffaf3}
+:root{--bg:#f5f7fa;--surface:#ffffff;--surface-2:#f4f7fb;--line:#e3e8ef;--line-strong:#c5cfdb;--ink:#0f1d33;--muted:#5a6779;--accent:#0f9f7a;--accent-ink:#0a7259;--accent-soft:#e7f6f0;--blue:#2563eb;--navy:#0e2742;--good:#15803d;--good-soft:#e6f4ea;--bad:#c2362b;--bad-soft:#fdecea;--shadow:0 20px 50px rgba(15,29,51,.16)}
+html,body{margin:0;background:#f5f7fa}
 *{box-sizing:border-box}
 a{color:var(--accent-ink);text-underline-offset:2px}
 a:hover{color:var(--accent)}
 button,input{font-family:inherit}
 button:disabled{cursor:not-allowed}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+:focus-visible{outline:1.1px solid var(--line);outline-offset:2px}
 input[type=range]{accent-color:var(--accent)}
+@keyframes ppBumpA{0%{transform:scale(1)}30%{transform:scale(1.55)}60%{transform:scale(.9)}100%{transform:scale(1)}}
+@keyframes ppBumpB{0%{transform:scale(1)}30%{transform:scale(1.55)}60%{transform:scale(.9)}100%{transform:scale(1)}}
+@keyframes ppSpin{to{transform:rotate(360deg)}}
 @keyframes prPulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes prBar{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
 </style>
 </helmet>
-<div data-theme="{{ themeName }}" style="min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:14px;line-height:1.45">
+<div data-theme="{{ themeName }}" style="min-height:100vh;display:flex;flex-direction:column;padding-left:232px;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:14px;line-height:1.45">
 
-<header style="position:relative;z-index:30;background:var(--surface);border-bottom:5px solid var(--accent)">
-  <div style="display:flex;align-items:center;gap:12px 24px;padding:12px 24px;flex-wrap:wrap">
-    <div onClick="{{ goSummary }}" style="cursor:pointer;display:flex;flex-direction:column;gap:3px">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:32px;line-height:1;letter-spacing:.03em;color:var(--ink)">PHARMA<span style="color:var(--accent)">POOL</span></div>
-      <div style="font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:800;white-space:nowrap">Independent pharmacy buying pool</div>
+<aside style="position:fixed;top:0;left:0;bottom:0;width:232px;z-index:40;background:var(--navy);color:#dbe5f0;display:flex;flex-direction:column;gap:22px;padding:22px 14px;overflow-y:auto">
+  <div onClick="{{ goSummary }}" style="cursor:pointer;display:flex;flex-direction:column;gap:10px;padding:0 8px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="display:grid;grid-template-columns:repeat(3,7px);gap:3px"><span style="width:7px;height:7px;border-radius:50%;background:#34d3a6"></span><span style="width:7px;height:7px;border-radius:50%;background:#5eead4"></span><span style="width:7px;height:7px;border-radius:50%;background:#34d3a6"></span><span style="width:7px;height:7px;border-radius:50%;background:#5eead4"></span><span style="width:7px;height:7px;border-radius:50%;background:#ffffff"></span><span style="width:7px;height:7px;border-radius:50%;background:#5eead4"></span><span style="width:7px;height:7px;border-radius:50%;background:#34d3a6"></span><span style="width:7px;height:7px;border-radius:50%;background:#5eead4"></span><span style="width:7px;height:7px;border-radius:50%;background:#34d3a6"></span></div>
+      <span style="font-size:22px;font-weight:800;color:#fff;letter-spacing:-.02em">PharmaPool</span>
     </div>
-    <nav style="display:flex;gap:6px;flex-wrap:wrap">
-      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="4">
-        <button onClick="{{ n.go }}" style="border:2px solid {{ n.bd }};border-radius:12px;padding:6px 14px;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;background:{{ n.bg }};color:{{ n.fg }}">
-          <span style="font-family:Anton,Impact,sans-serif;font-size:17px;letter-spacing:.04em;text-transform:uppercase">{{ n.label }}</span>
-          <span style="font-size:11px;font-weight:700;opacity:.8">{{ n.sub }}</span>
-        </button>
-      </sc-for>
-    </nav>
-    <div style="flex:1"></div>
-    <div data-tip="{{ fresh.tip }}" style="display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12px;color:var(--muted);background:var(--surface-2);cursor:help">
-      <span style="width:8px;height:8px;border-radius:50%;flex:none;background:{{ fresh.dot }};animation:{{ fresh.anim }}"></span>
-      <span style="white-space:nowrap"><span style="font-weight:800;color:var(--ink)">{{ fresh.label }}</span> {{ fresh.text }}</span>
-    </div>
-    <a onClick="{{ goSources }}" style="font-size:13px;font-weight:700;cursor:pointer">Data sources</a>
-    <div style="display:flex;gap:8px">
-      <button onClick="{{ goUpload }}" style="border:2px solid var(--ink);border-radius:999px;padding:7px 15px;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap;background:{{ upNav.bg }};color:{{ upNav.fg }}">↑ Upload data</button>
-      
-    </div>
+    <span style="font-size:13px;line-height:1.4;color:#b7c6d8">Collective purchasing for independent pharmacies.</span>
   </div>
-  <div style="position:absolute;left:0;right:0;bottom:-15px;height:15px;pointer-events:none">
-    <div style="position:absolute;left:6%;top:0;width:8px;height:12px;background:var(--accent);border-radius:0 0 5px 5px"></div>
-    <div style="position:absolute;left:19%;top:0;width:5px;height:7px;background:var(--accent);border-radius:0 0 4px 4px"></div>
-    <div style="position:absolute;left:44%;top:0;width:8px;height:14px;background:var(--accent);border-radius:0 0 5px 5px"></div>
-    <div style="position:absolute;left:70%;top:0;width:5px;height:6px;background:var(--accent);border-radius:0 0 4px 4px"></div>
-    <div style="position:absolute;left:89%;top:0;width:7px;height:10px;background:var(--accent);border-radius:0 0 4px 4px"></div>
+  <nav style="display:flex;flex-direction:column;gap:4px">
+    <sc-for list="{{ nav }}" as="n" hint-placeholder-count="4">
+      <button style-active="transform:scale(.95)" onClick="{{ n.go }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;border-left:3px solid {{ n.bd }};border-radius:10px;padding:10px 12px;cursor:pointer;background:{{ n.bg }};color:{{ n.fg }}">
+        <svg width="24" height="24" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none"><path d="{{ n.d }}"></path></svg>
+        <span style="display:flex;flex-direction:column;line-height:1.2"><span style="font-size:14.5px;font-weight:700">{{ n.label }}</span><span style="font-size:11.5px;opacity:.75;white-space:nowrap">{{ n.sub }}</span></span>
+      </button>
+    </sc-for>
+  </nav>
+  <div style="height:1px;background:rgba(255,255,255,.12);margin:0 8px"></div>
+  <nav style="display:flex;flex-direction:column;gap:4px">
+    <sc-for list="{{ util }}" as="n" hint-placeholder-count="2">
+      <button style-active="transform:scale(.95)" data-nav="{{ n.key }}" onClick="{{ n.go }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;border-left:3px solid {{ n.bd }};border-radius:10px;padding:10px 12px;cursor:pointer;font-size:14px;font-weight:600;background:{{ n.bg }};color:{{ n.fg }}">
+        <svg width="24" height="24" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none"><path d="{{ n.d }}"></path></svg><span style="flex:1">{{ n.label }}</span><sc-if value="{{ n.hasBadge }}" hint-placeholder-val="{{ false }}"><span style="min-width:22px;height:22px;border-radius:11px;background:#ef4444;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 6px;animation:{{ n.anim }}">{{ n.badge }}</span></sc-if>
+      </button>
+    </sc-for>
+  </nav>
+  <div style="flex:1"></div>
+  <div style="border-radius:14px;padding:16px;background:rgba(255,255,255,.07);display:flex;flex-direction:column;gap:6px">
+    <span style="font-size:14px;font-weight:700;color:#fff;line-height:1.35">Stronger together for independent pharmacies.</span>
+    <span style="font-size:12px;color:#9fb1c6">Hackachusetts 2026</span>
   </div>
-</header>
+</aside>
+<div style="position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:12px clamp(16px,3vw,40px)">
+  <div style="flex:1 1 180px;min-width:140px;max-width:620px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:var(--surface)">
+    <svg width="24" height="24" style="fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;flex:none"><path d="M11 3a8 8 0 1 0 0 16a8 8 0 1 0 0-16 M21 21l-4.35-4.35"></path></svg>
+    <input value="{{ search }}" onChange="{{ onSearch }}" onKeyDown="{{ onSearchKey }}" placeholder="Search medications or ask a question…" style="flex:1;min-width:0;border:0;outline:none;background:transparent;color:var(--ink);font-size:14px;padding:10px 0">
+  </div>
+  <div data-tip="{{ fresh.tip }}" style="display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12px;color:var(--muted);background:var(--surface-2);cursor:help;min-width:0;flex:0 1 auto">
+    <span style="width:8px;height:8px;border-radius:50%;flex:none;background:{{ fresh.dot }};animation:{{ fresh.anim }}"></span>
+    <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="font-weight:800;color:var(--ink)">{{ fresh.label }}</span> {{ fresh.text }}</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:0 1 auto">
+    <span style="width:38px;height:38px;border-radius:50%;background:#dbeafe;color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">HS</span>
+    <span style="font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0">Harbor Street Pharmacy</span>
+  </div>
+</div>
 
 <div style="display:flex;flex:1;align-items:flex-start">
 <main style="flex:1;min-width:0;padding:34px clamp(16px,3vw,40px) 110px;display:flex;flex-direction:column;gap:24px">
@@ -66,28 +80,28 @@ input[type=range]{accent-color:var(--accent)}
   <sc-if value="{{ isSummary }}" hint-placeholder-val="{{ true }}">
     <div style="display:flex;flex-direction:column;gap:6px">
       <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Harbor Street Pharmacy · Worcester, MA</div>
-      <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Your savings at a glance</h1>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Your savings at a glance</h1>
       <p style="margin:0;color:var(--muted);max-width:640px;text-wrap:pretty">What you could save, what to do next, and orders ready to award.</p>
     </div>
   </sc-if>
   <sc-if value="{{ isUpload }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:6px">
       <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Your data</div>
-      <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Upload your data</h1>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Upload your data</h1>
       <p style="margin:0;color:var(--muted);max-width:680px;text-wrap:pretty">Two files: 12 months of purchases (required) and today's inventory (optional). Messy spreadsheets are fine — we fix column names and drug spellings, and you check our work.</p>
     </div>
   </sc-if>
   <sc-if value="{{ isCompare }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:6px">
       <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Step 1 · Compare</div>
-      <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Your prices vs. benchmark</h1>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Your prices vs. benchmark</h1>
       <p style="margin:0;color:var(--muted);max-width:680px;text-wrap:pretty">Each drug is priced against <span data-tip="NADAC: the national average price pharmacies pay wholesalers. Published weekly by CMS." style="border-bottom:1px dotted var(--muted);cursor:help">NADAC</span>, the weekly CMS average of what pharmacies pay wholesalers. See savings by category, days of supply and FDA shortage alerts.</p>
     </div>
   </sc-if>
   <sc-if value="{{ isSwap }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:6px">
       <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Step 2 · Swap</div>
-      <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Equivalent swaps</h1>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Equivalent swaps</h1>
       <p style="margin:0;color:var(--muted);max-width:680px;text-wrap:pretty">Switch to an FDA-rated equivalent product from another manufacturer — same ingredient, strength and form — so you can join a buying round. You approve every swap before it's used.</p>
     </div>
   </sc-if>
@@ -95,19 +109,26 @@ input[type=range]{accent-color:var(--accent)}
     <div style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-direction:column;gap:6px">
         <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Step 3 · Join</div>
-        <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Buying rounds</h1>
+        <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Buying rounds</h1>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;max-width:960px">
-        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1.5px solid var(--line)"><span style="width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#111;font-family:Anton,Impact,sans-serif;display:flex;align-items:center;justify-content:center">1</span><span><strong>Opt in</strong> with a recommended commitment. Non-binding.</span></div>
-        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1.5px solid var(--line)"><span style="width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#111;font-family:Anton,Impact,sans-serif;display:flex;align-items:center;justify-content:center">2</span><span>The round must reach its <strong>volume target</strong>. If it misses, nothing is ordered.</span></div>
-        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1.5px solid var(--line)"><span style="width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#111;font-family:Anton,Impact,sans-serif;display:flex;align-items:center;justify-content:center">3</span><span>You get <strong>48 hours</strong> to confirm or drop out.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line)"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center">1</span><span><strong>Opt in</strong> with a recommended commitment. Non-binding.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line)"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center">2</span><span>The round must reach its <strong>volume target</strong>. If it misses, nothing is ordered.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line)"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center">3</span><span>You get <strong>48 hours</strong> to confirm or drop out.</span></div>
       </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ isAward }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Review &amp; submit</div>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Award</h1>
+      <p style="margin:0;color:var(--muted);max-width:680px;text-wrap:pretty">Everything you did on Compare, Swap and Join is collected here, plus supplier awards. Nothing is sent until you submit.</p>
     </div>
   </sc-if>
   <sc-if value="{{ isSources }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:6px">
       <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Where the numbers come from</div>
-      <h1 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:.01em;text-transform:uppercase;margin:0">Data sources</h1>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:34px;line-height:1.05;margin:0">Data sources</h1>
       <p style="margin:0;color:var(--muted);max-width:640px">Benchmarks come from public government feeds. Member data in this demo is synthetic.</p>
     </div>
   </sc-if>
@@ -116,43 +137,39 @@ input[type=range]{accent-color:var(--accent)}
     <div style="display:flex;flex-direction:column;gap:16px" aria-busy="true">
       <div style="display:flex;align-items:center;gap:10px;color:var(--muted);font-weight:600"><span style="width:10px;height:10px;border-radius:50%;background:var(--accent);animation:prPulse 1s infinite"></span>{{ loadText }}</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
-        <div style="height:150px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s infinite"></div>
-        <div style="height:150px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .15s infinite"></div>
-        <div style="height:150px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .3s infinite"></div>
+        <div style="height:150px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s infinite"></div>
+        <div style="height:150px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .15s infinite"></div>
+        <div style="height:150px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .3s infinite"></div>
       </div>
-      <div style="height:300px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .2s infinite"></div>
+      <div style="height:300px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);animation:prPulse 1.4s .2s infinite"></div>
     </div>
   </sc-if>
   <sc-if value="{{ showError }}" hint-placeholder-val="{{ false }}">
-    <div role="alert" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:28px;border-radius:16px;border:1.5px solid var(--bad);background:var(--bad-soft);max-width:680px">
-      <div style="display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;border-radius:50%;background:var(--bad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">!</span><span style="font-family:Anton,Impact,sans-serif;font-size:22px;letter-spacing:.02em;text-transform:uppercase">{{ err.title }}</span></div>
+    <div role="alert" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:28px;border-radius:14px;border:1.5px solid var(--bad);background:var(--bad-soft);max-width:680px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;border-radius:50%;background:var(--bad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">!</span><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">{{ err.title }}</span></div>
       <p style="margin:0;text-wrap:pretty">{{ err.body }}</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap"><button onClick="{{ retry }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:10px 18px;font-weight:800;cursor:pointer">Try again</button><button onClick="{{ goSources }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer">Check data sources</button></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><button style-active="transform:scale(.95)" onClick="{{ retry }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:10px 18px;font-weight:800;cursor:pointer">Try again</button><button style-active="transform:scale(.95)" onClick="{{ goSources }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:9px 16px;font-weight:700;cursor:pointer">Check data sources</button></div>
     </div>
   </sc-if>
 
   <!-- SUMMARY -->
   <sc-if value="{{ sumEmpty }}" hint-placeholder-val="{{ false }}">
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:32px;border:2px dashed var(--line-strong);border-radius:18px;background:var(--surface)">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:64px;line-height:1;color:var(--line-strong)">$—</div>
-      <div style="font-family:Anton,Impact,sans-serif;font-size:24px;text-transform:uppercase">Upload your purchases to see your savings</div>
-      <p style="margin:0;color:var(--muted);max-width:540px">Add 12 months of purchase history. It takes about 3 minutes, and we fix messy column names and spellings for you.</p><button onClick="{{ goUpload }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer">Go to Upload</button>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:32px;border:2px dashed var(--line-strong);border-radius:14px;background:var(--surface)">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:48px;line-height:1;color:var(--line-strong)">$—</div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:24px;">Upload your purchases to see your savings</div>
+      <p style="margin:0;color:var(--muted);max-width:540px">Add 12 months of purchase history. It takes about 3 minutes, and we fix messy column names and spellings for you.</p><button style-active="transform:scale(.95)" onClick="{{ goUpload }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:11px 18px;font-weight:800;cursor:pointer">Go to Upload</button>
     </div>
   </sc-if>
   <sc-if value="{{ sumReady }}" hint-placeholder-val="{{ true }}">
     <div style="display:flex;flex-direction:column;gap:18px">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,560px),1fr));gap:16px;align-items:stretch">
-        <div style="background:var(--surface);border:2.5px solid var(--ink);border-radius:20px;padding:24px 26px;display:flex;flex-direction:column;gap:12px">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px 26px;display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-            <span data-tip="Generics: 50–85% of your gap to NADAC plus approved swaps. Brand: 1–2.5% from better wholesaler tiers, prompt-pay terms and shared rebates. OTC & supplies: 8–14% from pooled orders." style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);cursor:help;border-bottom:1px dotted var(--muted)">Estimated savings per year</span><span data-tip="From your uploaded purchase history (synthetic)." style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help">Sample</span>
+            <span data-tip="Generics: 50–85% of your gap to NADAC plus approved swaps. Brand: 1–2.5% from better wholesaler tiers, prompt-pay terms and shared rebates. OTC & supplies: 8–14% from pooled orders." style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);cursor:help;border-bottom:1px dotted var(--muted)">Estimated savings per year</span><span data-tip="From your uploaded purchase history (synthetic)." style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help">Sample</span>
           </div>
           <div style="display:inline-flex;flex-direction:column;align-self:flex-start">
-            <span style="font-family:Anton,Impact,sans-serif;font-size:clamp(40px,5vw,84px);line-height:.95;letter-spacing:.005em;font-variant-numeric:tabular-nums;white-space:nowrap">{{ hero.save }}</span>
-            <span style="position:relative;display:block;height:10px;margin-top:8px;background:var(--accent);border-radius:3px">
-              <span style="position:absolute;left:8%;top:6px;width:9px;height:16px;background:var(--accent);border-radius:0 0 6px 6px"></span>
-              <span style="position:absolute;left:41%;top:6px;width:7px;height:10px;background:var(--accent);border-radius:0 0 5px 5px"></span>
-              <span style="position:absolute;left:77%;top:6px;width:9px;height:20px;background:var(--accent);border-radius:0 0 6px 6px"></span>
-            </span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:clamp(34px,4vw,56px);line-height:.95;font-variant-numeric:tabular-nums;white-space:nowrap">{{ hero.save }}</span>
+            
           </div>
           <div style="font-size:16px;font-weight:700;margin-top:12px">{{ hero.pct }} <span style="font-weight:500;color:var(--muted)">{{ hero.of }}</span></div>
           <sc-if value="{{ hero.hasSwapBoost }}" hint-placeholder-val="{{ false }}"><div style="font-size:13px;font-weight:700;color:var(--good)">▲ Includes {{ hero.boost }} from approved swaps</div></sc-if>
@@ -167,26 +184,26 @@ input[type=range]{accent-color:var(--accent)}
           </div>
           <div style="font-size:12px;color:var(--muted);text-wrap:pretty">Brand prices are set by manufacturers, so pooled brand savings come from better wholesaler tiers, prompt-pay terms and shared rebates — a smaller % than generics, on a much bigger base.</div>
         </div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:20px 22px;display:flex;flex-direction:column;gap:12px;min-width:0">
-          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px"><span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase">Monthly purchases</span><span style="font-size:12.5px;color:var(--muted);white-space:nowrap">Actual vs. projected</span></div>
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:12px;min-width:0">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Monthly purchases</span><span style="font-size:12.5px;color:var(--muted);white-space:nowrap">Actual vs. projected</span></div>
           <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted)">
-            <span><span style="display:inline-block;width:16px;height:3px;background:var(--ink);vertical-align:middle"></span> Actual</span>
+            <span><span style="display:inline-block;width:16px;height:3px;border-radius:2px;background:var(--blue);vertical-align:middle"></span> Actual</span>
             <span><span style="display:inline-block;width:16px;height:0;border-top:2px dashed var(--muted);vertical-align:middle"></span> Projected without PharmaPool</span>
             <span><span style="display:inline-block;width:16px;height:3px;background:var(--accent);vertical-align:middle"></span> Projected with PharmaPool (range shaded)</span>
           </div>
           <div style="overflow-x:auto">
             <svg width="560" height="214" style="display:block;overflow:visible">
-              <line x1="48" y1="10" x2="552" y2="10" style="stroke:var(--line)"></line>
-              <line x1="48" y1="100" x2="552" y2="100" style="stroke:var(--line)"></line>
+              <line x1="48" y1="10" x2="552" y2="10" style="stroke:var(--line);stroke-dasharray:3 4"></line>
+              <line x1="48" y1="100" x2="552" y2="100" style="stroke:var(--line);stroke-dasharray:3 4"></line>
               <line x1="48" y1="190" x2="552" y2="190" style="stroke:var(--line-strong)"></line>
               <text x="40" y="14" style="font-size:11px;fill:var(--muted);text-anchor:end">{{ chart.yTop }}</text>
               <text x="40" y="104" style="font-size:11px;fill:var(--muted);text-anchor:end">{{ chart.yMid }}</text>
               <text x="40" y="194" style="font-size:11px;fill:var(--muted);text-anchor:end">{{ chart.yBot }}</text>
-              <line x1="289" y1="2" x2="289" y2="190" style="stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 3"></line>
-              <polygon points="{{ chart.band }}" style="fill:var(--accent);fill-opacity:.2;stroke:none"></polygon>
+              <line x1="289" y1="2" x2="289" y2="190" style="stroke:var(--line-strong);stroke-width:1.5;stroke-dasharray:3 3"></line><polygon points="{{ chart.area }}" style="fill:rgba(37,99,235,.08);stroke:none"></polygon>
+              <polygon points="{{ chart.band }}" style="fill:var(--accent);fill-opacity:.16;stroke:none"></polygon>
               <polyline points="{{ chart.base }}" style="fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:6 5"></polyline>
               <polyline points="{{ chart.mid }}" style="fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"></polyline>
-              <polyline points="{{ chart.hist }}" style="fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"></polyline>
+              <polyline points="{{ chart.hist }}" style="fill:none;stroke:var(--blue);stroke-width:3;stroke-linecap:round;stroke-linejoin:round"></polyline><circle cx="289" cy="{{ chart.todayY }}" r="5" style="fill:#fff;stroke:var(--blue);stroke-width:3"></circle>
               <text x="48" y="208" style="font-size:11px;fill:var(--muted)">Nov 2025</text>
               <text x="289" y="208" style="font-size:11px;fill:var(--ink);font-weight:700;text-anchor:middle">Today</text>
               <text x="552" y="208" style="font-size:11px;fill:var(--muted);text-anchor:end">Oct 2027</text>
@@ -194,19 +211,19 @@ input[type=range]{accent-color:var(--accent)}
           </div>
           <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;padding-top:4px;border-top:1px solid var(--line)">
             <span style="font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap">Projected savings, next 12 months</span>
-            <span style="font-family:Anton,Impact,sans-serif;font-size:26px;white-space:nowrap">{{ chart.save }}</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:26px;white-space:nowrap">{{ chart.save }}</span>
             <span style="font-weight:800;color:var(--accent-ink)">{{ chart.savePct }}</span>
             <span style="flex-basis:100%;font-size:12px;color:var(--muted)">Savings phase in over ~4 months as rounds close.</span>
           </div>
         </div>
       </div>
       <section style="display:flex;flex-direction:column;gap:12px">
-        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:28px;text-transform:uppercase;margin:0">Savings by step</h2><span style="color:var(--muted);font-size:13px">Per year. Ranges become quoted figures as suppliers respond.</span></div>
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;margin:0">Savings by step</h2><span style="color:var(--muted);font-size:13px">Per year. Ranges become quoted figures as suppliers respond.</span></div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px">
           <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
-            <div onClick="{{ s.go }}" style="cursor:pointer;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:6px" style-hover="border-color:var(--accent);background:var(--accent-soft)">
-              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.03em">{{ s.title }}</span><span style="font-size:12px;font-weight:700;color:var(--muted)">{{ s.what }}</span></div>
-              <div style="font-family:Anton,Impact,sans-serif;font-size:clamp(26px,2.6vw,36px);line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap">{{ s.big }}</div>
+            <div onClick="{{ s.go }}" style="cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:6px" style-hover="border-color:var(--accent);background:var(--accent-soft)">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">{{ s.title }}</span><span style="font-size:12px;font-weight:700;color:var(--muted)">{{ s.what }}</span></div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:clamp(22px,2.2vw,30px);line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap">{{ s.big }}</div>
               <div style="font-size:15px;font-weight:800;color:var(--accent-ink)">{{ s.pct }}</div>
               <div style="font-size:13px;color:var(--muted)">{{ s.sub }}</div>
               <div style="font-weight:800;margin-top:4px">{{ s.cta }} →</div>
@@ -214,41 +231,41 @@ input[type=range]{accent-color:var(--accent)}
           </sc-for>
         </div>
       </section>
-      <section style="background:var(--surface);border:2.5px solid var(--ink);border-radius:20px;overflow:hidden">
-        <div style="padding:16px 20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:28px;text-transform:uppercase;margin:0">Key recommendations</h2><span style="color:var(--muted);font-size:13px">Ranked by urgency, then savings.</span></div>
+      <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+        <div style="padding:16px 20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;margin:0">Key recommendations</h2><span style="color:var(--muted);font-size:13px">Ranked by urgency, then savings.</span></div>
         <sc-for list="{{ recs }}" as="r" hint-placeholder-count="5">
           <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:14px 20px;border-top:1px solid var(--line);opacity:{{ r.op }}">
-            <span style="width:34px;height:34px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Anton,Impact,sans-serif;font-size:17px;background:{{ r.numBg }};color:{{ r.numFg }}">{{ r.n }}</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:34px;height:34px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;background:{{ r.numBg }};color:{{ r.numFg }}">{{ r.n }}</span>
             <div style="flex:1 1 320px;min-width:0"><div style="font-weight:800;font-size:15px">{{ r.title }}</div><div style="font-size:13px;color:var(--muted);text-wrap:pretty">{{ r.why }}</div></div>
             <span style="font-weight:800;color:{{ r.valC }};font-variant-numeric:tabular-nums;white-space:nowrap">{{ r.val }}</span>
-            <button onClick="{{ r.go }}" style="border:1.5px solid var(--ink);border-radius:999px;padding:8px 16px;font-weight:800;cursor:pointer;white-space:nowrap;background:{{ r.btnBg }};color:{{ r.btnFg }}">{{ r.cta }}</button>
+            <button style-active="transform:scale(.95)" onClick="{{ r.go }}" style="border:1.5px solid var(--ink);border-radius:10px;padding:8px 16px;font-weight:800;cursor:pointer;white-space:nowrap;background:{{ r.btnBg }};color:{{ r.btnFg }}">{{ r.cta }}</button>
           </div>
         </sc-for>
       </section>
 
       
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px">
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Total purchases / yr · Sample</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.total }}</div><div style="font-size:12px;color:var(--muted)">Generics {{ sum.spend }} · Brand {{ sum.brand }} · OTC {{ sum.otc }}</div></div>
-        <div data-tip="CMS NADAC, effective Oct 22, 2026" style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;cursor:help"><div style="font-size:12px;font-weight:700;color:var(--muted)">Generics above NADAC · Live</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.above }} <span style="font-size:17px;color:var(--muted)">of 10</span></div></div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Under 14 days of supply</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.low }}</div><div style="font-size:12px;color:var(--muted)">{{ sum.lowNames }}</div></div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Open buying rounds</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.rounds }}</div><div style="font-size:12px;font-weight:700;color:var(--bad)">{{ sum.atRisk }}</div></div>
+        <div style="background:#eaf2fd;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Total purchases / yr · Sample</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.total }}</div><div style="font-size:12px;color:var(--muted)">Generics {{ sum.spend }} · Brand {{ sum.brand }} · OTC {{ sum.otc }}</div></div>
+        <div data-tip="CMS NADAC, effective Oct 22, 2026" style="background:#e8f6ef;border:1px solid transparent;border-radius:14px;padding:16px 18px;cursor:help"><div style="font-size:12px;font-weight:700;color:var(--muted)">Generics above NADAC · Live</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.above }} <span style="font-size:17px;color:var(--muted)">of 10</span></div></div>
+        <div style="background:#f1f3f6;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Under 14 days of supply</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.low }}</div><div style="font-size:12px;color:var(--muted)">{{ sum.lowNames }}</div></div>
+        <div style="background:#e8f6ef;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Open buying rounds</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.rounds }}</div><div style="font-size:12px;font-weight:700;color:var(--bad)">{{ sum.atRisk }}</div></div>
       </div>
     </div>
   </sc-if>
 
   <sc-if value="{{ showUpload }}" hint-placeholder-val="{{ false }}">
     <section style="display:flex;flex-direction:column;gap:14px">
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:14px 18px;border-radius:16px;background:var(--surface);border:2.5px solid var(--ink)"><span style="font-family:Anton,Impact,sans-serif;font-size:19px;text-transform:uppercase">Your data stays yours</span><span style="flex:1 1 380px">Your name, prices and stock levels are never shown to other pharmacies or suppliers. Group figures are shown only when 5 or more pharmacies contribute.</span></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:14px 18px;border-radius:14px;background:var(--surface);border:1px solid var(--line)"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:19px;">Your data stays yours</span><span style="flex:1 1 380px">Your name, prices and stock levels are never shown to other pharmacies or suppliers. Group figures are shown only when 5 or more pharmacies contribute.</span></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px">
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;align-items:center;gap:12px">
-            <span style="width:32px;height:32px;border-radius:50%;background:var(--accent);color:#111;font-family:Anton,Impact,sans-serif;font-size:17px;display:flex;align-items:center;justify-content:center;flex:none">1</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-size:17px;display:flex;align-items:center;justify-content:center;flex:none">1</span>
             <div style="flex:1"><div style="font-weight:800">12-month purchase history</div><div style="color:var(--muted);font-size:12px">Required · drug name, strength, NDC (optional), package size, units/month, unit price paid, wholesaler (optional)</div></div>
           </div>
           <sc-if value="{{ up1.idle }}" hint-placeholder-val="{{ false }}">
             <div onDragOver="{{ dragOver }}" onDrop="{{ drop1 }}" style="border:2px dashed var(--line-strong);border-radius:14px;padding:22px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;background:var(--surface-2)">
               <div style="font-weight:800">Drop a CSV or XLSX here</div>
-              <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center"><button onClick="{{ start1 }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:9px 16px;font-weight:800;cursor:pointer">Use sample file</button><button onClick="{{ dl1 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer">Download template</button></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center"><button style-active="transform:scale(.95)" onClick="{{ start1 }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:9px 16px;font-weight:800;cursor:pointer">Use sample file</button><button style-active="transform:scale(.95)" onClick="{{ dl1 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer">Download template</button></div>
             </div>
           </sc-if>
           <sc-if value="{{ up1.parsing }}" hint-placeholder-val="{{ false }}">
@@ -258,21 +275,21 @@ input[type=range]{accent-color:var(--accent)}
             <div style="display:flex;flex-direction:column;gap:10px">
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:10px 12px;border-radius:12px;background:var(--good-soft)"><span style="color:var(--good);font-weight:800">✓</span><span style="font-weight:700">harbor_st_purchases_2025-26.xlsx</span><span style="color:var(--muted);font-size:12px">11 rows · 8 columns</span></div>
               <div style="display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;font-weight:700"><span style="color:var(--good)">{{ ms.matched }} matched</span><span style="color:var(--accent-ink)">{{ ms.review }} need review</span><span style="color:var(--muted)">{{ ms.unmatched }} unmatched</span></div>
-              <div style="display:flex;gap:8px;flex-wrap:wrap"><button onClick="{{ toggleMap }}" style="border:1.5px solid var(--accent);background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:7px 14px;font-weight:800;cursor:pointer">{{ mapBtn }}</button><button onClick="{{ reset1 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:7px 14px;font-weight:700;cursor:pointer">Replace file</button></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><button style-active="transform:scale(.95)" onClick="{{ toggleMap }}" style="border:1.1px solid var(--line);background:var(--accent-soft);color:var(--ink);border-radius:10px;padding:7px 14px;font-weight:800;cursor:pointer">{{ mapBtn }}</button><button style-active="transform:scale(.95)" onClick="{{ reset1 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:7px 14px;font-weight:700;cursor:pointer">Replace file</button></div>
             </div>
           </sc-if>
         </div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;align-items:center;gap:12px">
-            <span style="width:32px;height:32px;border-radius:50%;border:2px solid var(--accent);color:var(--accent-ink);font-family:Anton,Impact,sans-serif;font-size:17px;display:flex;align-items:center;justify-content:center;flex:none">2</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:32px;height:32px;border-radius:50%;border:1.1px solid var(--line);color:var(--accent-ink);font-size:17px;display:flex;align-items:center;justify-content:center;flex:none">2</span>
             <div style="flex:1"><div style="font-weight:800">Current inventory snapshot</div><div style="color:var(--muted);font-size:12px">Optional · drug name, strength, NDC (optional), units on hand, count date, expiration (optional)</div></div>
           </div>
           <div style="padding:10px 12px;border-radius:12px;background:var(--accent-soft);font-weight:700;font-size:13px">Add inventory to see days of supply and get a recommended commitment.</div>
           <sc-if value="{{ up2.idle }}" hint-placeholder-val="{{ true }}">
             <div onDragOver="{{ dragOver }}" onDrop="{{ drop2 }}" style="border:2px dashed var(--line-strong);border-radius:14px;padding:16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;background:var(--surface-2)">
               <span style="font-weight:700;font-size:13px">Drop inventory file</span>
-              <button onClick="{{ start2 }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:8px 14px;font-weight:800;cursor:pointer">Use sample file</button>
-              <button onClick="{{ dl2 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:7px 12px;font-weight:700;cursor:pointer">Template</button>
+              <button style-active="transform:scale(.95)" onClick="{{ start2 }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:8px 14px;font-weight:800;cursor:pointer">Use sample file</button>
+              <button style-active="transform:scale(.95)" onClick="{{ dl2 }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:7px 12px;font-weight:700;cursor:pointer">Template</button>
             </div>
           </sc-if>
           <sc-if value="{{ up2.parsing }}" hint-placeholder-val="{{ false }}">
@@ -286,7 +303,7 @@ input[type=range]{accent-color:var(--accent)}
 
       <sc-if value="{{ showMap }}" hint-placeholder-val="{{ false }}">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:14px">
-          <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden">
+          <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
             <div style="padding:12px 16px;font-weight:800">Column mapping <span style="font-weight:500;color:var(--muted);font-size:12.5px">· your names → standard fields</span></div>
             <sc-for list="{{ cols1 }}" as="c" hint-placeholder-count="8">
               <div style="display:grid;grid-template-columns:minmax(80px,1fr) 18px minmax(140px,1.6fr) auto;gap:8px;padding:8px 16px;border-top:1px solid var(--line);align-items:center">
@@ -294,14 +311,14 @@ input[type=range]{accent-color:var(--accent)}
               </div>
             </sc-for>
           </div>
-          <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden">
+          <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
             <div style="padding:12px 16px;font-weight:800">Drug matching <span style="font-weight:500;color:var(--muted);font-size:12.5px">· spellings fixed, you check the rest</span></div>
             <sc-for list="{{ matches }}" as="m" hint-placeholder-count="11">
               <div style="display:grid;grid-template-columns:minmax(110px,1fr) 18px minmax(160px,1.8fr) auto;gap:6px 8px;padding:8px 16px;border-top:1px solid var(--line);align-items:center;background:{{ m.rowBg }}">
                 <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)">{{ m.raw }}</span><span style="color:var(--accent)">→</span>
                 <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
                   <span style="font-weight:700;font-size:13px">{{ m.fix }}</span><span style="font-size:11.5px;color:var(--muted)">{{ m.note }}</span>
-                  <sc-if value="{{ m.showSugg }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-wrap:wrap;gap:5px"><sc-for list="{{ m.sugg }}" as="s" hint-placeholder-count="2"><button onClick="{{ s.pick }}" style="border:1.5px solid var(--accent);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700;cursor:pointer">{{ s.label }}</button></sc-for></div></sc-if>
+                  <sc-if value="{{ m.showSugg }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-wrap:wrap;gap:5px"><sc-for list="{{ m.sugg }}" as="s" hint-placeholder-count="2"><button style-active="transform:scale(.95)" onClick="{{ s.pick }}" style="border:1.1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:3px 10px;font-size:11.5px;font-weight:700;cursor:pointer">{{ s.label }}</button></sc-for></div></sc-if>
                 </div>
                 <span style="justify-self:end;font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1.5px solid {{ m.stC }};color:{{ m.stC }}">{{ m.st }}</span>
               </div>
@@ -309,16 +326,16 @@ input[type=range]{accent-color:var(--accent)}
           </div>
         </div>
       </sc-if>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px"><button onClick="{{ goCompare }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:12px 22px;font-weight:800;font-size:14px;cursor:pointer">See how your prices compare →</button><span style="color:var(--muted);font-size:13px">{{ upHint }}</span></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px"><button style-active="transform:scale(.95)" onClick="{{ goCompare }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:12px 22px;font-weight:800;font-size:14px;cursor:pointer">See how your prices compare →</button><span style="color:var(--muted);font-size:13px">{{ upHint }}</span></div>
     </section>
   </sc-if>
 
   <!-- COMPARE -->
   <sc-if value="{{ cmpEmpty }}" hint-placeholder-val="{{ false }}">
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:18px;max-width:720px">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:28px;text-transform:uppercase">Nothing to compare yet</div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:14px;max-width:720px">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px;">Nothing to compare yet</div>
       <p style="margin:0;color:var(--muted)">Upload 12 months of purchases and we'll price each drug against NADAC.</p>
-      <button onClick="{{ goUpload }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer">Upload purchase history</button>
+      <button style-active="transform:scale(.95)" onClick="{{ goUpload }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:11px 18px;font-weight:800;cursor:pointer">Upload purchase history</button>
     </div>
   </sc-if>
   <sc-if value="{{ cmpReady }}" hint-placeholder-val="{{ false }}">
@@ -327,18 +344,18 @@ input[type=range]{accent-color:var(--accent)}
         <div role="alert" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;padding:14px 18px;border-radius:14px;background:var(--bad-soft);border:1.5px solid var(--bad)">
           <span style="width:28px;height:28px;border-radius:50%;background:var(--bad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none">!</span>
           <div style="flex:1 1 380px;min-width:0;text-wrap:pretty"><strong>Amoxicillin 500 mg is on the FDA shortage list</strong> <span style="font-size:11px;font-weight:800;color:var(--accent-ink)">· LIVE</span> and you have <strong style="color:var(--bad)">9 days of supply</strong>. It's in the Antibiotics &amp; respiratory round — {{ alert.cta }}</div>
-          <button onClick="{{ goJoin }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:999px;padding:9px 16px;font-weight:800;cursor:pointer">Go to round →</button>
+          <button style-active="transform:scale(.95)" onClick="{{ goJoin }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:10px;padding:9px 16px;font-weight:800;cursor:pointer">Go to round →</button>
         </div>
       </sc-if>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Your spend · Sample</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.spend }}</div></div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Benchmark spend · Live</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.bench }}</div></div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Above NADAC</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.above }} <span style="font-size:17px;color:var(--muted)">of 10</span></div><div style="font-size:12px;font-weight:700;color:var(--bad)">▲ paying more than average</div></div>
-        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Under 14 days of supply</div><div style="font-family:Anton,Impact,sans-serif;font-size:32px">{{ sum.low }}</div><div style="font-size:12px;color:var(--muted)">{{ sum.lowNames }}</div></div>
+        <div style="background:#eaf2fd;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Your spend · Sample</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.spend }}</div></div>
+        <div style="background:#e8f6ef;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Benchmark spend · Live</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.bench }}</div></div>
+        <div style="background:#f1f3f6;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Above NADAC</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.above }} <span style="font-size:17px;color:var(--muted)">of 10</span></div><div style="font-size:12px;font-weight:700;color:var(--bad)">▲ paying more than average</div></div>
+        <div style="background:#e8f6ef;border:1px solid transparent;border-radius:14px;padding:16px 18px"><div style="font-size:12px;font-weight:700;color:var(--muted)">Under 14 days of supply</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px">{{ sum.low }}</div><div style="font-size:12px;color:var(--muted)">{{ sum.lowNames }}</div></div>
       </div>
-      <section style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden">
+      <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
         <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;padding:16px 18px">
-          <span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.02em">Savings by category</span>
+          <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Savings by category</span>
           <span style="color:var(--muted);font-size:12.5px">Click a category to see its drugs, then a drug for details.</span>
         </div>
         <div style="overflow-x:auto">
@@ -373,7 +390,7 @@ input[type=range]{accent-color:var(--accent)}
                     <span style="text-align:right">{{ d.save }}</span>
                     <span style="text-align:right;font-weight:700;color:{{ d.dosC }}">{{ d.dos }}</span>
                     <span><span style="font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;border:1.5px solid {{ d.risk.bd }};color:{{ d.risk.c }}">{{ d.risk.txt }}</span></span>
-                    <span><sc-if value="{{ d.act.show }}" hint-placeholder-val="{{ false }}"><button onClick="{{ d.act.go }}" style="border:1.5px solid {{ d.act.bd }};border-radius:999px;padding:5px 12px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;background:{{ d.act.bg }};color:{{ d.act.fg }}">{{ d.act.label }}</button></sc-if><sc-if value="{{ d.act.none }}" hint-placeholder-val="{{ true }}"><span style="font-size:12px;color:var(--muted)">{{ d.act.txt }}</span></sc-if></span><span style="color:var(--muted);text-align:center">›</span>
+                    <span><sc-if value="{{ d.act.show }}" hint-placeholder-val="{{ false }}"><button style-active="transform:scale(.95)" onClick="{{ d.act.go }}" style="border:1.5px solid {{ d.act.bd }};border-radius:10px;padding:5px 12px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;background:{{ d.act.bg }};color:{{ d.act.fg }}">{{ d.act.label }}</button></sc-if><sc-if value="{{ d.act.none }}" hint-placeholder-val="{{ true }}"><span style="font-size:12px;color:var(--muted)">{{ d.act.txt }}</span></sc-if></span><span style="color:var(--muted);text-align:center">›</span>
                   </div>
                 </sc-for>
               </sc-if>
@@ -386,36 +403,36 @@ input[type=range]{accent-color:var(--accent)}
 
   <!-- SWAP -->
   <sc-if value="{{ swapEmpty }}" hint-placeholder-val="{{ false }}">
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:18px;max-width:720px">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:28px;text-transform:uppercase">No swaps needed right now</div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:14px;max-width:720px">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px;">No swaps needed right now</div>
       <p style="margin:0;color:var(--muted)">Every drug you buy is already in a round, or no FDA-rated equivalent would save you money. We'll check again when new rounds open.</p>
     </div>
   </sc-if>
   <sc-if value="{{ swapReady }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:18px">
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding:20px 22px;border-radius:18px;background:var(--accent-soft);border:2px solid var(--accent)">
-        <div style="display:flex;flex-direction:column"><span style="font-family:Anton,Impact,sans-serif;font-size:56px;line-height:1">{{ swapHero.big }}</span><span style="font-size:13px;font-weight:700;color:var(--accent-ink)">{{ swapHero.sub }}</span></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding:20px 22px;border-radius:14px;background:var(--accent-soft);border:1.1px solid var(--line)">
+        <div style="display:flex;flex-direction:column"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:40px;line-height:1">{{ swapHero.big }}</span><span style="font-size:13px;font-weight:700;color:var(--accent-ink)">{{ swapHero.sub }}</span></div>
         <div style="flex:1 1 320px;font-size:15px;font-weight:600;text-wrap:pretty">{{ swapHero.text }}</div>
-        <button onClick="{{ swapHero.go }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer">{{ swapHero.cta }}</button>
+        <button style-active="transform:scale(.95)" onClick="{{ swapHero.go }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:10px;padding:11px 18px;font-weight:800;cursor:pointer">{{ swapHero.cta }}</button>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px">
         <sc-for list="{{ swapCards }}" as="s" hint-placeholder-count="3">
-          <article style="background:var(--surface);border:2px solid {{ s.bd }};border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px">
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase">{{ s.drug }}</span><span style="font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;background:var(--accent);color:#111;text-transform:uppercase;letter-spacing:.05em">Joins Cardio</span></div>
+          <article style="background:var(--surface);border:2px solid {{ s.bd }};border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">{{ s.drug }}</span><span style="font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;background:var(--accent);color:#fff;text-transform:uppercase;letter-spacing:.05em">Joins Cardio</span></div>
             <div style="display:grid;grid-template-columns:1fr 24px 1fr;gap:8px;align-items:center">
               <div style="padding:10px 12px;border-radius:12px;background:var(--surface-2)"><div style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase">Now</div><div style="font-weight:800">{{ s.cur }}</div><div style="font-size:12px;color:var(--muted)">You pay {{ s.curPrice }}</div></div>
               <span style="text-align:center;font-weight:800;color:var(--accent)">→</span>
-              <div style="padding:10px 12px;border-radius:12px;background:var(--accent-soft);border:1.5px solid var(--accent)"><div style="font-size:11px;font-weight:800;color:var(--accent-ink);text-transform:uppercase">Swap to</div><div style="font-weight:800">{{ s.to }} <span data-tip="FDA Orange Book therapeutic equivalence code. AB = meets bioequivalence requirements." style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:0 5px;border-radius:4px;border:1px solid var(--line-strong);cursor:help">{{ s.code }}</span></div><div style="font-size:12px;color:var(--muted)">Benchmark {{ s.bench }}</div></div>
+              <div style="padding:10px 12px;border-radius:12px;background:var(--accent-soft);border:1.1px solid var(--line)"><div style="font-size:11px;font-weight:800;color:var(--accent-ink);text-transform:uppercase">Swap to</div><div style="font-weight:800">{{ s.to }} <span data-tip="FDA Orange Book therapeutic equivalence code. AB = meets bioequivalence requirements." style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:0 5px;border-radius:4px;border:1px solid var(--line-strong);cursor:help">{{ s.code }}</span></div><div style="font-size:12px;color:var(--muted)">Benchmark {{ s.bench }}</div></div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
               <span style="font-weight:800;color:var(--good)">▲ {{ s.extra }}</span>
-              <button onClick="{{ s.go }}" style="border:2px solid var(--accent);border-radius:999px;padding:8px 16px;font-weight:800;cursor:pointer;background:{{ s.bg }};color:{{ s.fg }}">{{ s.btn }}</button>
+              <button style-active="transform:scale(.95)" onClick="{{ s.go }}" style="border:1.1px solid var(--line);border-radius:10px;padding:8px 16px;font-weight:800;cursor:pointer;background:{{ s.bg }};color:{{ s.fg }}">{{ s.btn }}</button>
             </div>
           </article>
         </sc-for>
       </div>
-      <section style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden">
-        <div style="padding:14px 18px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline"><span style="font-family:Anton,Impact,sans-serif;font-size:20px;text-transform:uppercase">Other equivalents</span><span style="font-size:12.5px;color:var(--muted)">Not in an open round yet. FDA Orange Book · Live</span></div>
+      <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+        <div style="padding:14px 18px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:20px;">Other equivalents</span><span style="font-size:12.5px;color:var(--muted)">Not in an open round yet. FDA Orange Book · Live</span></div>
         <sc-for list="{{ otherSwaps }}" as="o" hint-placeholder-count="7">
           <div onClick="{{ o.open }}" style="display:grid;grid-template-columns:minmax(180px,1fr) minmax(220px,2fr) 24px;gap:10px;padding:10px 18px;border-top:1px solid var(--line);align-items:center;cursor:pointer" style-hover="background:var(--surface-2)">
             <span><strong>{{ o.drug }}</strong> <span style="color:var(--muted);font-size:12.5px">· now {{ o.cur }}</span></span>
@@ -430,70 +447,115 @@ input[type=range]{accent-color:var(--accent)}
 
   <!-- JOIN -->
   <sc-if value="{{ joinEmpty }}" hint-placeholder-val="{{ false }}">
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:18px;max-width:720px">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:28px;text-transform:uppercase">No rounds available right now</div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:14px;max-width:720px">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px;">No rounds available right now</div>
       <p style="margin:0;color:var(--muted);max-width:520px">New rounds open when enough Massachusetts pharmacies need the same drugs. We'll email you when one matches your purchases — usually every 2–3 weeks.</p>
     </div>
   </sc-if>
   <sc-if value="{{ joinReady }}" hint-placeholder-val="{{ false }}">
     <sc-if value="{{ q.notAwarded }}" hint-placeholder-val="{{ true }}">
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:14px 18px;border-radius:16px;background:var(--accent-soft);border:2px solid var(--accent)">
-        <span style="font-family:Anton,Impact,sans-serif;font-size:18px;text-transform:uppercase;white-space:nowrap">Decision needed</span>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:14px 18px;border-radius:14px;background:var(--accent-soft);border:1.1px solid var(--line)">
+        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:18px;white-space:nowrap">Decision needed</span>
         <span style="flex:1 1 320px;font-weight:600">Quotes are in for the Diabetes &amp; thyroid round · {{ q.headSub }}</span>
-        <button onClick="{{ goAward }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:999px;padding:9px 16px;font-weight:800;cursor:pointer;white-space:nowrap">Review &amp; award ↓</button>
+        <button style-active="transform:scale(.95)" onClick="{{ goAward }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:10px;padding:9px 16px;font-weight:800;cursor:pointer;white-space:nowrap">Review in Award →</button>
       </div>
     </sc-if>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px">
       <sc-for list="{{ rounds }}" as="r" hint-placeholder-count="5">
-        <article style="background:var(--surface);border:2px solid {{ r.bd }};border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:14px;opacity:{{ r.op }}">
+        <article style="background:var(--surface);border:2px solid {{ r.bd }};border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;opacity:{{ r.op }}">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
             <span style="font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;padding:3px 10px;border-radius:999px;border:1.5px solid {{ r.tagBd }};background:{{ r.tagBg }};color:{{ r.tagC }}">{{ r.tag }}</span>
             <span style="font-size:12.5px;color:var(--muted);white-space:nowrap">{{ r.timeLabel }} <strong style="color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px">{{ r.time }}</strong></span>
           </div>
           <div>
-            <div style="font-family:Anton,Impact,sans-serif;font-size:26px;line-height:1.1;text-transform:uppercase;letter-spacing:.01em">{{ r.name }}</div>
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:26px;line-height:1.1;">{{ r.name }}</div>
             <div style="margin-top:4px;font-weight:800;color:var(--accent-ink)">{{ r.save }}</div>
           </div>
           <div style="display:flex;flex-direction:column;gap:6px">
             <div style="height:12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)"><div style="height:100%;border-radius:999px;background:var(--accent);width:{{ r.barW }}"></div></div>
             <div style="font-size:12.5px;font-weight:700">{{ r.pctTxt }}</div>
           </div>
+          <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px"><sc-for list="{{ r.tl }}" as="t" hint-placeholder-count="4"><div style="display:flex;flex-direction:column;gap:5px;min-width:0"><div style="height:4px;border-radius:2px;background:{{ t.c }}"></div><span style="font-size:11px;font-weight:700;line-height:1.2;color:{{ t.fc }}">{{ t.l }}</span></div></sc-for></div>
           <div style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ r.drugs }}" as="g" hint-placeholder-count="4"><span style="font-size:12px;padding:3px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);white-space:nowrap">{{ g.t }}</span></sc-for></div>
           <div style="font-size:12.5px;color:var(--muted)">Confirmation rate on past rounds: <strong style="color:var(--ink)">{{ r.rate }}</strong></div>
           <sc-if value="{{ r.isOpen }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button onClick="{{ r.onOpt }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:10px 20px;font-weight:800;cursor:pointer">Opt in</button><span style="font-size:12px;color:var(--muted)">Non-binding until the round hits its target.</span></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button style-active="transform:scale(.95)" onClick="{{ r.onOpt }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:10px 20px;font-weight:800;cursor:pointer">Opt in</button><span style="font-size:12px;color:var(--muted)">Non-binding until the round hits its target.</span></div>
           </sc-if>
           <sc-if value="{{ r.isTarget }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:14px;background:var(--accent-soft);border:1.5px solid var(--accent)">
+            <div style="display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:14px;background:var(--accent-soft);border:1.1px solid var(--line)">
               <div style="font-weight:700">Target reached. Confirm or drop out within <span style="font-family:'JetBrains Mono',monospace;white-space:nowrap">{{ r.time }}</span>.</div>
-              <div style="display:flex;gap:10px;flex-wrap:wrap"><button onClick="{{ r.onConfirm }}" style="white-space:nowrap;border:0;background:var(--accent);color:#111;border-radius:999px;padding:10px 20px;font-weight:800;cursor:pointer">Confirm</button><button onClick="{{ r.onDrop }}" style="white-space:nowrap;border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer">Drop out</button></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap"><button style-active="transform:scale(.95)" onClick="{{ r.onConfirm }}" style="white-space:nowrap;border:0;background:var(--accent);color:#fff;border-radius:10px;padding:10px 20px;font-weight:800;cursor:pointer">Confirm</button><button style-active="transform:scale(.95)" onClick="{{ r.onDrop }}" style="white-space:nowrap;border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:9px 16px;font-weight:700;cursor:pointer">Drop out</button></div>
             </div>
           </sc-if>
           <sc-if value="{{ r.hasNote }}" hint-placeholder-val="{{ false }}">
             <div style="font-size:13px;font-weight:700;color:{{ r.noteC }}">{{ r.note }}</div>
           </sc-if>
           <sc-if value="{{ r.isQuotes }}" hint-placeholder-val="{{ false }}">
-            <div><button onClick="{{ goAward }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:999px;padding:10px 18px;font-weight:800;cursor:pointer;white-space:nowrap">Review quotes &amp; award →</button></div>
+            <div><button style-active="transform:scale(.95)" onClick="{{ goAward }}" style="border:0;background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 18px;font-weight:800;cursor:pointer;white-space:nowrap">Review quotes &amp; award →</button></div>
           </sc-if>
         </article>
       </sc-for>
     </div>
   </sc-if>
 
-  <sc-if value="{{ joinReady }}" hint-placeholder-val="{{ false }}">
+  <sc-if value="{{ awardReady }}" hint-placeholder-val="{{ false }}">
+    <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:16px 20px;border-bottom:1px solid var(--line)">
+        <h2 style="font-size:20px;font-weight:800;margin:0;letter-spacing:-.015em">Your actions</h2>
+        <span style="min-width:24px;height:24px;border-radius:12px;background:#ef4444;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 7px">{{ aq.count }}</span>
+        <span style="flex:1"></span>
+        <span style="font-size:13px;color:var(--muted)">Est. savings</span>
+        <span style="font-size:20px;font-weight:800;color:var(--accent-ink);white-space:nowrap">{{ aq.total }}</span>
+        <span style="font-size:13px;font-weight:700;color:var(--muted)">{{ aq.pct }}</span>
+      </div>
+      <sc-if value="{{ aq.empty }}" hint-placeholder-val="{{ true }}">
+        <div style="padding:26px 20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+          <span style="font-weight:800;font-size:16px">{{ aq.emptyTitle }}</span>
+          <span style="color:var(--muted);max-width:560px">Approve swaps, join or confirm rounds, and reorder low stock. Each action lands here so you can review everything once and submit.</span>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button style-active="transform:scale(.95)" onClick="{{ goCompare }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer">Compare</button>
+            <button style-active="transform:scale(.95)" onClick="{{ goSwap }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer">Swap</button>
+            <button style-active="transform:scale(.95)" onClick="{{ goJoin }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer">Join</button>
+          </div>
+        </div>
+      </sc-if>
+      <sc-for list="{{ aq.items }}" as="it" hint-placeholder-count="0">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:14px 20px;border-bottom:1px solid var(--line)">
+          <span style="font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:8px;white-space:nowrap;background:{{ it.bg }};color:{{ it.fg }}">{{ it.kind }}</span>
+          <div style="flex:1 1 280px;min-width:0"><div style="font-weight:700">{{ it.title }}</div><div style="font-size:12.5px;color:var(--muted)">{{ it.detail }} · from {{ it.tab }}</div></div>
+          <div style="text-align:right"><div style="font-weight:800;white-space:nowrap">{{ it.val }}</div><div style="font-size:12px;color:var(--muted);white-space:nowrap">{{ it.pct }}</div></div>
+          <button style-active="transform:scale(.95)" onClick="{{ it.remove }}" style="border:1px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:7px 12px;font-weight:700;cursor:pointer;white-space:nowrap">Remove</button>
+        </div>
+      </sc-for>
+      <sc-if value="{{ aq.has }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;padding:16px 20px;background:var(--surface-2)">
+          <span style="flex:1 1 300px;font-size:13px;color:var(--muted)">Nothing is sent until you submit. Round opt-ins stay non-binding until each round hits its target.</span>
+          <button style-active="transform:scale(.95)" onClick="{{ aq.submit }}" disabled="{{ aq.submitting }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:12px 22px;font-weight:800;font-size:15px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:10px"><sc-if value="{{ aq.submitting }}" hint-placeholder-val="{{ false }}"><span style="width:14px;height:14px;border-radius:50%;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;animation:ppSpin .7s linear infinite"></span></sc-if>{{ aq.submitLabel }}</button>
+        </div>
+        <sc-if value="{{ aq.submitting }}" hint-placeholder-val="{{ false }}"><div style="height:4px;background:var(--line);overflow:hidden;position:relative"><div style="position:absolute;top:0;bottom:0;width:40%;background:var(--accent);animation:prBar 1s linear infinite"></div></div></sc-if>
+      </sc-if>
+    </section>
+    <sc-if value="{{ aq.hasHistory }}" hint-placeholder-val="{{ false }}">
+      <section role="status" style="background:var(--good-soft);border:1px solid var(--good);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--good);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</span><span style="font-weight:800;font-size:16px">{{ aq.histTitle }}</span></div>
+        <sc-for list="{{ aq.history }}" as="it" hint-placeholder-count="0"><div style="display:flex;gap:10px;font-size:13.5px;align-items:baseline"><span style="color:var(--good);font-weight:800">✓</span><span style="flex:1">{{ it.title }}</span><span style="font-weight:700;white-space:nowrap">{{ it.val }}</span></div></sc-for>
+      </section>
+    </sc-if>
+  </sc-if>
+  <sc-if value="{{ awardReady }}" hint-placeholder-val="{{ false }}">
     <section id="award" style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;justify-content:space-between">
-        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:Anton,Impact,sans-serif;font-weight:400;font-size:28px;text-transform:uppercase;margin:0">Award: Diabetes &amp; thyroid</h2><span style="color:var(--muted);font-size:13px">Diabetes &amp; thyroid round · 3 supplier quotes received Oct 23</span></div>
-        <div style="display:flex;border:1.5px solid var(--line-strong);border-radius:999px;padding:3px;gap:2px;background:var(--surface)">
-          <button onClick="{{ q.viewMine }}" style="border:0;border-radius:999px;padding:6px 14px;font-weight:700;font-size:12.5px;cursor:pointer;white-space:nowrap;background:{{ q.mineBg }};color:{{ q.mineFg }}">Supplier quotes</button>
-          <button onClick="{{ q.viewSup }}" style="border:0;border-radius:999px;padding:6px 14px;font-weight:700;font-size:12.5px;cursor:pointer;white-space:nowrap;background:{{ q.supBg }};color:{{ q.supFg }}">What suppliers see</button>
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;margin:0">Award: Diabetes &amp; thyroid</h2><span style="color:var(--muted);font-size:13px">Diabetes &amp; thyroid round · 3 supplier quotes received Oct 23</span></div>
+        <div style="display:flex;border:1.5px solid var(--line-strong);border-radius:10px;padding:3px;gap:2px;background:var(--surface)">
+          <button style-active="transform:scale(.95)" onClick="{{ q.viewMine }}" style="border:0;border-radius:10px;padding:6px 14px;font-weight:700;font-size:12.5px;cursor:pointer;white-space:nowrap;background:{{ q.mineBg }};color:{{ q.mineFg }}">Supplier quotes</button>
+          <button style-active="transform:scale(.95)" onClick="{{ q.viewSup }}" style="border:0;border-radius:10px;padding:6px 14px;font-weight:700;font-size:12.5px;cursor:pointer;white-space:nowrap;background:{{ q.supBg }};color:{{ q.supFg }}">What suppliers see</button>
         </div>
       </div>
 
-      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 28px;padding:20px 22px;border-radius:20px;background:var(--accent-soft);border:2.5px solid var(--accent)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 28px;padding:20px 22px;border-radius:14px;background:var(--accent-soft);border:1.1px solid var(--line)">
         <div style="display:flex;flex-direction:column;gap:4px">
           <span style="font-size:14px;font-weight:700;color:var(--muted);text-decoration:line-through;opacity:{{ q.oldOp }}">Estimated 8–14%</span>
-          <span style="font-family:Anton,Impact,sans-serif;font-size:clamp(40px,5vw,72px);line-height:.95;white-space:nowrap;font-variant-numeric:tabular-nums">{{ q.headline }}</span>
+          <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:clamp(32px,3.6vw,48px);line-height:.95;white-space:nowrap;font-variant-numeric:tabular-nums">{{ q.headline }}</span>
         </div>
         <div style="font-size:15px;font-weight:700;padding-bottom:6px">{{ q.headSub }}</div>
       </div>
@@ -501,18 +563,18 @@ input[type=range]{accent-color:var(--accent)}
         <div role="status" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:16px 18px;border-radius:14px;background:var(--good-soft);border:1.5px solid var(--good)">
           <span style="width:28px;height:28px;border-radius:50%;background:var(--good);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">✓</span>
           <div style="flex:1;min-width:240px"><div style="font-weight:800">{{ q.awardTitle }}</div><div style="font-size:13px">Orders ship Nov 3. You'll get a confirmation email with your share and invoice terms.</div></div>
-          <button onClick="{{ q.undo }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer">Undo</button>
+          <button style-active="transform:scale(.95)" onClick="{{ q.undo }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer">Undo</button>
         </div>
       </sc-if>
 
-      <div style="background:var(--surface);border:2.5px solid var(--ink);border-radius:20px;padding:22px;display:flex;flex-wrap:wrap;gap:20px 36px">
+      <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-wrap:wrap;gap:20px 36px">
         <div style="flex:1 1 340px;display:flex;flex-direction:column;gap:10px">
           <span style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">PharmaPool recommends</span>
-          <span style="font-family:Anton,Impact,sans-serif;font-size:38px;text-transform:uppercase;line-height:1">Supplier {{ q.rec }}</span>
+          <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:30px;line-height:1">Supplier {{ q.rec }}</span>
           <p style="margin:0;line-height:1.55;max-width:520px;text-wrap:pretty">{{ q.reason }}</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
-            <button onClick="{{ q.accept }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:11px 20px;font-weight:800;cursor:pointer">Accept recommendation</button>
-            <button onClick="{{ q.other }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer">Choose a different supplier</button>
+            <button style-active="transform:scale(.95)" onClick="{{ q.accept }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:11px 20px;font-weight:800;cursor:pointer">Accept recommendation</button>
+            <button style-active="transform:scale(.95)" onClick="{{ q.other }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:10px 18px;font-weight:700;cursor:pointer">Choose a different supplier</button>
           </div>
         </div>
         <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
@@ -526,24 +588,24 @@ input[type=range]{accent-color:var(--accent)}
             <div style="display:grid;grid-template-columns:86px 1fr 40px;gap:10px;align-items:center;font-size:13px">
               <span style="font-weight:800;color:{{ s.c }}">Supplier {{ s.id }}</span>
               <div style="display:flex;height:12px;border-radius:999px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line)">
-                <div data-tip="{{ s.tP }}" style="width:{{ s.p }};background:var(--accent)"></div><div data-tip="{{ s.tD }}" style="width:{{ s.d }};background:#ffc58a"></div><div data-tip="{{ s.tR }}" style="width:{{ s.r }};background:var(--ink)"></div>
+                <div data-tip="{{ s.tP }}" style="width:{{ s.p }};background:var(--accent)"></div><div data-tip="{{ s.tD }}" style="width:{{ s.d }};background:#60a5fa"></div><div data-tip="{{ s.tR }}" style="width:{{ s.r }};background:var(--ink)"></div>
               </div>
               <span style="text-align:right;font-family:'JetBrains Mono',monospace;font-weight:600">{{ s.total }}</span>
             </div>
           </sc-for>
-          <div style="display:flex;gap:14px;font-size:11.5px;color:var(--muted)"><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--accent)"></span> Price</span><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:#ffc58a"></span> Delivery</span><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--ink)"></span> Reliability</span></div>
+          <div style="display:flex;gap:14px;font-size:11.5px;color:var(--muted)"><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--accent)"></span> Price</span><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:#60a5fa"></span> Delivery</span><span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--ink)"></span> Reliability</span></div>
         </div>
       </div>
 
       <sc-if value="{{ q.showCards }}" hint-placeholder-val="{{ true }}">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px">
           <sc-for list="{{ q.cards }}" as="s" hint-placeholder-count="3">
-            <article style="background:var(--surface);border:{{ s.bd }};border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px">
+            <article style="background:var(--surface);border:{{ s.bd }};border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px">
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-                <span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase">Supplier {{ s.id }}</span>
-                <span data-tip="Synthetic supplier quote for the demo." style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help">Sample</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Supplier {{ s.id }}</span>
+                <span data-tip="Synthetic supplier quote for the demo." style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help">Sample</span>
                 <span style="flex:1"></span>
-                <sc-if value="{{ s.isRec }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#111;padding:3px 9px;border-radius:999px">Recommended</span></sc-if>
+                <sc-if value="{{ s.isRec }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#fff;padding:3px 9px;border-radius:999px">Recommended</span></sc-if>
               </div>
               <div style="display:flex;flex-direction:column;font-size:13px">
                 <sc-for list="{{ s.lines }}" as="l" hint-placeholder-count="3">
@@ -557,12 +619,12 @@ input[type=range]{accent-color:var(--accent)}
                 <span style="color:var(--muted)">Minimum order</span><span style="text-align:right;font-weight:600">{{ s.min }}</span>
               </div>
               <div style="padding:10px 12px;border-radius:12px;background:var(--surface-2);display:flex;flex-direction:column;gap:6px">
-                <div style="display:flex;align-items:center;gap:8px"><span data-tip="Based on each manufacturer's FDA shortage history over 3 years (openFDA drug shortages, updated Oct 24, 2026)." style="font-size:12px;font-weight:700;color:var(--muted);cursor:help;border-bottom:1px dotted var(--muted)">Supply reliability</span><span style="display:inline-flex;align-items:center;gap:5px;border:1.5px solid var(--accent);color:var(--accent-ink);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span><span style="flex:1"></span><span style="font-family:Anton,Impact,sans-serif;font-size:22px">{{ s.rel }}</span></div>
+                <div style="display:flex;align-items:center;gap:8px"><span data-tip="Based on each manufacturer's FDA shortage history over 3 years (openFDA drug shortages, updated Oct 24, 2026)." style="font-size:12px;font-weight:700;color:var(--muted);cursor:help;border-bottom:1px dotted var(--muted)">Supply reliability</span><span style="display:inline-flex;align-items:center;gap:5px;border:1.1px solid var(--line);color:var(--accent-ink);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span><span style="flex:1"></span><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px">{{ s.rel }}</span></div>
                 <div style="height:6px;border-radius:999px;background:var(--line)"><div style="height:100%;border-radius:999px;background:var(--accent);width:{{ s.relW }}"></div></div>
                 <span style="font-size:12px;color:var(--muted)">{{ s.relTxt }}</span>
               </div>
               <sc-if value="{{ q.choosing }}" hint-placeholder-val="{{ false }}">
-                <button onClick="{{ s.choose }}" style="border:1.5px solid var(--accent);background:transparent;color:var(--ink);border-radius:999px;padding:9px 14px;font-weight:800;cursor:pointer">Award to Supplier {{ s.id }}</button>
+                <button style-active="transform:scale(.95)" onClick="{{ s.choose }}" style="border:1.1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:9px 14px;font-weight:800;cursor:pointer">Award to Supplier {{ s.id }}</button>
               </sc-if>
             </article>
           </sc-for>
@@ -571,16 +633,16 @@ input[type=range]{accent-color:var(--accent)}
 
       <sc-if value="{{ q.showSup }}" hint-placeholder-val="{{ false }}">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
-          <section style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px">
             <span style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Your view</span>
-            <div style="font-weight:800;font-size:16px">Harbor Street Pharmacy <span style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;vertical-align:2px">Sample</span></div>
+            <div style="font-weight:800;font-size:16px">Harbor Street Pharmacy <span style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;vertical-align:2px">Sample</span></div>
             <div style="display:grid;grid-template-columns:1fr auto auto auto;gap:6px 14px;font-size:13px;font-variant-numeric:tabular-nums">
               <span style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase">Product</span><span style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;text-align:right">You pay</span><span style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;text-align:right">On hand</span><span style="font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;text-align:right">Commit</span>
               <span>Metformin 500 mg</span><span style="text-align:right">$0.0310</span><span style="text-align:right">100,800</span><span style="text-align:right">255,600</span>
               <span>Levothyroxine 50 mcg</span><span style="text-align:right">$0.1120</span><span style="text-align:right">31,800</span><span style="text-align:right">111,600</span>
             </div>
           </section>
-          <section style="background:var(--accent-soft);border:2px solid var(--accent);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <section style="background:var(--accent-soft);border:1.1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px">
             <span style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Supplier view</span>
             <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px"><span><strong>22</strong> pharmacies</span><span>Region: <strong>Massachusetts</strong></span><span>Cadence: <strong>monthly, 3-month term</strong></span></div>
             <div style="display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:13px;font-variant-numeric:tabular-nums">
@@ -602,28 +664,28 @@ input[type=range]{accent-color:var(--accent)}
 
   <!-- SOURCES -->
   <sc-if value="{{ srcEmpty }}" hint-placeholder-val="{{ false }}">
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:18px;max-width:720px">
-      <div style="font-family:Anton,Impact,sans-serif;font-size:28px;text-transform:uppercase">Feeds not connected yet</div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:36px;border:2px dashed var(--line-strong);border-radius:14px;max-width:720px">
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px;">Feeds not connected yet</div>
       <p style="margin:0;color:var(--muted)">The first refresh runs a few minutes after setup. Until then, benchmark columns show “—”.</p>
-      <button onClick="{{ retry }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:10px 18px;font-weight:800;cursor:pointer">Refresh now</button>
+      <button style-active="transform:scale(.95)" onClick="{{ retry }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:10px 18px;font-weight:800;cursor:pointer">Refresh now</button>
     </div>
   </sc-if>
   <sc-if value="{{ srcReady }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;flex-direction:column;gap:22px">
-      <section style="background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden">
-        <div style="padding:16px 18px"><span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase">Government benchmark feeds</span></div>
+      <section style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+        <div style="padding:16px 18px"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Government benchmark feeds</span></div>
         <div style="overflow-x:auto"><div style="min-width:820px">
           <div style="display:grid;grid-template-columns:minmax(180px,1fr) minmax(240px,2fr) 100px minmax(200px,1.3fr) 110px;gap:12px;padding:10px 18px;background:var(--surface-2);font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)"><span>Feed</span><span>What it's used for</span><span>Refresh</span><span>Last refresh</span><span>Status</span></div>
           <sc-for list="{{ feeds }}" as="f" hint-placeholder-count="3">
             <div style="display:grid;grid-template-columns:minmax(180px,1fr) minmax(240px,2fr) 100px minmax(200px,1.3fr) 110px;gap:12px;padding:14px 18px;border-top:1px solid var(--line);align-items:center">
               <span style="font-weight:800">{{ f.name }}</span><span style="color:var(--muted);font-size:13px">{{ f.what }}</span><span>{{ f.cad }}</span><span style="font-size:13px">{{ f.last }}</span>
-              <span><span style="display:inline-flex;align-items:center;gap:5px;border:1.5px solid {{ f.bd }};color:{{ f.c }};border-radius:999px;padding:0 9px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:18px"><span style="width:6px;height:6px;border-radius:50%;background:{{ f.bd }}"></span>{{ f.status }}</span></span>
+              <span><span style="display:inline-flex;align-items:center;gap:5px;border:1.5px solid {{ f.bd }};color:{{ f.c }};border-radius:10px;padding:0 9px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:18px"><span style="width:6px;height:6px;border-radius:50%;background:{{ f.bd }}"></span>{{ f.status }}</span></span>
             </div>
           </sc-for>
         </div></div>
       </section>
-      <section style="border:2px dashed var(--line-strong);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;max-width:880px">
-        <div style="display:flex;align-items:center;gap:10px"><span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase">Sample member data</span><span style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px">Sample</span></div>
+      <section style="border:2px dashed var(--line-strong);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;max-width:880px">
+        <div style="display:flex;align-items:center;gap:10px"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Sample member data</span><span style="display:inline-flex;border:1.5px solid var(--line-strong);color:var(--muted);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px">Sample</span></div>
         <p style="margin:0;text-wrap:pretty">Purchase histories, inventory counts, other pharmacies' commitments and supplier quotes in this demo are <strong>synthetic</strong>. No real member or supplier data is used.</p>
         <p style="margin:0;color:var(--muted);font-size:13px">Anything marked “Sample” comes from this synthetic set. Anything marked “Live” comes from the government feeds above.</p>
       </section>
@@ -632,14 +694,14 @@ input[type=range]{accent-color:var(--accent)}
 </main>
 
 <sc-if value="{{ chatClosed }}" hint-placeholder-val="{{ true }}">
-  <button onClick="{{ toggleChat }}" style="position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:10px;border:2.5px solid var(--ink);background:var(--accent);color:#111;border-radius:999px;padding:10px 20px 10px 10px;font-weight:800;font-size:14px;cursor:pointer;box-shadow:var(--shadow)"><span style="width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:Anton,Impact,sans-serif;font-size:15px">?</span>Ask PharmaPool</button>
+  <button style-active="transform:scale(.95)" onClick="{{ toggleChat }}" style="position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--accent);color:#fff;border-radius:10px;padding:10px 20px 10px 10px;font-weight:800;font-size:14px;cursor:pointer;white-space:nowrap;box-shadow:var(--shadow)"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:15px">?</span>Ask PharmaPool</button>
 </sc-if>
 <sc-if value="{{ chatOpen }}" hint-placeholder-val="{{ false }}">
-  <aside style="position:fixed;right:20px;bottom:20px;z-index:70;width:min(390px,calc(100vw - 40px));height:min(600px,calc(100vh - 40px));border:2.5px solid var(--ink);border-radius:20px;background:var(--surface);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden">
+  <aside style="position:fixed;right:20px;bottom:20px;z-index:70;width:min(390px,calc(100vw - 40px));height:min(600px,calc(100vh - 40px));border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden">
     <div style="display:flex;align-items:center;gap:10px;padding:16px 18px 8px">
-      <span style="font-family:Anton,Impact,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.02em">Ask Pharma<span style="color:var(--accent)">Pool</span></span>
+      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:22px;">Ask Pharma<span style="color:var(--accent)">Pool</span></span>
       <span style="flex:1"></span>
-      <button onClick="{{ toggleChat }}" aria-label="Close" style="border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px">×</button>
+      <button style-active="transform:scale(.95)" onClick="{{ toggleChat }}" aria-label="Close" style="border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px">×</button>
     </div>
     <div style="padding:0 18px 10px;font-size:12px;color:var(--muted)">Answers use your data (Sample) and today's benchmarks (Live). PharmaPool never shares your numbers.</div>
     <div ref="{{ msgRef }}" style="flex:1;overflow-y:auto;padding:8px 18px;display:flex;flex-direction:column;gap:10px">
@@ -649,53 +711,63 @@ input[type=range]{accent-color:var(--accent)}
       <sc-if value="{{ busy }}" hint-placeholder-val="{{ false }}"><div style="align-self:flex-start;color:var(--muted);font-size:13px;animation:prPulse 1s infinite">Checking your data…</div></sc-if>
     </div>
     <div style="display:flex;flex-direction:column;gap:6px;padding:10px 18px">
-      <sc-for list="{{ sugg }}" as="s" hint-placeholder-count="3"><button onClick="{{ s.go }}" style="text-align:left;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:12px;padding:7px 11px;font-size:12.5px;font-weight:600;cursor:pointer" style-hover="border-color:var(--accent)">{{ s.t }}</button></sc-for>
+      <sc-for list="{{ sugg }}" as="s" hint-placeholder-count="3"><button style-active="transform:scale(.95)" onClick="{{ s.go }}" style="text-align:left;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:12px;padding:7px 11px;font-size:12.5px;font-weight:600;cursor:pointer" style-hover="border-color:var(--accent)">{{ s.t }}</button></sc-for>
     </div>
     <div style="display:flex;gap:8px;padding:10px 18px 18px;border-top:1px solid var(--line)">
-      <input value="{{ chatIn }}" onChange="{{ onChatIn }}" onKeyDown="{{ onChatKey }}" placeholder="Ask about prices, stock, rounds…" style="flex:1;min-width:0;border:1.5px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:999px;padding:10px 14px;font-size:13.5px">
-      <button onClick="{{ send }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:0 16px;font-weight:800;cursor:pointer">Ask</button>
+      <input value="{{ chatIn }}" onChange="{{ onChatIn }}" onKeyDown="{{ onChatKey }}" placeholder="Ask about prices, stock, rounds…" style="flex:1;min-width:0;border:1.5px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:13.5px">
+      <button style-active="transform:scale(.95)" onClick="{{ send }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:0 16px;font-weight:800;cursor:pointer">Ask</button>
     </div>
   </aside>
 </sc-if>
 </div>
 
-<footer style="border-top:5px solid var(--accent);background:var(--surface);color:var(--muted);padding:18px 24px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center">
+<sc-if value="{{ rb.show }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;left:252px;bottom:20px;z-index:65;display:flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:14px;padding:9px 10px 9px 12px;box-shadow:var(--shadow);white-space:nowrap">
+    <span style="min-width:26px;height:26px;border-radius:13px;background:#ef4444;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;padding:0 7px;animation:{{ rb.anim }}">{{ rb.n }}</span>
+    <span style="font-weight:700;font-size:13.5px">{{ rb.text }}</span>
+    <button style-active="transform:scale(.95)" onClick="{{ goAwardPage }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:8px 14px;font-weight:800;cursor:pointer">Review in Award →</button>
+  </div>
+</sc-if>
+<sc-if value="{{ hasFly }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;z-index:95;pointer-events:none;background:#ef4444;color:#fff;font-weight:800;font-size:14px;border-radius:999px;padding:5px 11px;box-shadow:0 8px 20px rgba(239,68,68,.4);left:{{ fly.left }};top:{{ fly.top }};opacity:{{ fly.op }};transform:{{ fly.sc }};transition:{{ fly.tr }}">+1</div>
+</sc-if>
+<footer style="border-top:1px solid var(--line);background:var(--surface);color:var(--muted);padding:18px 24px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center">
   <span>Benchmarks: CMS NADAC, FDA Orange Book, openFDA drug shortages. Member data anonymized and aggregated.</span>
-  <span style="font-family:Anton,Impact,sans-serif;letter-spacing:.08em;color:var(--ink)">PHARMA<span style="color:var(--accent)">POOL</span> · HACKACHUSETTS 2026</span>
+  <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;color:var(--ink)">Pharma<span style="color:var(--accent)">Pool</span> · Hackachusetts 2026</span>
 </footer>
 
 <sc-if value="{{ drOpen }}" hint-placeholder-val="{{ false }}">
   <div onClick="{{ closeDrawer }}" style="position:fixed;inset:0;background:rgba(20,15,5,.4);z-index:50"></div>
-  <aside role="dialog" style="position:fixed;top:0;right:0;bottom:0;width:min(600px,100vw);background:var(--surface);z-index:51;overflow-y:auto;box-shadow:var(--shadow);border-left:5px solid var(--accent);display:flex;flex-direction:column">
+  <aside role="dialog" style="position:fixed;top:0;right:0;bottom:0;width:min(600px,100vw);background:var(--surface);z-index:51;overflow-y:auto;box-shadow:var(--shadow);border-left:1px solid var(--line);display:flex;flex-direction:column">
     <div style="padding:20px 24px;display:flex;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line)">
       <div style="flex:1">
         <div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">{{ dr.cat }}</div>
-        <div style="font-family:Anton,Impact,sans-serif;font-size:30px;text-transform:uppercase;line-height:1.1">{{ dr.title }}</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:30px;line-height:1.1">{{ dr.title }}</div>
         <div style="color:var(--muted);font-size:13px">{{ dr.sub }}</div>
       </div>
-      <button onClick="{{ closeDrawer }}" aria-label="Close" style="border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:18px">×</button>
+      <button style-active="transform:scale(.95)" onClick="{{ closeDrawer }}" aria-label="Close" style="border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:18px">×</button>
     </div>
     <div style="padding:20px 24px;display:flex;flex-direction:column;gap:22px">
       <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
-        <div style="padding:12px;border-radius:12px;background:var(--surface-2)"><div style="font-size:11.5px;color:var(--muted);font-weight:700">You pay</div><div style="font-family:Anton,Impact,sans-serif;font-size:24px">{{ dr.paid }}</div><div style="font-size:12px;font-weight:700;color:{{ dr.gap.c }}">{{ dr.gap.txt }}</div></div>
-        <div data-tip="{{ dr.nadacTip }}" style="padding:12px;border-radius:12px;background:var(--surface-2);cursor:help"><div style="font-size:11.5px;color:var(--muted);font-weight:700">NADAC <span style="color:var(--accent-ink)">· Live</span></div><div style="font-family:Anton,Impact,sans-serif;font-size:24px">{{ dr.nadac }}</div><div style="font-size:12px;color:var(--muted)">per {{ dr.unit }}</div></div>
-        <div style="padding:12px;border-radius:12px;background:var(--surface-2)"><div style="font-size:11.5px;color:var(--muted);font-weight:700">On hand</div><div style="font-family:Anton,Impact,sans-serif;font-size:24px">{{ dr.onHand }}</div><div style="font-size:12px;font-weight:700;color:{{ dr.dosC }}">{{ dr.dos }} · {{ dr.perDay }}/day</div></div>
+        <div style="padding:12px;border-radius:12px;background:var(--surface-2)"><div style="font-size:11.5px;color:var(--muted);font-weight:700">You pay</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:24px">{{ dr.paid }}</div><div style="font-size:12px;font-weight:700;color:{{ dr.gap.c }}">{{ dr.gap.txt }}</div></div>
+        <div data-tip="{{ dr.nadacTip }}" style="padding:12px;border-radius:12px;background:var(--surface-2);cursor:help"><div style="font-size:11.5px;color:var(--muted);font-weight:700">NADAC <span style="color:var(--accent-ink)">· Live</span></div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:24px">{{ dr.nadac }}</div><div style="font-size:12px;color:var(--muted)">per {{ dr.unit }}</div></div>
+        <div style="padding:12px;border-radius:12px;background:var(--surface-2)"><div style="font-size:11.5px;color:var(--muted);font-weight:700">On hand</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:24px">{{ dr.onHand }}</div><div style="font-size:12px;font-weight:700;color:{{ dr.dosC }}">{{ dr.dos }} · {{ dr.perDay }}/day</div></div>
       </div>
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 14px;border-radius:12px;border:1.5px solid {{ dr.short.bd }};background:{{ dr.short.bg }}">
         <span style="font-weight:800">FDA shortage status</span>
-        <span data-tip="openFDA drug shortages, updated Oct 24, 2026" style="display:inline-flex;align-items:center;gap:5px;border:1.5px solid var(--accent);color:var(--accent-ink);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span>
+        <span data-tip="openFDA drug shortages, updated Oct 24, 2026" style="display:inline-flex;align-items:center;gap:5px;border:1.1px solid var(--line);color:var(--accent-ink);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span>
         <span style="font-weight:700;color:{{ dr.short.c }}">{{ dr.short.txt }}</span>
       </div>
       <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><span style="font-weight:800">Your price vs. benchmark · 12 months</span><span style="font-size:12px;color:var(--muted)"><span style="display:inline-block;width:14px;height:3px;background:var(--accent);vertical-align:middle"></span> You</span><span style="font-size:12px;color:var(--muted)"><span style="display:inline-block;width:14px;height:0;border-top:2px dashed var(--muted);vertical-align:middle"></span> NADAC</span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><span style="font-weight:800">Your price vs. benchmark · 12 months</span><span style="font-size:12px;color:var(--muted)"><span style="display:inline-block;width:14px;height:3px;background:var(--blue);vertical-align:middle"></span> You</span><span style="font-size:12px;color:var(--muted)"><span style="display:inline-block;width:14px;height:0;border-top:2px dashed var(--muted);vertical-align:middle"></span> NADAC</span></div>
         <div style="display:flex;gap:8px">
           <div style="display:flex;flex-direction:column;justify-content:space-between;font-size:11px;color:var(--muted);text-align:right;width:52px;padding:4px 0;font-variant-numeric:tabular-nums"><span>{{ dr.chart.hi }}</span><span>{{ dr.chart.lo }}</span></div>
           <svg width="480" height="150" style="display:block;overflow:visible;max-width:100%">
-            <line x1="0" y1="8" x2="480" y2="8" style="stroke:var(--line)"></line>
-            <line x1="0" y1="75" x2="480" y2="75" style="stroke:var(--line)"></line>
+            <line x1="0" y1="8" x2="480" y2="8" style="stroke:var(--line);stroke-dasharray:3 4"></line>
+            <line x1="0" y1="75" x2="480" y2="75" style="stroke:var(--line);stroke-dasharray:3 4"></line>
             <line x1="0" y1="142" x2="480" y2="142" style="stroke:var(--line)"></line>
             <polyline points="{{ dr.chart.ben }}" style="fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:5 4"></polyline>
-            <polyline points="{{ dr.chart.you }}" style="fill:none;stroke:var(--accent);stroke-width:3;stroke-linejoin:round;stroke-linecap:round"></polyline>
+            <polyline points="{{ dr.chart.you }}" style="fill:none;stroke:var(--blue);stroke-width:3;stroke-linejoin:round;stroke-linecap:round"></polyline>
           </svg>
         </div>
         <div style="display:flex;justify-content:space-between;padding-left:60px;font-size:11px;color:var(--muted)"><span>Nov 2025</span><span>Apr 2026</span><span>Oct 2026</span></div>
@@ -703,11 +775,11 @@ input[type=range]{accent-color:var(--accent)}
       <div style="display:flex;flex-direction:column;gap:8px">
         <div style="font-weight:800">Monthly usage <span style="font-weight:500;color:var(--muted);font-size:12.5px">· avg {{ dr.use }} per month</span></div>
         <div style="display:flex;align-items:flex-end;gap:6px;height:80px">
-          <sc-for list="{{ dr.bars }}" as="b" hint-placeholder-count="12"><div data-tip="{{ b.tip }}" style="flex:1;background:var(--accent-soft);border-top:3px solid var(--accent);border-radius:4px 4px 0 0;height:{{ b.h }}"></div></sc-for>
+          <sc-for list="{{ dr.bars }}" as="b" hint-placeholder-count="12"><div data-tip="{{ b.tip }}" style="flex:1;background:var(--accent);opacity:.85;border-radius:5px 5px 2px 2px;height:{{ b.h }}"></div></sc-for>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="font-family:Anton,Impact,sans-serif;font-size:20px;text-transform:uppercase">Equivalent products</span><span data-tip="FDA Orange Book, October 2026 edition" style="display:inline-flex;align-items:center;gap:5px;border:1.5px solid var(--accent);color:var(--accent-ink);border-radius:999px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span></div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:20px;">Equivalent products</span><span data-tip="FDA Orange Book, October 2026 edition" style="display:inline-flex;align-items:center;gap:5px;border:1.1px solid var(--line);color:var(--accent-ink);border-radius:10px;padding:0 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:17px;cursor:help"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Live</span></div>
         <div style="font-size:12.5px;color:var(--muted)">Same ingredient, strength and dosage form, rated equivalent by FDA. Your current product: <strong style="color:var(--ink)">{{ dr.mfr }}</strong>.</div>
         <sc-for list="{{ dr.eq }}" as="e" hint-placeholder-count="2">
           <div style="display:grid;grid-template-columns:1fr auto;gap:8px 12px;padding:12px 14px;border-radius:14px;border:1.5px solid {{ e.bd }};align-items:center">
@@ -716,7 +788,7 @@ input[type=range]{accent-color:var(--accent)}
               <div style="font-size:12.5px;color:var(--muted)">Benchmark {{ e.bench }} · <span style="color:{{ e.roundC }};font-weight:600">{{ e.round }}</span></div>
               <div style="font-size:12.5px;font-weight:700;color:{{ e.extraC }}">{{ e.extra }}</div>
             </div>
-            <button onClick="{{ e.onSwap }}" style="border:2px solid var(--accent);border-radius:999px;padding:8px 16px;font-weight:800;cursor:pointer;background:{{ e.btnBg }};color:{{ e.btnFg }}">{{ e.btn }}</button>
+            <button style-active="transform:scale(.95)" onClick="{{ e.onSwap }}" style="border:1.1px solid var(--line);border-radius:10px;padding:8px 16px;font-weight:800;cursor:pointer;background:{{ e.btnBg }};color:{{ e.btnFg }}">{{ e.btn }}</button>
           </div>
         </sc-for>
         <div style="font-size:12.5px;color:var(--muted)">You approve every swap before it's used.</div>
@@ -727,16 +799,16 @@ input[type=range]{accent-color:var(--accent)}
 
 <sc-if value="{{ optOpen }}" hint-placeholder-val="{{ false }}">
   <div style="position:fixed;inset:0;background:rgba(20,15,5,.45);z-index:60;display:flex;align-items:center;justify-content:center;padding:20px">
-    <div role="dialog" style="width:min(720px,100%);max-height:92vh;overflow-y:auto;background:var(--surface);border-radius:20px;border-top:6px solid var(--accent);box-shadow:var(--shadow);padding:24px;display:flex;flex-direction:column;gap:14px">
-      <div><div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Opt in</div><div style="font-family:Anton,Impact,sans-serif;font-size:28px;text-transform:uppercase;line-height:1.1">Cardio generics bundle</div></div>
+    <div role="dialog" style="width:min(720px,100%);max-height:92vh;overflow-y:auto;background:var(--surface);border-radius:14px;border-top:4px solid var(--accent);box-shadow:var(--shadow);padding:24px;display:flex;flex-direction:column;gap:14px">
+      <div><div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)">Opt in</div><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.015em;font-size:28px;line-height:1.1">Cardio generics bundle</div></div>
       <p style="margin:0;color:var(--muted)">We pre-filled a recommended commitment for each drug. Edit any number.</p>
       <sc-for list="{{ opt.rows }}" as="r" hint-placeholder-count="3">
-        <div style="padding:14px;border-radius:14px;border:1.5px solid var(--line);display:flex;flex-direction:column;gap:10px">
+        <div style="padding:14px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:10px">
           <div style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline"><strong style="font-size:15px">{{ r.name }}</strong><span style="font-size:12.5px;color:var(--muted)">{{ r.prod }}</span></div>
           <sc-if value="{{ r.sw }}" hint-placeholder-val="{{ false }}">
             <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center">
               <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700">Commit
-                <input value="{{ r.val }}" onChange="{{ r.onChange }}" style="width:120px;text-align:right;border:1.5px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:999px;padding:8px 12px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums">
+                <input value="{{ r.val }}" onChange="{{ r.onChange }}" style="width:120px;text-align:right;border:1.5px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums">
                 <span style="color:var(--muted);font-weight:500">{{ r.unit }}</span>
               </label>
               <span style="font-size:12.5px;color:var(--muted)">{{ r.explain }}</span>
@@ -745,7 +817,7 @@ input[type=range]{accent-color:var(--accent)}
           <sc-if value="{{ r.notSw }}" hint-placeholder-val="{{ true }}">
             <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--accent-soft)">
               <span style="flex:1;min-width:220px;font-size:13px">Your {{ r.yours }} product isn't in this round, but <strong>{{ r.roundMfr }}</strong> ({{ r.code }}-rated equivalent) is.</span>
-              <button onClick="{{ r.onSwap }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:8px 14px;font-weight:800;cursor:pointer">Swap to join</button>
+              <button style-active="transform:scale(.95)" onClick="{{ r.onSwap }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:8px 14px;font-weight:800;cursor:pointer">Swap to join</button>
             </div>
           </sc-if>
         </div>
@@ -757,16 +829,16 @@ input[type=range]{accent-color:var(--accent)}
       </div>
       <div style="font-size:12.5px;padding:10px 12px;border-radius:12px;border:1px dashed var(--line-strong)">Non-binding. When the round reaches its target, you'll have 48 hours to confirm or drop out.</div>
       <div style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap">
-        <button onClick="{{ opt.cancel }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer">Cancel</button>
-        <button onClick="{{ opt.submit }}" disabled="{{ opt.disabled }}" style="border:0;background:var(--accent);color:#111;border-radius:999px;padding:10px 20px;font-weight:800;cursor:pointer;opacity:{{ opt.op }}">Opt in</button>
+        <button style-active="transform:scale(.95)" onClick="{{ opt.cancel }}" style="border:1.5px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:10px;padding:9px 16px;font-weight:700;cursor:pointer">Cancel</button>
+        <button style-active="transform:scale(.95)" onClick="{{ opt.submit }}" disabled="{{ opt.disabled }}" style="border:0;background:var(--accent);color:#fff;border-radius:10px;padding:10px 20px;font-weight:800;cursor:pointer;opacity:{{ opt.op }}">Opt in</button>
       </div>
     </div>
   </div>
 </sc-if>
 
 <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
-  <div role="status" style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:80;background:var(--ink);color:var(--bg);border-radius:999px;padding:10px 18px 10px 10px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:min(600px,92vw)">
-    <span style="width:24px;height:24px;border-radius:50%;background:var(--accent);color:#111;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none">✓</span>
+  <div role="status" style="position:fixed;right:24px;top:76px;z-index:80;background:var(--ink);color:var(--bg);border-radius:10px;padding:10px 18px 10px 10px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:min(600px,92vw)">
+    <span style="width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none">✓</span>
     <span style="font-size:13.5px">{{ toast }}</span>
   </div>
 </sc-if>
@@ -777,7 +849,7 @@ input[type=range]{accent-color:var(--accent)}
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;summary&quot;,&quot;compare&quot;,&quot;swap&quot;,&quot;join&quot;,&quot;upload&quot;,&quot;sources&quot;],&quot;default&quot;:&quot;summary&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;feedsFailing&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
 class Component extends DCLogic {
-  state = { screen: null, dark: null, chatOpen: false, demo: {}, feedsFail: null, up1: 'mapped', up2: 'idle', picks: {}, showMap: false,
+  state = { queue: [], sent: {}, history: [], bump: 0, submitting: false, fly: null, screen: null, dark: null, chatOpen: false, demo: {}, feedsFail: null, up1: 'mapped', up2: 'idle', picks: {}, showMap: false,
     drawer: null, expanded: { Cardiovascular: true }, swaps: {}, optOpen: false, commit: {},
     cardioJoined: false, cardioCommit: 0, cardioEnd: 0, cardioConf: null, abx: null,
     w: { price: 50, delivery: 20, reliability: 30 }, awarded: null, choosing: false, supView: false, qAnim: 0,
@@ -846,19 +918,19 @@ class Component extends DCLogic {
   scr() { return this.state.screen || this.props.startScreen || 'summary'; }
   vs() { return this.state.demo[this.scr()] || 'ready'; }
   maybeAnim() {
-    if (this.scr() !== 'join' || this.vs() !== 'ready' || this.animDone) return;
+    if (this.scr() !== 'award' || this.vs() !== 'ready' || this.animDone) return;
     this.animDone = true;
     const start = performance.now() + 700;
     const step = t => { const p = Math.max(0, Math.min(1, (t - start) / 1400)); if (p !== this.state.qAnim) this.setState({ qAnim: p }); if (p < 1) this.raf = requestAnimationFrame(step); };
     this.raf = requestAnimationFrame(step);
   }
   go(s) {
-    if (s === 'join' && this.scr() !== 'join') { this.animDone = false; cancelAnimationFrame(this.raf); this.setState({ screen: s, qAnim: 0, drawer: null }); }
+    if (s === 'award' && this.scr() !== 'award') { this.animDone = false; cancelAnimationFrame(this.raf); this.setState({ screen: s, qAnim: 0, drawer: null }); }
     else this.setState({ screen: s, drawer: null });
     window.scrollTo(0, 0);
   }
   goAward() {
-    this.animDone = false; cancelAnimationFrame(this.raf); this.setState({ qAnim: 0 }); this.go('join');
+    this.animDone = false; cancelAnimationFrame(this.raf); this.setState({ qAnim: 0 }); this.go('award');
     setTimeout(() => { const el = document.getElementById('award'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }); }, 80);
   }
   toastMsg(t) { this.setState({ toast: t }); clearTimeout(this.tt); this.tt = setTimeout(() => this.setState({ toast: null }), 4500); }
@@ -881,10 +953,32 @@ class Component extends DCLogic {
   drugs() {
     return this.D.map(d0 => { const d = Object.assign({}, d0, { use: d0.use * 6, onHand: d0.onHand * 6 }); const spend = d.paid * d.use * 12, bench = d.nadac * d.use * 12, dos = Math.round(d.onHand / (d.use / 30)); const g = Math.max(0, spend - bench); return Object.assign({}, d, { spend, bench, dos, saveLo: g * 0.5, saveHi: g * 0.85, lvl: d.short && dos < 14 ? 2 : d.short ? 1 : 0 }); });
   }
-  swap(d, e, quiet) {
-    const on = this.state.swaps[d.id] === e[0];
-    this.setState(s => ({ swaps: Object.assign({}, s.swaps, { [d.id]: on ? null : e[0] }) }));
-    if (!quiet) this.toastMsg(on ? 'Swap undone: back to ' + d.mfr + ' ' + d.name.toLowerCase() + '.' : 'Swap approved: ' + d.name + ' ' + d.str + ' — ' + d.mfr + ' → ' + e[0] + ' (' + e[1] + ').');
+  swap(d, e, quiet, ev) {
+    const on = this.state.swaps[d.id] === e[0], id = 'swap:' + d.id;
+    if (on) { this.setState(s => ({ swaps: Object.assign({}, s.swaps, { [d.id]: null }), queue: s.queue.filter(q => q.id !== id) })); this.toastMsg('Swap removed from Award.'); return; }
+    this.setState(s => ({ swaps: Object.assign({}, s.swaps, { [d.id]: e[0] }) }));
+    this.stage({ id, kind: 'Swap', tab: 'Swap', title: 'Swap ' + d.name + ' ' + d.str + ' → ' + e[0] + ' (' + e[1] + ')', detail: 'Replaces ' + d.mfr + (e[3] === 'cardio' ? ' · unlocks the Cardio round' : ''), lo: e[4] || 0, hi: e[4] || 0, undo: () => this.setState(s => ({ swaps: Object.assign({}, s.swaps, { [d.id]: null }) })) }, ev);
+  }
+  stage(it, e) {
+    const n = this.state.queue.filter(q => q.id !== it.id).length + 1;
+    this.setState(s => ({ queue: s.queue.filter(q => q.id !== it.id).concat([Object.assign({ at: Date.now() }, it)]), bump: (s.bump || 0) + 1, sent: Object.assign({}, s.sent, { [it.id]: false }) }));
+    this.fly(e);
+    this.toastMsg('Added to Award: ' + it.title + ' — ' + n + ' action' + (n === 1 ? '' : 's') + ' to review');
+  }
+  unstage(id, runUndo) {
+    const it = this.state.queue.find(q => q.id === id);
+    if (runUndo && it && it.undo) it.undo();
+    this.setState(s => ({ queue: s.queue.filter(q => q.id !== id) }));
+    if (it) this.toastMsg('Removed: ' + it.title);
+  }
+  fly(e) {
+    if (!e || e.clientX == null) return;
+    let tx = 150, ty = 470;
+    try { const t = document.querySelector('[data-nav="award"]'); if (t) { const r = t.getBoundingClientRect(); tx = r.right - 30; ty = r.top + r.height / 2; } } catch (x) {}
+    const n = (this.flyN = (this.flyN || 0) + 1);
+    this.setState({ fly: { left: e.clientX + 'px', top: e.clientY + 'px', op: 1, tr: 'none', sc: 'translate(-50%,-50%) scale(1.2)' } });
+    requestAnimationFrame(() => requestAnimationFrame(() => { if (this.flyN !== n) return; this.setState({ fly: { left: tx + 'px', top: ty + 'px', op: 0.3, tr: 'left .75s cubic-bezier(.6,0,.2,1), top .75s cubic-bezier(.6,0,.2,1), opacity .75s ease-in, transform .75s', sc: 'translate(-50%,-50%) scale(.6)' } }); }));
+    clearTimeout(this.flyT); this.flyT = setTimeout(() => { if (this.flyN === n) this.setState({ fly: null }); }, 900);
   }
   dl(name, cols) {
     const blob = new Blob([cols.join(',') + '\n'], { type: 'text/csv' });
@@ -918,17 +1012,19 @@ class Component extends DCLogic {
     const ds = this.drugs();
     const ends = this.ends;
 
-    const nav = [['summary', 'Summary', 'Savings & next steps'], ['compare', 'Compare', 'vs. NADAC'], ['swap', 'Swap', 'FDA equivalents'], ['join', 'Join', 'Buying rounds']].map(([k, l, s]) => {
-      const a = scr === k; return { label: l, sub: s, go: () => this.go(k), bg: a ? 'var(--accent)' : 'transparent', fg: a ? '#111' : 'var(--ink)', bd: a ? 'var(--accent)' : 'var(--line)' };
-    });
+    const IC = { award: 'M9 2h6a1 1 0 0 1 1 1v2H8V3a1 1 0 0 1 1-1z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 14l2 2 4-4', summary: 'M3 3h7v9H3z M14 3h7v5h-7z M14 12h7v9h-7z M3 16h7v5H3z', compare: 'M3 3v18h18 M18 17V9 M13 17V5 M8 17v-3', swap: 'M17 2l4 4-4 4 M3 11v-1a4 4 0 0 1 4-4h14 M7 22l-4-4 4-4 M21 13v1a4 4 0 0 1-4 4H3', join: 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2 M9 3a4 4 0 1 0 0 8a4 4 0 1 0 0-8 M22 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75', upload: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M17 8l-5-5-5 5 M12 3v12', sources: 'M12 2c4.97 0 9 1.34 9 3s-4.03 3-9 3-9-1.34-9-3 4.03-3 9-3z M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5 M3 12c0 1.66 4 3 9 3s9-1.34 9-3' };
+    const navItem = (k, l, s) => { const a = scr === k; return { key: k, hasBadge: k === 'award' && S.queue.length > 0, badge: S.queue.length, anim: S.bump ? (S.bump % 2 ? 'ppBumpA .55s ease' : 'ppBumpB .55s ease') : 'none', label: l, sub: s, d: IC[k], go: () => this.go(k), bg: a ? '#18426b' : 'transparent', fg: a ? '#ffffff' : '#c3d0df', bd: a ? '#34d3a6' : 'transparent' }; };
+    const nav = [['summary', 'Summary', 'Savings & actions'], ['compare', 'Compare', 'vs. NADAC'], ['swap', 'Swap', 'Equivalents'], ['join', 'Join', 'Group rounds']].map(x => navItem(x[0], x[1], x[2]));
+    const util = [['award', 'Award', ''], ['upload', 'Upload data', ''], ['sources', 'Data sources', '']].map(x => navItem(x[0], x[1], x[2]));
     const fresh = fail
       ? { label: 'Benchmarks:', text: 'Cached Oct 17 · Shortages cached Oct 23', tip: 'Benchmarks: Cached Oct 17, 2026 · FDA shortages cached Oct 23. A feed failed to refresh; showing the last good data.', dot: 'var(--muted)', anim: 'none' }
       : { label: 'Live:', text: 'NADAC Oct 22 · FDA shortages Oct 24', tip: 'Benchmarks: NADAC as of Oct 22, 2026 · FDA shortages as of Oct 24, 2026. Live: CMS NADAC (weekly) and openFDA drug shortages (daily), refreshed today 6:04 AM.', dot: 'var(--accent)', anim: 'prPulse 2s infinite' };
     const demoOpts = ['ready', 'empty', 'loading', 'error'].map(k => ({ label: k[0].toUpperCase() + k.slice(1), go: () => this.setState(s => ({ demo: Object.assign({}, s.demo, { [scr]: k }) })), bg: vs === k ? 'var(--ink)' : 'transparent', fg: vs === k ? 'var(--bg)' : 'var(--muted)' }));
     const feedOpts = [['Live', false], ['Failing', true]].map(([l, v]) => ({ label: l, go: () => this.setState({ feedsFail: v }), bg: fail === v ? 'var(--ink)' : 'transparent', fg: fail === v ? 'var(--bg)' : 'var(--muted)' }));
 
-    const loadTexts = { summary: 'Calculating your savings…', upload: 'Reading your files…', compare: 'Pricing each drug against NADAC…', swap: 'Checking FDA equivalence ratings…', join: 'Loading buying rounds…', sources: 'Checking feeds…' };
+    const loadTexts = { summary: 'Calculating your savings…', upload: 'Reading your files…', award: 'Loading your actions…', compare: 'Pricing each drug against NADAC…', swap: 'Checking FDA equivalence ratings…', join: 'Loading buying rounds…', sources: 'Checking feeds…' };
     const errs = {
+      award: { title: "Couldn't load your actions", body: 'Your staged actions are saved on this device. Try again in a minute.' },
       upload: { title: "We couldn't read “purchases_oct.pdf”", body: 'PDFs cannot be parsed reliably. Export a CSV or XLSX from your wholesaler portal, or use our template.' },
       summary: { title: "Couldn't load your summary", body: 'Your uploaded data is safe. We could not reach the pricing service — try again in a minute.' },
       compare: { title: "Couldn't load benchmark prices", body: 'The CMS NADAC feed did not respond. Your own purchase data is safe; benchmark columns will fill in once it reconnects.' },
@@ -950,6 +1046,7 @@ class Component extends DCLogic {
     const rspend = { cardio: sumSp(['atorva', 'lisin', 'amlo']), abx: sumSp(['amox', 'albu']), dm: sumSp(['metf', 'levo']), mh: sumSp(['sert', 'omep']), pain: sumSp(['gaba']), brand: 640000 };
     const rs = (k, a, b) => 'Your est. savings ' + this.k(rspend[k] * a) + '–' + this.k(rspend[k] * b) + '/yr (' + Math.round(a * 100) + '–' + Math.round(b * 100) + '%)';
     const rq = (k, p, lab) => (lab || 'Quoted') + ' savings ' + this.k(rspend[k] * p / 100) + '/yr (' + p + '%)';
+    const pend = id => S.sent[id] ? '' : ' — pending in Award';
     const cs = cardio.filter(d => S.swaps[d.id] === d.eq[0][0]).reduce((a, d) => a + d.spend, 0);
     // rounds
     const base = 5650000, target = 6000000;
@@ -959,35 +1056,37 @@ class Component extends DCLogic {
       return { id: d.id, name: d.name + ' ' + d.str, prod: sw ? 'Swapped to ' + rp[0] + ' (' + rp[1] + ') · in round' : 'You buy ' + d.mfr, sw, notSw: !sw, val, unit: this.unit(d) + 's', yours: d.mfr, roundMfr: rp[0], code: rp[1],
         explain: '3 months of usage (' + this.num(3 * d.use) + ') minus your extra stock (' + this.num(extra) + ')',
         onChange: e => { const v = e.target.value.replace(/[^0-9]/g, ''); this.setState(s => ({ commit: Object.assign({}, s.commit, { [d.id]: v }) })); },
-        onSwap: () => this.swap(d, rp) };
+        onSwap: ev => this.swap(d, rp, false, ev) };
     });
     const userCommit = optRows.filter(r => r.sw).reduce((a, r) => a + (+r.val || 0), 0);
     const proj = (base + userCommit) / target * 100;
     const cPct = (base + (S.cardioJoined ? S.cardioCommit : 0)) / target * 100;
-    const T = (txt, kind) => ({ tag: txt, tagBd: kind === 'fill' ? 'var(--accent)' : kind === 'bad' ? 'var(--bad)' : kind === 'good' ? 'var(--good)' : kind === 'mute' ? 'var(--line-strong)' : 'var(--accent)', tagBg: kind === 'fill' ? 'var(--accent)' : 'transparent', tagC: kind === 'fill' ? '#111' : kind === 'bad' ? 'var(--bad)' : kind === 'good' ? 'var(--good)' : kind === 'mute' ? 'var(--muted)' : 'var(--accent-ink)' });
+    const T = (txt, kind) => ({ tag: txt, tagBd: kind === 'fill' ? 'var(--accent)' : kind === 'bad' ? 'var(--bad)' : kind === 'good' ? 'var(--good)' : kind === 'mute' ? 'var(--line-strong)' : 'var(--accent)', tagBg: kind === 'fill' ? 'var(--accent)' : 'transparent', tagC: kind === 'fill' ? '#fff' : kind === 'bad' ? 'var(--bad)' : kind === 'good' ? 'var(--good)' : kind === 'mute' ? 'var(--muted)' : 'var(--accent-ink)' });
     const R = o => Object.assign({ isOpen: false, isTarget: false, isQuotes: false, hasNote: false, note: '', noteC: 'var(--ink)', bd: 'var(--line)', op: 1, barW: Math.min(100, o.pct) + '%', drugs: o.d.map(t => ({ t })) }, o);
     let cardioR;
     if (!S.cardioJoined) cardioR = R(Object.assign({ name: 'Cardio generics bundle', save: rs('cardio', 0.09, 0.14), pct: cPct, pctTxt: Math.round(cPct) + '% of target, 14 pharmacies joined', timeLabel: 'Closes in', time: this.cd(ends.cardio - now), rate: '91%', isOpen: true, bd: 'var(--accent)', onOpt: () => this.setState({ optOpen: true }), d: ['Atorvastatin 20 mg (Accord)', 'Lisinopril 10 mg (Lupin)', 'Amlodipine 5 mg (Aurobindo)', 'Losartan 50 mg', 'Metoprolol ER 25 mg'] }, T('Open')));
     else {
       const reached = cPct >= 100, c = S.cardioConf;
       cardioR = R(Object.assign({ name: 'Cardio generics bundle', save: rs('cardio', 0.09, 0.14), pct: cPct, pctTxt: Math.round(cPct) + '% of target, 15 pharmacies joined (including you)', timeLabel: reached && !c ? 'Confirm within' : reached ? 'Status' : 'Closes in', time: reached && !c ? this.cd(S.cardioEnd - now) : reached ? (c === 'confirmed' ? 'Confirmed' : 'Dropped') : this.cd(ends.cardio - now), rate: '91%', d: ['Atorvastatin 20 mg (Accord)', 'Lisinopril 10 mg (Lupin)', 'Amlodipine 5 mg (Aurobindo)', 'Losartan 50 mg', 'Metoprolol ER 25 mg'],
-        isTarget: reached && !c, hasNote: !reached || !!c, note: !reached ? "You're in. We'll notify you when the round reaches its target." : c === 'confirmed' ? '✓ Confirmed. Your order goes to quotes with the group.' : 'You dropped out of this round.', noteC: c === 'confirmed' ? 'var(--good)' : 'var(--accent-ink)', bd: 'var(--accent)',
-        onConfirm: () => { this.setState({ cardioConf: 'confirmed' }); this.toastMsg('Confirmed. The Cardio round now goes out for supplier quotes.'); }, onDrop: () => { this.setState({ cardioConf: 'dropped' }); this.toastMsg('You dropped out of the Cardio round.'); } }, reached && !c ? T('Target reached', 'fill') : c === 'confirmed' ? T('Confirmed', 'good') : T("You're in")));
+        isTarget: reached && !c, hasNote: !reached || !!c, note: !reached ? "You're in" + pend('opt:cardio') + ". We'll notify you when the round reaches its target." : c === 'confirmed' ? '✓ Confirmed' + pend('conf:cardio') + '.' : 'Dropping out' + pend('conf:cardio') + '.', noteC: c === 'confirmed' ? 'var(--good)' : 'var(--accent-ink)', bd: 'var(--accent)',
+        onConfirm: e => { this.setState({ cardioConf: 'confirmed' }); this.stage({ id: 'conf:cardio', kind: 'Confirm', tab: 'Join', title: 'Confirm order: Cardio generics bundle', detail: this.num(S.cardioCommit) + ' units · 48-hour window', lo: rspend.cardio * 0.09, hi: rspend.cardio * 0.14, undo: () => this.setState({ cardioConf: null }) }, e); }, onDrop: e => { this.setState({ cardioConf: 'dropped' }); this.stage({ id: 'conf:cardio', kind: 'Drop out', tab: 'Join', title: 'Drop out: Cardio generics bundle', detail: 'Your commitment is released', lo: 0, hi: 0, undo: () => this.setState({ cardioConf: null }) }, e); } }, reached && !c ? T('Target reached', 'fill') : c === 'confirmed' ? T('Confirmed', 'good') : T("You're in")));
     }
     const ab = S.abx;
     const abxR = R(Object.assign({ name: 'Antibiotics & respiratory', save: rs('abx', 0.06, 0.10), pct: 108, pctTxt: '108% of target, 19 pharmacies joined (including you)', timeLabel: ab ? 'Status' : 'Confirm within', time: ab ? (ab === 'confirmed' ? 'Confirmed' : 'Dropped') : this.cd(ends.abx - now), rate: '88%', d: ['Amoxicillin 500 mg (Aurobindo)', 'Albuterol HFA (Cipla)', 'Azithromycin 250 mg', 'Cephalexin 500 mg'],
-      isTarget: !ab, hasNote: !!ab, note: ab === 'confirmed' ? '✓ Confirmed. Amoxicillin supply is locked in for this round.' : 'You dropped out. Amoxicillin is still on the FDA shortage list.', noteC: ab === 'confirmed' ? 'var(--good)' : 'var(--bad)', bd: 'var(--accent)',
-      onConfirm: () => { this.setState({ abx: 'confirmed' }); this.toastMsg('Confirmed. Amoxicillin and albuterol are locked in.'); }, onDrop: () => { this.setState({ abx: 'dropped' }); this.toastMsg('You dropped out of the Antibiotics & respiratory round.'); } }, ab === 'confirmed' ? T('Confirmed', 'good') : ab ? T('Dropped', 'mute') : T('Target reached', 'fill')));
+      isTarget: !ab, hasNote: !!ab, note: ab === 'confirmed' ? '✓ Confirmed' + pend('conf:abx') + '. Amoxicillin supply locks in on submit.' : 'Dropping out' + pend('conf:abx') + '. Amoxicillin is still on the FDA shortage list.', noteC: ab === 'confirmed' ? 'var(--good)' : 'var(--bad)', bd: 'var(--accent)',
+      onConfirm: e => { this.setState({ abx: 'confirmed' }); this.stage({ id: 'conf:abx', kind: 'Confirm', tab: 'Join', title: 'Confirm order: Antibiotics & respiratory', detail: 'Locks in amoxicillin and albuterol supply', lo: rspend.abx * 0.06, hi: rspend.abx * 0.10, undo: () => this.setState({ abx: null }) }, e); }, onDrop: e => { this.setState({ abx: 'dropped' }); this.stage({ id: 'conf:abx', kind: 'Drop out', tab: 'Join', title: 'Drop out: Antibiotics & respiratory', detail: 'Amoxicillin is still on the FDA shortage list', lo: 0, hi: 0, undo: () => this.setState({ abx: null }) }, e); } }, ab === 'confirmed' ? T('Confirmed', 'good') : ab ? T('Dropped', 'mute') : T('Target reached', 'fill')));
     const dmR = R(Object.assign({ name: 'Diabetes & thyroid', save: S.awarded ? rq('dm', this.SUP.find(s => s.id === S.awarded).q) : rs('dm', 0.08, 0.14), pct: 112, pctTxt: '112% of target, 22 pharmacies joined', timeLabel: 'Quotes received', time: 'Oct 23', rate: '93%', d: ['Metformin 500 mg', 'Levothyroxine 50 mcg', 'Glipizide 5 mg'],
       isQuotes: !S.awarded, hasNote: !!S.awarded, note: S.awarded ? '✓ Awarded to Supplier ' + S.awarded + '. Orders ship Nov 3.' : '', noteC: 'var(--good)' }, S.awarded ? T('Awarded', 'good') : T('Quotes received')));
     const mhR = R(Object.assign({ name: 'Mental health & GI', save: rq('mh', 10.4), pct: 104, pctTxt: '104% of target, 17 pharmacies', timeLabel: 'Deliveries start', time: 'Nov 3', rate: '90%', d: ['Sertraline 50 mg', 'Omeprazole 20 mg', 'Escitalopram 10 mg'], hasNote: true, note: 'Awarded to Supplier B.', noteC: 'var(--muted)' }, T('Awarded', 'good')));
     const painR = R(Object.assign({ name: 'Pain & neuro · Q3', save: rq('pain', 9.1, 'Final'), pct: 101, pctTxt: '101% of target, 16 pharmacies', timeLabel: 'Closed', time: 'Sep 30', rate: '92%', d: ['Gabapentin 300 mg', 'Meloxicam 15 mg'], hasNote: true, note: 'Savings applied to your Q3 orders.', noteC: 'var(--muted)', op: 0.72 }, T('Closed', 'mute')));
     const bPct = 58 + (S.brandJoined ? 7 : 0);
     const brandR = R(Object.assign({ name: 'Brand inhalers & insulin', save: rs('brand', 0.02, 0.04), pct: bPct, pctTxt: bPct + '% of target, ' + (9 + (S.brandJoined ? 1 : 0)) + ' pharmacies joined', timeLabel: 'Closes in', time: this.cd(ends.brand - now), rate: '84%', d: ['Insulin glargine', 'Insulin lispro', 'Fluticasone/salmeterol', 'Tiotropium'],
-      isOpen: !S.brandJoined, hasNote: true, note: S.brandJoined ? "You're in. Still at risk: on pace for 86% at close — needs about 4 more pharmacies." : 'At risk: on pace for 81% at close. Needs about 6 more pharmacies to reach target.', noteC: 'var(--bad)', bd: 'var(--bad)',
-      onOpt: () => { this.setState({ brandJoined: true }); this.toastMsg("You're in the Brand inhalers & insulin round. Non-binding — nothing is ordered if it misses target."); } }, T('At risk', 'bad')));
+      isOpen: !S.brandJoined, hasNote: true, note: S.brandJoined ? "You're in" + pend('opt:brand') + ". Still at risk: on pace for 86% at close — needs about 4 more pharmacies." : 'At risk: on pace for 81% at close. Needs about 6 more pharmacies to reach target.', noteC: 'var(--bad)', bd: 'var(--bad)',
+      onOpt: e => { this.setState({ brandJoined: true }); this.stage({ id: 'opt:brand', kind: 'Opt in', tab: 'Join', title: 'Opt in: Brand inhalers & insulin', detail: 'Non-binding · nothing is ordered if it misses target', lo: rspend.brand * 0.02, hi: rspend.brand * 0.04, undo: () => this.setState({ brandJoined: false }) }, e); } }, T('At risk', 'bad')));
     const dermR = R(Object.assign({ name: 'Dermatology generics · Q3', save: 'Target missed · $0/yr (0%)', pct: 72, pctTxt: '72% of target, 11 pharmacies', timeLabel: 'Closed', time: 'Sep 15', rate: '—', d: ['Triamcinolone 0.1% cream', 'Clobetasol 0.05% ointment', 'Mupirocin 2% ointment'], hasNote: true, note: 'Target missed. No orders were placed and all commitments were released.', noteC: 'var(--muted)', op: 0.72 }, T('Target missed', 'mute')));
     const rounds = [cardioR, brandR, abxR, dmR, mhR, dermR, painR];
+    const TL = (st, miss) => ['Open', 'Target reached', 'Quotes', 'Awarded'].map((l, i) => { const m = miss && i === 1; return { l: m ? 'Target missed' : l, c: m ? 'var(--bad)' : i <= st ? 'var(--accent)' : 'var(--line)', fc: m ? 'var(--bad)' : i <= st ? 'var(--ink)' : 'var(--muted)' }; });
+    cardioR.tl = TL(S.cardioJoined && cPct >= 100 ? 1 : 0); brandR.tl = TL(0); abxR.tl = TL(1); dmR.tl = TL(S.awarded ? 3 : 2); mhR.tl = TL(3); dermR.tl = TL(0, true); painR.tl = TL(3);
     const openCount = (S.cardioJoined && S.cardioConf ? 0 : 1) + 1 + (ab ? 0 : 1);
 
     // quotes
@@ -1006,19 +1105,19 @@ class Component extends DCLogic {
     const e3 = 1 - Math.pow(1 - S.qAnim, 3);
     const awardTo = S.awarded;
     const setW = k => e => { const v = +e.target.value; this.setState(s => ({ w: Object.assign({}, s.w, { [k]: v }) })); };
-    const award = id => { this.setState({ awarded: id, choosing: false }); this.toastMsg('Awarded to Supplier ' + id + '. Orders ship Nov 3.'); };
+    const award = (id, ev) => { this.setState({ awarded: id, choosing: false }); const sq = this.SUP.find(s => s.id === id).q, v = rspend.dm * sq / 100; this.stage({ id: 'award:dm', kind: 'Award', tab: 'Award', title: 'Award Diabetes & thyroid to Supplier ' + id, detail: 'Quoted ' + sq + '% · ships Nov 3', lo: v, hi: v, undo: () => this.setState({ awarded: null }) }, ev); };
     const q = {
       headline: S.qAnim > 0 ? 'Quoted ' + (8 + (rec.q - 8) * e3).toFixed(1) + '%' : 'Estimated 8–14%',
       oldOp: S.qAnim > 0 ? 1 : 0,
       headSub: this.k(rspend.dm * rec.q / 100) + '/yr for you · best value Supplier ' + rec.id + ' · 22 pharmacies',
       rec: rec.id, reason: reasons[rec.id], wp: W.price, wd: W.delivery, wr: W.reliability, setP: setW('price'), setD: setW('delivery'), setR: setW('reliability'),
       scores: this.SUP.map((s, i) => ({ id: s.id, c: i === ri ? 'var(--accent-ink)' : 'var(--ink)', p: (W.price * sc[i].p / ws) + '%', d: (W.delivery * sc[i].d / ws) + '%', r: (W.reliability * sc[i].r / ws) + '%', total: Math.round(sc[i].t), tP: 'Price score ' + Math.round(sc[i].p), tD: 'Delivery score ' + Math.round(sc[i].d), tR: 'Reliability score ' + sc[i].r })),
-      accept: () => award(rec.id), other: () => this.setState({ choosing: true, supView: false }), choosing: S.choosing,
-      awarded: !!awardTo, notAwarded: !awardTo, awardTitle: awardTo ? 'Awarded to Supplier ' + awardTo + ' · ' + rq('dm', this.SUP.find(s => s.id === awardTo).q).toLowerCase() : '', undo: () => this.setState({ awarded: null }),
+      accept: ev => award(rec.id, ev), other: () => this.setState({ choosing: true, supView: false }), choosing: S.choosing,
+      awarded: !!awardTo, notAwarded: !awardTo, awardTitle: awardTo ? (S.sent['award:dm'] ? 'Awarded to Supplier ' : 'Selected Supplier ') + awardTo + ' · ' + rq('dm', this.SUP.find(s => s.id === awardTo).q).toLowerCase() : '', undo: () => this.unstage('award:dm', true),
       showCards: !S.supView, showSup: S.supView, viewMine: () => this.setState({ supView: false }), viewSup: () => this.setState({ supView: true }),
       mineBg: !S.supView ? 'var(--ink)' : 'transparent', mineFg: !S.supView ? 'var(--bg)' : 'var(--ink)', supBg: S.supView ? 'var(--ink)' : 'transparent', supFg: S.supView ? 'var(--bg)' : 'var(--ink)',
-      cards: this.SUP.map((s, i) => ({ id: s.id, isRec: i === ri, bd: (awardTo === s.id ? '2.5px solid var(--good)' : i === ri ? '2.5px solid var(--accent)' : '1.5px solid var(--line)'),
-        lines: this.PROD.map((p, j) => ({ name: p[0], price: this.price(s.p[j]) })), total: this.money(tot[i]), mine: this.money(mine[i]), days: s.days + ' days', min: this.money(s.min), rel: s.rel, relW: s.rel + '%', relTxt: s.relTxt, choose: () => award(s.id) }))
+      cards: this.SUP.map((s, i) => ({ id: s.id, isRec: i === ri, bd: (awardTo === s.id ? '2.5px solid var(--good)' : i === ri ? '1.1px solid var(--line)' : '1px solid var(--line)'),
+        lines: this.PROD.map((p, j) => ({ name: p[0], price: this.price(s.p[j]) })), total: this.money(tot[i]), mine: this.money(mine[i]), days: s.days + ' days', min: this.money(s.min), rel: s.rel, relW: s.rel + '%', relTxt: s.relTxt, choose: ev => award(s.id, ev) }))
     };
 
     // upload
@@ -1037,13 +1136,13 @@ class Component extends DCLogic {
 
     // compare
     const actFor = d => {
-      const stop = f => e => { if (e && e.stopPropagation) e.stopPropagation(); f(); };
-      const B = (label, f, strong) => ({ show: true, none: false, label, go: stop(f), bg: strong ? 'var(--ink)' : 'var(--accent)', fg: strong ? 'var(--bg)' : '#111', bd: strong ? 'var(--ink)' : 'var(--accent)' });
+      const stop = f => e => { if (e && e.stopPropagation) e.stopPropagation(); f(e); };
+      const B = (label, f, strong) => ({ show: true, none: false, label, go: stop(f), bg: strong ? 'var(--ink)' : 'var(--accent)', fg: strong ? 'var(--bg)' : '#fff', bd: strong ? 'var(--ink)' : 'var(--accent)' });
       const N = txt => ({ show: false, none: true, txt });
       if (d.cat === 'Cardiovascular') return S.swaps[d.id] === d.eq[0][0] ? (S.cardioJoined ? N('In Cardio round') : B('Join round', () => { this.go('join'); setTimeout(() => this.setState({ optOpen: true }), 200); })) : B('Swap', () => this.go('swap'));
       if (d.id === 'amox' || d.id === 'albu') return ab ? N(ab === 'confirmed' ? 'Confirmed' : 'Dropped out') : B('Confirm round', () => this.go('join'), true);
       if (d.id === 'metf' || d.id === 'levo') return S.awarded ? N('Awarded') : B('Award', () => this.goAward());
-      if (d.id === 'sert') return S.reordered ? N('On order list') : B('Reorder', () => { this.setState({ reordered: true }); this.toastMsg('Sertraline 50 mg added to your wholesaler order list.'); }, true);
+      if (d.id === 'sert') return S.reordered ? N('✓ Added to Award') : B('Reorder', ev => { this.setState({ reordered: true }); this.stage({ id: 'order:sert', kind: 'Order', tab: 'Compare', title: 'Reorder sertraline 50 mg', detail: this.num(d.use) + ' tablets (1 month) at or below NADAC ' + this.price(d.nadac), lo: 0, hi: 0, undo: () => this.setState({ reordered: false }) }, ev); }, true);
       if (d.id === 'omep') return N('In awarded round');
       return N('Watch price');
     };
@@ -1072,16 +1171,16 @@ class Component extends DCLogic {
         chart: { you: pts(you), ben: pts(ben), hi: this.price(mx), lo: this.price(mn) },
         bars: uses.map((u, i) => ({ h: Math.round(u / umx * 100) + '%', tip: months[i] + ': ' + this.num(u) + ' ' + this.unit(d) + 's' })),
         eq: d.eq.map(e => { const sw = S.swaps[d.id] === e[0]; const rn = e[3] === 'cardio' ? 'In Cardio generics bundle (open)' : e[3] === 'dm' ? 'In Diabetes & thyroid round (quotes in)' : 'Not in an open round';
-          return { mfr: e[0], code: e[1], bench: this.price(e[2]), round: rn, roundC: e[3] ? 'var(--accent-ink)' : 'var(--muted)', extra: e[4] ? '+' + this.money(e[4]) + '/yr (' + Math.round(e[4] / d.spend * 100) + '% of spend) extra by joining the round' : 'No extra round savings yet', extraC: e[4] ? 'var(--good)' : 'var(--muted)', btn: sw ? 'Swapped ✓' : 'Swap', btnBg: sw ? 'var(--accent)' : 'transparent', btnFg: sw ? '#111' : 'var(--ink)', bd: sw ? 'var(--accent)' : 'var(--line)', onSwap: () => this.swap(d, e) }; })
+          return { mfr: e[0], code: e[1], bench: this.price(e[2]), round: rn, roundC: e[3] ? 'var(--accent-ink)' : 'var(--muted)', extra: e[4] ? '+' + this.money(e[4]) + '/yr (' + Math.round(e[4] / d.spend * 100) + '% of spend) extra by joining the round' : 'No extra round savings yet', extraC: e[4] ? 'var(--good)' : 'var(--muted)', btn: sw ? 'Swapped ✓' : 'Swap', btnBg: sw ? 'var(--accent)' : 'transparent', btnFg: sw ? '#fff' : 'var(--ink)', bd: sw ? 'var(--accent)' : 'var(--line)', onSwap: ev => this.swap(d, e, false, ev) }; })
       };
     }
 
     // swap tab
-    const swapCards = cardio.map(d => { const e = d.eq[0], sw = S.swaps[d.id] === e[0]; return { drug: d.name + ' ' + d.str, cur: d.mfr, curPrice: this.price(d.paid), to: e[0], code: e[1], bench: this.price(e[2]), extra: this.money(e[4]) + '/yr (' + Math.round(e[4] / d.spend * 100) + '% of this drug\'s spend)', btn: sw ? 'Approved ✓ · Undo' : 'Approve swap', bg: sw ? 'var(--accent)' : 'transparent', fg: sw ? '#111' : 'var(--ink)', bd: sw ? 'var(--accent)' : 'var(--line)', go: () => this.swap(d, e) }; });
+    const swapCards = cardio.map(d => { const e = d.eq[0], sw = S.swaps[d.id] === e[0]; return { drug: d.name + ' ' + d.str, cur: d.mfr, curPrice: this.price(d.paid), to: e[0], code: e[1], bench: this.price(e[2]), extra: this.money(e[4]) + '/yr (' + Math.round(e[4] / d.spend * 100) + '% of this drug\'s spend)', btn: sw ? 'Approved ✓ · Undo' : 'Approve swap', bg: sw ? 'var(--accent)' : 'transparent', fg: sw ? '#fff' : 'var(--ink)', bd: sw ? 'var(--accent)' : 'var(--line)', go: ev => this.swap(d, e, false, ev) }; });
     const otherSwaps = ds.filter(d => d.cat !== 'Cardiovascular').map(d => ({ drug: d.name + ' ' + d.str, cur: d.mfr, alts: d.eq.map(e => e[0] + ' (' + e[1] + ') ' + this.price(e[2])).join(' · '), open: () => this.setState({ drawer: d.id }) }));
     const allDone = swapsDone === 3;
     const swapHero = { sub: 'extra savings per year · ' + (swapTotal / spend * 100).toFixed(1) + '% of your generic spend', big: '+' + this.money(swapTotal), text: allDone ? 'All 3 swaps approved. You can now join the Cardio round with your full volume.' : (3 - swapsDone) + ' equivalent swap' + (3 - swapsDone === 1 ? '' : 's') + ' available. Switching lets you join the Cardio round and save an extra ' + this.money(swapTotal) + ' a year.', cta: allDone ? 'Join the Cardio round →' : 'Approve all 3 swaps',
-      go: allDone ? () => { this.go('join'); setTimeout(() => this.setState({ optOpen: !S.cardioJoined }), 250); } : () => { const n = {}; cardio.forEach(d => { n[d.id] = d.eq[0][0]; }); this.setState(s => ({ swaps: Object.assign({}, s.swaps, n) })); this.toastMsg('3 swaps approved. You can now join the Cardio round.'); } };
+      go: allDone ? () => { this.go('join'); setTimeout(() => this.setState({ optOpen: !S.cardioJoined }), 250); } : ev => { cardio.forEach(d => { if (S.swaps[d.id] !== d.eq[0][0]) this.swap(d, d.eq[0], true, ev); }); } };
 
     const cmpLo = ds.reduce((a, d) => a + d.saveLo, 0), cmpHi = ds.reduce((a, d) => a + d.saveHi, 0);
     const pc = v => (v / spend * 100).toFixed(1) + '%';
@@ -1100,7 +1199,7 @@ class Component extends DCLogic {
       { done: !!S.brandJoined, title: S.brandJoined ? 'Joined Brand inhalers & insulin (still at risk)' : 'Opt in to Brand inhalers & insulin', why: "This brand round is at 58% of target and may miss. Your volume helps; it's non-binding and nothing is ordered if it misses.", val: this.k(rspend.brand * 0.02) + '–' + this.k(rspend.brand * 0.04) + '/yr (2–4%)', cta: S.brandJoined ? 'View' : 'Opt in', go: () => this.go('join') },
       { done: !!S.awarded, title: S.awarded ? 'Diabetes & thyroid awarded to Supplier ' + S.awarded : 'Award Diabetes & thyroid to Supplier ' + rec.id, why: reasons[rec.id].split('. ')[0] + '.', val: this.k(rspend.dm * rec.q / 100) + '/yr (' + rec.q + '%)', cta: S.awarded ? 'View' : 'Review award', go: () => this.goAward() },
       { done: false, warn: true, title: 'Reorder sertraline 50 mg this week', why: sert.dos + " days of supply left and it isn't in an open round. Order at or below NADAC (" + this.price(sert.nadac) + ' per tablet).', val: sert.dos + ' days left', cta: 'View drug', go: () => { this.go('compare'); setTimeout(() => this.setState({ drawer: 'sert' }), 60); } }
-    ].map((r, i) => Object.assign(r, { n: r.done ? '✓' : String(i + 1), numBg: r.done ? 'var(--good)' : r.urgent ? 'var(--bad)' : 'var(--accent)', numFg: r.done || r.urgent ? '#fff' : '#111', op: r.done ? 0.6 : 1, valC: r.done ? 'var(--muted)' : r.warn ? 'var(--bad)' : 'var(--good)', btnBg: r.done ? 'transparent' : r.urgent ? 'var(--ink)' : 'var(--accent)', btnFg: r.done ? 'var(--ink)' : r.urgent ? 'var(--bg)' : '#111' }));
+    ].map((r, i) => Object.assign(r, { n: r.done ? '✓' : String(i + 1), numBg: r.done ? 'var(--good)' : r.urgent ? 'var(--bad)' : 'var(--accent)', numFg: r.done || r.urgent ? '#fff' : '#fff', op: r.done ? 0.6 : 1, valC: r.done ? 'var(--muted)' : r.warn ? 'var(--bad)' : 'var(--good)', btnBg: r.done ? 'transparent' : r.urgent ? 'var(--ink)' : 'var(--accent)', btnFg: r.done ? 'var(--ink)' : r.urgent ? 'var(--bg)' : '#fff' }));
 
     const feeds = [
       { name: 'CMS NADAC', what: 'National Average Drug Acquisition Cost — the national average price pharmacies pay wholesalers. Used as the benchmark price.', cad: 'Weekly', last: fail ? 'Oct 17, 2026 data · refresh failed today 6:02 AM' : 'Effective Oct 22, 2026 · fetched today 6:02 AM', fail },
@@ -1112,7 +1211,7 @@ class Component extends DCLogic {
     const sugg = ['Why is my atorvastatin cost high?', 'What runs out first?', 'Why did you recommend Supplier ' + rec.id + '?'].map(t => ({ t, go: () => this.ask(t, ctx) }));
 
     const TOTAL = 4300000, OTC = 280000, BRAND = TOTAL - spend - OTC;
-    const mixD = [['Generics', spend, lo, hi, 'var(--accent)'], ['Brand', BRAND, BRAND * 0.01, BRAND * 0.025, 'var(--ink)'], ['OTC & supplies', OTC, OTC * 0.08, OTC * 0.14, '#ffc58a']];
+    const mixD = [['Generics', spend, lo, hi, 'var(--accent)'], ['Brand', BRAND, BRAND * 0.01, BRAND * 0.025, 'var(--ink)'], ['OTC & supplies', OTC, OTC * 0.08, OTC * 0.14, '#60a5fa']];
     const tLo = mixD.reduce((a, m) => a + m[2], 0), tHi = mixD.reduce((a, m) => a + m[3], 0), mxHi = Math.max.apply(null, mixD.map(m => m[3]));
     const mix = mixD.map(m => ({ name: m[0], spend: this.k(m[1]), save: this.k(m[2]) + '–' + this.k(m[3]), pct: (m[2] / m[1] * 100).toFixed(1) + '–' + (m[3] / m[1] * 100).toFixed(1) + '%', w: (m[3] / mxHi * 100) + '%', c: m[4] }));
     const mo = TOTAL / 12, hist = [], baseP = [], wLo = [], wHi = [];
@@ -1122,15 +1221,24 @@ class Component extends DCLogic {
     const CX = i => 48 + i * 504 / 23, CY = v => 190 - (v - cMin) / (cMax - cMin) * 180;
     const PT = arr => arr.map(p => CX(p[0]).toFixed(1) + ',' + CY(p[1]).toFixed(1)).join(' ');
     const lastP = [11, hist[11]];
-    const chart = { hist: PT(hist.map((v, i) => [i, v])), base: PT([lastP].concat(baseP.map((v, j) => [12 + j, v]))), mid: PT([lastP].concat(baseP.map((v, j) => [12 + j, (wLo[j] + wHi[j]) / 2]))),
+    const chart = { area: PT(hist.map((v, i) => [i, v])) + ' ' + CX(11).toFixed(1) + ',190 48,190', todayY: CY(hist[11]).toFixed(1), hist: PT(hist.map((v, i) => [i, v])), base: PT([lastP].concat(baseP.map((v, j) => [12 + j, v]))), mid: PT([lastP].concat(baseP.map((v, j) => [12 + j, (wLo[j] + wHi[j]) / 2]))),
       band: PT([lastP].concat(wLo.map((v, j) => [12 + j, v]))) + ' ' + PT(wHi.map((v, j) => [12 + j, v]).reverse()),
       yTop: this.k(cMax), yMid: this.k((cMax + cMin) / 2), yBot: this.k(cMin), save: this.k(tLo * 0.875) + '–' + this.k(tHi * 0.875), savePct: '(' + (tLo * 0.875 / TOTAL * 100).toFixed(1) + '–' + (tHi * 0.875 / TOTAL * 100).toFixed(1) + '% of purchases)' };
+    const KC = { Swap: ['#eaf2fd', '#1d4ed8'], 'Opt in': ['var(--accent-soft)', 'var(--accent-ink)'], Confirm: ['var(--accent-soft)', 'var(--accent-ink)'], 'Drop out': ['var(--bad-soft)', 'var(--bad)'], Order: ['#f1f3f6', 'var(--ink)'], Award: ['#e0e7ff', '#3730a3'] };
+    const fmtV = q => q.hi > 0 ? (q.lo === q.hi ? this.money(q.lo) : this.k(q.lo) + '–' + this.k(q.hi)) + '/yr' : (q.kind === 'Order' ? 'Restock' : '—');
+    const qLo = S.queue.reduce((a, q) => a + q.lo, 0), qHi = S.queue.reduce((a, q) => a + q.hi, 0), nQ = S.queue.length;
+    const aq = { count: nQ, has: nQ > 0, empty: nQ === 0, emptyTitle: S.history.length ? 'All caught up. New actions will appear here.' : 'No actions yet', total: qHi > 0 ? (qLo === qHi ? this.money(qLo) : this.k(qLo) + '–' + this.k(qHi)) + '/yr' : '$0/yr', pct: '(' + (qLo / TOTAL * 100).toFixed(2) + (qLo === qHi ? '' : '–' + (qHi / TOTAL * 100).toFixed(2)) + '% of purchases)',
+      items: S.queue.slice().reverse().map(q => ({ kind: q.kind, title: q.title, detail: q.detail, tab: q.tab, val: fmtV(q), pct: q.hi > 0 ? (q.hi / TOTAL * 100).toFixed(2) + '% of purchases' : (q.kind === 'Order' ? 'Prevents a stock-out' : 'No savings'), bg: (KC[q.kind] || KC.Order)[0], fg: (KC[q.kind] || KC.Order)[1], remove: () => this.unstage(q.id, true) })),
+      submitting: !!S.submitting, submitLabel: S.submitting ? 'Submitting ' + nQ + ' actions…' : 'Submit all ' + nQ + ' action' + (nQ === 1 ? '' : 's'),
+      submit: () => { if (!S.queue.length || S.submitting) return; this.setState({ submitting: true }); setTimeout(() => { const n = this.state.queue.length; this.setState(s => { const sent = Object.assign({}, s.sent); s.queue.forEach(q => { sent[q.id] = true; }); return { sent, history: s.queue.concat(s.history), queue: [], submitting: false }; }); this.toastMsg('Submitted ' + n + ' action' + (n === 1 ? '' : 's') + '. Confirmations are on their way.'); }, 1500); },
+      hasHistory: S.history.length > 0, histTitle: 'Submitted · ' + S.history.length + ' action' + (S.history.length === 1 ? '' : 's') + ' sent to rounds, suppliers and your wholesaler', history: S.history.map(q => ({ title: q.title, val: fmtV(q) })) };
+    const rb = { show: nQ > 0 && scr !== 'award', n: nQ, anim: S.bump ? (S.bump % 2 ? 'ppBumpA .55s ease' : 'ppBumpB .55s ease') : 'none', text: nQ + ' action' + (nQ === 1 ? '' : 's') + ' ready · est. ' + aq.total };
     const isS = k => scr === k;
     return {
       themeName: 'light', upNav: { bg: scr === 'upload' ? 'var(--ink)' : 'transparent', fg: scr === 'upload' ? 'var(--bg)' : 'var(--ink)' },
-      nav, fresh, demoOpts, feedOpts, chatOpen: S.chatOpen, chatClosed: !S.chatOpen, toggleChat: () => this.setState(s => ({ chatOpen: !s.chatOpen })),
+      nav, util, fresh, search: S.search || '', onSearch: e => this.setState({ search: e.target.value }), onSearchKey: e => { if (e.key === 'Enter' && (S.search || '').trim()) { const v = S.search; this.setState({ search: '', chatOpen: true }); this.ask(v, ctx); } }, demoOpts, feedOpts, chatOpen: S.chatOpen, chatClosed: !S.chatOpen, toggleChat: () => this.setState(s => ({ chatOpen: !s.chatOpen })),
       goSummary: () => this.go('summary'), goUpload: () => this.go('upload'), goCompare: () => this.go('compare'), goSources: () => this.go('sources'), goJoin: () => this.go('join'), goAward: () => this.goAward(),
-      isSummary: isS('summary'), isUpload: isS('upload'), isCompare: isS('compare'), isSwap: isS('swap'), isJoin: isS('join'), isSources: isS('sources'),
+      isSummary: isS('summary'), isAward: isS('award'), awardReady: isS('award') && ready, aq, rb, hasFly: !!S.fly, fly: S.fly || {}, goAwardPage: () => this.go('award'), goSwap: () => this.go('swap'), isUpload: isS('upload'), isCompare: isS('compare'), isSwap: isS('swap'), isJoin: isS('join'), isSources: isS('sources'),
       showLoading: vs === 'loading', showError: vs === 'error', loadText: loadTexts[scr], err: errs[scr],
       retry: () => { this.setState(s => ({ demo: Object.assign({}, s.demo, { [scr]: 'loading' }) })); setTimeout(() => this.setState(s => ({ demo: Object.assign({}, s.demo, { [scr]: 'ready' }) })), 900); },
       sumReady: isS('summary') && ready, sumEmpty: isS('summary') && empty, showUpload: isS('upload') && (ready || empty),
@@ -1153,7 +1261,7 @@ class Component extends DCLogic {
       optOpen: S.optOpen, opt: { save: cs ? this.k(cs * 0.09) + '–' + this.k(cs * 0.14) + '/yr (9–14%)' : '$0 (0%)', rows: optRows, total: this.num(userCommit) + ' units', from: '94%', to: Math.round(proj) + '%', toC: proj >= 100 ? 'var(--good)' : 'var(--ink)', fromW: '94%', toW: Math.min(100, proj) + '%',
         msg: proj >= 100 ? 'Your commitment pushes the round over its target.' : userCommit ? 'Swap the remaining drugs to help the round reach its target.' : 'Swap at least one drug to join this round.',
         disabled: userCommit <= 0, op: userCommit > 0 ? 1 : 0.45, cancel: () => this.setState({ optOpen: false }),
-        submit: () => { this.setState({ cardioJoined: true, cardioCommit: userCommit, cardioEnd: Date.now() + 48 * 3600 * 1000, optOpen: false }); this.toastMsg(proj >= 100 ? "You're in — your commitment pushed the Cardio round to " + Math.round(proj) + '% of target. Confirm within 48 hours.' : "You're in at " + Math.round(proj) + '% of target.'); } },
+        submit: e => { this.stage({ id: 'opt:cardio', kind: 'Opt in', tab: 'Join', title: 'Opt in: Cardio generics bundle', detail: this.num(userCommit) + ' units · takes the round to ' + Math.round(proj) + '% of target', lo: cs * 0.09, hi: cs * 0.14, undo: () => this.setState({ cardioJoined: false, cardioCommit: 0, cardioConf: null }) }, e); this.setState({ cardioJoined: true, cardioCommit: userCommit, cardioEnd: Date.now() + 48 * 3600 * 1000, optOpen: false });  } },
       hasToast: !!S.toast, toast: S.toast, hasTip: !!S.tip, tip: S.tip || {},
       msgs: S.msgs.map(m => m.r === 'me' ? { t: m.t, align: 'flex-end', bg: 'var(--ink)', fg: 'var(--bg)', bd: 'var(--ink)' } : { t: m.t, align: 'flex-start', bg: 'var(--surface-2)', fg: 'var(--ink)', bd: 'var(--line)' }),
       busy: S.busy, sugg, msgRef: this.msgRef, chatIn: S.chatIn, onChatIn: e => this.setState({ chatIn: e.target.value }),

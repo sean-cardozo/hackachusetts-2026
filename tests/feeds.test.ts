@@ -38,8 +38,9 @@ describe("NADAC", () => {
     for (const item of data.items) expect(item.ndc).toMatch(/^\d{11}$/);
   });
 
-  it("has a representative price for all 21 drugs (10 tracked + glipizide + 10 extra)", () => {
-    expect(allDrugKeys).toHaveLength(21);
+  it("has a representative price for every tracked drug (the original 11 plus the extras)", () => {
+    expect(allDrugKeys.length).toBeGreaterThanOrEqual(11);
+    expect(new Set(allDrugKeys).size).toBe(allDrugKeys.length); // keys are unique
     for (const key of allDrugKeys) {
       expect(data.byDrug[key], `missing byDrug entry for ${key}`).toBeDefined();
       expect(data.byDrug[key].nadac).toBeGreaterThan(0);

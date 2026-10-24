@@ -236,7 +236,17 @@ async function buildOrangeBook(): Promise<OrangeBookCache> {
 // openFDA drug shortages
 // ---------------------------------------------------------------------------
 
+// First strength in a text like "Clonazepam, Tablet, .5 mg (NDC ...)" or "90 mcg", in mg. null if none.
+function strengthInMg(text: string): number | null {
+  const match = /(\d*\.?\d+)\s*(mg|mcg|g)\b/i.exec(text);
+  if (!match) return null;
+  const amount = Number(match[1]);
+  const unit = match[2].toLowerCase();
+  return unit === "mcg" ? amount / 1000 : unit === "g" ? amount * 1000 : amount;
+}
+
 type OpenFdaShortage = {
+  presentation?: string;
   generic_name?: string;
   status?: string;
   update_date?: string;
@@ -293,6 +303,10 @@ async function buildShortages(): Promise<ShortagesCache> {
       // The dosage form must match too: a tablet is not affected by an injection shortage.
       const formWord = ["tablet", "capsule", "aerosol"].find((word) => drug.form.includes(word));
       if (formWord && !recordForm.includes(formWord)) continue;
+      // Same strength too (a 2 mg shortage does not affect the 0.5 mg product).
+      // If the record has no readable strength, keep it to be safe.
+      const recordMg = strengthInMg(record.presentation ?? "");
+      if (recordMg !== null && Math.abs(recordMg - strengthInMg(drug.strength)!) > 1e-6) continue;
       items.push({
         drugKey: drug.drugKey,
         ingredient: drug.name,

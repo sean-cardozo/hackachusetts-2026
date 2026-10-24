@@ -4,15 +4,16 @@
 
 **User:** an independent pharmacy owner in Massachusetts. Busy, practical, not a data analyst. Wants three answers fast: *Am I overpaying? What can I switch? What should I commit to?*
 
-**Built at:** Hackachusetts 2026. Visual theme follows the Hackachusetts brand (black, bright orange, white; heavy condensed display type; paint-drip accents) in a bright, light-first layout.
+**Built at:** Hackachusetts 2026. Visual theme: clean healthcare SaaS — navy sidebar, white workspace, green-teal accent (see theme.md).
 
 ## Navigation (4 tabs + header utilities)
 1. **Summary — Savings & next steps.** Big estimated savings across **all purchases** (~$4.3M/yr: generics, brand, OTC & supplies) in $ and %, with a breakdown by spend type; a **Monthly purchases chart** (12 months actual + 12 months projected, with and without PharmaPool, savings range shaded); **Savings by step** cards ($ and %) for Compare, Swap, Join; ranked **Key recommendations** each with one action; key stats.
 2. **Compare.** Each drug priced against NADAC, the weekly CMS average of what pharmacies pay wholesalers. Savings by category ($ and %), days of supply, FDA shortage alerts, and a **Next step** action per drug (Swap, Join round, Confirm round, Award, Reorder).
 3. **Swap.** Suggests switching to an FDA-rated equivalent (Orange Book "AB") from another manufacturer to join a round. Approve / undo per swap.
 4. **Join.** Buying rounds with a recommended commitment, non-binding until the round reaches its volume target, then a 48-hour window to confirm. Not every round makes it: rounds can be **At risk** (on pace to miss) or **Target missed** (nothing ordered, commitments released). The **Award** decision (quotes, AI recommendation, supplier view) lives here.
+- **Award (review & submit)** in the sidebar's second group: every action from Compare, Swap and Join is queued here with a red count badge (pulses + a flying "+1" on each click), reviewed, then submitted at once. Supplier award decisions live here too.
 - Header utilities: **↑ Upload data** button and **Data sources** link (right side, not tabs). Upload page = 2 steps, AI mapping, drug matching, privacy panel.
-- Floating **Ask PharmaPool** button bottom-right. Light theme only.
+- Navy left sidebar holds the 4 tabs plus Upload data and Data sources; top bar has search, data freshness and the pharmacy. Floating **Ask PharmaPool** button bottom-right. Light theme only.
 
 ## Non-negotiables
 - Every savings figure shows both $ and % (e.g. "$23.3k/yr (11.2%)").

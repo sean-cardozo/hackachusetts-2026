@@ -2,15 +2,34 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "var(--bg)",
+        surface: "var(--surface)",
+        "surface-2": "var(--surface-2)",
+        line: "var(--line)",
+        "line-strong": "var(--line-strong)",
+        ink: "var(--ink)",
+        muted: "var(--muted)",
+        accent: "var(--accent)",
+        "accent-ink": "var(--accent-ink)",
+        "accent-soft": "var(--accent-soft)",
+        good: "var(--good)",
+        "good-soft": "var(--good-soft)",
+        bad: "var(--bad)",
+        "bad-soft": "var(--bad-soft)",
+      },
+      fontFamily: {
+        display: ["var(--font-display)", "Impact", "sans-serif"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      boxShadow: {
+        pp: "var(--shadow)",
       },
     },
   },

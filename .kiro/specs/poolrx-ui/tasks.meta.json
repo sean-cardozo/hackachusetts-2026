@@ -1,0 +1,206 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Theme, shell and primitives: Tailwind tokens, fonts, globals, root layout, Header with tabs and drips, Footer, FreshnessChip, LiveBadge, SampleBadge, SourceTip, GapPill, RiskPill, StatCard, HeroNumber, StateViews, Toast, and placeholder pages for summary, compare, swap, join, upload and sources under `app/(app)/`, with `/` redirecting to `/summary`.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119651
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871125275
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871413177
+      }
+    ],
+    "1.2 Data layer and App State: `lib/data.ts`, `components/AppState.tsx`, and `tests/data.test.ts`.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119678
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871126011
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871413238
+      }
+    ],
+    "2.1 Summary page with savings hero, spend mix, monthly chart, Savings by step and Key recommendations.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119697
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871416080
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871614419
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871831333
+      }
+    ],
+    "2.2 Compare page with category table, drug drawer and Next step actions.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119727
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871416867
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871614925
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871831368
+      }
+    ],
+    "2.3 Swap page with approve, undo and Approve all.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119753
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871417677
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871610622
+      }
+    ],
+    "2.4 Join page with round cards, opt-in dialog and Award section.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119770
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871418506
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871615693
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871831946
+      }
+    ],
+    "2.5 Upload page with demo file, column mapping and drug matching.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119787
+      },
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871419092
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871616297
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871832831
+      }
+    ],
+    "3.1 Data sources page and the floating Ask PharmaPool panel.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119812
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871835669
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871951536
+      }
+    ],
+    "3.2 Quality pass: render tests for every page, accessibility fixes, and make build, lint, tsc and all tests pass.": [
+      {
+        "executionId": "137c3e2d-762e-4319-9ac3-7d7b62ea9ade",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871119837
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871956092
+      },
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792872250020
+      }
+    ],
+    "2. Main pages": [
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792871832880
+      }
+    ],
+    "3. Remaining pages and quality": [
+      {
+        "executionId": "5f660d49-1956-4211-adf7-cf58c627da17",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792872250083
+      }
+    ],
+    "4.1 Re-skin the app to the new identity: navy left sidebar with the 4 tabs, Upload data and Data sources, plus a link to the new Award page; sticky top bar with search, freshness chip and pharmacy name; white workspace; green-teal accent; Plus Jakarta Sans and JetBrains Mono; update tokens, shared classes, primitives, charts and hard-coded colors; rewrite `.kiro/steering/theme.md` and update `.kiro/steering/product.md` to match.": [
+      {
+        "executionId": "c18a35ed-2987-4f2b-bdd9-d25f2377115f",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792872553628
+      }
+    ],
+    "4.2 Award (review and submit) page at `/award`: every action from Compare, Swap and Join (approved swaps, opt-ins, award decision) is listed in a review queue with the count shown as a badge in the sidebar, then submitted at once.": [
+      {
+        "executionId": "c18a35ed-2987-4f2b-bdd9-d25f2377115f",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792872554375
+      }
+    ]
+  }
+}

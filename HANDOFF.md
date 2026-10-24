@@ -9,7 +9,7 @@ PharmaPool helps **independent pharmacies in Massachusetts pool their purchasing
 3. Lets them **join buying rounds** with a recommended commitment. Joining is non-binding until the round hits its volume target, then they get a 48-hour window to confirm. Some rounds miss their target, and then nothing is ordered.
 4. **Awards** the order to the best supplier, using an AI recommendation that weighs price, delivery speed and shortage history.
 
-Built for **Hackachusetts 2026**. The look is bold black condensed type, bright orange, warm white and orange paint drips.
+Built for **Hackachusetts 2026**. Look: clean healthcare SaaS — navy sidebar, white workspace, green-teal accent, Plus Jakarta Sans.
 
 ## What's in the folder
 | Path | What it is |
@@ -31,7 +31,7 @@ Built for **Hackachusetts 2026**. The look is bold black condensed type, bright 
 
 ### Prompts to paste into Kiro chat if you want to steer
 - *"Read BRIEF.md and all steering files, then summarize the app back to me before writing code."*
-- *"Build task 1–3: scaffold, theme tokens from theme.md, header with tabs Summary/Compare/Swap/Join and an 'Upload data' button + 'Data sources' link on the right, footer, and the LiveBadge/SampleBadge/SourceTip primitives."*
+- *"Build task 1–3: scaffold, theme tokens from theme.md, navy sidebar with Summary/Compare/Swap/Join plus Upload data and Data sources, sticky top bar with search + freshness chip, footer, and the LiveBadge/SampleBadge/SourceTip primitives."*
 - *"Load the sample data from design.md into /data/sample and write lib/calc.ts with unit tests."*
 - *"Build the Summary page to match reference/PharmaPool.dc.html: savings hero across all purchases (generics/brand/OTC), monthly purchases chart (actual + projected with/without), Savings by step cards, Key recommendations."*
 - *"Build Join with all round states including At risk and Target missed, the Opt-in dialog, and the Award section with the animated 'Estimated 8–14% → Quoted 11.2%' headline."*

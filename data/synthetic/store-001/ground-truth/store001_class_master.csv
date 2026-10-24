@@ -1,0 +1,925 @@
+equivalence_class_id,generic_name,brand_name,strength,brand_generic,therapeutic_category,us_fills_millions_approx,strength_share,store_annual_fills,avg_daily_units,reorder_point_units,order_up_to_units,benchmark_unit_price_start,store_primary_price_multiplier,secondary_eligible
+ATOR20,Atorvastatin calcium,,20 mg,G,Lipids,115.0,0.35,563.5,78.73,1102,3543,0.035,0.694,Y
+ATOR40,Atorvastatin calcium,,40 mg,G,Lipids,115.0,0.35,563.5,78.73,1102,3543,0.05,0.837,Y
+LEVO50,Levothyroxine sodium,,50 mcg,G,Endocrine,89.0,0.25,311.5,43.52,609,1958,0.12,0.815,N
+LEVO100,Levothyroxine sodium,,100 mcg,G,Endocrine,89.0,0.2,249.2,34.82,487,1567,0.14,0.998,N
+LISI10,Lisinopril,,10 mg,G,Cardiovascular,82.0,0.35,401.8,56.14,786,2526,0.02,1.123,Y
+LISI20,Lisinopril,,20 mg,G,Cardiovascular,82.0,0.35,401.8,56.14,786,2526,0.025,0.973,Y
+METF500,Metformin HCl,,500 mg,G,Diabetes,86.0,0.45,541.8,151.4,2120,6813,0.02,0.975,Y
+METF1000,Metformin HCl,,1000 mg,G,Diabetes,86.0,0.35,421.4,117.75,1649,5299,0.03,1.054,Y
+AMLO5,Amlodipine besylate,,5 mg,G,Cardiovascular,69.0,0.45,434.7,60.73,850,2733,0.015,1.1,Y
+AMLO10,Amlodipine besylate,,10 mg,G,Cardiovascular,69.0,0.4,386.4,53.99,756,2429,0.02,1.206,Y
+METOS50,Metoprolol succinate ER,,50 mg,G,Cardiovascular,64.0,0.3,268.8,37.56,526,1690,0.1,0.958,Y
+METOT25,Metoprolol tartrate,,25 mg,G,Cardiovascular,64.0,0.25,224.0,62.59,876,2817,0.02,1.06,Y
+OMEP20,Omeprazole DR,,20 mg,G,GI,51.0,0.6,428.4,59.85,838,2693,0.05,1.282,Y
+LOSA50,Losartan potassium,,50 mg,G,Cardiovascular,54.0,0.4,302.4,42.25,591,1901,0.04,0.845,Y
+LOSA100,Losartan potassium,,100 mg,G,Cardiovascular,54.0,0.35,264.6,36.97,518,1664,0.06,1.103,Y
+ALBU,Albuterol sulfate HFA,,"90 mcg/act, 200 act",G,Respiratory,59.0,0.85,702.0,3.27,46,147,22.0,0.974,N
+SIMV40,Simvastatin,,40 mg,G,Lipids,30.0,0.4,168.0,23.47,329,1056,0.025,0.86,Y
+GABA300,Gabapentin,,300 mg,G,CNS,41.0,0.4,229.6,96.24,1347,4331,0.04,1.073,Y
+SERT50,Sertraline HCl,,50 mg,G,Psychiatric,39.0,0.4,218.4,30.51,427,1373,0.03,0.965,Y
+HCTZ25,Hydrochlorothiazide,,25 mg,G,Cardiovascular,26.0,0.6,218.4,30.51,427,1373,0.02,0.894,Y
+ROSU10,Rosuvastatin calcium,,10 mg,G,Lipids,37.0,0.4,207.2,28.95,405,1303,0.04,1.004,Y
+MONT10,Montelukast sodium,,10 mg,G,Respiratory,27.0,0.8,302.4,42.25,591,1901,0.04,1.036,Y
+ESCI10,Escitalopram oxalate,,10 mg,G,Psychiatric,33.0,0.45,207.9,29.05,407,1307,0.03,0.865,Y
+BUPXL150,Bupropion HCl XL,,150 mg,G,Psychiatric,30.0,0.4,168.0,23.47,329,1056,0.12,0.846,N
+PANT40,Pantoprazole sodium DR,,40 mg,G,GI,30.0,0.85,357.0,49.88,698,2245,0.04,1.002,Y
+FURO40,Furosemide,,40 mg,G,Cardiovascular,27.0,0.45,170.1,23.77,333,1069,0.02,0.892,Y
+FLUT,Fluticasone propionate nasal,,"50 mcg/act, 16 g",G,Allergy,23.0,1.0,322.0,1.5,21,67,6.0,0.901,N
+TRAZ50,Trazodone HCl,,50 mg,G,Psychiatric,26.0,0.5,182.0,25.43,356,1144,0.03,0.87,Y
+TAMS04,Tamsulosin HCl,,0.4 mg,G,Urology,22.0,1.0,308.0,43.03,602,1936,0.04,1.09,Y
+CARV12,Carvedilol,,12.5 mg,G,Cardiovascular,22.0,0.3,92.4,25.82,361,1162,0.02,0.914,Y
+PRED20,Prednisone,,20 mg,G,Anti-inflammatory,21.0,0.35,102.9,2.82,39,127,0.05,0.954,N
+AMOX500,Amoxicillin,,500 mg,G,Anti-infective,23.0,0.5,161.0,13.23,185,595,0.06,1.122,N
+MELO15,Meloxicam,,15 mg,G,Pain/MSK,19.0,0.55,146.3,20.44,286,920,0.02,1.119,Y
+CLOP75,Clopidogrel bisulfate,,75 mg,G,Cardiovascular,17.0,1.0,238.0,33.25,466,1496,0.04,0.912,Y
+FLUO20,Fluoxetine HCl,,20 mg,G,Psychiatric,26.0,0.5,182.0,25.43,356,1144,0.04,1.03,Y
+DULO60,Duloxetine DR,,60 mg,G,Psychiatric,21.0,0.5,147.0,20.54,288,924,0.1,1.332,Y
+PRAV40,Pravastatin sodium,,40 mg,G,Lipids,16.0,0.45,100.8,14.08,197,634,0.05,0.961,Y
+GLIP5,Glipizide,,5 mg,G,Diabetes,13.0,0.5,91.0,12.71,178,572,0.04,0.913,Y
+CYCL10,Cyclobenzaprine HCl,,10 mg,G,Pain/MSK,12.0,0.6,100.8,8.28,116,373,0.03,0.848,Y
+ALLO100,Allopurinol,,100 mg,G,Other,15.0,0.5,105.0,14.67,205,660,0.05,0.942,Y
+ONDA4,Ondansetron ODT,,4 mg,G,GI,12.0,0.5,84.0,2.76,39,124,0.06,1.112,N
+SPIR25,Spironolactone,,25 mg,G,Cardiovascular,15.0,0.7,147.0,20.54,288,924,0.05,0.834,Y
+AZIT250,Azithromycin,,250 mg,G,Anti-infective,12.0,0.7,117.6,1.93,27,87,0.3,1.158,N
+CEPH500,Cephalexin,,500 mg,G,Anti-infective,10.0,0.7,98.0,7.52,105,338,0.08,1.013,N
+WARF5,Warfarin sodium,,5 mg,G,Anticoagulant,7.0,0.3,29.4,4.11,58,185,0.1,1.085,N
+VENL75,Venlafaxine ER,,75 mg,G,Psychiatric,15.0,0.45,94.5,13.2,185,594,0.15,0.773,Y
+LAMO100,Lamotrigine,,100 mg,G,CNS,12.0,0.35,58.8,16.43,230,739,0.04,1.214,N
+FINA5,Finasteride,,5 mg,G,Urology,10.0,0.7,98.0,13.69,192,616,0.04,0.988,Y
+VALA1G,Valacyclovir HCl,,1 g,G,Anti-infective,9.0,0.6,75.6,4.35,61,196,0.2,0.933,Y
+HYDX25,Hydroxyzine HCl,,25 mg,G,Psychiatric,15.0,0.5,105.0,8.63,121,388,0.04,1.159,Y
+BUSP10,Buspirone HCl,,10 mg,G,Psychiatric,16.0,0.45,100.8,28.17,394,1267,0.04,0.919,Y
+TOPI50,Topiramate,,50 mg,G,CNS,11.0,0.4,61.6,17.21,241,775,0.04,0.969,Y
+MEDR4,Methylprednisolone dose pack,,4 mg x 21 tabs,G,Anti-inflammatory,8.0,1.0,112.0,0.31,4,14,3.0,0.813,N
+FAMO20,Famotidine,,20 mg,G,GI,16.0,0.55,123.2,34.43,482,1549,0.04,1.118,Y
+DOXY100,Doxycycline hyclate,,100 mg,G,Anti-infective,9.0,0.6,75.6,4.14,58,186,0.15,1.002,N
+EZET10,Ezetimibe,,10 mg,G,Lipids,8.0,1.0,112.0,15.65,219,704,0.05,1.06,Y
+TIZA4,Tizanidine HCl,,4 mg,G,Pain/MSK,10.0,0.6,84.0,13.81,193,621,0.03,0.985,Y
+ESTR1,Estradiol,,1 mg,G,Women's health,9.0,0.4,50.4,7.04,99,317,0.1,0.795,N
+TADA5,Tadalafil,,5 mg,G,Urology,6.0,0.5,42.0,5.87,82,264,0.1,1.219,Y
+FLSA250,Fluticasone/salmeterol inhalation powder,,"250/50 mcg, 60 blisters",G,Respiratory,10.0,0.5,70.0,0.33,5,15,70.0,1.034,Y
+BUFO160,Budesonide/formoterol HFA,,"160/4.5 mcg, 120 act",G,Respiratory,8.0,0.55,61.6,0.29,4,13,180.0,0.726,Y
+OSEL75,Oseltamivir phosphate,,75 mg,G,Anti-infective,6.0,0.8,67.2,1.84,26,83,1.0,1.099,N
+ESOM40,Esomeprazole magnesium DR,,40 mg,G,GI,10.0,0.6,84.0,11.74,164,528,0.25,1.121,Y
+MESA12,Mesalamine DR,,1.2 g,G,GI,2.0,0.9,25.2,7.04,99,317,1.5,1.001,Y
+LATA,Latanoprost ophthalmic,,"0.005%, 2.5 mL",G,Ophthalmic,9.0,1.0,126.0,0.59,8,26,3.0,0.973,Y
+VALS160,Valsartan,,160 mg,G,Cardiovascular,10.0,0.4,56.0,7.82,110,352,0.12,0.967,Y
+NITF100,Nitrofurantoin monohydrate/macrocrystals,,100 mg,G,Anti-infective,8.0,1.0,112.0,3.07,43,138,0.35,1.099,N
+ELIQ5,Apixaban,Eliquis,5 mg,B,Anticoagulant,25.0,0.75,262.5,73.35,734,2201,9.95,,N
+XARE20,Rivaroxaban,Xarelto,20 mg,B,Anticoagulant,10.0,0.7,98.0,13.69,137,411,17.73,,N
+JARD10,Empagliflozin,Jardiance,10 mg,B,Diabetes,12.0,0.6,100.8,14.08,141,422,20.67,,N
+OZEM1,Semaglutide pen,Ozempic,1 mg/dose,B,Diabetes (GLP-1),15.0,0.45,94.5,0.31,3,9,983.03,,N
+MOUN5,Tirzepatide pen,Mounjaro,5 mg/0.5 mL,B,Diabetes (GLP-1),12.0,0.3,50.4,0.66,7,20,265.95,,N
+TRUL15,Dulaglutide pen,Trulicity,1.5 mg/0.5 mL,B,Diabetes (GLP-1),8.0,0.45,50.4,0.66,7,20,242.8,,N
+TREL,Fluticasone/umeclidinium/vilanterol,Trelegy Ellipta,"100/62.5/25 mcg, 30 doses",B,Respiratory,7.0,0.8,78.4,0.37,4,11,640.25,,N
+LTG0001,Long-tail generic #0001 (synthetic),,,G,Anti-infective,,1.0,223.6,31.25,437,1406,0.28052212187052,0.992,N
+LTG0002,Long-tail generic #0002 (synthetic),,,G,CNS,,1.0,9.3,1.3,18,90,0.45549413708928593,0.914,N
+LTG0003,Long-tail generic #0003 (synthetic),,,G,Cardiovascular,,1.0,17.9,2.51,35,113,0.06762006007203158,0.995,N
+LTG0004,Long-tail generic #0004 (synthetic),,,G,CNS,,1.0,12.7,1.78,25,90,0.06902920869958765,0.958,Y
+LTG0005,Long-tail generic #0005 (synthetic),,,G,Psychiatric,,1.0,24.2,3.38,47,152,0.33092088262537256,0.917,Y
+LTG0006,Long-tail generic #0006 (synthetic),,,G,Cardiovascular,,1.0,7.4,1.03,14,90,0.22415548392289206,1.101,N
+LTG0007,Long-tail generic #0007 (synthetic),,,G,Women's health,,1.0,82.8,11.57,162,521,0.3660626243867366,0.974,N
+LTG0008,Long-tail generic #0008 (synthetic),,,G,GI,,1.0,29.6,4.13,58,186,0.17528173853497547,0.848,Y
+LTG0009,Long-tail generic #0009 (synthetic),,,G,Urology,,1.0,6.6,0.92,13,42,0.2792784551502265,1.138,Y
+LTG0010,Long-tail generic #0010 (synthetic),,,G,Other,,1.0,11.4,1.6,22,90,0.24769166582588284,1.15,N
+LTG0011,Long-tail generic #0011 (synthetic),,,G,Cardiovascular,,1.0,56.3,7.86,110,354,0.4602790766387096,0.896,N
+LTG0012,Long-tail generic #0012 (synthetic),,,G,Diabetes,,1.0,105.6,14.76,207,664,0.4739367560445768,1.022,N
+LTG0013,Long-tail generic #0013 (synthetic),,,G,Dermatology,,1.0,300.0,41.92,587,1886,0.041854261110007604,1.12,N
+LTG0014,Long-tail generic #0014 (synthetic),,,G,Diabetes,,1.0,300.0,41.92,587,1886,0.022349345788908848,1.11,N
+LTG0015,Long-tail generic #0015 (synthetic),,,G,GI,,1.0,63.5,8.88,124,399,0.5758291501842759,0.869,N
+LTG0016,Long-tail generic #0016 (synthetic),,,G,GI,,1.0,11.8,1.65,23,90,0.6935273648635206,1.051,N
+LTG0017,Long-tail generic #0017 (synthetic),,,G,Cardiovascular,,1.0,3.0,0.42,6,90,0.07620618179105398,0.999,Y
+LTG0018,Long-tail generic #0018 (synthetic),,,G,Anti-infective,,1.0,53.3,7.44,104,335,0.032924932523814156,1.137,N
+LTG0019,Long-tail generic #0019 (synthetic),,,G,Other,,1.0,14.6,2.03,28,92,0.23348093519524335,1.038,N
+LTG0020,Long-tail generic #0020 (synthetic),,,G,Women's health,,1.0,23.5,3.28,46,148,0.536412701955023,1.441,N
+LTG0021,Long-tail generic #0021 (synthetic),,,G,Cardiovascular,,1.0,18.5,2.59,36,117,1.276222889850684,1.085,N
+LTG0022,Long-tail generic #0022 (synthetic),,,G,Respiratory,,1.0,32.6,4.56,64,205,0.35437765867357474,0.767,N
+LTG0023,Long-tail generic #0023 (synthetic),,,G,Psychiatric,,1.0,138.8,19.4,272,873,0.145816489253445,1.07,Y
+LTG0024,Long-tail generic #0024 (synthetic),,,G,Ophthalmic,,1.0,46.6,6.52,91,293,0.08656841127931665,0.851,N
+LTG0025,Long-tail generic #0025 (synthetic),,,G,Cardiovascular,,1.0,31.9,4.46,62,201,0.21390177117731182,1.002,Y
+LTG0026,Long-tail generic #0026 (synthetic),,,G,Women's health,,1.0,11.1,1.56,22,90,0.15677331381052642,1.187,N
+LTG0027,Long-tail generic #0027 (synthetic),,,G,Dermatology,,1.0,5.2,0.72,10,100,0.07663069381661193,0.865,Y
+LTG0028,Long-tail generic #0028 (synthetic),,,G,Cardiovascular,,1.0,21.6,3.01,42,136,1.6406064772277487,1.006,N
+LTG0029,Long-tail generic #0029 (synthetic),,,G,Cardiovascular,,1.0,36.2,5.06,71,228,1.2604625135728236,1.199,N
+LTG0030,Long-tail generic #0030 (synthetic),,,G,Dermatology,,1.0,300.0,41.92,587,1886,0.6585986290566554,0.872,N
+LTG0031,Long-tail generic #0031 (synthetic),,,G,Cardiovascular,,1.0,45.2,6.31,88,284,0.08420170807535746,0.818,N
+LTG0032,Long-tail generic #0032 (synthetic),,,G,Anti-infective,,1.0,125.6,17.55,246,790,0.497246027657397,0.952,Y
+LTG0033,Long-tail generic #0033 (synthetic),,,G,Ophthalmic,,1.0,21.2,2.96,42,133,0.4008919799280725,1.063,N
+LTG0034,Long-tail generic #0034 (synthetic),,,G,Endocrine,,1.0,9.3,1.3,18,90,0.32918214473661317,1.029,Y
+LTG0035,Long-tail generic #0035 (synthetic),,,G,Psychiatric,,1.0,12.1,1.7,24,100,0.7378428575850193,1.254,N
+LTG0036,Long-tail generic #0036 (synthetic),,,G,GI,,1.0,16.2,2.26,32,102,0.39918970205275517,0.889,N
+LTG0037,Long-tail generic #0037 (synthetic),,,G,Cardiovascular,,1.0,300.0,41.92,587,1886,0.443226019109369,0.963,Y
+LTG0038,Long-tail generic #0038 (synthetic),,,G,Other,,1.0,14.4,2.01,28,100,0.3998029849531947,1.027,Y
+LTG0039,Long-tail generic #0039 (synthetic),,,G,Psychiatric,,1.0,105.7,14.76,207,664,0.29733427554624037,0.942,N
+LTG0040,Long-tail generic #0040 (synthetic),,,G,CNS,,1.0,13.1,1.83,26,90,0.03553273822620806,1.18,N
+LTG0041,Long-tail generic #0041 (synthetic),,,G,Psychiatric,,1.0,118.2,16.51,231,743,0.229909713577605,0.802,Y
+LTG0042,Long-tail generic #0042 (synthetic),,,G,Other,,1.0,61.3,8.57,120,386,0.12125231785116396,1.039,N
+LTG0043,Long-tail generic #0043 (synthetic),,,G,Cardiovascular,,1.0,32.0,4.47,63,201,0.05880486838510395,0.996,N
+LTG0044,Long-tail generic #0044 (synthetic),,,G,Dermatology,,1.0,36.8,5.14,72,231,1.1366972916909193,1.07,N
+LTG0045,Long-tail generic #0045 (synthetic),,,G,Respiratory,,1.0,17.6,2.46,34,111,1.1916103965513989,1.145,N
+LTG0046,Long-tail generic #0046 (synthetic),,,G,Dermatology,,1.0,66.0,9.22,129,415,0.8232716384403378,1.072,Y
+LTG0047,Long-tail generic #0047 (synthetic),,,G,Other,,1.0,22.4,3.13,44,141,0.2729473778939555,0.9,Y
+LTG0048,Long-tail generic #0048 (synthetic),,,G,Dermatology,,1.0,8.9,1.24,17,56,0.816225549715222,1.197,Y
+LTG0049,Long-tail generic #0049 (synthetic),,,G,Women's health,,1.0,8.3,1.16,16,100,0.21403055503864382,1.084,Y
+LTG0050,Long-tail generic #0050 (synthetic),,,G,Cardiovascular,,1.0,47.5,6.64,93,299,0.25900901853196234,1.13,Y
+LTG0051,Long-tail generic #0051 (synthetic),,,G,Urology,,1.0,257.0,35.91,503,1616,0.07085207368115369,0.962,N
+LTG0052,Long-tail generic #0052 (synthetic),,,G,Anti-infective,,1.0,46.8,6.54,92,294,0.31452290685690015,0.952,N
+LTG0053,Long-tail generic #0053 (synthetic),,,G,Anti-infective,,1.0,33.5,4.68,66,211,0.22462931016897855,0.887,N
+LTG0054,Long-tail generic #0054 (synthetic),,,G,Ophthalmic,,1.0,54.4,7.61,106,342,0.057478645024811946,1.28,Y
+LTG0055,Long-tail generic #0055 (synthetic),,,G,Other,,1.0,185.2,25.87,362,1164,0.20091229970448293,0.917,N
+LTG0056,Long-tail generic #0056 (synthetic),,,G,Respiratory,,1.0,50.3,7.02,98,316,0.19526078829119067,1.078,Y
+LTG0057,Long-tail generic #0057 (synthetic),,,G,Anti-infective,,1.0,23.6,3.3,46,148,1.2761803211383527,0.947,N
+LTG0058,Long-tail generic #0058 (synthetic),,,G,GI,,1.0,145.7,20.36,285,916,0.517122056798728,0.863,Y
+LTG0059,Long-tail generic #0059 (synthetic),,,G,Psychiatric,,1.0,64.6,9.03,126,406,0.21390051930392082,1.187,N
+LTG0060,Long-tail generic #0060 (synthetic),,,G,Psychiatric,,1.0,244.0,34.09,477,1534,0.2711990124316372,1.044,N
+LTG0061,Long-tail generic #0061 (synthetic),,,G,Psychiatric,,1.0,48.1,6.73,94,303,0.22102547865106317,1.04,N
+LTG0062,Long-tail generic #0062 (synthetic),,,G,Cardiovascular,,1.0,8.9,1.24,17,90,0.17263018025313415,0.963,N
+LTG0063,Long-tail generic #0063 (synthetic),,,G,Cardiovascular,,1.0,7.5,1.05,15,100,0.07163891324387592,0.878,N
+LTG0064,Long-tail generic #0064 (synthetic),,,G,Pain/MSK,,1.0,280.1,39.14,548,1761,0.18181937099145648,0.885,N
+LTG0065,Long-tail generic #0065 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.10028010778497873,0.971,Y
+LTG0066,Long-tail generic #0066 (synthetic),,,G,Women's health,,1.0,31.1,4.35,61,196,0.060566992463219844,0.964,Y
+LTG0067,Long-tail generic #0067 (synthetic),,,G,Diabetes,,1.0,24.4,3.41,48,153,0.35258348085343066,1.226,N
+LTG0068,Long-tail generic #0068 (synthetic),,,G,Cardiovascular,,1.0,223.1,31.18,437,1403,0.31272689343511184,0.956,Y
+LTG0069,Long-tail generic #0069 (synthetic),,,G,Cardiovascular,,1.0,10.2,1.43,20,64,0.035422885468252466,1.169,N
+LTG0070,Long-tail generic #0070 (synthetic),,,G,CNS,,1.0,13.2,1.84,26,100,0.18705093646685625,0.982,N
+LTG0071,Long-tail generic #0071 (synthetic),,,G,Other,,1.0,83.6,11.68,164,526,0.572359328418155,0.72,N
+LTG0072,Long-tail generic #0072 (synthetic),,,G,CNS,,1.0,24.1,3.36,47,151,0.6098965445458168,1.187,N
+LTG0073,Long-tail generic #0073 (synthetic),,,G,Anti-infective,,1.0,38.4,5.36,75,241,0.589870161641501,1.152,N
+LTG0074,Long-tail generic #0074 (synthetic),,,G,Women's health,,1.0,31.8,4.44,62,200,0.21985732465712396,1.017,Y
+LTG0075,Long-tail generic #0075 (synthetic),,,G,Other,,1.0,57.9,8.09,113,364,0.0908327839184896,1.034,Y
+LTG0076,Long-tail generic #0076 (synthetic),,,G,CNS,,1.0,209.2,29.22,409,1315,0.0715478729518429,1.132,N
+LTG0077,Long-tail generic #0077 (synthetic),,,G,Cardiovascular,,1.0,43.1,6.02,84,271,0.29847032362022546,1.068,N
+LTG0078,Long-tail generic #0078 (synthetic),,,G,Cardiovascular,,1.0,83.7,11.69,164,526,0.3090013479380913,0.982,Y
+LTG0079,Long-tail generic #0079 (synthetic),,,G,Cardiovascular,,1.0,3.3,0.46,6,100,0.7661643603622524,1.206,N
+LTG0080,Long-tail generic #0080 (synthetic),,,G,CNS,,1.0,36.4,5.09,71,229,0.6352669187903148,1.183,Y
+LTG0081,Long-tail generic #0081 (synthetic),,,G,Endocrine,,1.0,14.0,1.96,27,90,0.18527421080682324,0.955,N
+LTG0082,Long-tail generic #0082 (synthetic),,,G,Ophthalmic,,1.0,8.9,1.25,18,90,0.06093816892456172,0.917,Y
+LTG0083,Long-tail generic #0083 (synthetic),,,G,Anti-infective,,1.0,13.5,1.88,26,100,0.1536932922521349,0.949,N
+LTG0084,Long-tail generic #0084 (synthetic),,,G,Diabetes,,1.0,25.9,3.61,51,163,0.262774644435018,1.115,N
+LTG0085,Long-tail generic #0085 (synthetic),,,G,CNS,,1.0,116.0,16.2,227,729,0.17277365053151597,1.002,Y
+LTG0086,Long-tail generic #0086 (synthetic),,,G,Urology,,1.0,7.9,1.1,15,100,0.11864923041757516,1.01,N
+LTG0087,Long-tail generic #0087 (synthetic),,,G,Diabetes,,1.0,40.1,5.6,78,252,0.27231253155407686,1.081,Y
+LTG0088,Long-tail generic #0088 (synthetic),,,G,Dermatology,,1.0,21.6,3.02,42,136,0.1277541690982988,0.88,N
+LTG0089,Long-tail generic #0089 (synthetic),,,G,Women's health,,1.0,26.1,3.64,51,164,0.11284323121098438,0.987,Y
+LTG0090,Long-tail generic #0090 (synthetic),,,G,Psychiatric,,1.0,128.7,17.98,252,809,0.2887376351956001,0.964,Y
+LTG0091,Long-tail generic #0091 (synthetic),,,G,Cardiovascular,,1.0,73.7,10.3,144,463,0.1414679266566513,0.953,N
+LTG0092,Long-tail generic #0092 (synthetic),,,G,CNS,,1.0,192.3,26.87,376,1209,0.26993197795576,0.928,Y
+LTG0093,Long-tail generic #0093 (synthetic),,,G,GI,,1.0,32.1,4.48,63,202,0.2779023040467506,0.905,N
+LTG0094,Long-tail generic #0094 (synthetic),,,G,Women's health,,1.0,16.8,2.34,33,105,0.06766957053009115,0.944,N
+LTG0095,Long-tail generic #0095 (synthetic),,,G,Psychiatric,,1.0,29.5,4.13,58,186,0.13068952615915927,1.007,N
+LTG0096,Long-tail generic #0096 (synthetic),,,G,Pain/MSK,,1.0,51.7,7.22,101,325,0.8905529346466569,1.102,Y
+LTG0097,Long-tail generic #0097 (synthetic),,,G,Anti-infective,,1.0,47.7,6.67,93,300,0.06615404860225477,1.154,N
+LTG0098,Long-tail generic #0098 (synthetic),,,G,CNS,,1.0,10.5,1.47,21,100,0.02546770441137064,1.087,N
+LTG0099,Long-tail generic #0099 (synthetic),,,G,Psychiatric,,1.0,43.1,6.02,84,271,0.032858828198154465,0.928,Y
+LTG0100,Long-tail generic #0100 (synthetic),,,G,Diabetes,,1.0,50.8,7.1,99,319,0.21771253620581577,1.041,Y
+LTG0101,Long-tail generic #0101 (synthetic),,,G,Respiratory,,1.0,300.0,41.92,587,1886,0.21810637070841177,1.043,N
+LTG0102,Long-tail generic #0102 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.18800240388248088,0.834,N
+LTG0103,Long-tail generic #0103 (synthetic),,,G,CNS,,1.0,13.9,1.94,27,90,0.7121264070964448,1.043,N
+LTG0104,Long-tail generic #0104 (synthetic),,,G,Pain/MSK,,1.0,27.4,3.82,54,172,0.014603061108148185,1.087,N
+LTG0105,Long-tail generic #0105 (synthetic),,,G,CNS,,1.0,6.7,0.93,13,90,0.3141904966593526,1.018,N
+LTG0106,Long-tail generic #0106 (synthetic),,,G,Women's health,,1.0,19.0,2.66,37,120,1.0077786251306633,1.039,Y
+LTG0107,Long-tail generic #0107 (synthetic),,,G,CNS,,1.0,56.4,7.88,110,355,0.06846241029917058,0.959,Y
+LTG0108,Long-tail generic #0108 (synthetic),,,G,Cardiovascular,,1.0,164.2,22.94,321,1032,0.1446416194489132,1.199,N
+LTG0109,Long-tail generic #0109 (synthetic),,,G,Anti-infective,,1.0,16.1,2.25,32,101,0.09960114769373614,0.863,N
+LTG0110,Long-tail generic #0110 (synthetic),,,G,Anti-infective,,1.0,17.6,2.46,34,111,0.0864632578279416,0.956,N
+LTG0111,Long-tail generic #0111 (synthetic),,,G,Anti-infective,,1.0,2.9,0.41,6,90,0.1525974792075137,1.077,N
+LTG0112,Long-tail generic #0112 (synthetic),,,G,GI,,1.0,31.8,4.44,62,200,0.8814346714842132,0.988,Y
+LTG0113,Long-tail generic #0113 (synthetic),,,G,Other,,1.0,10.8,1.51,21,90,1.3280304782597012,0.707,N
+LTG0114,Long-tail generic #0114 (synthetic),,,G,Anti-infective,,1.0,20.5,2.86,40,129,0.1511278821032138,0.872,N
+LTG0115,Long-tail generic #0115 (synthetic),,,G,Anti-infective,,1.0,13.5,1.88,26,90,1.4210137706219517,0.917,Y
+LTG0116,Long-tail generic #0116 (synthetic),,,G,GI,,1.0,34.5,4.82,67,217,0.21912494270440536,0.965,N
+LTG0117,Long-tail generic #0117 (synthetic),,,G,Cardiovascular,,1.0,4.7,0.65,9,100,1.2214044101099915,0.992,N
+LTG0118,Long-tail generic #0118 (synthetic),,,G,Endocrine,,1.0,6.6,0.93,13,42,0.19262917258941276,0.941,N
+LTG0119,Long-tail generic #0119 (synthetic),,,G,CNS,,1.0,300.0,41.92,587,1886,0.2410786987051581,1.142,N
+LTG0120,Long-tail generic #0120 (synthetic),,,G,Diabetes,,1.0,8.2,1.15,16,90,0.3047647225427809,0.855,N
+LTG0121,Long-tail generic #0121 (synthetic),,,G,Cardiovascular,,1.0,10.4,1.45,20,90,5.079251992448345,1.187,N
+LTG0122,Long-tail generic #0122 (synthetic),,,G,Other,,1.0,300.0,41.92,587,1886,0.4953928972889836,0.984,Y
+LTG0123,Long-tail generic #0123 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.10425096057975985,0.819,N
+LTG0124,Long-tail generic #0124 (synthetic),,,G,Ophthalmic,,1.0,9.5,1.32,19,100,0.5572775861137108,0.941,N
+LTG0125,Long-tail generic #0125 (synthetic),,,G,Anti-infective,,1.0,24.8,3.47,49,156,0.1472649091054514,0.976,N
+LTG0126,Long-tail generic #0126 (synthetic),,,G,Cardiovascular,,1.0,58.2,8.13,114,366,0.12958219910260094,1.027,N
+LTG0127,Long-tail generic #0127 (synthetic),,,G,Dermatology,,1.0,300.0,41.92,587,1886,0.5246162089433484,1.04,Y
+LTG0128,Long-tail generic #0128 (synthetic),,,G,Diabetes,,1.0,11.8,1.65,23,74,0.2181430832240711,1.149,N
+LTG0129,Long-tail generic #0129 (synthetic),,,G,Urology,,1.0,28.8,4.02,56,181,0.2793991820496527,0.965,N
+LTG0130,Long-tail generic #0130 (synthetic),,,G,GI,,1.0,98.2,13.72,192,617,0.2144444706248625,1.156,Y
+LTG0131,Long-tail generic #0131 (synthetic),,,G,Diabetes,,1.0,65.1,9.1,127,409,0.2960856383968515,1.072,N
+LTG0132,Long-tail generic #0132 (synthetic),,,G,Dermatology,,1.0,24.6,3.44,48,155,0.3234457821516577,0.845,Y
+LTG0133,Long-tail generic #0133 (synthetic),,,G,Diabetes,,1.0,32.9,4.6,64,207,0.030480851661454294,1.07,N
+LTG0134,Long-tail generic #0134 (synthetic),,,G,Psychiatric,,1.0,7.4,1.04,15,90,0.41184137924789443,0.872,Y
+LTG0135,Long-tail generic #0135 (synthetic),,,G,Respiratory,,1.0,29.0,4.06,57,183,0.07920553517503505,1.215,N
+LTG0136,Long-tail generic #0136 (synthetic),,,G,Respiratory,,1.0,28.1,3.92,55,176,0.04998717483486522,0.989,N
+LTG0137,Long-tail generic #0137 (synthetic),,,G,Other,,1.0,51.0,7.13,100,321,0.1994681074059243,0.976,Y
+LTG0138,Long-tail generic #0138 (synthetic),,,G,Psychiatric,,1.0,19.8,2.77,39,125,0.22999247893288327,1.326,N
+LTG0139,Long-tail generic #0139 (synthetic),,,G,GI,,1.0,68.0,9.51,133,428,0.10569519576236516,0.979,N
+LTG0140,Long-tail generic #0140 (synthetic),,,G,Urology,,1.0,130.2,18.2,255,819,0.48546027545126375,0.931,Y
+LTG0141,Long-tail generic #0141 (synthetic),,,G,Anti-infective,,1.0,46.6,6.5,91,293,0.055251220928735544,0.951,N
+LTG0142,Long-tail generic #0142 (synthetic),,,G,Pain/MSK,,1.0,58.9,8.23,115,370,0.14076922621334367,1.002,N
+LTG0143,Long-tail generic #0143 (synthetic),,,G,GI,,1.0,41.2,5.75,81,259,0.11782393923095034,1.017,N
+LTG0144,Long-tail generic #0144 (synthetic),,,G,CNS,,1.0,38.6,5.4,76,243,0.2018406115983535,1.061,N
+LTG0145,Long-tail generic #0145 (synthetic),,,G,Pain/MSK,,1.0,16.3,2.27,32,102,0.2794797640477826,0.876,N
+LTG0146,Long-tail generic #0146 (synthetic),,,G,Cardiovascular,,1.0,56.5,7.89,110,355,0.0771824928808794,0.903,N
+LTG0147,Long-tail generic #0147 (synthetic),,,G,CNS,,1.0,34.4,4.8,67,216,0.4363079416524021,0.813,N
+LTG0148,Long-tail generic #0148 (synthetic),,,G,Diabetes,,1.0,300.0,41.92,587,1886,0.2252178088110645,0.898,N
+LTG0149,Long-tail generic #0149 (synthetic),,,G,Pain/MSK,,1.0,255.2,35.66,499,1605,0.03188447937650436,1.171,Y
+LTG0150,Long-tail generic #0150 (synthetic),,,G,Ophthalmic,,1.0,61.4,8.58,120,386,0.02982879387394579,1.129,N
+LTG0151,Long-tail generic #0151 (synthetic),,,G,CNS,,1.0,15.5,2.16,30,97,0.2088771566324317,1.331,N
+LTG0152,Long-tail generic #0152 (synthetic),,,G,Cardiovascular,,1.0,10.2,1.42,20,90,0.16954159365223523,0.911,N
+LTG0153,Long-tail generic #0153 (synthetic),,,G,Women's health,,1.0,161.3,22.54,316,1014,0.19068931701850012,1.094,Y
+LTG0154,Long-tail generic #0154 (synthetic),,,G,Cardiovascular,,1.0,53.0,7.4,104,333,0.2056309687084772,0.973,Y
+LTG0155,Long-tail generic #0155 (synthetic),,,G,CNS,,1.0,68.7,9.6,134,432,0.26497234029475725,0.815,N
+LTG0156,Long-tail generic #0156 (synthetic),,,G,Psychiatric,,1.0,4.8,0.67,9,90,0.5455067693464835,0.977,N
+LTG0157,Long-tail generic #0157 (synthetic),,,G,Anti-infective,,1.0,117.6,16.43,230,739,0.06961365244092081,1.228,N
+LTG0158,Long-tail generic #0158 (synthetic),,,G,Ophthalmic,,1.0,66.6,9.31,130,419,0.06550287349826579,0.841,Y
+LTG0159,Long-tail generic #0159 (synthetic),,,G,Pain/MSK,,1.0,10.2,1.42,20,90,0.0708625260238652,0.807,Y
+LTG0160,Long-tail generic #0160 (synthetic),,,G,Respiratory,,1.0,21.9,3.07,43,138,0.28230336974812964,1.188,Y
+LTG0161,Long-tail generic #0161 (synthetic),,,G,CNS,,1.0,53.0,7.41,104,333,0.7343699960564339,1.047,N
+LTG0162,Long-tail generic #0162 (synthetic),,,G,Psychiatric,,1.0,41.1,5.75,80,259,0.13737661469036996,0.935,Y
+LTG0163,Long-tail generic #0163 (synthetic),,,G,Anti-infective,,1.0,27.2,3.8,53,171,0.017328729010601698,0.939,N
+LTG0164,Long-tail generic #0164 (synthetic),,,G,Cardiovascular,,1.0,34.1,4.77,67,215,0.03847746488159852,0.904,N
+LTG0165,Long-tail generic #0165 (synthetic),,,G,CNS,,1.0,28.6,3.99,56,180,0.09193013459578488,1.205,Y
+LTG0166,Long-tail generic #0166 (synthetic),,,G,Psychiatric,,1.0,46.4,6.48,91,292,0.12106610482517595,0.936,N
+LTG0167,Long-tail generic #0167 (synthetic),,,G,Cardiovascular,,1.0,225.9,31.56,442,1420,0.1405659786568067,1.189,N
+LTG0168,Long-tail generic #0168 (synthetic),,,G,Anti-infective,,1.0,1.8,0.25,3,100,0.21978432569635314,1.015,Y
+LTG0169,Long-tail generic #0169 (synthetic),,,G,Respiratory,,1.0,29.1,4.06,57,183,0.15482868908023337,0.865,N
+LTG0170,Long-tail generic #0170 (synthetic),,,G,Cardiovascular,,1.0,47.7,6.67,93,300,0.6038979431272378,0.789,N
+LTG0171,Long-tail generic #0171 (synthetic),,,G,Anti-infective,,1.0,55.1,7.7,108,346,0.10755994274585201,1.136,N
+LTG0172,Long-tail generic #0172 (synthetic),,,G,Urology,,1.0,24.7,3.45,48,155,0.08927733473481338,1.049,N
+LTG0173,Long-tail generic #0173 (synthetic),,,G,Pain/MSK,,1.0,4.7,0.66,9,90,0.3413611962719246,0.968,N
+LTG0174,Long-tail generic #0174 (synthetic),,,G,Urology,,1.0,57.3,8.0,112,360,0.045532371515005644,1.108,N
+LTG0175,Long-tail generic #0175 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.3122353748949212,0.842,N
+LTG0176,Long-tail generic #0176 (synthetic),,,G,Dermatology,,1.0,6.1,0.86,12,90,0.2343038526253512,1.23,N
+LTG0177,Long-tail generic #0177 (synthetic),,,G,CNS,,1.0,108.9,15.22,213,685,0.1824768133591399,0.88,Y
+LTG0178,Long-tail generic #0178 (synthetic),,,G,Psychiatric,,1.0,26.0,3.64,51,164,1.035191499163901,0.904,Y
+LTG0179,Long-tail generic #0179 (synthetic),,,G,CNS,,1.0,35.9,5.01,70,226,0.11350627928494243,0.978,N
+LTG0180,Long-tail generic #0180 (synthetic),,,G,GI,,1.0,10.9,1.53,21,100,1.6596529202560502,0.957,N
+LTG0181,Long-tail generic #0181 (synthetic),,,G,Psychiatric,,1.0,25.9,3.61,51,163,0.16878642453454304,0.95,N
+LTG0182,Long-tail generic #0182 (synthetic),,,G,CNS,,1.0,183.9,25.69,360,1156,0.05897119827075799,0.902,Y
+LTG0183,Long-tail generic #0183 (synthetic),,,G,Pain/MSK,,1.0,77.7,10.86,152,489,0.22678108882632303,1.053,N
+LTG0184,Long-tail generic #0184 (synthetic),,,G,Psychiatric,,1.0,300.0,41.92,587,1886,0.07208315653617246,1.223,N
+LTG0185,Long-tail generic #0185 (synthetic),,,G,CNS,,1.0,158.7,22.17,310,998,0.0997143658109849,0.948,N
+LTG0186,Long-tail generic #0186 (synthetic),,,G,Cardiovascular,,1.0,65.4,9.14,128,411,0.31453611568622614,0.952,Y
+LTG0187,Long-tail generic #0187 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.36857628068848913,0.987,N
+LTG0188,Long-tail generic #0188 (synthetic),,,G,Psychiatric,,1.0,65.4,9.14,128,411,0.11351079068625736,1.057,Y
+LTG0189,Long-tail generic #0189 (synthetic),,,G,Psychiatric,,1.0,104.3,14.58,204,656,0.5676305402800753,0.962,Y
+LTG0190,Long-tail generic #0190 (synthetic),,,G,CNS,,1.0,27.1,3.78,53,170,0.6728842762663921,0.905,Y
+LTG0191,Long-tail generic #0191 (synthetic),,,G,Pain/MSK,,1.0,41.8,5.85,82,263,0.8892401743015175,1.197,Y
+LTG0192,Long-tail generic #0192 (synthetic),,,G,Women's health,,1.0,16.7,2.34,33,105,0.35905623221120025,0.864,N
+LTG0193,Long-tail generic #0193 (synthetic),,,G,Anti-infective,,1.0,126.7,17.7,248,796,0.8267433570954477,0.87,N
+LTG0194,Long-tail generic #0194 (synthetic),,,G,Diabetes,,1.0,9.4,1.31,18,59,0.03224191057224254,0.834,N
+LTG0195,Long-tail generic #0195 (synthetic),,,G,Dermatology,,1.0,98.8,13.8,193,621,0.1538778423512694,0.949,N
+LTG0196,Long-tail generic #0196 (synthetic),,,G,Other,,1.0,30.7,4.29,60,193,0.08885984457964838,1.001,N
+LTG0197,Long-tail generic #0197 (synthetic),,,G,Diabetes,,1.0,157.5,22.01,308,990,0.23824307259488892,1.04,N
+LTG0198,Long-tail generic #0198 (synthetic),,,G,Ophthalmic,,1.0,95.1,13.29,186,598,0.11941638096804948,0.938,N
+LTG0199,Long-tail generic #0199 (synthetic),,,G,Ophthalmic,,1.0,300.0,41.92,587,1886,0.1790934546890703,1.068,N
+LTG0200,Long-tail generic #0200 (synthetic),,,G,Urology,,1.0,92.9,12.97,182,584,1.388862693347231,1.132,N
+LTG0201,Long-tail generic #0201 (synthetic),,,G,GI,,1.0,5.9,0.82,11,37,0.1784566667355975,0.947,Y
+LTG0202,Long-tail generic #0202 (synthetic),,,G,Cardiovascular,,1.0,35.6,4.98,70,224,0.31985185068186833,0.999,Y
+LTG0203,Long-tail generic #0203 (synthetic),,,G,Cardiovascular,,1.0,9.5,1.32,19,100,0.16763622006256151,0.998,N
+LTG0204,Long-tail generic #0204 (synthetic),,,G,Anti-infective,,1.0,20.7,2.9,41,130,0.22809880554578824,1.009,Y
+LTG0205,Long-tail generic #0205 (synthetic),,,G,Anti-infective,,1.0,236.9,33.1,463,1489,0.21274245128839542,0.88,N
+LTG0206,Long-tail generic #0206 (synthetic),,,G,GI,,1.0,83.0,11.6,162,522,0.3310898109523343,1.026,N
+LTG0207,Long-tail generic #0207 (synthetic),,,G,Endocrine,,1.0,16.7,2.33,33,105,0.6781531452132273,0.73,N
+LTG0208,Long-tail generic #0208 (synthetic),,,G,Anti-infective,,1.0,11.4,1.6,22,72,1.098234975526268,0.965,N
+LTG0209,Long-tail generic #0209 (synthetic),,,G,Dermatology,,1.0,40.2,5.61,79,253,0.288208935239425,0.866,N
+LTG0210,Long-tail generic #0210 (synthetic),,,G,Cardiovascular,,1.0,9.0,1.25,18,100,0.3813099230629106,1.035,Y
+LTG0211,Long-tail generic #0211 (synthetic),,,G,CNS,,1.0,17.3,2.41,34,109,0.06690014239429368,0.981,N
+LTG0212,Long-tail generic #0212 (synthetic),,,G,Urology,,1.0,56.2,7.85,110,353,0.19367642658599635,1.085,N
+LTG0213,Long-tail generic #0213 (synthetic),,,G,Dermatology,,1.0,154.5,21.59,302,972,0.541506499785242,1.071,N
+LTG0214,Long-tail generic #0214 (synthetic),,,G,Other,,1.0,80.2,11.21,157,504,0.5027204464819978,0.687,Y
+LTG0215,Long-tail generic #0215 (synthetic),,,G,Dermatology,,1.0,2.5,0.35,5,30,0.26130161093272575,1.245,Y
+LTG0216,Long-tail generic #0216 (synthetic),,,G,Ophthalmic,,1.0,55.7,7.78,109,350,0.5130942565971629,0.944,N
+LTG0217,Long-tail generic #0217 (synthetic),,,G,Psychiatric,,1.0,42.1,5.89,82,265,0.34544461062175985,1.21,N
+LTG0218,Long-tail generic #0218 (synthetic),,,G,GI,,1.0,63.5,8.87,124,399,0.7023078657173906,0.992,Y
+LTG0219,Long-tail generic #0219 (synthetic),,,G,CNS,,1.0,268.7,37.54,526,1689,0.28242831374765864,1.002,N
+LTG0220,Long-tail generic #0220 (synthetic),,,G,Endocrine,,1.0,3.2,0.45,6,90,0.1481710410446822,0.925,N
+LTG0221,Long-tail generic #0221 (synthetic),,,G,Women's health,,1.0,19.0,2.66,37,120,0.29586606289956013,0.835,N
+LTG0222,Long-tail generic #0222 (synthetic),,,G,Psychiatric,,1.0,78.5,10.97,154,494,0.011284964098635077,1.141,N
+LTG0223,Long-tail generic #0223 (synthetic),,,G,Anti-infective,,1.0,5.8,0.81,11,100,0.3101175258156196,0.858,Y
+LTG0224,Long-tail generic #0224 (synthetic),,,G,Psychiatric,,1.0,227.1,31.73,444,1428,0.005504978031751396,0.937,N
+LTG0225,Long-tail generic #0225 (synthetic),,,G,CNS,,1.0,60.1,8.4,118,378,0.037735534015914486,0.809,N
+LTG0226,Long-tail generic #0226 (synthetic),,,G,CNS,,1.0,106.7,14.91,209,671,0.3322322278014951,0.949,N
+LTG0227,Long-tail generic #0227 (synthetic),,,G,Cardiovascular,,1.0,19.5,2.72,38,122,0.34090196458004385,0.978,Y
+LTG0228,Long-tail generic #0228 (synthetic),,,G,Women's health,,1.0,102.6,14.33,201,645,0.06613094718384774,1.119,N
+LTG0229,Long-tail generic #0229 (synthetic),,,G,GI,,1.0,139.2,19.46,272,876,0.103747863165479,0.841,Y
+LTG0230,Long-tail generic #0230 (synthetic),,,G,Dermatology,,1.0,51.1,7.14,100,321,0.8326443443207824,0.897,N
+LTG0231,Long-tail generic #0231 (synthetic),,,G,Respiratory,,1.0,51.2,7.15,100,322,0.13032553987965298,0.859,N
+LTG0232,Long-tail generic #0232 (synthetic),,,G,CNS,,1.0,53.4,7.47,105,336,1.9921822345842792,0.874,Y
+LTG0233,Long-tail generic #0233 (synthetic),,,G,CNS,,1.0,13.7,1.92,27,90,0.21106069615363712,1.05,N
+LTG0234,Long-tail generic #0234 (synthetic),,,G,Urology,,1.0,32.4,4.52,63,203,0.3180160272487806,0.878,N
+LTG0235,Long-tail generic #0235 (synthetic),,,G,CNS,,1.0,32.2,4.5,63,202,1.0652235937394248,1.313,Y
+LTG0236,Long-tail generic #0236 (synthetic),,,G,Ophthalmic,,1.0,61.2,8.55,120,385,0.24107129532750465,1.078,N
+LTG0237,Long-tail generic #0237 (synthetic),,,G,Cardiovascular,,1.0,128.2,17.92,251,806,0.07761196660220039,0.897,Y
+LTG0238,Long-tail generic #0238 (synthetic),,,G,Respiratory,,1.0,10.8,1.52,21,90,0.18949036010836035,0.954,Y
+LTG0239,Long-tail generic #0239 (synthetic),,,G,Urology,,1.0,33.3,4.65,65,209,0.20406832588825174,0.837,N
+LTG0240,Long-tail generic #0240 (synthetic),,,G,CNS,,1.0,228.6,31.94,447,1437,0.05401835804471502,0.989,N
+LTG0241,Long-tail generic #0241 (synthetic),,,G,CNS,,1.0,15.8,2.21,31,100,0.16373242384248404,0.966,N
+LTG0242,Long-tail generic #0242 (synthetic),,,G,Other,,1.0,14.4,2.01,28,100,0.10067258423644718,0.839,N
+LTG0243,Long-tail generic #0243 (synthetic),,,G,CNS,,1.0,49.2,6.88,96,310,0.5329477354120855,1.016,Y
+LTG0244,Long-tail generic #0244 (synthetic),,,G,GI,,1.0,106.4,14.87,208,669,0.21891367608183004,0.91,Y
+LTG0245,Long-tail generic #0245 (synthetic),,,G,GI,,1.0,39.2,5.47,77,246,0.15937658415106712,0.982,Y
+LTG0246,Long-tail generic #0246 (synthetic),,,G,CNS,,1.0,190.3,26.6,372,1197,0.190163394596948,0.928,N
+LTG0247,Long-tail generic #0247 (synthetic),,,G,Pain/MSK,,1.0,108.0,15.09,211,679,0.2643271718537453,1.147,N
+LTG0248,Long-tail generic #0248 (synthetic),,,G,Pain/MSK,,1.0,106.1,14.82,208,667,0.3918502707579299,1.172,Y
+LTG0249,Long-tail generic #0249 (synthetic),,,G,Psychiatric,,1.0,75.1,10.5,147,472,0.07781649106297692,1.24,Y
+LTG0250,Long-tail generic #0250 (synthetic),,,G,Dermatology,,1.0,300.0,41.92,587,1886,0.07462517913366379,0.969,N
+LTG0251,Long-tail generic #0251 (synthetic),,,G,CNS,,1.0,30.2,4.22,59,190,0.6382594232328996,1.07,Y
+LTG0252,Long-tail generic #0252 (synthetic),,,G,Cardiovascular,,1.0,3.5,0.49,7,100,0.14001208391702571,0.748,N
+LTG0253,Long-tail generic #0253 (synthetic),,,G,Endocrine,,1.0,264.9,37.01,518,1665,0.0512760361873063,1.049,N
+LTG0254,Long-tail generic #0254 (synthetic),,,G,Other,,1.0,22.3,3.12,44,140,0.3295995109168277,1.181,Y
+LTG0255,Long-tail generic #0255 (synthetic),,,G,Cardiovascular,,1.0,44.0,6.14,86,276,0.3361089659513831,1.131,N
+LTG0256,Long-tail generic #0256 (synthetic),,,G,CNS,,1.0,186.0,25.98,364,1169,0.0457572545031408,0.863,N
+LTG0257,Long-tail generic #0257 (synthetic),,,G,Anti-infective,,1.0,5.6,0.79,11,90,0.26601356939556375,0.794,Y
+LTG0258,Long-tail generic #0258 (synthetic),,,G,Urology,,1.0,8.6,1.2,17,100,0.4412663658084747,1.257,Y
+LTG0259,Long-tail generic #0259 (synthetic),,,G,Cardiovascular,,1.0,5.7,0.79,11,100,0.30749291812345153,0.928,N
+LTG0260,Long-tail generic #0260 (synthetic),,,G,Psychiatric,,1.0,14.9,2.08,29,94,0.3978388757603223,0.871,Y
+LTG0261,Long-tail generic #0261 (synthetic),,,G,Pain/MSK,,1.0,65.5,9.15,128,412,0.051924799410443326,1.085,Y
+LTG0262,Long-tail generic #0262 (synthetic),,,G,Psychiatric,,1.0,72.5,10.13,142,456,0.2944489842634629,0.932,Y
+LTG0263,Long-tail generic #0263 (synthetic),,,G,CNS,,1.0,53.8,7.52,105,338,0.15624821199387187,0.997,N
+LTG0264,Long-tail generic #0264 (synthetic),,,G,CNS,,1.0,7.1,0.99,14,90,0.1304872402418198,0.957,Y
+LTG0265,Long-tail generic #0265 (synthetic),,,G,GI,,1.0,2.4,0.34,5,90,0.5050317073833105,1.051,Y
+LTG0266,Long-tail generic #0266 (synthetic),,,G,Anti-infective,,1.0,41.2,5.76,81,259,0.928286223248908,0.911,N
+LTG0267,Long-tail generic #0267 (synthetic),,,G,Dermatology,,1.0,21.9,3.06,43,138,1.2721143776358927,1.081,N
+LTG0268,Long-tail generic #0268 (synthetic),,,G,Diabetes,,1.0,67.0,9.37,131,422,0.7875079581910602,0.954,N
+LTG0269,Long-tail generic #0269 (synthetic),,,G,Respiratory,,1.0,89.7,12.53,175,564,0.18948908485467558,0.923,Y
+LTG0270,Long-tail generic #0270 (synthetic),,,G,Other,,1.0,45.6,6.37,89,287,0.30090234226665363,1.011,Y
+LTG0271,Long-tail generic #0271 (synthetic),,,G,GI,,1.0,96.2,13.44,188,605,0.4552690107076602,1.053,Y
+LTG0272,Long-tail generic #0272 (synthetic),,,G,GI,,1.0,50.9,7.11,99,320,0.2387085983047654,1.008,N
+LTG0273,Long-tail generic #0273 (synthetic),,,G,Ophthalmic,,1.0,73.0,10.2,143,459,0.24100791919806833,1.089,N
+LTG0274,Long-tail generic #0274 (synthetic),,,G,CNS,,1.0,16.6,2.32,32,104,0.4819395718852201,1.159,Y
+LTG0275,Long-tail generic #0275 (synthetic),,,G,Pain/MSK,,1.0,31.1,4.35,61,196,0.19929436617507024,1.055,Y
+LTG0276,Long-tail generic #0276 (synthetic),,,G,Pain/MSK,,1.0,48.9,6.84,96,308,0.10198019914486119,1.002,N
+LTG0277,Long-tail generic #0277 (synthetic),,,G,Cardiovascular,,1.0,103.4,14.45,202,650,0.13971331022792383,0.858,Y
+LTG0278,Long-tail generic #0278 (synthetic),,,G,GI,,1.0,24.1,3.37,47,151,0.3986070053518506,1.133,N
+LTG0279,Long-tail generic #0279 (synthetic),,,G,CNS,,1.0,72.2,10.09,141,454,0.21210021939881,1.14,N
+LTG0280,Long-tail generic #0280 (synthetic),,,G,CNS,,1.0,28.1,3.92,55,177,0.2971614463902964,0.943,Y
+LTG0281,Long-tail generic #0281 (synthetic),,,G,GI,,1.0,33.5,4.69,66,211,0.41328806632770493,1.083,N
+LTG0282,Long-tail generic #0282 (synthetic),,,G,Psychiatric,,1.0,104.5,14.61,204,657,0.14536155794728264,1.057,N
+LTG0283,Long-tail generic #0283 (synthetic),,,G,Urology,,1.0,3.5,0.49,7,90,0.450480039401553,1.257,N
+LTG0284,Long-tail generic #0284 (synthetic),,,G,Ophthalmic,,1.0,8.2,1.14,16,90,0.3088662107570147,1.358,Y
+LTG0285,Long-tail generic #0285 (synthetic),,,G,Urology,,1.0,6.5,0.91,13,90,0.06151324502414701,0.996,N
+LTG0286,Long-tail generic #0286 (synthetic),,,G,CNS,,1.0,2.3,0.33,5,100,0.8945943684836721,1.07,Y
+LTG0287,Long-tail generic #0287 (synthetic),,,G,CNS,,1.0,17.1,2.39,33,108,0.1281653030764248,1.046,N
+LTG0288,Long-tail generic #0288 (synthetic),,,G,CNS,,1.0,95.0,13.27,186,597,0.040405675654490054,0.983,N
+LTG0289,Long-tail generic #0289 (synthetic),,,G,Cardiovascular,,1.0,27.4,3.83,54,173,0.07436771393708994,1.114,N
+LTG0290,Long-tail generic #0290 (synthetic),,,G,Women's health,,1.0,49.0,6.84,96,308,0.07617401881382965,1.144,N
+LTG0291,Long-tail generic #0291 (synthetic),,,G,GI,,1.0,142.8,19.95,279,898,0.22279207188920974,0.954,Y
+LTG0292,Long-tail generic #0292 (synthetic),,,G,CNS,,1.0,190.1,26.56,372,1195,0.1608086420247984,1.15,N
+LTG0293,Long-tail generic #0293 (synthetic),,,G,Dermatology,,1.0,35.6,4.97,70,224,0.15099302401048406,1.103,N
+LTG0294,Long-tail generic #0294 (synthetic),,,G,Psychiatric,,1.0,196.1,27.39,384,1233,0.39298347799673217,0.914,N
+LTG0295,Long-tail generic #0295 (synthetic),,,G,Cardiovascular,,1.0,43.1,6.03,84,271,0.29706202814651916,0.988,N
+LTG0296,Long-tail generic #0296 (synthetic),,,G,CNS,,1.0,14.1,1.98,28,100,0.2900674480516493,1.097,Y
+LTG0297,Long-tail generic #0297 (synthetic),,,G,Diabetes,,1.0,18.9,2.65,37,119,0.31858651223822004,1.152,N
+LTG0298,Long-tail generic #0298 (synthetic),,,G,Urology,,1.0,6.5,0.91,13,90,0.39158408653272886,0.973,N
+LTG0299,Long-tail generic #0299 (synthetic),,,G,CNS,,1.0,13.3,1.86,26,100,0.025690268510278204,0.846,Y
+LTG0300,Long-tail generic #0300 (synthetic),,,G,Ophthalmic,,1.0,25.1,3.51,49,158,0.1468816782084162,0.971,Y
+LTG0301,Long-tail generic #0301 (synthetic),,,G,Dermatology,,1.0,101.3,14.16,198,637,0.023899452250669105,1.035,N
+LTG0302,Long-tail generic #0302 (synthetic),,,G,Dermatology,,1.0,300.0,41.92,587,1886,0.2192309042284925,0.882,N
+LTG0303,Long-tail generic #0303 (synthetic),,,G,CNS,,1.0,7.4,1.03,14,46,0.2104888394670404,1.015,Y
+LTG0304,Long-tail generic #0304 (synthetic),,,G,Cardiovascular,,1.0,61.9,8.65,121,389,0.6016030723407312,1.016,N
+LTG0305,Long-tail generic #0305 (synthetic),,,G,Dermatology,,1.0,11.1,1.55,22,100,0.6934644644090527,0.838,N
+LTG0306,Long-tail generic #0306 (synthetic),,,G,Psychiatric,,1.0,68.3,9.54,134,429,0.2590032611763202,0.815,Y
+LTG0307,Long-tail generic #0307 (synthetic),,,G,Diabetes,,1.0,33.0,4.61,65,208,0.12821448522590134,1.056,Y
+LTG0308,Long-tail generic #0308 (synthetic),,,G,Pain/MSK,,1.0,4.3,0.6,8,100,0.34351360481554466,0.905,Y
+LTG0309,Long-tail generic #0309 (synthetic),,,G,Cardiovascular,,1.0,117.7,16.44,230,740,0.12472957171787027,1.011,Y
+LTG0310,Long-tail generic #0310 (synthetic),,,G,Urology,,1.0,18.7,2.61,37,118,0.21117199705485296,0.952,N
+LTG0311,Long-tail generic #0311 (synthetic),,,G,Women's health,,1.0,20.4,2.84,40,128,0.5669107714363314,0.929,N
+LTG0312,Long-tail generic #0312 (synthetic),,,G,Pain/MSK,,1.0,10.7,1.5,21,90,0.12106096464978819,0.841,N
+LTG0313,Long-tail generic #0313 (synthetic),,,G,GI,,1.0,17.6,2.46,34,111,0.4733070082582614,1.107,Y
+LTG0314,Long-tail generic #0314 (synthetic),,,G,Dermatology,,1.0,64.6,9.02,126,406,0.4163253198335736,1.204,N
+LTG0315,Long-tail generic #0315 (synthetic),,,G,Anti-infective,,1.0,30.8,4.3,60,194,0.0813917395111023,1.046,N
+LTG0316,Long-tail generic #0316 (synthetic),,,G,Pain/MSK,,1.0,57.3,8.01,112,360,0.5600128517389311,1.148,N
+LTG0317,Long-tail generic #0317 (synthetic),,,G,Dermatology,,1.0,59.6,8.33,117,375,0.4252307446387386,1.1,N
+LTG0318,Long-tail generic #0318 (synthetic),,,G,Pain/MSK,,1.0,188.5,26.33,369,1185,0.23415692076269165,1.009,N
+LTG0319,Long-tail generic #0319 (synthetic),,,G,Psychiatric,,1.0,25.6,3.58,50,161,0.09866617146964379,1.02,N
+LTG0320,Long-tail generic #0320 (synthetic),,,G,Cardiovascular,,1.0,6.6,0.92,13,100,0.08955559326170183,0.995,N
+LTG0321,Long-tail generic #0321 (synthetic),,,G,CNS,,1.0,139.0,19.43,272,874,0.12351999278677492,1.013,N
+LTG0322,Long-tail generic #0322 (synthetic),,,G,Anti-infective,,1.0,26.0,3.63,51,163,0.3638203013304573,0.976,N
+LTG0323,Long-tail generic #0323 (synthetic),,,G,Anti-infective,,1.0,147.2,20.56,288,925,0.08132393993727839,0.936,N
+LTG0324,Long-tail generic #0324 (synthetic),,,G,Endocrine,,1.0,61.2,8.55,120,385,0.32752941027251253,1.047,N
+LTG0325,Long-tail generic #0325 (synthetic),,,G,Psychiatric,,1.0,33.0,4.61,65,208,0.06108767185816961,1.002,N
+LTG0326,Long-tail generic #0326 (synthetic),,,G,Urology,,1.0,58.7,8.2,115,369,0.172430976530994,0.942,N
+LTG0327,Long-tail generic #0327 (synthetic),,,G,Ophthalmic,,1.0,300.0,41.92,587,1886,0.23597204847743727,1.067,N
+LTG0328,Long-tail generic #0328 (synthetic),,,G,CNS,,1.0,300.0,41.92,587,1886,2.4386399121978513,0.891,N
+LTG0329,Long-tail generic #0329 (synthetic),,,G,Pain/MSK,,1.0,42.0,5.87,82,264,0.05334338349060531,0.873,N
+LTG0330,Long-tail generic #0330 (synthetic),,,G,Respiratory,,1.0,46.8,6.54,92,294,0.9215713214806581,0.913,Y
+LTG0331,Long-tail generic #0331 (synthetic),,,G,Anti-infective,,1.0,140.6,19.64,275,884,0.24565006390705604,0.971,Y
+LTG0332,Long-tail generic #0332 (synthetic),,,G,CNS,,1.0,14.0,1.96,27,100,0.31901480832796747,1.099,N
+LTG0333,Long-tail generic #0333 (synthetic),,,G,Urology,,1.0,57.6,8.05,113,362,0.23803399941901748,1.002,N
+LTG0334,Long-tail generic #0334 (synthetic),,,G,Other,,1.0,37.5,5.23,73,235,0.3299009384820375,1.159,N
+LTG0335,Long-tail generic #0335 (synthetic),,,G,Pain/MSK,,1.0,56.3,7.87,110,354,0.18134122916337722,0.998,N
+LTG0336,Long-tail generic #0336 (synthetic),,,G,Ophthalmic,,1.0,14.2,1.99,28,90,0.9051636772979775,1.014,N
+LTG0337,Long-tail generic #0337 (synthetic),,,G,Other,,1.0,5.7,0.8,11,36,0.13396712855378354,0.831,Y
+LTG0338,Long-tail generic #0338 (synthetic),,,G,Psychiatric,,1.0,3.2,0.45,6,90,0.6560914449124431,0.983,Y
+LTG0339,Long-tail generic #0339 (synthetic),,,G,Diabetes,,1.0,10.1,1.41,20,100,0.11101868101332335,1.008,Y
+LTG0340,Long-tail generic #0340 (synthetic),,,G,Anti-infective,,1.0,22.3,3.11,44,140,0.1991013035738528,1.064,Y
+LTG0341,Long-tail generic #0341 (synthetic),,,G,Other,,1.0,27.2,3.8,53,171,0.07239252531034292,1.007,N
+LTG0342,Long-tail generic #0342 (synthetic),,,G,Cardiovascular,,1.0,300.0,41.92,587,1886,0.3333154454185686,0.887,N
+LTG0343,Long-tail generic #0343 (synthetic),,,G,GI,,1.0,145.7,20.35,285,916,0.8971217308452802,1.128,N
+LTG0344,Long-tail generic #0344 (synthetic),,,G,Dermatology,,1.0,12.2,1.7,24,90,0.19572476751160856,1.039,N
+LTG0345,Long-tail generic #0345 (synthetic),,,G,Psychiatric,,1.0,58.6,8.19,115,369,0.17367398739076184,0.998,N
+LTG0346,Long-tail generic #0346 (synthetic),,,G,Urology,,1.0,23.7,3.31,46,149,0.06936959379246836,1.133,Y
+LTG0347,Long-tail generic #0347 (synthetic),,,G,Psychiatric,,1.0,27.5,3.84,54,173,0.1681359622542867,0.75,Y
+LTG0348,Long-tail generic #0348 (synthetic),,,G,Other,,1.0,48.3,6.74,94,303,0.043003062971873916,0.848,Y
+LTG0349,Long-tail generic #0349 (synthetic),,,G,Ophthalmic,,1.0,81.2,11.35,159,511,0.08487568173440378,0.935,N
+LTG0350,Long-tail generic #0350 (synthetic),,,G,Psychiatric,,1.0,25.7,3.59,50,162,0.2652974504123171,0.884,N
+LTG0351,Long-tail generic #0351 (synthetic),,,G,Pain/MSK,,1.0,138.5,19.35,271,871,0.7908266592878236,0.957,N
+LTG0352,Long-tail generic #0352 (synthetic),,,G,Psychiatric,,1.0,9.8,1.37,19,90,3.509667090715557,1.173,Y
+LTG0353,Long-tail generic #0353 (synthetic),,,G,Endocrine,,1.0,38.9,5.44,76,245,0.11762252070353904,1.144,N
+LTG0354,Long-tail generic #0354 (synthetic),,,G,Diabetes,,1.0,300.0,41.92,587,1886,0.8883499573110419,1.061,N
+LTG0355,Long-tail generic #0355 (synthetic),,,G,Dermatology,,1.0,50.5,7.05,99,317,0.2698370032897706,1.069,Y
+LTG0356,Long-tail generic #0356 (synthetic),,,G,Cardiovascular,,1.0,215.7,30.14,422,1356,0.18178377985359967,1.063,Y
+LTG0357,Long-tail generic #0357 (synthetic),,,G,CNS,,1.0,43.1,6.02,84,271,0.32592264127613385,1.049,N
+LTG0358,Long-tail generic #0358 (synthetic),,,G,Pain/MSK,,1.0,77.6,10.84,152,488,0.22497338098273428,1.287,Y
+LTG0359,Long-tail generic #0359 (synthetic),,,G,Endocrine,,1.0,36.1,5.04,71,227,0.23614861476052662,1.14,N
+LTG0360,Long-tail generic #0360 (synthetic),,,G,Anti-infective,,1.0,31.5,4.4,62,198,0.14057377528463294,1.153,N
+LTG0361,Long-tail generic #0361 (synthetic),,,G,Cardiovascular,,1.0,15.2,2.12,30,100,0.052245614012831516,1.06,N
+LTG0362,Long-tail generic #0362 (synthetic),,,G,Psychiatric,,1.0,64.7,9.05,127,407,0.04517032760084398,0.923,N
+LTG0363,Long-tail generic #0363 (synthetic),,,G,Dermatology,,1.0,13.9,1.94,27,100,0.40638886145984654,0.896,N
+LTG0364,Long-tail generic #0364 (synthetic),,,G,Cardiovascular,,1.0,85.9,12.0,168,540,0.16035105647865713,0.896,N
+LTG0365,Long-tail generic #0365 (synthetic),,,G,Psychiatric,,1.0,142.1,19.85,278,893,0.11650995326717807,0.964,N
+LTG0366,Long-tail generic #0366 (synthetic),,,G,Women's health,,1.0,60.0,8.38,117,377,0.21327261532384753,0.922,Y
+LTG0367,Long-tail generic #0367 (synthetic),,,G,Cardiovascular,,1.0,27.4,3.83,54,172,0.46824790054668813,0.929,N
+LTG0368,Long-tail generic #0368 (synthetic),,,G,Pain/MSK,,1.0,66.6,9.31,130,419,0.25326327183292674,0.942,Y
+LTG0369,Long-tail generic #0369 (synthetic),,,G,CNS,,1.0,26.7,3.73,52,168,0.10972866844973636,0.91,Y
+LTG0370,Long-tail generic #0370 (synthetic),,,G,Dermatology,,1.0,118.7,16.59,232,746,0.7207977324655771,1.207,N
+LTG0371,Long-tail generic #0371 (synthetic),,,G,Pain/MSK,,1.0,4.3,0.6,8,100,1.025823627327293,0.937,N
+LTG0372,Long-tail generic #0372 (synthetic),,,G,Ophthalmic,,1.0,25.8,3.61,51,162,0.3467563112230381,0.973,Y
+LTG0373,Long-tail generic #0373 (synthetic),,,G,CNS,,1.0,3.5,0.5,7,100,0.559883718216806,0.73,Y
+LTG0374,Long-tail generic #0374 (synthetic),,,G,Anti-infective,,1.0,6.4,0.9,13,100,0.7321794261353116,1.097,Y
+LTG0375,Long-tail generic #0375 (synthetic),,,G,Pain/MSK,,1.0,198.5,27.73,388,1248,0.6546920164664786,1.076,Y
+LTG0376,Long-tail generic #0376 (synthetic),,,G,CNS,,1.0,113.1,15.8,221,711,0.39078783135207834,1.139,N
+LTG0377,Long-tail generic #0377 (synthetic),,,G,CNS,,1.0,16.3,2.28,32,102,0.384680320058842,0.95,Y
+LTG0378,Long-tail generic #0378 (synthetic),,,G,Cardiovascular,,1.0,6.4,0.89,12,40,0.35557143739546243,1.165,N
+LTG0379,Long-tail generic #0379 (synthetic),,,G,Women's health,,1.0,1.1,0.15,2,30,0.07057866689670965,0.937,Y
+LTG0380,Long-tail generic #0380 (synthetic),,,G,Pain/MSK,,1.0,20.1,2.81,39,127,0.4261488769571098,1.076,Y
+LTG0381,Long-tail generic #0381 (synthetic),,,G,Diabetes,,1.0,300.0,41.92,587,1886,0.05450277586395437,1.061,N
+LTG0382,Long-tail generic #0382 (synthetic),,,G,Pain/MSK,,1.0,65.1,9.1,127,409,0.09553246617463403,0.952,Y
+LTG0383,Long-tail generic #0383 (synthetic),,,G,Anti-infective,,1.0,19.7,2.76,39,124,0.7787037455617783,1.17,N
+LTG0384,Long-tail generic #0384 (synthetic),,,G,Anti-infective,,1.0,67.5,9.43,132,424,0.4899413879279405,1.0,Y
+LTG0385,Long-tail generic #0385 (synthetic),,,G,GI,,1.0,5.9,0.83,12,100,0.9358581299918817,1.011,N
+LTG0386,Long-tail generic #0386 (synthetic),,,G,Diabetes,,1.0,27.0,3.78,53,170,0.16115896225732834,1.076,Y
+LTG0387,Long-tail generic #0387 (synthetic),,,G,CNS,,1.0,43.5,6.08,85,274,0.06680759445359323,0.939,N
+LTG0388,Long-tail generic #0388 (synthetic),,,G,Ophthalmic,,1.0,34.8,4.87,68,219,0.16627256634066226,1.002,N
+LTG0389,Long-tail generic #0389 (synthetic),,,G,Urology,,1.0,99.8,13.94,195,627,0.23418160451371364,1.167,Y
+LTG0390,Long-tail generic #0390 (synthetic),,,G,Psychiatric,,1.0,58.4,8.16,114,367,0.22884715175580161,1.068,N
+LTG0391,Long-tail generic #0391 (synthetic),,,G,Endocrine,,1.0,86.1,12.04,169,542,0.6570407780061421,0.969,Y
+LTG0392,Long-tail generic #0392 (synthetic),,,G,Cardiovascular,,1.0,16.9,2.36,33,106,0.14734771175995756,0.793,N
+LTG0393,Long-tail generic #0393 (synthetic),,,G,Other,,1.0,113.5,15.85,222,713,0.30069608689328614,0.985,N
+LTG0394,Long-tail generic #0394 (synthetic),,,G,Ophthalmic,,1.0,272.8,38.12,534,1715,0.07868389175277833,0.942,N
+LTG0395,Long-tail generic #0395 (synthetic),,,G,Ophthalmic,,1.0,12.1,1.69,24,100,0.3317504012896073,1.079,N
+LTG0396,Long-tail generic #0396 (synthetic),,,G,Psychiatric,,1.0,13.3,1.86,26,100,0.21212466726385162,0.982,N
+LTG0397,Long-tail generic #0397 (synthetic),,,G,CNS,,1.0,191.9,26.81,375,1207,0.0999082501668876,0.908,N
+LTG0398,Long-tail generic #0398 (synthetic),,,G,CNS,,1.0,30.7,4.29,60,193,0.16704049074973118,0.995,N
+LTG0399,Long-tail generic #0399 (synthetic),,,G,Cardiovascular,,1.0,208.2,29.1,407,1309,0.17589546298600167,0.906,N
+LTG0400,Long-tail generic #0400 (synthetic),,,G,Cardiovascular,,1.0,22.7,3.17,44,143,0.16140398979425688,1.195,N
+LTG0401,Long-tail generic #0401 (synthetic),,,G,Cardiovascular,,1.0,221.4,30.94,433,1392,1.2431538376542044,1.39,N
+LTG0402,Long-tail generic #0402 (synthetic),,,G,Other,,1.0,45.2,6.32,88,284,0.1916401898117453,0.926,N
+LTG0403,Long-tail generic #0403 (synthetic),,,G,Cardiovascular,,1.0,52.7,7.36,103,331,0.16569843748493518,1.094,N
+LTG0404,Long-tail generic #0404 (synthetic),,,G,Cardiovascular,,1.0,252.6,35.29,494,1588,0.025961499371826534,1.109,Y
+LTG0405,Long-tail generic #0405 (synthetic),,,G,Dermatology,,1.0,25.0,3.5,49,157,0.086475250603145,0.966,Y
+LTG0406,Long-tail generic #0406 (synthetic),,,G,Endocrine,,1.0,12.5,1.74,24,100,0.16255106203624756,0.853,N
+LTG0407,Long-tail generic #0407 (synthetic),,,G,Pain/MSK,,1.0,22.6,3.15,44,142,0.1065072362239032,1.06,N
+LTG0408,Long-tail generic #0408 (synthetic),,,G,Diabetes,,1.0,66.5,9.29,130,418,0.8419942608782907,0.835,Y
+LTG0409,Long-tail generic #0409 (synthetic),,,G,Ophthalmic,,1.0,5.9,0.82,12,37,0.17931209397320705,0.973,Y
+LTG0410,Long-tail generic #0410 (synthetic),,,G,Diabetes,,1.0,83.0,11.6,162,522,0.7670176816502142,1.168,Y
+LTG0411,Long-tail generic #0411 (synthetic),,,G,Anti-infective,,1.0,20.2,2.83,40,127,0.2249257255033813,0.883,Y
+LTG0412,Long-tail generic #0412 (synthetic),,,G,Pain/MSK,,1.0,153.2,21.4,300,963,0.21948709568648522,1.006,Y
+LTG0413,Long-tail generic #0413 (synthetic),,,G,GI,,1.0,2.2,0.31,4,30,0.19349838323683993,0.895,N
+LTG0414,Long-tail generic #0414 (synthetic),,,G,Psychiatric,,1.0,15.0,2.1,29,95,0.2122705958740085,0.869,N
+LTG0415,Long-tail generic #0415 (synthetic),,,G,GI,,1.0,5.1,0.71,10,32,1.1795173493746867,1.018,N
+LTG0416,Long-tail generic #0416 (synthetic),,,G,CNS,,1.0,14.3,2.0,28,100,0.020789641919473526,0.994,N
+LTG0417,Long-tail generic #0417 (synthetic),,,G,Urology,,1.0,52.0,7.27,102,327,0.02857464711986586,1.088,N
+LTG0418,Long-tail generic #0418 (synthetic),,,G,CNS,,1.0,31.2,4.35,61,196,0.12284148368933943,1.034,N
+LTG0419,Long-tail generic #0419 (synthetic),,,G,Cardiovascular,,1.0,28.5,3.98,56,179,0.21456087265730225,0.919,Y
+LTG0420,Long-tail generic #0420 (synthetic),,,G,CNS,,1.0,31.9,4.46,62,201,0.4216476571190888,0.975,Y
+LTG0421,Long-tail generic #0421 (synthetic),,,G,Dermatology,,1.0,49.3,6.89,96,310,0.33939098905288323,1.007,Y
+LTG0422,Long-tail generic #0422 (synthetic),,,G,Psychiatric,,1.0,11.5,1.61,23,72,0.14400092049784172,1.098,Y
+LTG0423,Long-tail generic #0423 (synthetic),,,G,Respiratory,,1.0,90.2,12.61,176,567,0.5858766649309001,1.016,N
+LTG0424,Long-tail generic #0424 (synthetic),,,G,Dermatology,,1.0,85.6,11.96,167,538,0.5924467573358456,0.92,N
+LTG0425,Long-tail generic #0425 (synthetic),,,G,Cardiovascular,,1.0,61.3,8.57,120,386,0.2542005280498208,0.878,Y
+LTG0426,Long-tail generic #0426 (synthetic),,,G,Pain/MSK,,1.0,75.3,10.53,147,474,0.5537554577369245,0.927,N
+LTG0427,Long-tail generic #0427 (synthetic),,,G,Psychiatric,,1.0,55.1,7.7,108,347,0.277747066890677,1.007,Y
+LTG0428,Long-tail generic #0428 (synthetic),,,G,CNS,,1.0,300.0,41.92,587,1886,0.12061245786437752,1.034,N
+LTG0429,Long-tail generic #0429 (synthetic),,,G,Respiratory,,1.0,34.8,4.86,68,219,0.42491215089520884,0.968,Y
+LTG0430,Long-tail generic #0430 (synthetic),,,G,Ophthalmic,,1.0,26.7,3.73,52,168,0.2361999583337754,0.969,N
+LTG0431,Long-tail generic #0431 (synthetic),,,G,Psychiatric,,1.0,15.6,2.19,31,100,0.21174981323755349,0.872,N
+LTG0432,Long-tail generic #0432 (synthetic),,,G,Endocrine,,1.0,11.2,1.56,22,70,0.9224370886204948,1.019,N
+LTG0433,Long-tail generic #0433 (synthetic),,,G,Psychiatric,,1.0,8.7,1.21,17,55,0.018232276842237424,1.111,N
+LTG0434,Long-tail generic #0434 (synthetic),,,G,Anti-infective,,1.0,13.3,1.86,26,84,0.051232875962407894,0.986,N
+LTG0435,Long-tail generic #0435 (synthetic),,,G,Diabetes,,1.0,35.5,4.96,69,223,0.06452128558354277,0.796,N
+LTG0436,Long-tail generic #0436 (synthetic),,,G,Diabetes,,1.0,57.7,8.06,113,363,0.14705474864666007,0.905,Y
+LTG0437,Long-tail generic #0437 (synthetic),,,G,Diabetes,,1.0,41.1,5.74,80,258,0.16393293889418342,1.029,Y
+LTG0438,Long-tail generic #0438 (synthetic),,,G,Cardiovascular,,1.0,15.4,2.15,30,97,0.04684011327235806,0.977,N
+LTG0439,Long-tail generic #0439 (synthetic),,,G,Respiratory,,1.0,113.8,15.9,223,715,0.07895732940842029,1.046,N
+LTG0440,Long-tail generic #0440 (synthetic),,,G,Respiratory,,1.0,93.8,13.11,184,590,0.08940923049717156,1.039,N
+LTG0441,Long-tail generic #0441 (synthetic),,,G,Respiratory,,1.0,31.9,4.46,62,201,2.4688054690134265,0.932,N
+LTG0442,Long-tail generic #0442 (synthetic),,,G,Cardiovascular,,1.0,17.6,2.47,35,111,1.281526920401205,1.044,Y
+LTG0443,Long-tail generic #0443 (synthetic),,,G,GI,,1.0,74.6,10.42,146,469,0.1400943588126023,0.956,N
+LTG0444,Long-tail generic #0444 (synthetic),,,G,GI,,1.0,48.4,6.76,95,304,0.14700731015317603,1.196,N
+LTG0445,Long-tail generic #0445 (synthetic),,,G,Cardiovascular,,1.0,6.8,0.95,13,100,0.067011323166315,1.443,N
+LTG0446,Long-tail generic #0446 (synthetic),,,G,CNS,,1.0,35.6,4.98,70,224,0.031372609131146194,0.97,N
+LTG0447,Long-tail generic #0447 (synthetic),,,G,GI,,1.0,52.9,7.39,103,333,0.1881398216113683,0.946,Y
+LTG0448,Long-tail generic #0448 (synthetic),,,G,Pain/MSK,,1.0,13.1,1.83,26,90,0.0779613835605134,1.202,Y
+LTG0449,Long-tail generic #0449 (synthetic),,,G,CNS,,1.0,48.5,6.78,95,305,0.1942634200057801,1.087,N
+LTG0450,Long-tail generic #0450 (synthetic),,,G,Dermatology,,1.0,6.7,0.94,13,90,0.042685520131697054,1.078,Y
+LTG0451,Long-tail generic #0451 (synthetic),,,G,Anti-infective,,1.0,192.0,26.83,376,1207,0.09870061194511165,1.087,N
+LTG0452,Long-tail generic #0452 (synthetic),,,G,Pain/MSK,,1.0,172.7,24.13,338,1086,0.245351702133596,1.193,N
+LTG0453,Long-tail generic #0453 (synthetic),,,G,Anti-infective,,1.0,28.5,3.99,56,179,0.3049888451214213,1.043,N
+LTG0454,Long-tail generic #0454 (synthetic),,,G,Anti-infective,,1.0,59.8,8.35,117,376,0.3210309588593763,0.952,Y
+LTG0455,Long-tail generic #0455 (synthetic),,,G,Diabetes,,1.0,2.1,0.3,4,100,0.05646249546292795,0.918,N
+LTG0456,Long-tail generic #0456 (synthetic),,,G,Ophthalmic,,1.0,9.6,1.35,19,100,0.49708017695058526,1.061,N
+LTG0457,Long-tail generic #0457 (synthetic),,,G,Anti-infective,,1.0,27.2,3.79,53,171,0.0949978166001789,0.929,N
+LTG0458,Long-tail generic #0458 (synthetic),,,G,Anti-infective,,1.0,10.7,1.49,21,100,0.39818770686358174,0.97,N
+LTG0459,Long-tail generic #0459 (synthetic),,,G,Endocrine,,1.0,91.0,12.72,178,572,0.20922849413796418,1.167,Y
+LTG0460,Long-tail generic #0460 (synthetic),,,G,Pain/MSK,,1.0,300.0,41.92,587,1886,0.05339291747974213,1.111,N
+LTG0461,Long-tail generic #0461 (synthetic),,,G,Cardiovascular,,1.0,9.4,1.32,18,59,0.1541410203872457,1.135,N
+LTG0462,Long-tail generic #0462 (synthetic),,,G,Anti-infective,,1.0,14.1,1.98,28,100,0.3047309776369056,0.883,N
+LTG0463,Long-tail generic #0463 (synthetic),,,G,Anti-infective,,1.0,51.2,7.16,100,322,0.3903450085056749,0.885,Y
+LTG0464,Long-tail generic #0464 (synthetic),,,G,Ophthalmic,,1.0,267.0,37.31,522,1679,0.18365843616976024,0.944,Y
+LTG0465,Long-tail generic #0465 (synthetic),,,G,Anti-infective,,1.0,8.9,1.25,17,100,0.9783275140177693,0.991,Y
+LTG0466,Long-tail generic #0466 (synthetic),,,G,GI,,1.0,52.1,7.28,102,328,0.5791586087757209,1.109,N
+LTG0467,Long-tail generic #0467 (synthetic),,,G,Other,,1.0,300.0,41.92,587,1886,0.163597883719076,1.1,N
+LTG0468,Long-tail generic #0468 (synthetic),,,G,GI,,1.0,5.3,0.74,10,100,0.4477286768520735,1.086,N
+LTG0469,Long-tail generic #0469 (synthetic),,,G,CNS,,1.0,8.3,1.16,16,90,1.462436398522238,1.239,Y
+LTG0470,Long-tail generic #0470 (synthetic),,,G,CNS,,1.0,23.2,3.25,45,146,1.5019960546134792,0.946,Y
+LTG0471,Long-tail generic #0471 (synthetic),,,G,Cardiovascular,,1.0,20.7,2.89,40,130,0.061933778403233816,0.825,N
+LTG0472,Long-tail generic #0472 (synthetic),,,G,Cardiovascular,,1.0,102.4,14.31,200,644,0.08372457090585665,1.097,N
+LTG0473,Long-tail generic #0473 (synthetic),,,G,GI,,1.0,51.6,7.21,101,325,0.9335405414171241,1.086,N
+LTG0474,Long-tail generic #0474 (synthetic),,,G,Pain/MSK,,1.0,4.6,0.64,9,100,0.07338977009794005,1.033,N
+LTG0475,Long-tail generic #0475 (synthetic),,,G,Pain/MSK,,1.0,71.7,10.02,140,451,0.056346744811145814,1.03,N
+LTG0476,Long-tail generic #0476 (synthetic),,,G,Cardiovascular,,1.0,19.3,2.7,38,121,0.13004382045544205,0.957,N
+LTG0477,Long-tail generic #0477 (synthetic),,,G,Endocrine,,1.0,178.3,24.91,349,1121,0.3219165383438095,0.948,N
+LTG0478,Long-tail generic #0478 (synthetic),,,G,Cardiovascular,,1.0,18.2,2.54,36,114,0.190884569687838,0.988,Y
+LTG0479,Long-tail generic #0479 (synthetic),,,G,Women's health,,1.0,18.0,2.51,35,113,0.1103328807102666,0.945,N
+LTG0480,Long-tail generic #0480 (synthetic),,,G,CNS,,1.0,74.0,10.33,145,465,0.10775424695015666,1.101,N
+LTG0481,Long-tail generic #0481 (synthetic),,,G,Diabetes,,1.0,96.5,13.48,189,607,0.10372348294486747,1.049,N
+LTG0482,Long-tail generic #0482 (synthetic),,,G,Psychiatric,,1.0,66.1,9.24,129,416,0.08775562616431745,1.171,N
+LTG0483,Long-tail generic #0483 (synthetic),,,G,Diabetes,,1.0,5.1,0.71,10,32,2.070816974480492,0.693,N
+LTG0484,Long-tail generic #0484 (synthetic),,,G,GI,,1.0,73.7,10.29,144,463,0.28474005489281407,0.985,N
+LTG0485,Long-tail generic #0485 (synthetic),,,G,Pain/MSK,,1.0,11.2,1.56,22,90,0.5132816188614477,0.869,N
+LTG0486,Long-tail generic #0486 (synthetic),,,G,CNS,,1.0,51.2,7.16,100,322,0.12966940029093396,1.021,N
+LTG0487,Long-tail generic #0487 (synthetic),,,G,Ophthalmic,,1.0,7.0,0.98,14,100,0.1755824841406463,0.921,Y
+LTG0488,Long-tail generic #0488 (synthetic),,,G,Anti-infective,,1.0,66.0,9.22,129,415,0.1035973368497942,1.13,Y
+LTG0489,Long-tail generic #0489 (synthetic),,,G,Pain/MSK,,1.0,14.7,2.05,29,100,0.014914848641802049,1.11,N
+LTG0490,Long-tail generic #0490 (synthetic),,,G,Dermatology,,1.0,8.3,1.16,16,100,0.05330639621120111,1.151,Y
+LTG0491,Long-tail generic #0491 (synthetic),,,G,Other,,1.0,91.0,12.71,178,572,0.03458592906066375,0.996,N
+LTG0492,Long-tail generic #0492 (synthetic),,,G,CNS,,1.0,51.6,7.21,101,325,0.022293202844644793,0.851,N
+LTG0493,Long-tail generic #0493 (synthetic),,,G,Psychiatric,,1.0,18.5,2.58,36,116,0.06398870801224842,0.946,N
+LTG0494,Long-tail generic #0494 (synthetic),,,G,CNS,,1.0,220.4,30.8,431,1386,0.7955401231569298,1.058,Y
+LTG0495,Long-tail generic #0495 (synthetic),,,G,CNS,,1.0,22.8,3.18,45,143,0.20227525878756522,0.908,Y
+LTG0496,Long-tail generic #0496 (synthetic),,,G,Endocrine,,1.0,40.1,5.61,79,252,0.7686451096681194,1.055,Y
+LTG0497,Long-tail generic #0497 (synthetic),,,G,Other,,1.0,53.3,7.45,104,335,0.3189544114264179,1.023,N
+LTG0498,Long-tail generic #0498 (synthetic),,,G,Other,,1.0,18.4,2.57,36,115,0.46248976662775043,1.085,Y
+LTG0499,Long-tail generic #0499 (synthetic),,,G,Anti-infective,,1.0,68.0,9.5,133,428,0.08589869265382301,0.923,N
+LTG0500,Long-tail generic #0500 (synthetic),,,G,Diabetes,,1.0,20.4,2.85,40,128,0.35710025153223357,1.074,N
+LTG0501,Long-tail generic #0501 (synthetic),,,G,Dermatology,,1.0,23.6,3.29,46,148,0.43824575559352336,0.742,N
+LTG0502,Long-tail generic #0502 (synthetic),,,G,Women's health,,1.0,198.2,27.69,388,1246,0.1187972564193398,0.945,N
+LTG0503,Long-tail generic #0503 (synthetic),,,G,CNS,,1.0,11.1,1.55,22,70,0.370038100772839,0.928,Y
+LTG0504,Long-tail generic #0504 (synthetic),,,G,Anti-infective,,1.0,2.1,0.3,4,90,0.3725060813123522,1.124,Y
+LTG0505,Long-tail generic #0505 (synthetic),,,G,Dermatology,,1.0,267.0,37.31,522,1679,0.12206003131276758,0.91,Y
+LTG0506,Long-tail generic #0506 (synthetic),,,G,Psychiatric,,1.0,300.0,41.92,587,1886,0.06880642811722856,1.136,Y
+LTG0507,Long-tail generic #0507 (synthetic),,,G,GI,,1.0,23.8,3.32,46,149,0.06471139282104611,0.849,N
+LTG0508,Long-tail generic #0508 (synthetic),,,G,Other,,1.0,3.8,0.53,7,100,0.23057383734738765,0.775,Y
+LTG0509,Long-tail generic #0509 (synthetic),,,G,Other,,1.0,26.6,3.72,52,167,0.29326465877200536,0.967,N
+LTG0510,Long-tail generic #0510 (synthetic),,,G,Ophthalmic,,1.0,27.4,3.83,54,172,0.09573077018599369,0.872,N
+LTG0511,Long-tail generic #0511 (synthetic),,,G,Urology,,1.0,30.8,4.3,60,193,0.21716359122005657,0.886,N
+LTG0512,Long-tail generic #0512 (synthetic),,,G,CNS,,1.0,10.2,1.42,20,64,0.37412974197010423,0.883,Y
+LTG0513,Long-tail generic #0513 (synthetic),,,G,Psychiatric,,1.0,77.4,10.82,151,487,0.39239002993185557,0.99,N
+LTG0514,Long-tail generic #0514 (synthetic),,,G,Anti-infective,,1.0,72.5,10.13,142,456,0.9981920821784808,1.063,N
+LTG0515,Long-tail generic #0515 (synthetic),,,G,Endocrine,,1.0,6.4,0.9,13,100,0.7582752428747784,0.738,N
+LTG0516,Long-tail generic #0516 (synthetic),,,G,Anti-infective,,1.0,89.4,12.49,175,562,0.07769369992389488,1.07,N
+LTG0517,Long-tail generic #0517 (synthetic),,,G,Diabetes,,1.0,300.0,41.92,587,1886,1.1387105609263666,0.914,N
+LTG0518,Long-tail generic #0518 (synthetic),,,G,GI,,1.0,47.5,6.64,93,299,0.12434862345027592,1.015,Y
+LTG0519,Long-tail generic #0519 (synthetic),,,G,Pain/MSK,,1.0,25.8,3.6,50,162,0.6012064685607509,1.031,Y
+LTG0520,Long-tail generic #0520 (synthetic),,,G,Psychiatric,,1.0,32.6,4.55,64,205,0.22634315458945942,1.02,N
+LTG0521,Long-tail generic #0521 (synthetic),,,G,Psychiatric,,1.0,80.8,11.29,158,508,0.140038337768511,1.009,N
+LTG0522,Long-tail generic #0522 (synthetic),,,G,Cardiovascular,,1.0,4.8,0.68,9,90,0.03468713070152061,1.052,N
+LTG0523,Long-tail generic #0523 (synthetic),,,G,CNS,,1.0,47.1,6.58,92,296,0.17812776871511465,1.061,Y
+LTG0524,Long-tail generic #0524 (synthetic),,,G,Dermatology,,1.0,24.2,3.38,47,152,0.044464111003469926,0.986,N
+LTG0525,Long-tail generic #0525 (synthetic),,,G,GI,,1.0,300.0,41.92,587,1886,0.5563317787350576,0.964,N
+LTG0526,Long-tail generic #0526 (synthetic),,,G,CNS,,1.0,31.3,4.38,61,197,0.9637753826603784,0.869,Y
+LTG0527,Long-tail generic #0527 (synthetic),,,G,Pain/MSK,,1.0,285.9,39.94,559,1797,0.09531189464210112,0.985,N
+LTG0528,Long-tail generic #0528 (synthetic),,,G,Anti-infective,,1.0,10.3,1.44,20,100,0.28601273771740543,0.97,Y
+LTG0529,Long-tail generic #0529 (synthetic),,,G,Cardiovascular,,1.0,78.2,10.92,153,491,0.10237822901995527,0.868,N
+LTG0530,Long-tail generic #0530 (synthetic),,,G,Psychiatric,,1.0,56.7,7.92,111,356,0.11279599968452973,1.067,N
+LTG0531,Long-tail generic #0531 (synthetic),,,G,CNS,,1.0,13.6,1.9,27,100,0.45877519032325936,0.94,N
+LTG0532,Long-tail generic #0532 (synthetic),,,G,Diabetes,,1.0,47.8,6.68,93,301,0.2034717842507074,0.946,N
+LTG0533,Long-tail generic #0533 (synthetic),,,G,CNS,,1.0,165.5,23.13,324,1041,1.2043721185900271,0.926,N
+LTG0534,Long-tail generic #0534 (synthetic),,,G,Cardiovascular,,1.0,26.2,3.66,51,165,0.13056003066378805,0.891,Y
+LTG0535,Long-tail generic #0535 (synthetic),,,G,Cardiovascular,,1.0,5.1,0.71,10,100,0.5744436098292582,1.062,N
+LTG0536,Long-tail generic #0536 (synthetic),,,G,Endocrine,,1.0,37.8,5.29,74,238,0.23310267406821958,0.842,Y
+LTG0537,Long-tail generic #0537 (synthetic),,,G,Cardiovascular,,1.0,13.1,1.83,26,100,0.46864409192322043,0.853,N
+LTG0538,Long-tail generic #0538 (synthetic),,,G,Dermatology,,1.0,25.6,3.58,50,161,0.1352206579536954,1.039,N
+LTG0539,Long-tail generic #0539 (synthetic),,,G,Cardiovascular,,1.0,35.0,4.89,69,220,0.20124171892044704,0.883,Y
+LTG0540,Long-tail generic #0540 (synthetic),,,G,Endocrine,,1.0,5.0,0.7,10,90,0.18839988005349495,0.714,Y
+LTG0541,Long-tail generic #0541 (synthetic),,,G,GI,,1.0,5.6,0.78,11,100,0.09165288845490786,1.05,N
+LTG0542,Long-tail generic #0542 (synthetic),,,G,GI,,1.0,68.9,9.63,135,433,0.4099958916835049,1.119,Y
+LTG0543,Long-tail generic #0543 (synthetic),,,G,Cardiovascular,,1.0,20.6,2.88,40,130,0.4051731920388114,0.874,N
+LTG0544,Long-tail generic #0544 (synthetic),,,G,Urology,,1.0,1.8,0.25,3,30,0.3828412068514521,0.97,N
+LTG0545,Long-tail generic #0545 (synthetic),,,G,Ophthalmic,,1.0,99.1,13.84,194,623,0.9834150497954409,1.273,N
+LTG0546,Long-tail generic #0546 (synthetic),,,G,Cardiovascular,,1.0,53.6,7.48,105,337,0.900914542770557,1.061,Y
+LTG0547,Long-tail generic #0547 (synthetic),,,G,CNS,,1.0,16.4,2.29,32,103,0.14534655349123218,0.848,Y
+LTG0548,Long-tail generic #0548 (synthetic),,,G,Ophthalmic,,1.0,8.0,1.11,16,50,0.3070829551238997,0.966,N
+LTG0549,Long-tail generic #0549 (synthetic),,,G,Anti-infective,,1.0,105.3,14.72,206,662,0.113348247460516,0.97,N
+LTG0550,Long-tail generic #0550 (synthetic),,,G,Cardiovascular,,1.0,58.8,8.21,115,369,0.21646327896736933,1.119,N
+LTG0551,Long-tail generic #0551 (synthetic),,,G,CNS,,1.0,300.0,41.92,587,1886,0.11608424246343742,0.83,Y
+LTG0552,Long-tail generic #0552 (synthetic),,,G,Diabetes,,1.0,64.0,8.94,125,402,1.0686333989680452,1.153,Y
+LTG0553,Long-tail generic #0553 (synthetic),,,G,Pain/MSK,,1.0,61.5,8.6,120,387,0.3042238427005974,0.948,Y
+LTG0554,Long-tail generic #0554 (synthetic),,,G,Endocrine,,1.0,31.6,4.42,62,199,0.17004047155341412,0.994,Y
+LTG0555,Long-tail generic #0555 (synthetic),,,G,Women's health,,1.0,102.9,14.38,201,647,0.6976267214127696,0.87,Y
+LTG0556,Long-tail generic #0556 (synthetic),,,G,Anti-infective,,1.0,81.8,11.43,160,514,0.024129862829783237,0.951,Y
+LTG0557,Long-tail generic #0557 (synthetic),,,G,Psychiatric,,1.0,173.5,24.24,339,1091,0.02821808289687424,0.973,N
+LTG0558,Long-tail generic #0558 (synthetic),,,G,Anti-infective,,1.0,20.7,2.89,40,130,0.4686725139288587,0.986,Y
+LTG0559,Long-tail generic #0559 (synthetic),,,G,Psychiatric,,1.0,22.9,3.2,45,144,0.22464784727550915,0.99,Y
+LTG0560,Long-tail generic #0560 (synthetic),,,G,CNS,,1.0,21.7,3.04,43,137,0.27164930241605345,1.081,N
+LTG0561,Long-tail generic #0561 (synthetic),,,G,Cardiovascular,,1.0,99.8,13.94,195,627,0.056129947939988344,0.901,N
+LTG0562,Long-tail generic #0562 (synthetic),,,G,Psychiatric,,1.0,233.3,32.59,456,1467,0.20660978010657752,1.1,Y
+LTG0563,Long-tail generic #0563 (synthetic),,,G,Pain/MSK,,1.0,22.3,3.11,44,140,1.5680295010579786,0.864,N
+LTG0564,Long-tail generic #0564 (synthetic),,,G,Cardiovascular,,1.0,23.2,3.24,45,146,0.48215480012691236,0.841,N
+LTG0565,Long-tail generic #0565 (synthetic),,,G,GI,,1.0,56.3,7.87,110,354,0.2505784762546324,0.992,N
+LTG0566,Long-tail generic #0566 (synthetic),,,G,Diabetes,,1.0,28.8,4.02,56,181,0.13632090402220784,0.924,Y
+LTG0567,Long-tail generic #0567 (synthetic),,,G,Diabetes,,1.0,121.1,16.92,237,761,0.14252148395093991,0.847,Y
+LTG0568,Long-tail generic #0568 (synthetic),,,G,Pain/MSK,,1.0,2.6,0.36,5,90,0.025150246949980304,1.268,N
+LTG0569,Long-tail generic #0569 (synthetic),,,G,Urology,,1.0,14.3,2.0,28,90,0.27361062681806697,1.131,N
+LTG0570,Long-tail generic #0570 (synthetic),,,G,Pain/MSK,,1.0,15.1,2.11,30,95,0.49252672015591004,1.085,Y
+LTG0571,Long-tail generic #0571 (synthetic),,,G,Cardiovascular,,1.0,2.4,0.33,5,100,0.043748016630309625,0.867,Y
+LTG0572,Long-tail generic #0572 (synthetic),,,G,Anti-infective,,1.0,12.2,1.7,24,90,0.10914188275953224,0.962,N
+LTG0573,Long-tail generic #0573 (synthetic),,,G,Endocrine,,1.0,12.9,1.8,25,100,0.06646004716152094,0.87,N
+LTG0574,Long-tail generic #0574 (synthetic),,,G,CNS,,1.0,30.3,4.24,59,191,0.08053681507244753,1.007,N
+LTG0575,Long-tail generic #0575 (synthetic),,,G,Cardiovascular,,1.0,146.9,20.52,287,924,0.22308374333227995,0.99,N
+LTG0576,Long-tail generic #0576 (synthetic),,,G,CNS,,1.0,28.8,4.02,56,181,0.02630248574650769,0.812,N
+LTG0577,Long-tail generic #0577 (synthetic),,,G,GI,,1.0,11.2,1.57,22,90,0.3908547638936994,0.995,Y
+LTG0578,Long-tail generic #0578 (synthetic),,,G,GI,,1.0,36.1,5.04,71,227,0.449403287357167,1.223,N
+LTG0579,Long-tail generic #0579 (synthetic),,,G,CNS,,1.0,136.1,19.01,266,855,0.16450862768206156,1.106,Y
+LTG0580,Long-tail generic #0580 (synthetic),,,G,Dermatology,,1.0,12.0,1.67,23,75,0.01769632683854343,0.909,N
+LTG0581,Long-tail generic #0581 (synthetic),,,G,Ophthalmic,,1.0,13.0,1.81,25,81,0.07807321019882298,1.066,N
+LTG0582,Long-tail generic #0582 (synthetic),,,G,CNS,,1.0,75.5,10.55,148,475,0.7255772456017641,1.058,Y
+LTG0583,Long-tail generic #0583 (synthetic),,,G,Ophthalmic,,1.0,29.6,4.14,58,186,0.01314539259274795,0.976,N
+LTG0584,Long-tail generic #0584 (synthetic),,,G,Cardiovascular,,1.0,84.0,11.74,164,528,0.14938728957227998,0.998,N
+LTG0585,Long-tail generic #0585 (synthetic),,,G,Ophthalmic,,1.0,38.0,5.31,74,239,0.06497904454591623,0.836,Y
+LTG0586,Long-tail generic #0586 (synthetic),,,G,Women's health,,1.0,89.7,12.53,175,564,0.4727827148780915,1.031,N
+LTG0587,Long-tail generic #0587 (synthetic),,,G,Cardiovascular,,1.0,11.2,1.56,22,100,0.10765715130090411,0.976,N
+LTG0588,Long-tail generic #0588 (synthetic),,,G,Pain/MSK,,1.0,38.1,5.32,74,239,0.3167204822762454,0.97,N
+LTG0589,Long-tail generic #0589 (synthetic),,,G,Other,,1.0,30.0,4.19,59,189,0.37223524146872145,1.27,N
+LTG0590,Long-tail generic #0590 (synthetic),,,G,Ophthalmic,,1.0,9.0,1.25,18,56,1.3264897474342208,0.888,Y
+LTG0591,Long-tail generic #0591 (synthetic),,,G,Other,,1.0,5.9,0.83,12,90,0.17262535377414248,0.9,N
+LTG0592,Long-tail generic #0592 (synthetic),,,G,Anti-infective,,1.0,88.0,12.29,172,553,0.3080031389768356,1.049,Y
+LTG0593,Long-tail generic #0593 (synthetic),,,G,Cardiovascular,,1.0,25.4,3.54,50,159,0.04789495262324599,1.2,Y
+LTG0594,Long-tail generic #0594 (synthetic),,,G,Dermatology,,1.0,11.3,1.58,22,90,0.695394401011002,0.923,Y
+LTG0595,Long-tail generic #0595 (synthetic),,,G,Diabetes,,1.0,34.4,4.81,67,216,0.09884537462948693,0.873,N
+LTG0596,Long-tail generic #0596 (synthetic),,,G,Diabetes,,1.0,149.6,20.9,293,940,0.12070039983039975,0.896,N
+LTG0597,Long-tail generic #0597 (synthetic),,,G,GI,,1.0,2.5,0.35,5,100,0.20681358044327794,0.984,N
+LTG0598,Long-tail generic #0598 (synthetic),,,G,Endocrine,,1.0,6.4,0.9,13,90,0.04430870945597042,0.95,N
+LTG0599,Long-tail generic #0599 (synthetic),,,G,Cardiovascular,,1.0,12.8,1.78,25,100,0.2658243184718408,1.366,N
+LTG0600,Long-tail generic #0600 (synthetic),,,G,Pain/MSK,,1.0,223.1,31.17,436,1403,0.5564247145337802,0.934,N
+LTB0001,Long-tail brand #0001 active ingredient (synthetic),LT Brand #0001,,B,Diabetes,,1.0,65.7,9.17,92,275,0.75,,N
+LTB0002,Long-tail brand #0002 active ingredient (synthetic),LT Brand #0002,,B,HIV/Antiviral,,1.0,22.5,3.15,31,94,1.48,,N
+LTB0003,Long-tail brand #0003 active ingredient (synthetic),LT Brand #0003,,B,Respiratory,,1.0,70.6,9.87,99,296,0.13,,N
+LTB0004,Long-tail brand #0004 active ingredient (synthetic),LT Brand #0004,,B,CNS,,1.0,10.8,1.51,15,45,2.08,,N
+LTB0005,Long-tail brand #0005 active ingredient (synthetic),LT Brand #0005,,B,Diabetes,,1.0,6.2,0.87,9,90,1.97,,N
+LTB0006,Long-tail brand #0006 active ingredient (synthetic),LT Brand #0006,,B,Psychiatric,,1.0,27.5,3.84,38,115,5.88,,N
+LTB0007,Long-tail brand #0007 active ingredient (synthetic),LT Brand #0007,,B,HIV/Antiviral,,1.0,31.1,4.35,43,130,0.3,,N
+LTB0008,Long-tail brand #0008 active ingredient (synthetic),LT Brand #0008,,B,Cardiovascular,,1.0,19.7,2.76,28,83,8.52,,N
+LTB0009,Long-tail brand #0009 active ingredient (synthetic),LT Brand #0009,,B,Respiratory,,1.0,130.6,18.25,183,548,5.85,,N
+LTB0010,Long-tail brand #0010 active ingredient (synthetic),LT Brand #0010,,B,Respiratory,,1.0,10.8,1.51,15,90,9.4,,N
+LTB0011,Long-tail brand #0011 active ingredient (synthetic),LT Brand #0011,,B,Ophthalmic,,1.0,43.6,6.09,61,183,2.24,,N
+LTB0012,Long-tail brand #0012 active ingredient (synthetic),LT Brand #0012,,B,Respiratory,,1.0,32.5,4.54,45,136,7.24,,N
+LTB0013,Long-tail brand #0013 active ingredient (synthetic),LT Brand #0013,,B,GI,,1.0,4.6,0.65,6,30,0.47,,N
+LTB0014,Long-tail brand #0014 active ingredient (synthetic),LT Brand #0014,,B,Cardiovascular,,1.0,6.2,0.86,9,90,5.2,,N
+LTB0015,Long-tail brand #0015 active ingredient (synthetic),LT Brand #0015,,B,Respiratory,,1.0,30.4,4.25,42,127,1.02,,N
+LTB0016,Long-tail brand #0016 active ingredient (synthetic),LT Brand #0016,,B,HIV/Antiviral,,1.0,250.0,34.93,349,1048,0.39,,N
+LTB0017,Long-tail brand #0017 active ingredient (synthetic),LT Brand #0017,,B,CNS,,1.0,60.0,8.39,84,252,0.69,,N
+LTB0018,Long-tail brand #0018 active ingredient (synthetic),LT Brand #0018,,B,Diabetes,,1.0,3.8,0.53,5,30,2.39,,N
+LTB0019,Long-tail brand #0019 active ingredient (synthetic),LT Brand #0019,,B,Endocrine,,1.0,0.7,0.1,1,30,0.96,,N
+LTB0020,Long-tail brand #0020 active ingredient (synthetic),LT Brand #0020,,B,Diabetes,,1.0,72.2,10.09,101,303,3.59,,N
+LTB0021,Long-tail brand #0021 active ingredient (synthetic),LT Brand #0021,,B,Cardiovascular,,1.0,26.7,3.73,37,112,0.32,,N
+LTB0022,Long-tail brand #0022 active ingredient (synthetic),LT Brand #0022,,B,CNS,,1.0,117.8,16.46,165,494,0.23,,N
+LTB0023,Long-tail brand #0023 active ingredient (synthetic),LT Brand #0023,,B,Psychiatric,,1.0,10.4,1.45,15,90,10.74,,N
+LTB0024,Long-tail brand #0024 active ingredient (synthetic),LT Brand #0024,,B,GI,,1.0,45.6,6.37,64,191,6.41,,N
+LTB0025,Long-tail brand #0025 active ingredient (synthetic),LT Brand #0025,,B,Diabetes,,1.0,82.7,11.55,116,347,0.75,,N
+LTB0026,Long-tail brand #0026 active ingredient (synthetic),LT Brand #0026,,B,Oncology (oral),,1.0,17.5,2.45,24,73,2.36,,N
+LTB0027,Long-tail brand #0027 active ingredient (synthetic),LT Brand #0027,,B,Immunology,,1.0,18.0,2.51,25,75,7.28,,N
+LTB0028,Long-tail brand #0028 active ingredient (synthetic),LT Brand #0028,,B,Endocrine,,1.0,30.9,4.31,43,129,3.76,,N
+LTB0029,Long-tail brand #0029 active ingredient (synthetic),LT Brand #0029,,B,Ophthalmic,,1.0,57.4,8.03,80,241,2.79,,N
+LTB0030,Long-tail brand #0030 active ingredient (synthetic),LT Brand #0030,,B,Oncology (oral),,1.0,29.4,4.11,41,123,7.91,,N
+LTB0031,Long-tail brand #0031 active ingredient (synthetic),LT Brand #0031,,B,Immunology,,1.0,96.4,13.47,135,404,1.06,,N
+LTB0032,Long-tail brand #0032 active ingredient (synthetic),LT Brand #0032,,B,Cardiovascular,,1.0,17.2,2.4,24,72,2.46,,N
+LTB0033,Long-tail brand #0033 active ingredient (synthetic),LT Brand #0033,,B,CNS,,1.0,6.1,0.85,9,30,2.33,,N
+LTB0034,Long-tail brand #0034 active ingredient (synthetic),LT Brand #0034,,B,Immunology,,1.0,250.0,34.93,349,1048,1.76,,N
+LTB0035,Long-tail brand #0035 active ingredient (synthetic),LT Brand #0035,,B,CNS,,1.0,14.5,2.03,20,90,1.55,,N
+LTB0036,Long-tail brand #0036 active ingredient (synthetic),LT Brand #0036,,B,HIV/Antiviral,,1.0,15.1,2.12,21,63,2.57,,N
+LTB0037,Long-tail brand #0037 active ingredient (synthetic),LT Brand #0037,,B,Diabetes,,1.0,27.7,3.87,39,116,2.46,,N
+LTB0038,Long-tail brand #0038 active ingredient (synthetic),LT Brand #0038,,B,Ophthalmic,,1.0,32.5,4.54,45,136,0.75,,N
+LTB0039,Long-tail brand #0039 active ingredient (synthetic),LT Brand #0039,,B,Respiratory,,1.0,18.8,2.63,26,90,5.73,,N
+LTB0040,Long-tail brand #0040 active ingredient (synthetic),LT Brand #0040,,B,Endocrine,,1.0,29.3,4.1,41,123,0.81,,N
+LTB0041,Long-tail brand #0041 active ingredient (synthetic),LT Brand #0041,,B,Diabetes,,1.0,28.6,3.99,40,120,1.87,,N
+LTB0042,Long-tail brand #0042 active ingredient (synthetic),LT Brand #0042,,B,Diabetes,,1.0,36.9,5.16,52,155,1.71,,N
+LTB0043,Long-tail brand #0043 active ingredient (synthetic),LT Brand #0043,,B,Ophthalmic,,1.0,1.8,0.25,2,90,3.52,,N
+LTB0044,Long-tail brand #0044 active ingredient (synthetic),LT Brand #0044,,B,Ophthalmic,,1.0,250.0,34.93,349,1048,0.23,,N
+LTB0045,Long-tail brand #0045 active ingredient (synthetic),LT Brand #0045,,B,HIV/Antiviral,,1.0,25.1,3.51,35,105,6.32,,N
+LTB0046,Long-tail brand #0046 active ingredient (synthetic),LT Brand #0046,,B,Endocrine,,1.0,60.1,8.4,84,252,1.13,,N
+LTB0047,Long-tail brand #0047 active ingredient (synthetic),LT Brand #0047,,B,Respiratory,,1.0,5.7,0.8,8,30,9.08,,N
+LTB0048,Long-tail brand #0048 active ingredient (synthetic),LT Brand #0048,,B,Ophthalmic,,1.0,17.0,2.38,24,90,1.4,,N
+LTB0049,Long-tail brand #0049 active ingredient (synthetic),LT Brand #0049,,B,Cardiovascular,,1.0,13.4,1.87,19,56,2.25,,N
+LTB0050,Long-tail brand #0050 active ingredient (synthetic),LT Brand #0050,,B,Psychiatric,,1.0,174.7,24.42,244,732,19.47,,N
+LTB0051,Long-tail brand #0051 active ingredient (synthetic),LT Brand #0051,,B,CNS,,1.0,14.8,2.07,21,90,1.75,,N
+LTB0052,Long-tail brand #0052 active ingredient (synthetic),LT Brand #0052,,B,Diabetes,,1.0,74.4,10.39,104,312,9.27,,N
+LTB0053,Long-tail brand #0053 active ingredient (synthetic),LT Brand #0053,,B,Immunology,,1.0,13.7,1.92,19,90,2.48,,N
+LTB0054,Long-tail brand #0054 active ingredient (synthetic),LT Brand #0054,,B,GI,,1.0,17.4,2.43,24,73,3.75,,N
+LTB0055,Long-tail brand #0055 active ingredient (synthetic),LT Brand #0055,,B,Respiratory,,1.0,22.3,3.12,31,94,2.56,,N
+LTB0056,Long-tail brand #0056 active ingredient (synthetic),LT Brand #0056,,B,Oncology (oral),,1.0,139.8,19.53,195,586,6.03,,N
+LTB0057,Long-tail brand #0057 active ingredient (synthetic),LT Brand #0057,,B,Psychiatric,,1.0,3.1,0.43,4,90,1.12,,N
+LTB0058,Long-tail brand #0058 active ingredient (synthetic),LT Brand #0058,,B,Respiratory,,1.0,6.2,0.86,9,90,0.8,,N
+LTB0059,Long-tail brand #0059 active ingredient (synthetic),LT Brand #0059,,B,Immunology,,1.0,2.9,0.4,4,30,1.18,,N
+LTB0060,Long-tail brand #0060 active ingredient (synthetic),LT Brand #0060,,B,Respiratory,,1.0,8.1,1.13,11,34,2.65,,N
+LTB0061,Long-tail brand #0061 active ingredient (synthetic),LT Brand #0061,,B,Diabetes,,1.0,11.3,1.58,16,47,1.86,,N
+LTB0062,Long-tail brand #0062 active ingredient (synthetic),LT Brand #0062,,B,HIV/Antiviral,,1.0,4.3,0.6,6,90,5.18,,N
+LTB0063,Long-tail brand #0063 active ingredient (synthetic),LT Brand #0063,,B,Diabetes,,1.0,12.4,1.73,17,52,9.97,,N
+LTB0064,Long-tail brand #0064 active ingredient (synthetic),LT Brand #0064,,B,Diabetes,,1.0,2.7,0.37,4,30,0.81,,N
+LTB0065,Long-tail brand #0065 active ingredient (synthetic),LT Brand #0065,,B,HIV/Antiviral,,1.0,8.8,1.23,12,37,1.06,,N
+LTB0066,Long-tail brand #0066 active ingredient (synthetic),LT Brand #0066,,B,Diabetes,,1.0,126.5,17.67,177,530,0.49,,N
+LTB0067,Long-tail brand #0067 active ingredient (synthetic),LT Brand #0067,,B,Ophthalmic,,1.0,48.6,6.79,68,204,22.14,,N
+LTB0068,Long-tail brand #0068 active ingredient (synthetic),LT Brand #0068,,B,GI,,1.0,37.5,5.24,52,157,3.32,,N
+LTB0069,Long-tail brand #0069 active ingredient (synthetic),LT Brand #0069,,B,Diabetes,,1.0,9.0,1.26,13,38,4.02,,N
+LTB0070,Long-tail brand #0070 active ingredient (synthetic),LT Brand #0070,,B,Psychiatric,,1.0,4.7,0.66,7,90,0.54,,N
+LTB0071,Long-tail brand #0071 active ingredient (synthetic),LT Brand #0071,,B,Diabetes,,1.0,7.6,1.07,11,32,2.37,,N
+LTB0072,Long-tail brand #0072 active ingredient (synthetic),LT Brand #0072,,B,Immunology,,1.0,28.4,3.97,40,119,4.15,,N
+LTB0073,Long-tail brand #0073 active ingredient (synthetic),LT Brand #0073,,B,Diabetes,,1.0,84.9,11.86,119,356,1.8,,N
+LTB0074,Long-tail brand #0074 active ingredient (synthetic),LT Brand #0074,,B,Endocrine,,1.0,88.5,12.36,124,371,7.75,,N
+LTB0075,Long-tail brand #0075 active ingredient (synthetic),LT Brand #0075,,B,Respiratory,,1.0,63.8,8.92,89,268,30.17,,N
+LTB0076,Long-tail brand #0076 active ingredient (synthetic),LT Brand #0076,,B,HIV/Antiviral,,1.0,12.4,1.73,17,52,0.84,,N
+LTB0077,Long-tail brand #0077 active ingredient (synthetic),LT Brand #0077,,B,Diabetes,,1.0,30.8,4.31,43,129,0.77,,N
+LTB0078,Long-tail brand #0078 active ingredient (synthetic),LT Brand #0078,,B,Respiratory,,1.0,20.4,2.85,28,85,0.9,,N
+LTB0079,Long-tail brand #0079 active ingredient (synthetic),LT Brand #0079,,B,CNS,,1.0,23.5,3.29,33,99,13.88,,N
+LTB0080,Long-tail brand #0080 active ingredient (synthetic),LT Brand #0080,,B,Immunology,,1.0,250.0,34.93,349,1048,7.47,,N
+LTB0081,Long-tail brand #0081 active ingredient (synthetic),LT Brand #0081,,B,Other,,1.0,3.6,0.51,5,90,2.04,,N
+LTB0082,Long-tail brand #0082 active ingredient (synthetic),LT Brand #0082,,B,Diabetes,,1.0,22.6,3.16,32,95,2.47,,N
+LTB0083,Long-tail brand #0083 active ingredient (synthetic),LT Brand #0083,,B,Diabetes,,1.0,128.2,17.92,179,537,0.97,,N
+LTB0084,Long-tail brand #0084 active ingredient (synthetic),LT Brand #0084,,B,Cardiovascular,,1.0,5.2,0.72,7,90,6.32,,N
+LTB0085,Long-tail brand #0085 active ingredient (synthetic),LT Brand #0085,,B,Cardiovascular,,1.0,13.8,1.93,19,58,1.56,,N
+LTB0086,Long-tail brand #0086 active ingredient (synthetic),LT Brand #0086,,B,Dermatology,,1.0,15.9,2.22,22,67,1.78,,N
+LTB0087,Long-tail brand #0087 active ingredient (synthetic),LT Brand #0087,,B,Oncology (oral),,1.0,22.9,3.2,32,96,4.63,,N
+LTB0088,Long-tail brand #0088 active ingredient (synthetic),LT Brand #0088,,B,Dermatology,,1.0,4.4,0.62,6,30,1.93,,N
+LTB0089,Long-tail brand #0089 active ingredient (synthetic),LT Brand #0089,,B,Diabetes,,1.0,61.2,8.55,85,256,1.83,,N
+LTB0090,Long-tail brand #0090 active ingredient (synthetic),LT Brand #0090,,B,CNS,,1.0,66.6,9.31,93,279,2.4,,N
+LTB0091,Long-tail brand #0091 active ingredient (synthetic),LT Brand #0091,,B,GI,,1.0,55.1,7.7,77,231,5.69,,N
+LTB0092,Long-tail brand #0092 active ingredient (synthetic),LT Brand #0092,,B,Cardiovascular,,1.0,10.5,1.47,15,44,14.51,,N
+LTB0093,Long-tail brand #0093 active ingredient (synthetic),LT Brand #0093,,B,HIV/Antiviral,,1.0,33.2,4.64,46,139,4.52,,N
+LTB0094,Long-tail brand #0094 active ingredient (synthetic),LT Brand #0094,,B,Respiratory,,1.0,10.2,1.42,14,43,5.74,,N
+LTB0095,Long-tail brand #0095 active ingredient (synthetic),LT Brand #0095,,B,Cardiovascular,,1.0,20.1,2.81,28,84,1.9,,N
+LTB0096,Long-tail brand #0096 active ingredient (synthetic),LT Brand #0096,,B,Dermatology,,1.0,250.0,34.93,349,1048,1.09,,N
+LTB0097,Long-tail brand #0097 active ingredient (synthetic),LT Brand #0097,,B,Respiratory,,1.0,33.6,4.69,47,141,4.87,,N
+LTB0098,Long-tail brand #0098 active ingredient (synthetic),LT Brand #0098,,B,Endocrine,,1.0,7.2,1.01,10,30,2.86,,N
+LTB0099,Long-tail brand #0099 active ingredient (synthetic),LT Brand #0099,,B,Cardiovascular,,1.0,37.2,5.2,52,156,0.5,,N
+LTB0100,Long-tail brand #0100 active ingredient (synthetic),LT Brand #0100,,B,Diabetes,,1.0,5.9,0.83,8,30,1.65,,N
+LTB0101,Long-tail brand #0101 active ingredient (synthetic),LT Brand #0101,,B,Respiratory,,1.0,7.1,0.99,10,90,2.17,,N
+LTB0102,Long-tail brand #0102 active ingredient (synthetic),LT Brand #0102,,B,Respiratory,,1.0,8.6,1.2,12,90,1.35,,N
+LTB0103,Long-tail brand #0103 active ingredient (synthetic),LT Brand #0103,,B,Psychiatric,,1.0,17.6,2.46,25,74,12.11,,N
+LTB0104,Long-tail brand #0104 active ingredient (synthetic),LT Brand #0104,,B,Diabetes,,1.0,92.2,12.88,129,387,4.02,,N
+LTB0105,Long-tail brand #0105 active ingredient (synthetic),LT Brand #0105,,B,Immunology,,1.0,60.0,8.38,84,251,10.74,,N
+LTB0106,Long-tail brand #0106 active ingredient (synthetic),LT Brand #0106,,B,Dermatology,,1.0,56.1,7.84,78,235,3.17,,N
+LTB0107,Long-tail brand #0107 active ingredient (synthetic),LT Brand #0107,,B,Cardiovascular,,1.0,8.0,1.12,11,34,2.59,,N
+LTB0108,Long-tail brand #0108 active ingredient (synthetic),LT Brand #0108,,B,Respiratory,,1.0,15.6,2.19,22,66,0.85,,N
+LTB0109,Long-tail brand #0109 active ingredient (synthetic),LT Brand #0109,,B,CNS,,1.0,41.5,5.8,58,174,2.4,,N
+LTB0110,Long-tail brand #0110 active ingredient (synthetic),LT Brand #0110,,B,GI,,1.0,14.1,1.97,20,59,2.41,,N
+LTB0111,Long-tail brand #0111 active ingredient (synthetic),LT Brand #0111,,B,Immunology,,1.0,21.4,3.0,30,90,0.53,,N
+LTB0112,Long-tail brand #0112 active ingredient (synthetic),LT Brand #0112,,B,Diabetes,,1.0,50.9,7.11,71,213,1.31,,N
+LTB0113,Long-tail brand #0113 active ingredient (synthetic),LT Brand #0113,,B,Psychiatric,,1.0,19.7,2.75,28,83,1.66,,N
+LTB0114,Long-tail brand #0114 active ingredient (synthetic),LT Brand #0114,,B,CNS,,1.0,39.3,5.49,55,165,3.74,,N
+LTB0115,Long-tail brand #0115 active ingredient (synthetic),LT Brand #0115,,B,Cardiovascular,,1.0,202.5,28.3,283,849,3.94,,N
+LTB0116,Long-tail brand #0116 active ingredient (synthetic),LT Brand #0116,,B,Diabetes,,1.0,24.4,3.41,34,102,1.25,,N
+LTB0117,Long-tail brand #0117 active ingredient (synthetic),LT Brand #0117,,B,Other,,1.0,123.3,17.23,172,517,3.97,,N
+LTB0118,Long-tail brand #0118 active ingredient (synthetic),LT Brand #0118,,B,Respiratory,,1.0,58.6,8.19,82,246,1.94,,N
+LTB0119,Long-tail brand #0119 active ingredient (synthetic),LT Brand #0119,,B,Respiratory,,1.0,5.1,0.72,7,30,0.1,,N
+LTB0120,Long-tail brand #0120 active ingredient (synthetic),LT Brand #0120,,B,Diabetes,,1.0,8.0,1.12,11,33,1.39,,N
+LTB0121,Long-tail brand #0121 active ingredient (synthetic),LT Brand #0121,,B,Immunology,,1.0,11.0,1.54,15,46,7.77,,N
+LTB0122,Long-tail brand #0122 active ingredient (synthetic),LT Brand #0122,,B,CNS,,1.0,10.7,1.5,15,45,0.37,,N
+LTB0123,Long-tail brand #0123 active ingredient (synthetic),LT Brand #0123,,B,Respiratory,,1.0,26.9,3.76,38,113,2.69,,N
+LTB0124,Long-tail brand #0124 active ingredient (synthetic),LT Brand #0124,,B,CNS,,1.0,62.6,8.75,88,263,13.57,,N
+LTB0125,Long-tail brand #0125 active ingredient (synthetic),LT Brand #0125,,B,HIV/Antiviral,,1.0,135.1,18.87,189,566,1.03,,N
+LTB0126,Long-tail brand #0126 active ingredient (synthetic),LT Brand #0126,,B,Respiratory,,1.0,43.4,6.06,61,182,2.38,,N
+LTB0127,Long-tail brand #0127 active ingredient (synthetic),LT Brand #0127,,B,Oncology (oral),,1.0,17.5,2.45,25,74,0.57,,N
+LTB0128,Long-tail brand #0128 active ingredient (synthetic),LT Brand #0128,,B,Cardiovascular,,1.0,2.5,0.34,3,90,14.21,,N
+LTB0129,Long-tail brand #0129 active ingredient (synthetic),LT Brand #0129,,B,Respiratory,,1.0,32.6,4.56,46,137,2.16,,N
+LTB0130,Long-tail brand #0130 active ingredient (synthetic),LT Brand #0130,,B,Endocrine,,1.0,30.9,4.32,43,130,2.5,,N
+LTB0131,Long-tail brand #0131 active ingredient (synthetic),LT Brand #0131,,B,Ophthalmic,,1.0,37.3,5.21,52,156,10.52,,N
+LTB0132,Long-tail brand #0132 active ingredient (synthetic),LT Brand #0132,,B,Cardiovascular,,1.0,250.0,34.93,349,1048,4.91,,N
+LTB0133,Long-tail brand #0133 active ingredient (synthetic),LT Brand #0133,,B,Ophthalmic,,1.0,132.7,18.55,185,556,0.91,,N
+LTB0134,Long-tail brand #0134 active ingredient (synthetic),LT Brand #0134,,B,Psychiatric,,1.0,76.8,10.74,107,322,1.16,,N
+LTB0135,Long-tail brand #0135 active ingredient (synthetic),LT Brand #0135,,B,Cardiovascular,,1.0,9.4,1.32,13,90,4.09,,N
+LTB0136,Long-tail brand #0136 active ingredient (synthetic),LT Brand #0136,,B,Ophthalmic,,1.0,16.2,2.26,23,68,1.19,,N
+LTB0137,Long-tail brand #0137 active ingredient (synthetic),LT Brand #0137,,B,GI,,1.0,26.7,3.74,37,112,0.23,,N
+LTB0138,Long-tail brand #0138 active ingredient (synthetic),LT Brand #0138,,B,Respiratory,,1.0,11.8,1.65,17,50,2.24,,N
+LTB0139,Long-tail brand #0139 active ingredient (synthetic),LT Brand #0139,,B,Immunology,,1.0,54.6,7.63,76,229,0.47,,N
+LTB0140,Long-tail brand #0140 active ingredient (synthetic),LT Brand #0140,,B,Cardiovascular,,1.0,46.0,6.42,64,193,14.04,,N
+LTB0141,Long-tail brand #0141 active ingredient (synthetic),LT Brand #0141,,B,Diabetes,,1.0,8.1,1.13,11,34,2.88,,N
+LTB0142,Long-tail brand #0142 active ingredient (synthetic),LT Brand #0142,,B,Endocrine,,1.0,125.9,17.6,176,528,0.88,,N
+LTB0143,Long-tail brand #0143 active ingredient (synthetic),LT Brand #0143,,B,Psychiatric,,1.0,33.9,4.73,47,142,1.1,,N
+LTB0144,Long-tail brand #0144 active ingredient (synthetic),LT Brand #0144,,B,Immunology,,1.0,3.8,0.53,5,30,0.3,,N
+LTB0145,Long-tail brand #0145 active ingredient (synthetic),LT Brand #0145,,B,Immunology,,1.0,28.2,3.94,39,118,0.71,,N
+LTB0146,Long-tail brand #0146 active ingredient (synthetic),LT Brand #0146,,B,Psychiatric,,1.0,42.0,5.87,59,176,7.26,,N
+LTB0147,Long-tail brand #0147 active ingredient (synthetic),LT Brand #0147,,B,Respiratory,,1.0,96.3,13.45,134,403,27.63,,N
+LTB0148,Long-tail brand #0148 active ingredient (synthetic),LT Brand #0148,,B,Other,,1.0,20.0,2.79,28,90,5.28,,N
+LTB0149,Long-tail brand #0149 active ingredient (synthetic),LT Brand #0149,,B,Immunology,,1.0,80.9,11.3,113,339,2.14,,N
+LTB0150,Long-tail brand #0150 active ingredient (synthetic),LT Brand #0150,,B,HIV/Antiviral,,1.0,37.5,5.24,52,157,1.48,,N
+LTB0151,Long-tail brand #0151 active ingredient (synthetic),LT Brand #0151,,B,CNS,,1.0,6.2,0.86,9,30,0.83,,N
+LTB0152,Long-tail brand #0152 active ingredient (synthetic),LT Brand #0152,,B,Respiratory,,1.0,5.5,0.77,8,30,22.87,,N
+LTB0153,Long-tail brand #0153 active ingredient (synthetic),LT Brand #0153,,B,Diabetes,,1.0,115.2,16.1,161,483,1.93,,N
+LTB0154,Long-tail brand #0154 active ingredient (synthetic),LT Brand #0154,,B,Cardiovascular,,1.0,125.8,17.58,176,527,24.32,,N
+LTB0155,Long-tail brand #0155 active ingredient (synthetic),LT Brand #0155,,B,Respiratory,,1.0,44.1,6.17,62,185,10.99,,N
+LTB0156,Long-tail brand #0156 active ingredient (synthetic),LT Brand #0156,,B,HIV/Antiviral,,1.0,180.3,25.19,252,756,0.35,,N
+LTB0157,Long-tail brand #0157 active ingredient (synthetic),LT Brand #0157,,B,Dermatology,,1.0,106.4,14.87,149,446,1.14,,N
+LTB0158,Long-tail brand #0158 active ingredient (synthetic),LT Brand #0158,,B,Cardiovascular,,1.0,68.0,9.51,95,285,1.14,,N
+LTB0159,Long-tail brand #0159 active ingredient (synthetic),LT Brand #0159,,B,Cardiovascular,,1.0,10.0,1.4,14,42,2.17,,N
+LTB0160,Long-tail brand #0160 active ingredient (synthetic),LT Brand #0160,,B,HIV/Antiviral,,1.0,239.2,33.42,334,1003,2.22,,N
+LTB0161,Long-tail brand #0161 active ingredient (synthetic),LT Brand #0161,,B,Diabetes,,1.0,57.0,7.97,80,239,64.06,,N
+LTB0162,Long-tail brand #0162 active ingredient (synthetic),LT Brand #0162,,B,Oncology (oral),,1.0,18.9,2.63,26,79,0.73,,N
+LTB0163,Long-tail brand #0163 active ingredient (synthetic),LT Brand #0163,,B,Cardiovascular,,1.0,13.4,1.88,19,90,3.05,,N
+LTB0164,Long-tail brand #0164 active ingredient (synthetic),LT Brand #0164,,B,Diabetes,,1.0,40.8,5.7,57,171,4.67,,N
+LTB0165,Long-tail brand #0165 active ingredient (synthetic),LT Brand #0165,,B,Respiratory,,1.0,4.0,0.56,6,30,2.37,,N
+LTB0166,Long-tail brand #0166 active ingredient (synthetic),LT Brand #0166,,B,Oncology (oral),,1.0,69.4,9.69,97,291,2.68,,N
+LTB0167,Long-tail brand #0167 active ingredient (synthetic),LT Brand #0167,,B,Respiratory,,1.0,9.5,1.33,13,40,0.75,,N
+LTB0168,Long-tail brand #0168 active ingredient (synthetic),LT Brand #0168,,B,HIV/Antiviral,,1.0,46.7,6.53,65,196,2.67,,N
+LTB0169,Long-tail brand #0169 active ingredient (synthetic),LT Brand #0169,,B,Diabetes,,1.0,16.0,2.24,22,67,4.16,,N
+LTB0170,Long-tail brand #0170 active ingredient (synthetic),LT Brand #0170,,B,Respiratory,,1.0,21.8,3.05,30,91,3.4,,N
+LTB0171,Long-tail brand #0171 active ingredient (synthetic),LT Brand #0171,,B,Dermatology,,1.0,12.1,1.69,17,51,4.44,,N
+LTB0172,Long-tail brand #0172 active ingredient (synthetic),LT Brand #0172,,B,Diabetes,,1.0,24.7,3.45,34,103,11.22,,N
+LTB0173,Long-tail brand #0173 active ingredient (synthetic),LT Brand #0173,,B,Diabetes,,1.0,250.0,34.93,349,1048,6.65,,N
+LTB0174,Long-tail brand #0174 active ingredient (synthetic),LT Brand #0174,,B,Psychiatric,,1.0,157.9,22.06,221,662,2.57,,N
+LTB0175,Long-tail brand #0175 active ingredient (synthetic),LT Brand #0175,,B,Dermatology,,1.0,45.8,6.4,64,192,0.65,,N
+LTB0176,Long-tail brand #0176 active ingredient (synthetic),LT Brand #0176,,B,Cardiovascular,,1.0,29.1,4.06,41,122,1.23,,N
+LTB0177,Long-tail brand #0177 active ingredient (synthetic),LT Brand #0177,,B,Diabetes,,1.0,82.5,11.53,115,346,1.86,,N
+LTB0178,Long-tail brand #0178 active ingredient (synthetic),LT Brand #0178,,B,Other,,1.0,116.2,16.24,162,487,3.13,,N
+LTB0179,Long-tail brand #0179 active ingredient (synthetic),LT Brand #0179,,B,HIV/Antiviral,,1.0,11.1,1.55,15,46,1.4,,N
+LTB0180,Long-tail brand #0180 active ingredient (synthetic),LT Brand #0180,,B,Dermatology,,1.0,27.3,3.81,38,114,0.85,,N
+LTB0181,Long-tail brand #0181 active ingredient (synthetic),LT Brand #0181,,B,GI,,1.0,3.4,0.47,5,90,0.64,,N
+LTB0182,Long-tail brand #0182 active ingredient (synthetic),LT Brand #0182,,B,HIV/Antiviral,,1.0,115.3,16.11,161,483,0.39,,N
+LTB0183,Long-tail brand #0183 active ingredient (synthetic),LT Brand #0183,,B,CNS,,1.0,250.0,34.93,349,1048,1.83,,N
+LTB0184,Long-tail brand #0184 active ingredient (synthetic),LT Brand #0184,,B,Cardiovascular,,1.0,33.0,4.61,46,138,0.47,,N
+LTB0185,Long-tail brand #0185 active ingredient (synthetic),LT Brand #0185,,B,HIV/Antiviral,,1.0,2.3,0.33,3,90,0.79,,N
+LTB0186,Long-tail brand #0186 active ingredient (synthetic),LT Brand #0186,,B,HIV/Antiviral,,1.0,62.2,8.69,87,261,1.54,,N
+LTB0187,Long-tail brand #0187 active ingredient (synthetic),LT Brand #0187,,B,Endocrine,,1.0,10.1,1.41,14,90,0.55,,N
+LTB0188,Long-tail brand #0188 active ingredient (synthetic),LT Brand #0188,,B,Immunology,,1.0,13.5,1.89,19,90,3.6,,N
+LTB0189,Long-tail brand #0189 active ingredient (synthetic),LT Brand #0189,,B,Respiratory,,1.0,63.5,8.88,89,266,5.36,,N
+LTB0190,Long-tail brand #0190 active ingredient (synthetic),LT Brand #0190,,B,Psychiatric,,1.0,40.7,5.68,57,170,1.3,,N
+LTB0191,Long-tail brand #0191 active ingredient (synthetic),LT Brand #0191,,B,Immunology,,1.0,16.7,2.33,23,70,1.47,,N
+LTB0192,Long-tail brand #0192 active ingredient (synthetic),LT Brand #0192,,B,CNS,,1.0,13.7,1.92,19,58,4.28,,N
+LTB0193,Long-tail brand #0193 active ingredient (synthetic),LT Brand #0193,,B,GI,,1.0,34.8,4.87,49,146,1.08,,N
+LTB0194,Long-tail brand #0194 active ingredient (synthetic),LT Brand #0194,,B,Immunology,,1.0,18.3,2.56,26,90,1.0,,N
+LTB0195,Long-tail brand #0195 active ingredient (synthetic),LT Brand #0195,,B,Diabetes,,1.0,7.9,1.11,11,33,8.85,,N
+LTB0196,Long-tail brand #0196 active ingredient (synthetic),LT Brand #0196,,B,Immunology,,1.0,20.1,2.81,28,84,6.27,,N
+LTB0197,Long-tail brand #0197 active ingredient (synthetic),LT Brand #0197,,B,Immunology,,1.0,45.0,6.29,63,189,4.6,,N
+LTB0198,Long-tail brand #0198 active ingredient (synthetic),LT Brand #0198,,B,Oncology (oral),,1.0,24.2,3.38,34,101,6.57,,N
+LTB0199,Long-tail brand #0199 active ingredient (synthetic),LT Brand #0199,,B,CNS,,1.0,5.5,0.77,8,30,0.27,,N
+LTB0200,Long-tail brand #0200 active ingredient (synthetic),LT Brand #0200,,B,Immunology,,1.0,98.2,13.71,137,411,10.52,,N
+LTB0201,Long-tail brand #0201 active ingredient (synthetic),LT Brand #0201,,B,CNS,,1.0,1.1,0.16,2,30,3.65,,N
+LTB0202,Long-tail brand #0202 active ingredient (synthetic),LT Brand #0202,,B,Psychiatric,,1.0,17.5,2.45,24,73,7.21,,N
+LTB0203,Long-tail brand #0203 active ingredient (synthetic),LT Brand #0203,,B,Diabetes,,1.0,14.2,1.99,20,60,3.63,,N
+LTB0204,Long-tail brand #0204 active ingredient (synthetic),LT Brand #0204,,B,Dermatology,,1.0,35.8,5.0,50,150,2.5,,N
+LTB0205,Long-tail brand #0205 active ingredient (synthetic),LT Brand #0205,,B,Oncology (oral),,1.0,58.8,8.21,82,246,1.75,,N
+LTB0206,Long-tail brand #0206 active ingredient (synthetic),LT Brand #0206,,B,Psychiatric,,1.0,115.8,16.18,162,485,3.55,,N
+LTB0207,Long-tail brand #0207 active ingredient (synthetic),LT Brand #0207,,B,Psychiatric,,1.0,12.7,1.78,18,53,1.68,,N
+LTB0208,Long-tail brand #0208 active ingredient (synthetic),LT Brand #0208,,B,Diabetes,,1.0,60.6,8.46,85,254,6.16,,N
+LTB0209,Long-tail brand #0209 active ingredient (synthetic),LT Brand #0209,,B,Immunology,,1.0,37.9,5.29,53,159,0.41,,N
+LTB0210,Long-tail brand #0210 active ingredient (synthetic),LT Brand #0210,,B,CNS,,1.0,3.8,0.54,5,30,1.31,,N
+LTB0211,Long-tail brand #0211 active ingredient (synthetic),LT Brand #0211,,B,HIV/Antiviral,,1.0,250.0,34.93,349,1048,22.49,,N
+LTB0212,Long-tail brand #0212 active ingredient (synthetic),LT Brand #0212,,B,Diabetes,,1.0,5.3,0.74,7,30,1.19,,N
+LTB0213,Long-tail brand #0213 active ingredient (synthetic),LT Brand #0213,,B,HIV/Antiviral,,1.0,49.6,6.92,69,208,1.82,,N
+LTB0214,Long-tail brand #0214 active ingredient (synthetic),LT Brand #0214,,B,Respiratory,,1.0,47.8,6.68,67,200,0.9,,N
+LTB0215,Long-tail brand #0215 active ingredient (synthetic),LT Brand #0215,,B,Immunology,,1.0,41.7,5.83,58,175,3.43,,N
+LTB0216,Long-tail brand #0216 active ingredient (synthetic),LT Brand #0216,,B,Immunology,,1.0,16.5,2.31,23,90,1.06,,N
+LTB0217,Long-tail brand #0217 active ingredient (synthetic),LT Brand #0217,,B,Respiratory,,1.0,80.8,11.29,113,339,1.93,,N
+LTB0218,Long-tail brand #0218 active ingredient (synthetic),LT Brand #0218,,B,CNS,,1.0,4.6,0.64,6,30,6.04,,N
+LTB0219,Long-tail brand #0219 active ingredient (synthetic),LT Brand #0219,,B,Ophthalmic,,1.0,27.7,3.87,39,116,1.1,,N
+LTB0220,Long-tail brand #0220 active ingredient (synthetic),LT Brand #0220,,B,Immunology,,1.0,15.2,2.13,21,64,5.65,,N
+LTB0221,Long-tail brand #0221 active ingredient (synthetic),LT Brand #0221,,B,Diabetes,,1.0,13.3,1.86,19,56,5.86,,N
+LTB0222,Long-tail brand #0222 active ingredient (synthetic),LT Brand #0222,,B,CNS,,1.0,50.1,7.0,70,210,7.57,,N
+LTB0223,Long-tail brand #0223 active ingredient (synthetic),LT Brand #0223,,B,Cardiovascular,,1.0,109.1,15.25,152,457,2.77,,N
+LTB0224,Long-tail brand #0224 active ingredient (synthetic),LT Brand #0224,,B,Immunology,,1.0,19.8,2.77,28,83,83.88,,N
+LTB0225,Long-tail brand #0225 active ingredient (synthetic),LT Brand #0225,,B,Immunology,,1.0,76.4,10.68,107,320,7.57,,N
+LTB0226,Long-tail brand #0226 active ingredient (synthetic),LT Brand #0226,,B,Diabetes,,1.0,31.8,4.44,44,133,3.39,,N
+LTB0227,Long-tail brand #0227 active ingredient (synthetic),LT Brand #0227,,B,Immunology,,1.0,10.3,1.43,14,43,0.91,,N
+LTB0228,Long-tail brand #0228 active ingredient (synthetic),LT Brand #0228,,B,HIV/Antiviral,,1.0,22.0,3.07,31,92,2.13,,N
+LTB0229,Long-tail brand #0229 active ingredient (synthetic),LT Brand #0229,,B,GI,,1.0,20.9,2.92,29,90,11.39,,N
+LTB0230,Long-tail brand #0230 active ingredient (synthetic),LT Brand #0230,,B,Diabetes,,1.0,13.0,1.81,18,54,15.56,,N
+LTB0231,Long-tail brand #0231 active ingredient (synthetic),LT Brand #0231,,B,Cardiovascular,,1.0,50.1,7.0,70,210,12.06,,N
+LTB0232,Long-tail brand #0232 active ingredient (synthetic),LT Brand #0232,,B,CNS,,1.0,39.7,5.55,55,166,5.63,,N
+LTB0233,Long-tail brand #0233 active ingredient (synthetic),LT Brand #0233,,B,Respiratory,,1.0,4.4,0.62,6,90,0.6,,N
+LTB0234,Long-tail brand #0234 active ingredient (synthetic),LT Brand #0234,,B,CNS,,1.0,4.1,0.58,6,90,4.05,,N
+LTB0235,Long-tail brand #0235 active ingredient (synthetic),LT Brand #0235,,B,Diabetes,,1.0,49.9,6.97,70,209,0.61,,N
+LTB0236,Long-tail brand #0236 active ingredient (synthetic),LT Brand #0236,,B,Diabetes,,1.0,11.3,1.57,16,47,0.46,,N
+LTB0237,Long-tail brand #0237 active ingredient (synthetic),LT Brand #0237,,B,HIV/Antiviral,,1.0,43.0,6.01,60,180,3.09,,N
+LTB0238,Long-tail brand #0238 active ingredient (synthetic),LT Brand #0238,,B,Respiratory,,1.0,76.5,10.68,107,321,4.22,,N
+LTB0239,Long-tail brand #0239 active ingredient (synthetic),LT Brand #0239,,B,HIV/Antiviral,,1.0,6.5,0.91,9,30,6.41,,N
+LTB0240,Long-tail brand #0240 active ingredient (synthetic),LT Brand #0240,,B,Diabetes,,1.0,5.5,0.77,8,30,4.1,,N
+LTB0241,Long-tail brand #0241 active ingredient (synthetic),LT Brand #0241,,B,Immunology,,1.0,223.4,31.21,312,936,4.26,,N
+LTB0242,Long-tail brand #0242 active ingredient (synthetic),LT Brand #0242,,B,CNS,,1.0,45.7,6.38,64,191,0.8,,N
+LTB0243,Long-tail brand #0243 active ingredient (synthetic),LT Brand #0243,,B,GI,,1.0,18.1,2.53,25,76,2.11,,N
+LTB0244,Long-tail brand #0244 active ingredient (synthetic),LT Brand #0244,,B,GI,,1.0,9.8,1.36,14,41,0.45,,N
+LTB0245,Long-tail brand #0245 active ingredient (synthetic),LT Brand #0245,,B,Cardiovascular,,1.0,16.2,2.27,23,68,0.26,,N
+LTB0246,Long-tail brand #0246 active ingredient (synthetic),LT Brand #0246,,B,Immunology,,1.0,7.2,1.0,10,30,5.36,,N
+LTB0247,Long-tail brand #0247 active ingredient (synthetic),LT Brand #0247,,B,Respiratory,,1.0,86.5,12.08,121,362,1.04,,N
+LTB0248,Long-tail brand #0248 active ingredient (synthetic),LT Brand #0248,,B,Immunology,,1.0,11.8,1.65,16,49,6.19,,N
+LTB0249,Long-tail brand #0249 active ingredient (synthetic),LT Brand #0249,,B,Diabetes,,1.0,111.3,15.55,155,466,8.03,,N
+LTB0250,Long-tail brand #0250 active ingredient (synthetic),LT Brand #0250,,B,CNS,,1.0,18.5,2.59,26,78,1.2,,N
