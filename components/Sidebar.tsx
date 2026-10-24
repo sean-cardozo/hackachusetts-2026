@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { STORE_KEY } from "@/lib/store";
+import { PLAN_KEY } from "./PlanState";
 
 const ICONS = {
   award: "M9 2h6a1 1 0 0 1 1 1v2H8V3a1 1 0 0 1 1-1z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 14l2 2 4-4",
@@ -46,6 +48,18 @@ function Icon({ d }: { d: string }) {
       <path d={d} />
     </svg>
   );
+}
+
+/** Clears everything the demo saved (upload, plan, swaps, rounds, award) and starts over on Summary. */
+function resetDemo() {
+  if (!window.confirm("Reset the demo? This clears the uploaded data and every choice you made.")) return;
+  try {
+    window.localStorage.removeItem(STORE_KEY);
+    window.localStorage.removeItem(PLAN_KEY);
+  } catch {
+    // Storage blocked: nothing was saved, so the reload alone starts over.
+  }
+  window.location.assign("/summary");
 }
 
 function itemClass(active: boolean) {
@@ -105,6 +119,13 @@ export default function Sidebar() {
         <span className="text-[14px] font-bold leading-[1.35] text-white">Stronger together for independent pharmacies.</span>
         <span className="text-[12px] text-[#9fb1c6]">Hackachusetts 2026</span>
       </div>
+      <button
+        type="button"
+        onClick={resetDemo}
+        className="mx-2 rounded-[10px] border border-white/20 bg-transparent px-3 py-2 text-[13px] font-semibold text-[#c3d0df] hover:bg-white/5 hover:text-white"
+      >
+        Reset demo
+      </button>
     </aside>
   );
 }
