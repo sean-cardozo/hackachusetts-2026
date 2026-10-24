@@ -1,0 +1,80 @@
+{
+  "feed": "shortages",
+  "source": "openFDA drug shortages",
+  "cadence": "daily",
+  "fetchedAt": "2026-10-24T19:15:54.178Z",
+  "effectiveDate": "2026-10-23",
+  "status": "live",
+  "items": [
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "Albuterol",
+      "status": "resolved",
+      "updated": "2026-08-27",
+      "dosageForm": "Solution",
+      "company": "Nephron Pharmaceuticals Corporation"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "Albuterol",
+      "status": "resolved",
+      "updated": "2026-08-27",
+      "dosageForm": "Solution",
+      "company": "Ritedose Pharmaceuticals, LLC"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "Albuterol",
+      "status": "resolved",
+      "updated": "2026-08-27",
+      "dosageForm": "Solution",
+      "company": "Rising Pharma Holdings, Inc."
+    }
+  ],
+  "history": {
+    "atorvastatin-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "lisinopril-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "amlodipine-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "metformin-500mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "sertraline-50mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "amoxicillin-500mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "albuterol-90mcg-inhalation-aerosol": {
+      "currentCount": 0,
+      "last3yCount": 3
+    },
+    "omeprazole-20mg-dr-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "levothyroxine-50mcg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "gabapentin-300mg-capsule": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "glipizide-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    }
+  }
+}

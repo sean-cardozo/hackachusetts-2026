@@ -1,0 +1,2354 @@
+{
+  "feed": "orangebook",
+  "source": "FDA Orange Book",
+  "cadence": "monthly",
+  "fetchedAt": "2026-10-24T19:15:52.478Z",
+  "effectiveDate": "2026-10-09",
+  "status": "live",
+  "products": [
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "207687",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALKEM LABORATORIES LTD",
+      "applNo": "209288",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "214969",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "090548",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "217118",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "BIOCON PHARMA LTD",
+      "applNo": "216436",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "077575",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "214659",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "091650",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "209912",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HETERO LABS LTD UNIT V",
+      "applNo": "214344",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LANNETT CO INC",
+      "applNo": "091624",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LAURUS LABS LTD",
+      "applNo": "214513",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "208480",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MANKIND PHARMA LTD",
+      "applNo": "217081",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MSN LABORATORIES PRIVATE LTD",
+      "applNo": "211933",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "091226",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "205519",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SHANDONG XINHUA PHARMACEUTICAL CO LTD",
+      "applNo": "211886",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS INC",
+      "applNo": "220276",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS USA",
+      "applNo": "205300",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UMEDICA LABORATORIES PRIVATE LTD",
+      "applNo": "213853",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "206536",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "ingredient": "ATORVASTATIN CALCIUM",
+      "strength": "EQ 20MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UPJOHN MANUFACTURING IRELAND UNLTD",
+      "applNo": "020702",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ANNORA PHARMA PRIVATE LTD",
+      "applNo": "075903",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "077622",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "075994",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "applNo": "076102",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "203508",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN LTD",
+      "applNo": "077321",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "075743",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "076164",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "212041",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SUN PHARMACEUTICAL INDUSTRIES LTD",
+      "applNo": "075944",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WATSON LABORATORIES INC",
+      "applNo": "076059",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WOCKHARDT BIO AG",
+      "applNo": "078402",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "ingredient": "LISINOPRIL",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TWI PHARMACEUTICALS INC",
+      "applNo": "019777",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "202553",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALKEM LABORATORIES LTD",
+      "applNo": "078925",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "078021",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "076692",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHINA RESOURCES SAIKE PHARMACEUTICAL CO LTD",
+      "applNo": "090752",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CIPLA LTD",
+      "applNo": "077073",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "EPIC PHARMA LLC",
+      "applNo": "078552",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS INC",
+      "applNo": "201380",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "077955",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "206367",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "IPCA LABORATORIES LTD",
+      "applNo": "210489",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN LTD",
+      "applNo": "078043",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "076719",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ORBION PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "078453",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "OXFORD PHARMACEUTICALS LLC",
+      "applNo": "078414",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PURACAP LABORATORIES LLC DBA BLU PHARMACEUTICALS",
+      "applNo": "207821",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS USA INC",
+      "applNo": "076846",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UNICHEM LABORATORIES LTD",
+      "applNo": "203245",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "078226",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "ingredient": "AMLODIPINE BESYLATE",
+      "strength": "EQ 5MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "VIATRIS SPECIALTY LLC",
+      "applNo": "019787",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALKEM LABORATORIES LTD",
+      "applNo": "091184",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "077095",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL SCHEDULED LLC",
+      "applNo": "075972",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CSPC OUYI PHARMACEUTICAL CO LTD",
+      "applNo": "205096",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "DR REDDYS LABORATORIES INC",
+      "applNo": "077787",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "EPIC PHARMA LLC",
+      "applNo": "075965",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "090564",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HARMAN FINOCHEM LTD",
+      "applNo": "213320",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LAURUS LABS LTD",
+      "applNo": "209882",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "075973",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PHARMAZONE",
+      "applNo": "076033",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PHARMAZONE",
+      "applNo": "090888",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "203769",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS HEALTHCARE USA LLC",
+      "applNo": "203686",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "ingredient": "METFORMIN HYDROCHLORIDE",
+      "strength": "500MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "077064",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "202825",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ASCENT PHARMACEUTICALS INC",
+      "applNo": "214790",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "077206",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "078403",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "applNo": "076465",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "077397",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN LTD",
+      "applNo": "077670",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "076882",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "REYOUNG CORPORATION",
+      "applNo": "078677",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "076442",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "STRIDES PHARMA GLOBAL PTE LTD",
+      "applNo": "076881",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TP ANDA HOLDINGS LLC",
+      "applNo": "078175",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "ingredient": "SERTRALINE HYDROCHLORIDE",
+      "strength": "EQ 50MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "VIATRIS SPECIALTY LLC",
+      "applNo": "019839",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "065271",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "CHARTWELL LIFE MOLECULES LLC",
+      "applNo": "062058",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "061926",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "HIKMA PHARMACEUTICALS",
+      "applNo": "065291",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "MICRO LABS LTD",
+      "applNo": "207471",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "SANDOZ INC",
+      "applNo": "064076",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "ingredient": "AMOXICILLIN",
+      "strength": "500MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "US ANTIBIOTICS LLC",
+      "applNo": "062216",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "AMNEAL IRELAND LTD",
+      "applNo": "211600",
+      "applType": "A",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "ARMSTRONG PHARMACEUTICALS INC",
+      "applNo": "212447",
+      "applType": "A",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "CIPLA LTD",
+      "applNo": "209959",
+      "applType": "A",
+      "teCode": "AB1"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "CIPLA LTD",
+      "applNo": "219409",
+      "applType": "A",
+      "teCode": "AB3"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "LUPIN INC",
+      "applNo": "209954",
+      "applType": "A",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "PADAGIS US LLC",
+      "applNo": "203760",
+      "applType": "A",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "SANDOZ INC",
+      "applNo": "207085",
+      "applType": "A",
+      "teCode": "AB1"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "TEVA BRANDED PHARMACEUTICAL PRODUCTS R AND D INC",
+      "applNo": "021457",
+      "applType": "N",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "KINDEVA DRUG DELIVERY LP",
+      "applNo": "020503",
+      "applType": "N",
+      "teCode": "AB1"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "ingredient": "ALBUTEROL SULFATE",
+      "strength": "EQ 0.09MG BASE/INH",
+      "dosageForm": "AEROSOL, METERED;INHALATION",
+      "applicant": "GLAXOSMITHKLINE INTELLECTUAL PROPERTY LTD ENGLAND",
+      "applNo": "020983",
+      "applType": "N",
+      "teCode": "AB3"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "ACTAVIS LABORATORIES FL INC",
+      "applNo": "075347",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "076048",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "203270",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "BRECKENRIDGE PHARMACEUTICAL INC",
+      "applNo": "203481",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "075576",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "078490",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "GLENMARK PHARMACEUTICALS LTD",
+      "applNo": "091672",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "HETERO LABS LTD UNIT III",
+      "applNo": "204012",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "IMPAX LABORATORIES INC",
+      "applNo": "075785",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "LANNETT CO INC",
+      "applNo": "075410",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "SANDOZ INC",
+      "applNo": "075757",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS USA",
+      "applNo": "204661",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "XIROMED PHARMA ESPANA SL",
+      "applNo": "212977",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "ingredient": "OMEPRAZOLE",
+      "strength": "20MG",
+      "dosageForm": "CAPSULE, DELAYED REL PELLETS;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "091352",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CEDIPROF INC",
+      "applNo": "021342",
+      "applType": "N",
+      "teCode": "AB1,AB2,AB3"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GENUS LIFE SCIENCES INC",
+      "applNo": "021137",
+      "applType": "N",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "212399",
+      "applType": "A",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALEMBIC PHARMACEUTICALS LTD",
+      "applNo": "216370",
+      "applType": "A",
+      "teCode": "AB2"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ASCENT PHARMACEUTICALS INC",
+      "applNo": "215259",
+      "applType": "A",
+      "teCode": "AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN INC",
+      "applNo": "209713",
+      "applType": "A",
+      "teCode": "AB1,AB2,AB3"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "211417",
+      "applType": "A",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "076187",
+      "applType": "A",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WATSON LABORATORIES INC AN INDIRECT WHOLLY OWNED SUB OF TEVA PHARMACEUTICALS USA INC",
+      "applNo": "207588",
+      "applType": "A",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "KING PHARMACEUTICALS RESEARCH AND DEVELOPMENT LLC",
+      "applNo": "021301",
+      "applType": "N",
+      "teCode": "AB1,AB3"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ABBVIE INC",
+      "applNo": "021402",
+      "applType": "N",
+      "teCode": "AB1,AB2"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALVOGEN INC",
+      "applNo": "021116",
+      "applType": "N",
+      "teCode": "AB1,AB2,AB3,AB4"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "ingredient": "LEVOTHYROXINE SODIUM",
+      "strength": "0.05MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "JEROME STEVENS PHARMACEUTICALS INC",
+      "applNo": "021210",
+      "applType": "N",
+      "teCode": "AB1,AB2,AB3"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "ACTAVIS ELIZABETH LLC",
+      "applNo": "075350",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "ALKEM LABORATORIES LTD",
+      "applNo": "090858",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "AMNEAL PHARMACEUTICALS NY LLC",
+      "applNo": "078428",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "ASCENT PHARMACEUTICALS INC",
+      "applNo": "214956",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "078787",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "CSPC OUYI PHARMACEUTICAL CO LTD",
+      "applNo": "075477",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "075360",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "090705",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "PHARMAZONE",
+      "applNo": "090007",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "PHARMAZONE",
+      "applNo": "219319",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "PHARMOBEDIENT CONSULTING LLC",
+      "applNo": "217546",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "219814",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "RISING PHARMA HOLDINGS INC",
+      "applNo": "207099",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "STRIDES PHARMA GLOBAL PTE LTD",
+      "applNo": "206943",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "STRIDES PHARMA GLOBAL PTE LTD",
+      "applNo": "211314",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "ZHEJIANG YONGTAI PHARMACEUTICAL CO LTD",
+      "applNo": "213603",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "VIATRIS SPECIALTY LLC",
+      "applNo": "020235",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "ingredient": "GABAPENTIN",
+      "strength": "300MG",
+      "dosageForm": "CAPSULE;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "204989",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AIPING PHARMACEUTICAL INC",
+      "applNo": "074305",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ANI PHARMACEUTICALS INC",
+      "applNo": "074497",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "075795",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA USA INC",
+      "applNo": "074226",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "219159",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "OXFORD PHARMACEUTICALS LLC",
+      "applNo": "074378",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "RUBICON RESEARCH LTD",
+      "applNo": "214874",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "ingredient": "GLIPIZIDE",
+      "strength": "5MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WATSON LABORATORIES INC AN INDIRECT WHOLLY OWNED SUB OF TEVA PHARMACEUTICALS USA INC",
+      "applNo": "074223",
+      "applType": "A",
+      "teCode": "AB"
+    }
+  ],
+  "equivalents": [
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "207687"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "ALKEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "209288"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "APOTEX INC",
+      "teCode": "AB",
+      "applNo": "090548"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "217118"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "BIOCON PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "216436"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "077575"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "DR REDDYS LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "091650"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "209912"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "HETERO LABS LTD UNIT V",
+      "teCode": "AB",
+      "applNo": "214344"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "LANNETT CO INC",
+      "teCode": "AB",
+      "applNo": "091624"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "LAURUS LABS LTD",
+      "teCode": "AB",
+      "applNo": "214513"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "208480"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "MANKIND PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "217081"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "MSN LABORATORIES PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "211933"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "091226"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "205519"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "SHANDONG XINHUA PHARMACEUTICAL CO LTD",
+      "teCode": "AB",
+      "applNo": "211886"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "TEVA PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "220276"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "TEVA PHARMACEUTICALS USA",
+      "teCode": "AB",
+      "applNo": "205300"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "UMEDICA LABORATORIES PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "213853"
+    },
+    {
+      "drugKey": "atorvastatin-20mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "206536"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "ANNORA PHARMA PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "075903"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "077622"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "075994"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "076102"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "203508"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "LUPIN LTD",
+      "teCode": "AB",
+      "applNo": "077321"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "PRINSTON PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "075743"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "212041"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "SUN PHARMACEUTICAL INDUSTRIES LTD",
+      "teCode": "AB",
+      "applNo": "075944"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "WATSON LABORATORIES INC",
+      "teCode": "AB",
+      "applNo": "076059"
+    },
+    {
+      "drugKey": "lisinopril-10mg-tablet",
+      "mfr": "WOCKHARDT BIO AG",
+      "teCode": "AB",
+      "applNo": "078402"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "202553"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "ALKEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "078925"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "078021"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "076692"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "CHINA RESOURCES SAIKE PHARMACEUTICAL CO LTD",
+      "teCode": "AB",
+      "applNo": "090752"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "CIPLA LTD",
+      "teCode": "AB",
+      "applNo": "077073"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "EPIC PHARMA LLC",
+      "teCode": "AB",
+      "applNo": "078552"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "201380"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "077955"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "IPCA LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "210489"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "LUPIN LTD",
+      "teCode": "AB",
+      "applNo": "078043"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "076719"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "ORBION PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "078453"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "OXFORD PHARMACEUTICALS LLC",
+      "teCode": "AB",
+      "applNo": "078414"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "PURACAP LABORATORIES LLC DBA BLU PHARMACEUTICALS",
+      "teCode": "AB",
+      "applNo": "207821"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "TEVA PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "076846"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "UNICHEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "203245"
+    },
+    {
+      "drugKey": "amlodipine-5mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "078226"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "ALKEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "091184"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "077095"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "CHARTWELL SCHEDULED LLC",
+      "teCode": "AB",
+      "applNo": "075972"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "CSPC OUYI PHARMACEUTICAL CO LTD",
+      "teCode": "AB",
+      "applNo": "205096"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "DR REDDYS LABORATORIES INC",
+      "teCode": "AB",
+      "applNo": "077787"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "EPIC PHARMA LLC",
+      "teCode": "AB",
+      "applNo": "075965"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "090564"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "HARMAN FINOCHEM LTD",
+      "teCode": "AB",
+      "applNo": "213320"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "LAURUS LABS LTD",
+      "teCode": "AB",
+      "applNo": "209882"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "075973"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "PHARMAZONE",
+      "teCode": "AB",
+      "applNo": "076033"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "203769"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "ZYDUS HEALTHCARE USA LLC",
+      "teCode": "AB",
+      "applNo": "203686"
+    },
+    {
+      "drugKey": "metformin-500mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "077064"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "202825"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "ASCENT PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "214790"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "077206"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "078403"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "076465"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "077397"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "LUPIN LTD",
+      "teCode": "AB",
+      "applNo": "077670"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "076882"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "REYOUNG CORPORATION",
+      "teCode": "AB",
+      "applNo": "078677"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "076442"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "STRIDES PHARMA GLOBAL PTE LTD",
+      "teCode": "AB",
+      "applNo": "076881"
+    },
+    {
+      "drugKey": "sertraline-50mg-tablet",
+      "mfr": "TP ANDA HOLDINGS LLC",
+      "teCode": "AB",
+      "applNo": "078175"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "065271"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "CHARTWELL LIFE MOLECULES LLC",
+      "teCode": "AB",
+      "applNo": "062058"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "061926"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "HIKMA PHARMACEUTICALS",
+      "teCode": "AB",
+      "applNo": "065291"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "MICRO LABS LTD",
+      "teCode": "AB",
+      "applNo": "207471"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "SANDOZ INC",
+      "teCode": "AB",
+      "applNo": "064076"
+    },
+    {
+      "drugKey": "amoxicillin-500mg-capsule",
+      "mfr": "US ANTIBIOTICS LLC",
+      "teCode": "AB",
+      "applNo": "062216"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "AMNEAL IRELAND LTD",
+      "teCode": "AB2",
+      "applNo": "211600"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "ARMSTRONG PHARMACEUTICALS INC",
+      "teCode": "AB2",
+      "applNo": "212447"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "CIPLA LTD",
+      "teCode": "AB1",
+      "applNo": "209959"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "LUPIN INC",
+      "teCode": "AB2",
+      "applNo": "209954"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "PADAGIS US LLC",
+      "teCode": "AB2",
+      "applNo": "203760"
+    },
+    {
+      "drugKey": "albuterol-90mcg-inhalation-aerosol",
+      "mfr": "SANDOZ INC",
+      "teCode": "AB1",
+      "applNo": "207085"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "ACTAVIS LABORATORIES FL INC",
+      "teCode": "AB",
+      "applNo": "075347"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "APOTEX INC",
+      "teCode": "AB",
+      "applNo": "076048"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "203270"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "BRECKENRIDGE PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "203481"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "DR REDDYS LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "075576"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "GLENMARK PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "091672"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "HETERO LABS LTD UNIT III",
+      "teCode": "AB",
+      "applNo": "204012"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "IMPAX LABORATORIES INC",
+      "teCode": "AB",
+      "applNo": "075785"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "LANNETT CO INC",
+      "teCode": "AB",
+      "applNo": "075410"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "SANDOZ INC",
+      "teCode": "AB",
+      "applNo": "075757"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "TEVA PHARMACEUTICALS USA",
+      "teCode": "AB",
+      "applNo": "204661"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "XIROMED PHARMA ESPANA SL",
+      "teCode": "AB",
+      "applNo": "212977"
+    },
+    {
+      "drugKey": "omeprazole-20mg-dr-capsule",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "091352"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB1,AB2,AB3,AB4",
+      "applNo": "212399"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "ALEMBIC PHARMACEUTICALS LTD",
+      "teCode": "AB2",
+      "applNo": "216370"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "ASCENT PHARMACEUTICALS INC",
+      "teCode": "AB4",
+      "applNo": "215259"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "LUPIN INC",
+      "teCode": "AB1,AB2,AB3",
+      "applNo": "209713"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB1,AB2,AB3,AB4",
+      "applNo": "211417"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB1,AB2,AB3,AB4",
+      "applNo": "076187"
+    },
+    {
+      "drugKey": "levothyroxine-50mcg-tablet",
+      "mfr": "WATSON LABORATORIES INC AN INDIRECT WHOLLY OWNED SUB OF TEVA PHARMACEUTICALS USA INC",
+      "teCode": "AB1,AB2,AB3,AB4",
+      "applNo": "207588"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "ACTAVIS ELIZABETH LLC",
+      "teCode": "AB",
+      "applNo": "075350"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "ALKEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "090858"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "AMNEAL PHARMACEUTICALS NY LLC",
+      "teCode": "AB",
+      "applNo": "078428"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "ASCENT PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "214956"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "078787"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "CSPC OUYI PHARMACEUTICAL CO LTD",
+      "teCode": "AB",
+      "applNo": "075477"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "075360"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "090705"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "PHARMAZONE",
+      "teCode": "AB",
+      "applNo": "090007"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "PHARMOBEDIENT CONSULTING LLC",
+      "teCode": "AB",
+      "applNo": "217546"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "PRINSTON PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "219814"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "RISING PHARMA HOLDINGS INC",
+      "teCode": "AB",
+      "applNo": "207099"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "204989"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "STRIDES PHARMA GLOBAL PTE LTD",
+      "teCode": "AB",
+      "applNo": "206943"
+    },
+    {
+      "drugKey": "gabapentin-300mg-capsule",
+      "mfr": "ZHEJIANG YONGTAI PHARMACEUTICAL CO LTD",
+      "teCode": "AB",
+      "applNo": "213603"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "AIPING PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "074305"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "ANI PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "074497"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "APOTEX INC",
+      "teCode": "AB",
+      "applNo": "075795"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "AUROBINDO PHARMA USA INC",
+      "teCode": "AB",
+      "applNo": "074226"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "219159"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "OXFORD PHARMACEUTICALS LLC",
+      "teCode": "AB",
+      "applNo": "074378"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "RUBICON RESEARCH LTD",
+      "teCode": "AB",
+      "applNo": "214874"
+    },
+    {
+      "drugKey": "glipizide-5mg-tablet",
+      "mfr": "WATSON LABORATORIES INC AN INDIRECT WHOLLY OWNED SUB OF TEVA PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "074223"
+    }
+  ]
+}

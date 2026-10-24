@@ -1,0 +1,3687 @@
+{
+  "feed": "nadac",
+  "source": "CMS NADAC",
+  "cadence": "weekly",
+  "fetchedAt": "2026-10-24T19:15:51.978Z",
+  "effectiveDate": "2026-10-21",
+  "status": "live",
+  "items": [
+    {
+      "ndc": "00054074287",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 2.08079,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "00093317431",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.52204,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "00781729685",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 2.08079,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "17270074000",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.52204,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "45802008801",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.52204,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "60687066291",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 2.08079,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "66993001968",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.83196,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "68180096301",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.52204,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "69097002160",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.83196,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "69097014260",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 2.08079,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "69238129101",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 1.52204,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "76282067942",
+      "description": "ALBUTEROL HFA 90 MCG INHALER",
+      "nadac": 2.08079,
+      "pricingUnit": "GM",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "albuterol-90mcg-inhalation-aerosol"
+    },
+    {
+      "ndc": "00480716710",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "00480716798",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "00904637061",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "29300039705",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "29300039710",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "29300039719",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "59762201001",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "59762201003",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "59762201009",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "60687048801",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "60687048811",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877019805",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877019810",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877019890",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877090105",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877090110",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "67877090190",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68180045501",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68180045502",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68180072003",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68180072009",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68382012205",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68382012216",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "68645051554",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69097012705",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69097012715",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69584002209",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69584002250",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69584002290",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "69584002295",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "76282023810",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "76282023890",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "76282050810",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "76282050890",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "82009002710",
+      "description": "AMLODIPINE BESYLATE 5 MG TAB",
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amlodipine-5mg-tablet"
+    },
+    {
+      "ndc": "00093310905",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00093310953",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00143993905",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00143993928",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00781261301",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00781261305",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "16714029902",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "16714029903",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "16714029904",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "42571023401",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "42571023405",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "57237003101",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "57237003105",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "60687078701",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "60687078711",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "65862001701",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "65862001705",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "81964020501",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "81964020505",
+      "description": "AMOXICILLIN 500 MG CAPSULE",
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "amoxicillin-500mg-capsule"
+    },
+    {
+      "ndc": "00093505910",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00093505998",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00378395105",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00378395177",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00480358610",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00480358698",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00904629106",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00904629161",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16571013709",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16571013710",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16571013750",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16714017403",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "31722042505",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "31722042510",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "31722042590",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "33342031610",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "33342031615",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "33342031644",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42385094101",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42385094105",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42385094111",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42385094190",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42571017310",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "42571017390",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "43598009905",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "43598009987",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "43598009990",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "43598083105",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "43598083190",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "50228045205",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "50228045290",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "50268009411",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "50268009415",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "51079020901",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "51079020920",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "55111012205",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "55111012290",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "59651060790",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "59651060799",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "60290004002",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "60505257908",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "60505257909",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "67877051205",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "67877051210",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "67877051290",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68084009801",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68084009811",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68382025010",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68382025016",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377002811",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377002813",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377007811",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377007813",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70710177500",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70710177509",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70756024812",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70756024851",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70756024890",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72205002305",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72205002390",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72205002399",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72603028301",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72603028302",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72603028303",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72603040401",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "72603040402",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "75834025601",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "82009000210",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "82009017710",
+      "description": "ATORVASTATIN 20 MG TABLET",
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "atorvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00480349501",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "00480349505",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "00904666661",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "16571086801",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "16571086810",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "16571086850",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "16714066201",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "16714066202",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "23155086701",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "23155086705",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "23155086710",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "31722014901",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "31722014905",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "42385097301",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "42385097305",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "43547026610",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "45963055611",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "45963055650",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "49483060601",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "49483060610",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "49483060650",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "50228018001",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "50228018005",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "50228018010",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "60687059101",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "60687059111",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "64380075401",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "64380075402",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "64380075403",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65162010210",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65162010211",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65162010250",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65862019901",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65862019905",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "65862019999",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "67877022301",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "67877022305",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "67877022310",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "69097094312",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "69292064101",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "69292064150",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "69367013206",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "69367034405",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "70010092701",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "70010092705",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "70010092710",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "71093012104",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "71093012105",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "71093016204",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "71093016205",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "76282062705",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "83301000401",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "83301000402",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "83301000403",
+      "description": "GABAPENTIN 300 MG CAPSULE",
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "gabapentin-300mg-capsule"
+    },
+    {
+      "ndc": "00591046001",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "00591046005",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "00591046010",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "00904663761",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "50268036111",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "50268036115",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60505014100",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60505014101",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60505014102",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60505014108",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60687069001",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "60687069011",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "62559031510",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "68645057454",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "69584030910",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "69584030950",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "69584030990",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "72888011600",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "72888011601",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "72888011605",
+      "description": "GLIPIZIDE 5 MG TABLET",
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "glipizide-5mg-tablet"
+    },
+    {
+      "ndc": "00378180310",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "00378180377",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "00527328143",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "00527328146",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "00904695061",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "16729044815",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "16729044817",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "31722028510",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "31722028590",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "33342039410",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "33342039411",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "33342039444",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "47781064310",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "47781064390",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "51079044001",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "51079044020",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "60687046401",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "60687046411",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "68180096601",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "68180096603",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "68180096609",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "69238183101",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "69238183107",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "72603066101",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "72603066102",
+      "description": "LEVOTHYROXINE 50 MCG TABLET",
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "levothyroxine-50mcg-tablet"
+    },
+    {
+      "ndc": "00591040701",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "00591040710",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "00904679861",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "23155087801",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "23155087810",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "31722017701",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "31722017710",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "43547035310",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "43547035311",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "43547041610",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "43547041611",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "60687032501",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "60687032511",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "62135064231",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "62135064290",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68001033400",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68001033408",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68180098001",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68180098003",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68180098030",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68645055254",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68645058754",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "68645061090",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282041901",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282041910",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282041945",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282041950",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282041990",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282073001",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282073010",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282073045",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282073050",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "76282073090",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "82009006410",
+      "description": "LISINOPRIL 10 MG TABLET",
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "lisinopril-10mg-tablet"
+    },
+    {
+      "ndc": "00378718505",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "00904716261",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "23155084101",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "23155084105",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "23155084110",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "42385094701",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "42385094705",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "42385094711",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "43547035710",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "43547035711",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "43547035750",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "49483062201",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "49483062210",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "49483062250",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "49483062281",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "50228010501",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "50228010505",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "50228010510",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "59651085401",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "59651085405",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "59651085499",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "60687015501",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "60687015511",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "62135068005",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "62135068018",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "62135068090",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "65862000801",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "65862000805",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "65862000899",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877056101",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877056105",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877056110",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877093001",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877093005",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "67877093010",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68094068860",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68094068870",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68382075801",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68382075805",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68382075810",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68645054459",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "68645058259",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367018001",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367018005",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367018010",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367038101",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367038105",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "69367038110",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "70010006301",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "70010006305",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "70010006309",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "70010006310",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "82009004610",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "82009017410",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "83301000801",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "83301000802",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "83301000803",
+      "description": "METFORMIN HCL 500 MG TABLET",
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metformin-500mg-tablet"
+    },
+    {
+      "ndc": "00781286810",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "00781286831",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "00781286892",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "00904691761",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "16714063401",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "16714063402",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "16714063403",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111015801",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111015810",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111015830",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111015834",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111064401",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111064410",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "55111064430",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "57237016130",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "57237016190",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "57237016199",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "59651000205",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "59651000290",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "59651000299",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "60505006501",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "60505006502",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "60687059701",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "60687059711",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68382041201",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68382041205",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68462039601",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68462039610",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68462039630",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "68462039690",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "70700015001",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "70700015010",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "70700015030",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "82009002210",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "82009018310",
+      "description": "OMEPRAZOLE DR 20 MG CAPSULE",
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "00904692561",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "16714061201",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "16714061204",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "16714061205",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "16714061206",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "23155075805",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "23155075809",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "31722014605",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "31722014630",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "31722014690",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "50268076911",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "50268076915",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "50268082411",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "50268082415",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "60687024201",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "60687024211",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "65862001201",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "65862001205",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "65862001230",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180035202",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180035205",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180035206",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180035209",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180098601",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180098602",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180098603",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68180098604",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "68645052254",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "69097083402",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "69097083412",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "70010020403",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "70010020405",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "70010020409",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "70010020410",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021301",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021305",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021318",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021330",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021360",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "76282021390",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "82009004905",
+      "description": "SERTRALINE HCL 50 MG TABLET",
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "sertraline-50mg-tablet"
+    }
+  ],
+  "byDrug": {
+    "atorvastatin-20mg-tablet": {
+      "nadac": 0.02858,
+      "pricingUnit": "EA",
+      "ndcCount": 69,
+      "method": "Median of NADAC Per Unit across 69 generic (G) NDCs whose NADAC description is exactly \"ATORVASTATIN 20 MG TABLET\", week of 2026-10-21"
+    },
+    "lisinopril-10mg-tablet": {
+      "nadac": 0.01797,
+      "pricingUnit": "EA",
+      "ndcCount": 34,
+      "method": "Median of NADAC Per Unit across 34 generic (G) NDCs whose NADAC description is exactly \"LISINOPRIL 10 MG TABLET\", week of 2026-10-21"
+    },
+    "amlodipine-5mg-tablet": {
+      "nadac": 0.01015,
+      "pricingUnit": "EA",
+      "ndcCount": 35,
+      "method": "Median of NADAC Per Unit across 35 generic (G) NDCs whose NADAC description is exactly \"AMLODIPINE BESYLATE 5 MG TAB\", week of 2026-10-21"
+    },
+    "metformin-500mg-tablet": {
+      "nadac": 0.01483,
+      "pricingUnit": "EA",
+      "ndcCount": 57,
+      "method": "Median of NADAC Per Unit across 57 generic (G) NDCs whose NADAC description is exactly \"METFORMIN HCL 500 MG TABLET\", week of 2026-10-21"
+    },
+    "sertraline-50mg-tablet": {
+      "nadac": 0.03484,
+      "pricingUnit": "EA",
+      "ndcCount": 41,
+      "method": "Median of NADAC Per Unit across 41 generic (G) NDCs whose NADAC description is exactly \"SERTRALINE HCL 50 MG TABLET\", week of 2026-10-21"
+    },
+    "amoxicillin-500mg-capsule": {
+      "nadac": 0.07925,
+      "pricingUnit": "EA",
+      "ndcCount": 19,
+      "method": "Median of NADAC Per Unit across 19 generic (G) NDCs whose NADAC description is exactly \"AMOXICILLIN 500 MG CAPSULE\", week of 2026-10-21"
+    },
+    "albuterol-90mcg-inhalation-aerosol": {
+      "nadac": 1.83196,
+      "pricingUnit": "GM",
+      "ndcCount": 12,
+      "method": "Median of NADAC Per Unit across 12 generic (G) NDCs whose NADAC description is exactly \"ALBUTEROL HFA 90 MCG INHALER\", week of 2026-10-21"
+    },
+    "omeprazole-20mg-dr-capsule": {
+      "nadac": 0.03045,
+      "pricingUnit": "EA",
+      "ndcCount": 35,
+      "method": "Median of NADAC Per Unit across 35 generic (G) NDCs whose NADAC description is exactly \"OMEPRAZOLE DR 20 MG CAPSULE\", week of 2026-10-21"
+    },
+    "levothyroxine-50mcg-tablet": {
+      "nadac": 0.04006,
+      "pricingUnit": "EA",
+      "ndcCount": 25,
+      "method": "Median of NADAC Per Unit across 25 generic (G) NDCs whose NADAC description is exactly \"LEVOTHYROXINE 50 MCG TABLET\", week of 2026-10-21"
+    },
+    "gabapentin-300mg-capsule": {
+      "nadac": 0.03283,
+      "pricingUnit": "EA",
+      "ndcCount": 54,
+      "method": "Median of NADAC Per Unit across 54 generic (G) NDCs whose NADAC description is exactly \"GABAPENTIN 300 MG CAPSULE\", week of 2026-10-21"
+    },
+    "glipizide-5mg-tablet": {
+      "nadac": 0.03285,
+      "pricingUnit": "EA",
+      "ndcCount": 20,
+      "method": "Median of NADAC Per Unit across 20 generic (G) NDCs whose NADAC description is exactly \"GLIPIZIDE 5 MG TABLET\", week of 2026-10-21"
+    }
+  }
+}
