@@ -2,3 +2,6 @@
 .env.*
 node_modules/
 .DS_Store
+
+# Not part of the project
+Pharmacy Buying Pool.html
