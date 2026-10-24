@@ -100,6 +100,78 @@ export const TRACKED_DRUGS: TrackedDrug[] = [
     obIngredient: "GLIPIZIDE", obStrength: "5MG", obForm: "TABLET;ORAL",
     shortageWord: "glipizide",
   },
+
+  // ---- 10 extra common generics (not in the sample data) ----
+  {
+    drugKey: "losartan-50mg-tablet",
+    name: "Losartan", strength: "50 mg", form: "tablet", category: "Cardio",
+    nadacDescription: "LOSARTAN POTASSIUM 50 MG TAB",
+    obIngredient: "LOSARTAN POTASSIUM", obStrength: "50MG", obForm: "TABLET;ORAL",
+    shortageWord: "losartan",
+  },
+  {
+    drugKey: "hydrochlorothiazide-25mg-tablet",
+    name: "Hydrochlorothiazide", strength: "25 mg", form: "tablet", category: "Cardio",
+    nadacDescription: "HYDROCHLOROTHIAZIDE 25 MG TAB",
+    obIngredient: "HYDROCHLOROTHIAZIDE", obStrength: "25MG", obForm: "TABLET;ORAL",
+    shortageWord: "hydrochlorothiazide",
+  },
+  {
+    drugKey: "simvastatin-20mg-tablet",
+    name: "Simvastatin", strength: "20 mg", form: "tablet", category: "Cardio",
+    nadacDescription: "SIMVASTATIN 20 MG TABLET",
+    obIngredient: "SIMVASTATIN", obStrength: "20MG", obForm: "TABLET;ORAL",
+    shortageWord: "simvastatin",
+  },
+  {
+    drugKey: "metoprolol-tartrate-25mg-tablet",
+    name: "Metoprolol tartrate", strength: "25 mg", form: "tablet", category: "Cardio",
+    nadacDescription: "METOPROLOL TARTRATE 25 MG TAB",
+    obIngredient: "METOPROLOL TARTRATE", obStrength: "25MG", obForm: "TABLET;ORAL",
+    shortageWord: "metoprolol",
+  },
+  {
+    drugKey: "furosemide-40mg-tablet",
+    name: "Furosemide", strength: "40 mg", form: "tablet", category: "Cardio",
+    nadacDescription: "FUROSEMIDE 40 MG TABLET",
+    obIngredient: "FUROSEMIDE", obStrength: "40MG", obForm: "TABLET;ORAL",
+    shortageWord: "furosemide",
+  },
+  {
+    drugKey: "montelukast-10mg-tablet",
+    name: "Montelukast", strength: "10 mg", form: "tablet", category: "Respiratory",
+    nadacDescription: "MONTELUKAST SOD 10 MG TABLET",
+    obIngredient: "MONTELUKAST SODIUM", obStrength: "EQ 10MG BASE", obForm: "TABLET;ORAL",
+    shortageWord: "montelukast",
+  },
+  {
+    drugKey: "escitalopram-10mg-tablet",
+    name: "Escitalopram", strength: "10 mg", form: "tablet", category: "Mental health",
+    nadacDescription: "ESCITALOPRAM 10 MG TABLET",
+    obIngredient: "ESCITALOPRAM OXALATE", obStrength: "EQ 10MG BASE", obForm: "TABLET;ORAL",
+    shortageWord: "escitalopram",
+  },
+  {
+    drugKey: "trazodone-50mg-tablet",
+    name: "Trazodone", strength: "50 mg", form: "tablet", category: "Mental health",
+    nadacDescription: "TRAZODONE 50 MG TABLET",
+    obIngredient: "TRAZODONE HYDROCHLORIDE", obStrength: "50MG", obForm: "TABLET;ORAL",
+    shortageWord: "trazodone",
+  },
+  {
+    drugKey: "pantoprazole-40mg-dr-tablet",
+    name: "Pantoprazole", strength: "40 mg", form: "delayed-release tablet", category: "GI",
+    nadacDescription: "PANTOPRAZOLE SOD DR 40 MG TAB",
+    obIngredient: "PANTOPRAZOLE SODIUM", obStrength: "EQ 40MG BASE", obForm: "TABLET, DELAYED RELEASE;ORAL",
+    shortageWord: "pantoprazole",
+  },
+  {
+    drugKey: "prednisone-10mg-tablet",
+    name: "Prednisone", strength: "10 mg", form: "tablet", category: "Other",
+    nadacDescription: "PREDNISONE 10 MG TABLET",
+    obIngredient: "PREDNISONE", obStrength: "10MG", obForm: "TABLET;ORAL",
+    shortageWord: "prednisone",
+  },
 ];
 
 export const DRUG_KEYS = TRACKED_DRUGS.map((d) => d.drugKey);

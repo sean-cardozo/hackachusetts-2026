@@ -38,8 +38,8 @@ describe("NADAC", () => {
     for (const item of data.items) expect(item.ndc).toMatch(/^\d{11}$/);
   });
 
-  it("has a representative price for all 11 drugs (10 tracked + glipizide)", () => {
-    expect(allDrugKeys).toHaveLength(11);
+  it("has a representative price for all 21 drugs (10 tracked + glipizide + 10 extra)", () => {
+    expect(allDrugKeys).toHaveLength(21);
     for (const key of allDrugKeys) {
       expect(data.byDrug[key], `missing byDrug entry for ${key}`).toBeDefined();
       expect(data.byDrug[key].nadac).toBeGreaterThan(0);

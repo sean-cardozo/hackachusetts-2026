@@ -2,7 +2,7 @@
   "feed": "orangebook",
   "source": "FDA Orange Book",
   "cadence": "monthly",
-  "fetchedAt": "2026-10-24T19:15:52.478Z",
+  "fetchedAt": "2026-10-24T19:23:49.213Z",
   "effectiveDate": "2026-10-09",
   "status": "live",
   "products": [
@@ -1555,6 +1555,1166 @@
       "applNo": "074223",
       "applType": "A",
       "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ORGANON LLC A SUB OF ORGANON AND CO",
+      "applNo": "020386",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AIPING PHARMACEUTICAL INC",
+      "applNo": "090544",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALEMBIC PHARMACEUTICALS LTD",
+      "applNo": "090428",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "090083",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "077424",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "215959",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "219859",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HETERO LABS LTD UNIT V",
+      "applNo": "203835",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "applNo": "201170",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN LTD",
+      "applNo": "078232",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "202230",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MSN LABORATORIES PRIVATE LTD",
+      "applNo": "217396",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "091497",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "STRIDES PHARMA GLOBAL PTE LTD",
+      "applNo": "090382",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UNICHEM LABORATORIES LTD",
+      "applNo": "203030",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WATSON LABORATORIES INC",
+      "applNo": "091129",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "ingredient": "LOSARTAN POTASSIUM",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "078243",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "202556",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "040780",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "applNo": "085182",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "IVAX PHARMACEUTICALS INC SUB TEVA PHARMACEUTICALS USA",
+      "applNo": "083177",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LEADING PHARMA LLC",
+      "applNo": "040702",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "OXFORD PHARMACEUTICALS LLC",
+      "applNo": "087059",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "203018",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "ingredient": "HYDROCHLOROTHIAZIDE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UNICHEM LABORATORIES LTD",
+      "applNo": "040907",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "078155",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "077691",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "BIOCON PHARMA LTD",
+      "applNo": "078034",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HETERO LABS LTD UNIT III",
+      "applNo": "200895",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "206557",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LUPIN LTD",
+      "applNo": "078103",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PHARMOBEDIENT CONSULTING LLC",
+      "applNo": "211394",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "RISING PHARMA HOLDINGS INC",
+      "applNo": "077752",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TP ANDA HOLDINGS LLC",
+      "applNo": "078735",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "077837",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "ingredient": "SIMVASTATIN",
+      "strength": "20MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ORGANON LLC A SUB OF ORGANON AND CO",
+      "applNo": "019766",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ALEMBIC PHARMACEUTICALS LTD",
+      "applNo": "202871",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "077739",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "IPCA LABORATORIES LTD",
+      "applNo": "078459",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "076704",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "RUBICON RESEARCH LTD",
+      "applNo": "200981",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "ingredient": "METOPROLOL TARTRATE",
+      "strength": "25MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SCIEGEN PHARMACEUTICALS INC",
+      "applNo": "208955",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "218831",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "EPIC PHARMA LLC",
+      "applNo": "018569",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ESJAY PHARMA LLC",
+      "applNo": "018415",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "216629",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HIKMA PHARMACEUTICALS USA INC",
+      "applNo": "018823",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "IPCA LABORATORIES LTD",
+      "applNo": "078010",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "LEADING PHARMA LLC",
+      "applNo": "077293",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "ingredient": "FUROSEMIDE",
+      "strength": "40MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "076796",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "202717",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AIPING PHARMACEUTICAL INC",
+      "applNo": "200889",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AMNEAL PHARMACEUTICALS",
+      "applNo": "204604",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ANBISON LABORATORY CO LTD",
+      "applNo": "205683",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "202468",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL MOLECULAR HOLDINGS LLC",
+      "applNo": "201522",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CIPLA LTD",
+      "applNo": "207463",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "201582",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GLENMARK PHARMACEUTICALS LTD",
+      "applNo": "090926",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HETERO LABS LTD UNIT V",
+      "applNo": "202843",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "203366",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PHARMOBEDIENT CONSULTING LLC",
+      "applNo": "202859",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "RISING PHARMA HOLDINGS INC",
+      "applNo": "209012",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS USA",
+      "applNo": "078605",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TORRENT PHARMACEUTICALS LTD",
+      "applNo": "201515",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "UNICHEM LABORATORIES LTD",
+      "applNo": "204290",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "ingredient": "MONTELUKAST SODIUM",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ORGANON LLC A SUB OF ORGANON AND CO",
+      "applNo": "020829",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "202389",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AMNEAL PHARMACEUTICALS",
+      "applNo": "205619",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ASCENT PHARMACEUTICALS INC",
+      "applNo": "215177",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "090432",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CHARTWELL RX SCIENCES LLC",
+      "applNo": "078169",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "078777",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "INVAGEN PHARMACEUTICALS INC",
+      "applNo": "078604",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "applNo": "202280",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MACLEODS PHARMACEUTICALS LTD",
+      "applNo": "202210",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PRINSTON PHARMACEUTICAL INC",
+      "applNo": "078032",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TORRENT PHARMACEUTICALS LTD",
+      "applNo": "090939",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS LIFESCIENCES LTD",
+      "applNo": "077734",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "ingredient": "ESCITALOPRAM OXALATE",
+      "strength": "EQ 10MG BASE",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ABBVIE INC",
+      "applNo": "021323",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ACCORD HEALTHCARE INC",
+      "applNo": "206923",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "071258",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "204852",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "CROSSMEDIKA SA",
+      "applNo": "211116",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "218988",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "217740",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "OXFORD PHARMACEUTICALS LLC",
+      "applNo": "072192",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SUN PHARMACEUTICAL INDUSTRIES INC",
+      "applNo": "073137",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TEVA PHARMACEUTICALS USA INC",
+      "applNo": "071523",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "TORRENT PHARMACEUTICALS LTD",
+      "applNo": "202180",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "ingredient": "TRAZODONE HYDROCHLORIDE",
+      "strength": "50MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "ZYDUS PHARMACEUTICALS USA INC",
+      "applNo": "205253",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "AMNEAL PHARMACEUTICALS",
+      "applNo": "205119",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "APOTEX INC",
+      "applNo": "091231",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "202038",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "DR REDDYS LABORATORIES LTD",
+      "applNo": "077619",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "GRANULES INDIA LTD",
+      "applNo": "217282",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "219087",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "HETERO LABS LTD UNIT V",
+      "applNo": "202882",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "LANNETT CO INC",
+      "applNo": "078281",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "MANKIND PHARMA LTD",
+      "applNo": "215880",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "090970",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "ORBION PHARMACEUTICALS PRIVATE LTD",
+      "applNo": "202052",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "RUBICON RESEARCH LTD",
+      "applNo": "090807",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "TORRENT PHARMACEUTICALS LTD",
+      "applNo": "090074",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "ingredient": "PANTOPRAZOLE SODIUM",
+      "strength": "EQ 40MG BASE",
+      "dosageForm": "TABLET, DELAYED RELEASE;ORAL",
+      "applicant": "WYETH PHARMACEUTICALS LLC",
+      "applNo": "020987",
+      "applType": "N",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AMNEAL EU LTD",
+      "applNo": "213386",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "AUROBINDO PHARMA LTD",
+      "applNo": "215672",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "HIKMA PHARMACEUTICALS USA INC",
+      "applNo": "080352",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "applNo": "040362",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "MYLAN PHARMACEUTICALS INC",
+      "applNo": "083677",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "NOVITIUM PHARMA LLC",
+      "applNo": "211575",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PH HEALTH LTD",
+      "applNo": "040256",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "PHARMAZONE",
+      "applNo": "212629",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "STRIDES PHARMA GLOBAL PTE LTD",
+      "applNo": "208412",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "SUN PHARMACEUTICAL INDUSTRIES INC",
+      "applNo": "089247",
+      "applType": "A",
+      "teCode": "AB"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "ingredient": "PREDNISONE",
+      "strength": "10MG",
+      "dosageForm": "TABLET;ORAL",
+      "applicant": "WATSON LABORATORIES INC",
+      "applNo": "085162",
+      "applType": "A",
+      "teCode": "AB"
     }
   ],
   "equivalents": [
@@ -2349,6 +3509,654 @@
       "mfr": "WATSON LABORATORIES INC AN INDIRECT WHOLLY OWNED SUB OF TEVA PHARMACEUTICALS USA INC",
       "teCode": "AB",
       "applNo": "074223"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "AIPING PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "090544"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "ALEMBIC PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "090428"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "090083"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "077424"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "215959"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "219859"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "HETERO LABS LTD UNIT V",
+      "teCode": "AB",
+      "applNo": "203835"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "201170"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "LUPIN LTD",
+      "teCode": "AB",
+      "applNo": "078232"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "202230"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "MSN LABORATORIES PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "217396"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "PRINSTON PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "091497"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "STRIDES PHARMA GLOBAL PTE LTD",
+      "teCode": "AB",
+      "applNo": "090382"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "UNICHEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "203030"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "WATSON LABORATORIES INC",
+      "teCode": "AB",
+      "applNo": "091129"
+    },
+    {
+      "drugKey": "losartan-50mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "078243"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "202556"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "040780"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "HERITAGE PHARMACEUTICALS INC DBA AVET PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "085182"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "IVAX PHARMACEUTICALS INC SUB TEVA PHARMACEUTICALS USA",
+      "teCode": "AB",
+      "applNo": "083177"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "LEADING PHARMA LLC",
+      "teCode": "AB",
+      "applNo": "040702"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "OXFORD PHARMACEUTICALS LLC",
+      "teCode": "AB",
+      "applNo": "087059"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "203018"
+    },
+    {
+      "drugKey": "hydrochlorothiazide-25mg-tablet",
+      "mfr": "UNICHEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "040907"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "078155"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "077691"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "BIOCON PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "078034"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "HETERO LABS LTD UNIT III",
+      "teCode": "AB",
+      "applNo": "200895"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "206557"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "LUPIN LTD",
+      "teCode": "AB",
+      "applNo": "078103"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "PHARMOBEDIENT CONSULTING LLC",
+      "teCode": "AB",
+      "applNo": "211394"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "RISING PHARMA HOLDINGS INC",
+      "teCode": "AB",
+      "applNo": "077752"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "TP ANDA HOLDINGS LLC",
+      "teCode": "AB",
+      "applNo": "078735"
+    },
+    {
+      "drugKey": "simvastatin-20mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "077837"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "ALEMBIC PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "202871"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "077739"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "IPCA LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "078459"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "076704"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "RUBICON RESEARCH LTD",
+      "teCode": "AB",
+      "applNo": "200981"
+    },
+    {
+      "drugKey": "metoprolol-tartrate-25mg-tablet",
+      "mfr": "SCIEGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "208955"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "218831"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "216629"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "mfr": "IPCA LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "078010"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "mfr": "LEADING PHARMA LLC",
+      "teCode": "AB",
+      "applNo": "077293"
+    },
+    {
+      "drugKey": "furosemide-40mg-tablet",
+      "mfr": "PRINSTON PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "076796"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "202717"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "AIPING PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "200889"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "AMNEAL PHARMACEUTICALS",
+      "teCode": "AB",
+      "applNo": "204604"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "ANBISON LABORATORY CO LTD",
+      "teCode": "AB",
+      "applNo": "205683"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "202468"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "CHARTWELL MOLECULAR HOLDINGS LLC",
+      "teCode": "AB",
+      "applNo": "201522"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "CIPLA LTD",
+      "teCode": "AB",
+      "applNo": "207463"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "DR REDDYS LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "201582"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "GLENMARK PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "090926"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "HETERO LABS LTD UNIT V",
+      "teCode": "AB",
+      "applNo": "202843"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "203366"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "PHARMOBEDIENT CONSULTING LLC",
+      "teCode": "AB",
+      "applNo": "202859"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "RISING PHARMA HOLDINGS INC",
+      "teCode": "AB",
+      "applNo": "209012"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "TEVA PHARMACEUTICALS USA",
+      "teCode": "AB",
+      "applNo": "078605"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "TORRENT PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "201515"
+    },
+    {
+      "drugKey": "montelukast-10mg-tablet",
+      "mfr": "UNICHEM LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "204290"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "202389"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "AMNEAL PHARMACEUTICALS",
+      "teCode": "AB",
+      "applNo": "205619"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "ASCENT PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "215177"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "090432"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "CHARTWELL RX SCIENCES LLC",
+      "teCode": "AB",
+      "applNo": "078169"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "078777"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "INVAGEN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "078604"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "202280"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "MACLEODS PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "202210"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "PRINSTON PHARMACEUTICAL INC",
+      "teCode": "AB",
+      "applNo": "078032"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "TORRENT PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "090939"
+    },
+    {
+      "drugKey": "escitalopram-10mg-tablet",
+      "mfr": "ZYDUS LIFESCIENCES LTD",
+      "teCode": "AB",
+      "applNo": "077734"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "ACCORD HEALTHCARE INC",
+      "teCode": "AB",
+      "applNo": "206923"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "APOTEX INC",
+      "teCode": "AB",
+      "applNo": "071258"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "204852"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "CROSSMEDIKA SA",
+      "teCode": "AB",
+      "applNo": "211116"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "218988"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "217740"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "OXFORD PHARMACEUTICALS LLC",
+      "teCode": "AB",
+      "applNo": "072192"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "SUN PHARMACEUTICAL INDUSTRIES INC",
+      "teCode": "AB",
+      "applNo": "073137"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "TEVA PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "071523"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "TORRENT PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "202180"
+    },
+    {
+      "drugKey": "trazodone-50mg-tablet",
+      "mfr": "ZYDUS PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "205253"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "AMNEAL PHARMACEUTICALS",
+      "teCode": "AB",
+      "applNo": "205119"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "APOTEX INC",
+      "teCode": "AB",
+      "applNo": "091231"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "202038"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "DR REDDYS LABORATORIES LTD",
+      "teCode": "AB",
+      "applNo": "077619"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "GRANULES INDIA LTD",
+      "teCode": "AB",
+      "applNo": "217282"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "GRAVITI PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "219087"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "HETERO LABS LTD UNIT V",
+      "teCode": "AB",
+      "applNo": "202882"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "LANNETT CO INC",
+      "teCode": "AB",
+      "applNo": "078281"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "MANKIND PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "215880"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "090970"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "ORBION PHARMACEUTICALS PRIVATE LTD",
+      "teCode": "AB",
+      "applNo": "202052"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "RUBICON RESEARCH LTD",
+      "teCode": "AB",
+      "applNo": "090807"
+    },
+    {
+      "drugKey": "pantoprazole-40mg-dr-tablet",
+      "mfr": "TORRENT PHARMACEUTICALS LTD",
+      "teCode": "AB",
+      "applNo": "090074"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "AMNEAL EU LTD",
+      "teCode": "AB",
+      "applNo": "213386"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "AUROBINDO PHARMA LTD",
+      "teCode": "AB",
+      "applNo": "215672"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "HIKMA PHARMACEUTICALS USA INC",
+      "teCode": "AB",
+      "applNo": "080352"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "JUBILANT CADISTA PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "040362"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "MYLAN PHARMACEUTICALS INC",
+      "teCode": "AB",
+      "applNo": "083677"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "NOVITIUM PHARMA LLC",
+      "teCode": "AB",
+      "applNo": "211575"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "PH HEALTH LTD",
+      "teCode": "AB",
+      "applNo": "040256"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "PHARMAZONE",
+      "teCode": "AB",
+      "applNo": "212629"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "STRIDES PHARMA GLOBAL PTE LTD",
+      "teCode": "AB",
+      "applNo": "208412"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "SUN PHARMACEUTICAL INDUSTRIES INC",
+      "teCode": "AB",
+      "applNo": "089247"
+    },
+    {
+      "drugKey": "prednisone-10mg-tablet",
+      "mfr": "WATSON LABORATORIES INC",
+      "teCode": "AB",
+      "applNo": "085162"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "feed": "nadac",
   "source": "CMS NADAC",
   "cadence": "weekly",
-  "fetchedAt": "2026-10-24T19:15:51.978Z",
+  "fetchedAt": "2026-10-24T19:23:48.855Z",
   "effectiveDate": "2026-10-21",
   "status": "live",
   "items": [
@@ -1222,6 +1222,348 @@
       "drugKey": "atorvastatin-20mg-tablet"
     },
     {
+      "ndc": "00904642661",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "13668013601",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "13668013605",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "13668013610",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "16571075601",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "16571075610",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "43547028110",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "43547028111",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "65862037401",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "65862037405",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "68001059200",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "68001059208",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "68084061701",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "68084061711",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "68645051954",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "69097084805",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "69097084815",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "72603015001",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "76282025010",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "76282025030",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "76282025090",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "82009003610",
+      "description": "ESCITALOPRAM 10 MG TABLET",
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "escitalopram-10mg-tablet"
+    },
+    {
+      "ndc": "00054429925",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "00054429931",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "00054829925",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "00904717861",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "43547040210",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "43547040211",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "59651079701",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "59651079799",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "62135075490",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "63561016502",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "64980056301",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "64980056310",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "69315011701",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "69315011710",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "83980000301",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
+      "ndc": "83980000310",
+      "description": "FUROSEMIDE 40 MG TABLET",
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "furosemide-40mg-tablet"
+    },
+    {
       "ndc": "00480349501",
       "description": "GABAPENTIN 300 MG CAPSULE",
       "nadac": 0.03283,
@@ -1888,6 +2230,213 @@
       "drugKey": "glipizide-5mg-tablet"
     },
     {
+      "ndc": "00172208360",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "00172208380",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "16729018301",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "16729018317",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "23155000801",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "23155000810",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "29300012801",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "29300012810",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "43547039710",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "43547039711",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "60687059301",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "60687059311",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "60687089401",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "60687089411",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "62135044805",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "62135044890",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "65862013399",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "68645051054",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "69315013101",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "69315013110",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "69584036110",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "69584036190",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
+      "ndc": "69584036195",
+      "description": "HYDROCHLOROTHIAZIDE 25 MG TAB",
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "hydrochlorothiazide-25mg-tablet"
+    },
+    {
       "ndc": "00378180310",
       "description": "LEVOTHYROXINE 50 MCG TABLET",
       "nadac": 0.04006,
@@ -2419,6 +2968,375 @@
       "drugKey": "lisinopril-10mg-tablet"
     },
     {
+      "ndc": "00904704861",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "11788010110",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "11788010130",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "11788010190",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "29300014519",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "31722070110",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "31722070190",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "33342004507",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "33342004510",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "33342004544",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "43547036103",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "43547036109",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "43547036111",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "50268050511",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "50268050515",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "59746033410",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "59746033430",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "59746033490",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "62332002830",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "62332002890",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "62332002891",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "65862020230",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "65862020290",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "65862020299",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68084034701",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68084034711",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68180037703",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68180037709",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68382013606",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68382013610",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68382013616",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "68645059954",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "70010074203",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "70010074209",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "70010074210",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "72205014230",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "72205014290",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "72205014299",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "72603034101",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "72603034102",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
+      "ndc": "82009004310",
+      "description": "LOSARTAN POTASSIUM 50 MG TAB",
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "losartan-50mg-tablet"
+    },
+    {
       "ndc": "00378718505",
       "description": "METFORMIN HCL 500 MG TABLET",
       "nadac": 0.01483,
@@ -2932,6 +3850,510 @@
       "drugKey": "metformin-500mg-tablet"
     },
     {
+      "ndc": "00378001801",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "00378001805",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "51079025501",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "51079025520",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "52817025000",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "52817025010",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "52817036000",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "52817036010",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "57237010001",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "57237010099",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "62332011231",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "62332011291",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "62584026501",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "62584026511",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "65862006201",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "65862006299",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888000400",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888000401",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888000405",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888020800",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888020801",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888020802",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "72888020805",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "76282079401",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "76282079410",
+      "description": "METOPROLOL TARTRATE 25 MG TAB",
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "metoprolol-tartrate-25mg-tablet"
+    },
+    {
+      "ndc": "00904680806",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "00904680861",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "13668008105",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "13668008130",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "13668008190",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "16571010009",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "16571010010",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "29300022010",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "29300022013",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "29300022019",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "31722072610",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "31722072630",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "31722072690",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "33342010207",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "33342010210",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "33342010215",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "50268055611",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "50268055615",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "55111072510",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "55111072530",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "55111072590",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "65862057490",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68001036103",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68001036104",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68001036105",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68084087501",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68084087511",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "68645056054",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "69367028705",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "69367028709",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
+      "ndc": "82009000910",
+      "description": "MONTELUKAST SOD 10 MG TABLET",
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "montelukast-10mg-tablet"
+    },
+    {
       "ndc": "00781286810",
       "description": "OMEPRAZOLE DR 20 MG CAPSULE",
       "nadac": 0.03045,
@@ -3245,6 +4667,609 @@
       "classification": "G",
       "effectiveDate": "2026-10-21",
       "drugKey": "omeprazole-20mg-dr-capsule"
+    },
+    {
+      "ndc": "00378668910",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "00378668977",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "00904647406",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "00904647461",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "00904687045",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "13668042905",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "13668042990",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "31722071310",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "31722071390",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "35573042851",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "35573042880",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "50268063911",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "50268063915",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "51079005101",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "51079005120",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "55111033310",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "55111033390",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "60687073601",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "60687073609",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "60687073611",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "60687073665",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "62135053408",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "62135053490",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "62175061743",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "62175061746",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "64980067709",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "64980067710",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "65162063709",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "65162063711",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "65862056090",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "65862056099",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "68645059654",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "70010019109",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "70010019110",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "70756001912",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "72603017801",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "72603074601",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "72603074602",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "82009001110",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "82009001190",
+      "description": "PANTOPRAZOLE SOD DR 40 MG TAB",
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "pantoprazole-40mg-dr-tablet"
+    },
+    {
+      "ndc": "00054981725",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00054981729",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00378064101",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00378064110",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00591544201",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00591544205",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00591544210",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00603533821",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00603533828",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00603533832",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "00904692361",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "59651048701",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "59651048705",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60219170701",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60219170705",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60687013401",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60687013411",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60687091401",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "60687091411",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "63561012101",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "63561012102",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "63561012105",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "64380078406",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "64380078407",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "64380078408",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "70954005910",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
+    },
+    {
+      "ndc": "70954005920",
+      "description": "PREDNISONE 10 MG TABLET",
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "prednisone-10mg-tablet"
     },
     {
       "ndc": "00904692561",
@@ -3614,6 +5639,465 @@
       "classification": "G",
       "effectiveDate": "2026-10-21",
       "drugKey": "sertraline-50mg-tablet"
+    },
+    {
+      "ndc": "16714068301",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16714068302",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "16714068303",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "24658050210",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "24658050230",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "24658050245",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "24658050290",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "65862005226",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "65862005230",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "65862005290",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "65862005299",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68084051201",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68084051211",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68180047901",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68180047902",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68180047903",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "68645047054",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "69367037509",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "69367037510",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377000312",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377000314",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "70377000315",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "82009001410",
+      "description": "SIMVASTATIN 20 MG TABLET",
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "simvastatin-20mg-tablet"
+    },
+    {
+      "ndc": "00904686861",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "13107007901",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "13107007905",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "13668033001",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "13668033005",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "50111056001",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "50111056002",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "50111056003",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "57664001472",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "57664001474",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "57664001475",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "60505265301",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "60687044301",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "60687044311",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "60687095401",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "60687095411",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "64980067201",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "64980067210",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "64980067250",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382060901",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382060905",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382060910",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382080501",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382080505",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "68382080510",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "70010023101",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "70010023105",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
+    },
+    {
+      "ndc": "70010023110",
+      "description": "TRAZODONE 50 MG TABLET",
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "classification": "G",
+      "effectiveDate": "2026-10-21",
+      "drugKey": "trazodone-50mg-tablet"
     }
   ],
   "byDrug": {
@@ -3682,6 +6166,66 @@
       "pricingUnit": "EA",
       "ndcCount": 20,
       "method": "Median of NADAC Per Unit across 20 generic (G) NDCs whose NADAC description is exactly \"GLIPIZIDE 5 MG TABLET\", week of 2026-10-21"
+    },
+    "losartan-50mg-tablet": {
+      "nadac": 0.03316,
+      "pricingUnit": "EA",
+      "ndcCount": 41,
+      "method": "Median of NADAC Per Unit across 41 generic (G) NDCs whose NADAC description is exactly \"LOSARTAN POTASSIUM 50 MG TAB\", week of 2026-10-21"
+    },
+    "hydrochlorothiazide-25mg-tablet": {
+      "nadac": 0.01142,
+      "pricingUnit": "EA",
+      "ndcCount": 23,
+      "method": "Median of NADAC Per Unit across 23 generic (G) NDCs whose NADAC description is exactly \"HYDROCHLOROTHIAZIDE 25 MG TAB\", week of 2026-10-21"
+    },
+    "simvastatin-20mg-tablet": {
+      "nadac": 0.03245,
+      "pricingUnit": "EA",
+      "ndcCount": 23,
+      "method": "Median of NADAC Per Unit across 23 generic (G) NDCs whose NADAC description is exactly \"SIMVASTATIN 20 MG TABLET\", week of 2026-10-21"
+    },
+    "metoprolol-tartrate-25mg-tablet": {
+      "nadac": 0.01603,
+      "pricingUnit": "EA",
+      "ndcCount": 25,
+      "method": "Median of NADAC Per Unit across 25 generic (G) NDCs whose NADAC description is exactly \"METOPROLOL TARTRATE 25 MG TAB\", week of 2026-10-21"
+    },
+    "furosemide-40mg-tablet": {
+      "nadac": 0.02876,
+      "pricingUnit": "EA",
+      "ndcCount": 16,
+      "method": "Median of NADAC Per Unit across 16 generic (G) NDCs whose NADAC description is exactly \"FUROSEMIDE 40 MG TABLET\", week of 2026-10-21"
+    },
+    "montelukast-10mg-tablet": {
+      "nadac": 0.04321,
+      "pricingUnit": "EA",
+      "ndcCount": 31,
+      "method": "Median of NADAC Per Unit across 31 generic (G) NDCs whose NADAC description is exactly \"MONTELUKAST SOD 10 MG TABLET\", week of 2026-10-21"
+    },
+    "escitalopram-10mg-tablet": {
+      "nadac": 0.03911,
+      "pricingUnit": "EA",
+      "ndcCount": 22,
+      "method": "Median of NADAC Per Unit across 22 generic (G) NDCs whose NADAC description is exactly \"ESCITALOPRAM 10 MG TABLET\", week of 2026-10-21"
+    },
+    "trazodone-50mg-tablet": {
+      "nadac": 0.02986,
+      "pricingUnit": "EA",
+      "ndcCount": 28,
+      "method": "Median of NADAC Per Unit across 28 generic (G) NDCs whose NADAC description is exactly \"TRAZODONE 50 MG TABLET\", week of 2026-10-21"
+    },
+    "pantoprazole-40mg-dr-tablet": {
+      "nadac": 0.03675,
+      "pricingUnit": "EA",
+      "ndcCount": 40,
+      "method": "Median of NADAC Per Unit across 40 generic (G) NDCs whose NADAC description is exactly \"PANTOPRAZOLE SOD DR 40 MG TAB\", week of 2026-10-21"
+    },
+    "prednisone-10mg-tablet": {
+      "nadac": 0.0521,
+      "pricingUnit": "EA",
+      "ndcCount": 27,
+      "method": "Median of NADAC Per Unit across 27 generic (G) NDCs whose NADAC description is exactly \"PREDNISONE 10 MG TABLET\", week of 2026-10-21"
     }
   }
 }

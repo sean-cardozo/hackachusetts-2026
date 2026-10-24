@@ -2,35 +2,10 @@
   "feed": "shortages",
   "source": "openFDA drug shortages",
   "cadence": "daily",
-  "fetchedAt": "2026-10-24T19:15:54.178Z",
+  "fetchedAt": "2026-10-24T19:23:54.144Z",
   "effectiveDate": "2026-10-23",
   "status": "live",
-  "items": [
-    {
-      "drugKey": "albuterol-90mcg-inhalation-aerosol",
-      "ingredient": "Albuterol",
-      "status": "resolved",
-      "updated": "2026-08-27",
-      "dosageForm": "Solution",
-      "company": "Nephron Pharmaceuticals Corporation"
-    },
-    {
-      "drugKey": "albuterol-90mcg-inhalation-aerosol",
-      "ingredient": "Albuterol",
-      "status": "resolved",
-      "updated": "2026-08-27",
-      "dosageForm": "Solution",
-      "company": "Ritedose Pharmaceuticals, LLC"
-    },
-    {
-      "drugKey": "albuterol-90mcg-inhalation-aerosol",
-      "ingredient": "Albuterol",
-      "status": "resolved",
-      "updated": "2026-08-27",
-      "dosageForm": "Solution",
-      "company": "Rising Pharma Holdings, Inc."
-    }
-  ],
+  "items": [],
   "history": {
     "atorvastatin-20mg-tablet": {
       "currentCount": 0,
@@ -58,7 +33,7 @@
     },
     "albuterol-90mcg-inhalation-aerosol": {
       "currentCount": 0,
-      "last3yCount": 3
+      "last3yCount": 0
     },
     "omeprazole-20mg-dr-capsule": {
       "currentCount": 0,
@@ -73,6 +48,46 @@
       "last3yCount": 0
     },
     "glipizide-5mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "losartan-50mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "hydrochlorothiazide-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "simvastatin-20mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "metoprolol-tartrate-25mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "furosemide-40mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "montelukast-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "escitalopram-10mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "trazodone-50mg-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "pantoprazole-40mg-dr-tablet": {
+      "currentCount": 0,
+      "last3yCount": 0
+    },
+    "prednisone-10mg-tablet": {
       "currentCount": 0,
       "last3yCount": 0
     }

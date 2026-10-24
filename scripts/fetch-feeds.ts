@@ -203,6 +203,8 @@ async function buildOrangeBook(): Promise<OrangeBookCache> {
     }
   }
 
+  if (products.length === 0) throw new Error("Orange Book: no products matched the tracked drugs");
+
   // Equivalents: different manufacturers with a TE code starting with "A".
   // Brand-name (NDA, Appl_Type "N") products stay in `products` but are not offered as swaps.
   const equivalents: Equivalent[] = [];
@@ -284,8 +286,13 @@ async function buildShortages(): Promise<ShortagesCache> {
     const names = [record.generic_name ?? "", ...(record.openfda?.generic_name ?? []), ...(record.openfda?.substance_name ?? [])]
       .join(" ")
       .toLowerCase();
+    const isCombination = (record.generic_name ?? "").includes("/"); // e.g. "Quinapril/Hydrochlorothiazide Tablet"
+    const recordForm = `${record.dosage_form ?? ""} ${record.generic_name ?? ""}`.toLowerCase();
     for (const drug of TRACKED_DRUGS) {
-      if (!new RegExp(`\\b${drug.shortageWord}\\b`).test(names)) continue;
+      if (isCombination || !new RegExp(`\\b${drug.shortageWord}\\b`).test(names)) continue;
+      // The dosage form must match too: a tablet is not affected by an injection shortage.
+      const formWord = ["tablet", "capsule", "aerosol"].find((word) => drug.form.includes(word));
+      if (formWord && !recordForm.includes(formWord)) continue;
       items.push({
         drugKey: drug.drugKey,
         ingredient: drug.name,
@@ -337,10 +344,9 @@ function writeJson(file: string, value: unknown) {
 }
 
 // Returns true if the feed ended up with a usable cache file (fresh or old).
-async function refreshFeed(feed: FeedName, build: () => Promise<{ items?: unknown[]; products?: unknown[] }>): Promise<boolean> {
+async function refreshFeed(feed: FeedName, build: () => Promise<unknown>): Promise<boolean> {
   try {
-    const fresh = await build();
-    if ((fresh.items ?? fresh.products ?? []).length === 0) throw new Error("download had zero rows");
+    const fresh = await build(); // each builder throws if its download was empty
     FEED_SCHEMAS[feed].parse(fresh); // make sure the shape is right before saving
     writeJson(cacheFile(feed), fresh);
     console.log(`${feed}: saved fresh data (status "live")`);
