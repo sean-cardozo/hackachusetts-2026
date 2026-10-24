@@ -189,6 +189,12 @@ export default function SummaryClient(props: SummaryProps) {
     });
   }, [series]);
   const todayLabel = series ? chartData[series.todayIndex - 1]?.label : undefined;
+  // Y axis starts just below the lowest value (not at $0) so month-to-month movement is visible.
+  const yMin = useMemo(() => {
+    const vals = chartData.flatMap((d) => [d.actual, d.without, d.withMid, d.bandBase]).filter((v): v is number => typeof v === "number");
+    if (vals.length === 0) return 0;
+    return Math.max(0, Math.floor((Math.min(...vals) * 0.9) / 10000) * 10000);
+  }, [chartData]);
 
   // Shortage alert and stats.
   const shortages = props.drugs
@@ -313,8 +319,11 @@ export default function SummaryClient(props: SummaryProps) {
       </div>
 
       {shortages.length > 0 ? (
-        <div role="alert" className="flex flex-wrap items-center gap-3 rounded-[16px] border-2 border-bad bg-bad-soft px-4 py-3">
-          <strong className="text-bad">Shortage alert</strong>
+        <div role="alert" className="flex flex-wrap items-center gap-3 rounded-[14px] border border-l-4 border-line border-l-bad bg-surface px-4 py-3">
+          <span aria-hidden className="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-bad text-[13px] font-extrabold text-white">
+            !
+          </span>
+          <strong className="text-ink">Shortage alert</strong>
           <span className="flex-1 text-[14px]">
             {shortages.map((d) => `${d.name}: ${d.daysOfSupply} days of supply`).join("; ")}. Order or join a round before you run out.
           </span>
@@ -394,12 +403,12 @@ export default function SummaryClient(props: SummaryProps) {
           </div>
           {series ? (
             <>
-              <div className="h-[320px] w-full" role="img" aria-label={`Monthly purchases: 12 months actual, then 12 months projected with and without PharmaPool. Projected 12 month savings ${dollarRange(series.projected12MonthSavings)} per year.`}>
+              <div className="min-h-[320px] w-full flex-1" role="img" aria-label={`Monthly purchases: 12 months actual, then 12 months projected with and without PharmaPool. Projected 12 month savings ${dollarRange(series.projected12MonthSavings)} per year.`}>
                 <ResponsiveContainer width="100%" height="100%">
                   <ComposedChart data={chartData} margin={{ top: 8, right: 12, bottom: 0, left: 0 }}>
                     <CartesianGrid stroke="var(--line)" vertical={false} />
                     <XAxis dataKey="label" tick={{ fontSize: 11 }} interval={2} />
-                    <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtAxis} width={56} domain={["auto", "auto"]} />
+                    <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtAxis} width={56} domain={[yMin, "auto"]} allowDataOverflow />
                     <Tooltip formatter={(v) => formatDollars(Number(v ?? 0))} />
                     <Area dataKey="bandBase" stackId="band" stroke="none" fill="transparent" isAnimationActive={false} legendType="none" tooltipType="none" />
                     <Area dataKey="bandSize" stackId="band" stroke="none" fill="#0f9f7a" fillOpacity={0.22} isAnimationActive={false} name="Savings band" />
@@ -434,12 +443,12 @@ export default function SummaryClient(props: SummaryProps) {
           {[
             { name: "Compare", f: steps.compare, href: "/compare", sub: "Pay closer to NADAC on generics." },
             {
-              name: "Swap",
-              f: steps.swap,
+              name: "Swap potential",
+              f: steps.swap.potential,
               href: "/swap",
               sub:
                 steps.swap.potential.high > steps.swap.high
-                  ? `Up to ${formatDollars(steps.swap.potential.high)}/yr (${pctRange(steps.swap.potential)}) if you approve every swap.`
+                  ? `Sum of all available swaps. ${formatDollars(steps.swap.high)}/yr approved so far.`
                   : "All available swaps approved.",
             },
             { name: "Join", f: steps.join, href: "/join", sub: "Pooled rounds with other pharmacies." },
