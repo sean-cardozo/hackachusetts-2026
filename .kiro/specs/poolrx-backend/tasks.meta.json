@@ -1,0 +1,220 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Shared foundation": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869079978
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869109283
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869212330
+      }
+    ],
+    "2.1 Create `data/sample/drugs.json`, `rounds.json`, `quotes.json` and `upload-demo.json` with the exact values from `.kiro/specs/poolrx/design.md`, after the x6 scale. Include `nadacFallback` and `\"kind\": \"sample\"`.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080070
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869215328
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869479086
+      }
+    ],
+    "2.2 Create `lib/sample.ts` with Zod validation and `tests/sample.test.ts`, including a check that quote group totals and the Cardio round totals match the design.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080130
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869481824
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869716601
+      }
+    ],
+    "3.1 Create `lib/calc.ts` with the formulas in Requirement 3.1 to 3.9.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080157
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869216139
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869479132
+      }
+    ],
+    "3.2 Add Summary figures: savings split, Savings by step, 24-month series.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080179
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869482861
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869716621
+      }
+    ],
+    "3.3 Write unit tests with the numbers from the design and fast-check property tests for the range, order-independence and monotonicity properties.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080202
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869719421
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870113021
+      }
+    ],
+    "4.1 Create `lib/match.ts` with CSV parsing (Papaparse), column mapping with confidence, and drug-name matching with statuses and suggestions.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080227
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869217009
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869479333
+      }
+    ],
+    "4.2 Write `tests/match.test.ts` using the demo headers and the demo names from Requirement 4.6.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080251
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869483551
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869716879
+      }
+    ],
+    "5.1 Create `lib/ai.ts` with the AI call wrapper (15 second timeout, Zod validation) and the five fallbacks, using `lib/calc.ts` and `lib/match.ts`.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080272
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869720253
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870113054
+      }
+    ],
+    "5.2 Create `app/api/ai/[task]/route.ts` and `tests/ai.test.ts` that runs without a key and checks every task returns a Fallback result, and that invalid bodies return 400.": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080296
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870116035
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870263570
+      }
+    ],
+    "6. Run notes": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869080317
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870265894
+      },
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870554644
+      }
+    ],
+    "2. Sample data": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869716672
+      }
+    ],
+    "4. Upload matcher": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792869716898
+      }
+    ],
+    "3. Calculator": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870113073
+      }
+    ],
+    "5. AI service": [
+      {
+        "executionId": "5ccf8bf6-9862-4616-ba2e-3d65de99da26",
+        "chatSessionId": "sess_c0c59261-e488-4fbc-a97d-ee73ca3e04ca",
+        "timestamp": 1792870263600
+      }
+    ]
+  }
+}

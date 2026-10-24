@@ -1,0 +1,23 @@
+{
+  "kind": "sample",
+  "note": "Synthetic messy wholesaler export for the Upload screen. Headers and the five demo names come from .kiro/specs/poolrx/design.md (Upload demo). Qty/Mo uses the x6 scaled units; Cost Ea is near the design's paid values. NDC# is blank so rows match by name.",
+  "headers": ["Drug Desc", "Str.", "NDC#", "Pkg Sz", "Qty/Mo", "Cost Ea", "Vendor", "Notes"],
+  "demoNames": {
+    "matched": ["Atorvastatn 20mg tab", "Lisinipril 10 MG"],
+    "needsReview": ["Levoxyl 50mcg", "Gaba 300"],
+    "unmatched": ["Vit D3 2000IU"]
+  },
+  "items": [
+    { "Drug Desc": "Atorvastatn 20mg tab", "Str.": "20mg", "NDC#": "", "Pkg Sz": "90", "Qty/Mo": 58800, "Cost Ea": "$0.0925", "Vendor": "McKesson", "Notes": "" },
+    { "Drug Desc": "Lisinipril 10 MG", "Str.": "10 MG", "NDC#": "", "Pkg Sz": "100", "Qty/Mo": 45600, "Cost Ea": "$0.0478", "Vendor": "Cardinal Health", "Notes": "" },
+    { "Drug Desc": "Amlodipine 5mg tab", "Str.": "5mg", "NDC#": "", "Pkg Sz": "90", "Qty/Mo": 53400, "Cost Ea": "$0.0392", "Vendor": "McKesson", "Notes": "" },
+    { "Drug Desc": "Metformin HCL 500 mg", "Str.": "500mg", "NDC#": "", "Pkg Sz": "100", "Qty/Mo": 85200, "Cost Ea": "$0.0308", "Vendor": "Cardinal Health", "Notes": "reorder monthly" },
+    { "Drug Desc": "Sertralin 50mg", "Str.": "50mg", "NDC#": "", "Pkg Sz": "100", "Qty/Mo": 35400, "Cost Ea": "$0.0545", "Vendor": "AmerisourceBergen", "Notes": "" },
+    { "Drug Desc": "Amoxicillin 500 cap", "Str.": "500mg", "NDC#": "", "Pkg Sz": "100", "Qty/Mo": 25800, "Cost Ea": "$0.1175", "Vendor": "McKesson", "Notes": "backorder risk" },
+    { "Drug Desc": "Albuterol HFA 90mcg", "Str.": "90mcg", "NDC#": "", "Pkg Sz": "1", "Qty/Mo": 1860, "Cost Ea": "$26.35", "Vendor": "Cardinal Health", "Notes": "inhaler 200 act" },
+    { "Drug Desc": "Omeprazole DR 20mg cap", "Str.": "20mg", "NDC#": "", "Pkg Sz": "90", "Qty/Mo": 32400, "Cost Ea": "$0.0712", "Vendor": "AmerisourceBergen", "Notes": "" },
+    { "Drug Desc": "Levoxyl 50mcg", "Str.": "50mcg", "NDC#": "", "Pkg Sz": "90", "Qty/Mo": 37200, "Cost Ea": "$0.1135", "Vendor": "McKesson", "Notes": "brand name on invoice" },
+    { "Drug Desc": "Gaba 300", "Str.": "300", "NDC#": "", "Pkg Sz": "100", "Qty/Mo": 48600, "Cost Ea": "$0.0445", "Vendor": "Cardinal Health", "Notes": "" },
+    { "Drug Desc": "Vit D3 2000IU", "Str.": "2000IU", "NDC#": "", "Pkg Sz": "250", "Qty/Mo": 4200, "Cost Ea": "$0.0210", "Vendor": "AmerisourceBergen", "Notes": "OTC" }
+  ]
+}

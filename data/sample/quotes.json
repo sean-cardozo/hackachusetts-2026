@@ -1,0 +1,47 @@
+{
+  "kind": "sample",
+  "note": "Synthetic supplier quotes for the Diabetes & thyroid round. Source: .kiro/specs/poolrx/design.md (Quotes, Scale). Demand, share and minimum orders are the design's x6 values. Prices are keyed by product id; glipizide appears only here and is not one of the 10 drugs.",
+  "scaleFactor": 6,
+  "defaultWeights": { "price": 50, "delivery": 20, "reliability": 30 },
+  "groupDemand": {
+    "metformin-500": 2520000,
+    "levothyroxine-50": 1116000,
+    "glipizide": 588000
+  },
+  "yourShare": {
+    "metformin-500": 255600,
+    "levothyroxine-50": 111600,
+    "glipizide": 0
+  },
+  "unscaled": {
+    "groupDemand": { "metformin-500": 420000, "levothyroxine-50": 186000, "glipizide": 98000 },
+    "yourShare": { "metformin-500": 42600, "levothyroxine-50": 18600, "glipizide": 0 },
+    "minOrder": { "A": 2500, "B": 1500, "C": 5000 }
+  },
+  "quotes": [
+    {
+      "supplier": "A",
+      "prices": { "metformin-500": 0.0182, "levothyroxine-50": 0.104, "glipizide": 0.0298 },
+      "deliveryDays": 9,
+      "minOrder": 15000,
+      "reliability": 62,
+      "quotedPct": 12.9
+    },
+    {
+      "supplier": "B",
+      "prices": { "metformin-500": 0.0186, "levothyroxine-50": 0.1061, "glipizide": 0.0301 },
+      "deliveryDays": 5,
+      "minOrder": 9000,
+      "reliability": 96,
+      "quotedPct": 11.2
+    },
+    {
+      "supplier": "C",
+      "prices": { "metformin-500": 0.0199, "levothyroxine-50": 0.1098, "glipizide": 0.0322 },
+      "deliveryDays": 3,
+      "minOrder": 30000,
+      "reliability": 81,
+      "quotedPct": 7.0
+    }
+  ]
+}
