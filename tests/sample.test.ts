@@ -55,19 +55,25 @@ describe("drugs", () => {
     expect(daysOfSupply(s.onHand, s.unitsPerMonth)).toBe(12);
   });
 
-  it("annual spend of the 10 drugs is $694,348.56 with the real-NADAC prices", () => {
-    // Task 7 re-based "paid" on the real NADAC (week of 2026-10-21) plus a 8 to 18 percent
-    // markup. The design table's hand-typed prices gave $899,848.80 (and "about $920k"); the
-    // real prices are lower, so the total moved to $694,348.56.
+  it("annual spend of the 10 drugs is $678,589.20 with the real-NADAC prices", () => {
+    // Task 7 re-based "paid" on the real NADAC (week of 2026-10-21) plus a per-drug
+    // markup (-9 to +21 percent). The design table's hand-typed prices gave $899,848.80 (and "about $920k"); the
+    // real prices are lower, so the total moved to $678,589.20.
     const total = drugs.reduce((sum, d) => sum + annualSpend(d.paid, d.unitsPerMonth)!, 0);
-    expect(total).toBeCloseTo(694_348.56, 1);
+    expect(total).toBeCloseTo(678_589.2, 1);
   });
-  it("paid is the fallback NADAC plus a markup of 8 to 18 percent for every drug", () => {
+  it("paid is the fallback NADAC plus the per-drug markup (3 below NADAC, 7 above)", () => {
+    const table: Record<string, number> = {"atorvastatin-20":18,"lisinopril-10":15,"amlodipine-5":12,"metformin-500":4,"sertraline-50":-6,"amoxicillin-500":-3,"albuterol-90":9,"omeprazole-20":21,"levothyroxine-50":-9,"gabapentin-300":7};
+    let below = 0;
+    let above = 0;
     for (const d of drugs) {
       const markup = (d.paid / d.nadacFallback - 1) * 100;
-      expect(markup, d.id).toBeGreaterThanOrEqual(8);
-      expect(markup, d.id).toBeLessThanOrEqual(18.5); // 4-decimal rounding of tiny prices
+      expect(Math.abs(markup - table[d.id]), d.id).toBeLessThanOrEqual(0.6);
+      if (markup < 0) below++;
+      else above++;
     }
+    expect(below).toBeGreaterThanOrEqual(3);
+    expect(above).toBeGreaterThanOrEqual(6);
   });
 });
 

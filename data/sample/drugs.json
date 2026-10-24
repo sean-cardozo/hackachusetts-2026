@@ -1,6 +1,6 @@
 {
   "kind": "sample",
-  "note": "Synthetic member inventory. Source: .kiro/specs/poolrx/design.md (Sample data). unitsPerMonth and onHand are the design values multiplied by 6. Prices are real NADAC plus a synthetic markup: nadacFallback is the real CMS NADAC unit price from data/cache/nadac.json (week of 2026-10-21, price per each), and paid = nadacFallback x (1 + a markup of 8 to 18 percent, fixed per drug). Albuterol is priced per GM in the cache, so its nadacFallback stays 21.85 per inhaler and paid is 21.85 x 1.10. nadacFallback is used only when the live NADAC cache is missing or unusable.",
+  "note": "Synthetic member inventory. Source: .kiro/specs/poolrx/design.md (Sample data). unitsPerMonth and onHand are the design values multiplied by 6. Prices are real NADAC plus a synthetic markup: nadacFallback is the real CMS NADAC unit price from data/cache/nadac.json (week of 2026-10-21, price per each), and paid = nadacFallback x (1 + a fixed per-drug markup from -9 to +21 percent (3 of 10 drugs below NADAC)). Albuterol is priced per GM in the cache, so its nadacFallback stays 21.85 per inhaler and paid is 21.85 x 1.09. nadacFallback is used only when the live NADAC cache is missing or unusable.",
   "scaleFactor": 6,
   "countDate": "2026-10-22",
   "items": [
@@ -26,7 +26,7 @@
       "category": "Cardio",
       "mfr": "Unichem",
       "unitsPerMonth": 45600,
-      "paid": 0.021,
+      "paid": 0.0207,
       "onHand": 41400,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -40,7 +40,7 @@
       "category": "Cardio",
       "mfr": "Camber",
       "unitsPerMonth": 53400,
-      "paid": 0.0118,
+      "paid": 0.0114,
       "onHand": 60600,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -54,7 +54,7 @@
       "category": "Diabetes",
       "mfr": "Zydus",
       "unitsPerMonth": 85200,
-      "paid": 0.0166,
+      "paid": 0.0154,
       "onHand": 100800,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -68,7 +68,7 @@
       "category": "Mental health",
       "mfr": "Lupin",
       "unitsPerMonth": 35400,
-      "paid": 0.0397,
+      "paid": 0.0327,
       "onHand": 14100,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -82,7 +82,7 @@
       "category": "Antibiotics",
       "mfr": "Aurobindo",
       "unitsPerMonth": 25800,
-      "paid": 0.0872,
+      "paid": 0.0769,
       "onHand": 7740,
       "countDate": "2026-10-22",
       "hasShortage": true,
@@ -96,7 +96,7 @@
       "category": "Respiratory",
       "mfr": "Cipla",
       "unitsPerMonth": 1860,
-      "paid": 24.04,
+      "paid": 23.82,
       "onHand": 2100,
       "countDate": "2026-10-22",
       "hasShortage": true,
@@ -110,7 +110,7 @@
       "category": "GI",
       "mfr": "Dr. Reddy's",
       "unitsPerMonth": 32400,
-      "paid": 0.0344,
+      "paid": 0.0368,
       "onHand": 28800,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -124,7 +124,7 @@
       "category": "Thyroid",
       "mfr": "Amneal",
       "unitsPerMonth": 37200,
-      "paid": 0.0437,
+      "paid": 0.0365,
       "onHand": 31800,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -138,7 +138,7 @@
       "category": "Pain",
       "mfr": "Ascend",
       "unitsPerMonth": 48600,
-      "paid": 0.0364,
+      "paid": 0.0351,
       "onHand": 59400,
       "countDate": "2026-10-22",
       "hasShortage": false,
@@ -148,9 +148,27 @@
   "swapExtras": {
     "note": "Cardio-round swap extras per year, design values multiplied by 6 (design: Accord $11,640, Lupin $6,720, Aurobindo $7,860 after scale; unscaled 1,940 / 1,120 / 1,310).",
     "items": [
-      { "drugId": "atorvastatin-20", "toMfr": "Accord", "teCode": "AB", "extraSavingsYr": 11640, "unscaledExtraSavingsYr": 1940 },
-      { "drugId": "lisinopril-10", "toMfr": "Lupin", "teCode": "AB", "extraSavingsYr": 6720, "unscaledExtraSavingsYr": 1120 },
-      { "drugId": "amlodipine-5", "toMfr": "Aurobindo", "teCode": "AB", "extraSavingsYr": 7860, "unscaledExtraSavingsYr": 1310 }
+      {
+        "drugId": "atorvastatin-20",
+        "toMfr": "Accord",
+        "teCode": "AB",
+        "extraSavingsYr": 11640,
+        "unscaledExtraSavingsYr": 1940
+      },
+      {
+        "drugId": "lisinopril-10",
+        "toMfr": "Lupin",
+        "teCode": "AB",
+        "extraSavingsYr": 6720,
+        "unscaledExtraSavingsYr": 1120
+      },
+      {
+        "drugId": "amlodipine-5",
+        "toMfr": "Aurobindo",
+        "teCode": "AB",
+        "extraSavingsYr": 7860,
+        "unscaledExtraSavingsYr": 1310
+      }
     ]
   }
 }

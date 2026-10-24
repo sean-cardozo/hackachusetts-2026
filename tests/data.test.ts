@@ -57,16 +57,16 @@ describe("getDrugViews", () => {
     // The fallback is the real cache NADAC (0.02858), so the atorvastatin gap is
     // (0.0337 - 0.02858) / 0.02858 = 17.9 %.
     const gap = fb.find((v) => v.id === "atorvastatin-20")?.gapPct as number;
-    expect(gap).toBeGreaterThan(17);
-    expect(gap).toBeLessThan(19);
+    expect(gap).toBeGreaterThan(15);
+    expect(gap).toBeLessThan(21);
   });
 
   it("gives atorvastatin a sensible positive gap with the cache", () => {
     const gap = byId("atorvastatin-20").gapPct as number;
     console.info(`atorvastatin gap (${byId("atorvastatin-20").nadacSource}): ${gap.toFixed(1)}%`);
-    // Price paid is the real NADAC plus an 18 % markup, so the gap is about 18 % (8 to 20 % allowed).
-    expect(gap).toBeGreaterThan(8);
-    expect(gap).toBeLessThan(20);
+    // Price paid is the real NADAC plus an 18 % markup, so the gap is about 18 % (15 to 21 % allowed).
+    expect(gap).toBeGreaterThan(15);
+    expect(gap).toBeLessThan(21);
   });
 
   it("flags amoxicillin and albuterol as shortages", () => {

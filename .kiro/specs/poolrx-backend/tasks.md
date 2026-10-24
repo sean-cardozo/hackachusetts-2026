@@ -44,6 +44,10 @@ Backend library, sample data and AI helper route for PharmaPool. Work only in th
   - Set the price paid in `data/sample/drugs.json` and in the store-001 invoice export (and its labeled ground-truth copy) to the real NADAC unit price from `data/cache/nadac.json` plus a markup of 8 to 18 percent, set `nadacFallback` to the same real value where the cache price is per each, update the affected tests and `docs/BACKEND.md`, and report the new gaps and savings.
     - _Requirements: 2.1, 2.3_
 
+- [-] 8. Make the price gaps realistic (some below NADAC)
+  - Change the per-drug markups so about 3 of the 10 drugs pay below real NADAC and the rest pay above it, update the sample data, the store-001 files, the tests and the docs, and save the original Nathan file and the new file side by side in `data/upload-variants/`.
+    - _Requirements: 2.1, 2.3_
+
 ## Task Dependency Graph
 
 ```json
@@ -55,7 +59,8 @@ Backend library, sample data and AI helper route for PharmaPool. Work only in th
     { "id": 3, "tasks": ["3.3", "5.1"] },
     { "id": 4, "tasks": ["5.2"] },
     { "id": 5, "tasks": ["6"] },
-    { "id": 6, "tasks": ["7"] }
+    { "id": 6, "tasks": ["7"] },
+    { "id": 7, "tasks": ["8"] }
   ]
 }
 ```

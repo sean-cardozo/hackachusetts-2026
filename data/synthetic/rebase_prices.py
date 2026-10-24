@@ -5,8 +5,8 @@
 
 The markup per drug is a fixed base (BASE_MARKUP, the same numbers as data/sample/drugs.json)
 plus a deterministic variation by invoice month of at most +/- 2 percentage points, always
-kept inside 8 to 18 percent (larger chains pay less, a single independent store pays
-mid-to-high).
+(1.5 points when the base is within 3 points of zero). Markups run -9 to +21 percent;
+negative means the store pays BELOW NADAC (3 of 10 drugs).
 
 Only invoice lines of the 10 catalog drugs change (the same lines lib/match.ts matches to the
 pool catalog: same name, strength and form, not extended-release). On those lines this script
@@ -28,29 +28,31 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 import zlib
 from pathlib import Path
 
+ORIGINAL_COMMIT = "115d55c"
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 NADAC_JSON = REPO / "data" / "cache" / "nadac.json"
 UPLOAD_CSV = HERE / "store-001" / "store001_upload_export.csv"
 LABELED_CSV = HERE / "store-001" / "ground-truth" / "store001_invoice_lines_labeled.csv"
 
-MIN_MARKUP, MAX_MARKUP, SPREAD = 8.0, 18.0, 2.0  # percent
+SPREAD, SPREAD_NEAR_ZERO = 2.0, 1.5  # percentage points
 
 # drug id -> (description regex, nadac cache key or None, fallback unit price, base markup %)
 DRUGS: dict[str, tuple[str, str | None, float | None, float]] = {
     "atorvastatin-20": (r"^ATORVASTATIN\b.* 20 MG TABLET\b", "atorvastatin-20mg-tablet", None, 18.0),
-    "lisinopril-10": (r"^LISINOPRIL 10 MG TABLET\b", "lisinopril-10mg-tablet", None, 17.0),
-    "amlodipine-5": (r"^AMLODIPINE\b.* 5 MG TABLET\b", "amlodipine-5mg-tablet", None, 16.0),
-    "metformin-500": (r"^METFORMIN\b.* 500 MG TABLET\b", "metformin-500mg-tablet", None, 12.0),
-    "sertraline-50": (r"^SERTRALINE\b.* 50 MG TABLET\b", "sertraline-50mg-tablet", None, 14.0),
-    "amoxicillin-500": (r"^AMOXICILLIN 500 MG CAPSULE\b", "amoxicillin-500mg-capsule", None, 10.0),
-    "albuterol-90": (r"^ALBUTEROL\b.* 90 MCG.* INHALER\b", None, 21.85, 10.0),
-    "omeprazole-20": (r"^OMEPRAZOLE DR 20 MG CAPSULE\b", "omeprazole-20mg-dr-capsule", None, 13.0),
-    "levothyroxine-50": (r"^LEVOTHYROXINE\b.* 50 MCG TABLET\b", "levothyroxine-50mcg-tablet", None, 9.0),
-    "gabapentin-300": (r"^GABAPENTIN 300 MG CAPSULE\b", "gabapentin-300mg-capsule", None, 11.0),
+    "lisinopril-10": (r"^LISINOPRIL 10 MG TABLET\b", "lisinopril-10mg-tablet", None, 15.0),
+    "amlodipine-5": (r"^AMLODIPINE\b.* 5 MG TABLET\b", "amlodipine-5mg-tablet", None, 12.0),
+    "metformin-500": (r"^METFORMIN\b.* 500 MG TABLET\b", "metformin-500mg-tablet", None, 4.0),
+    "sertraline-50": (r"^SERTRALINE\b.* 50 MG TABLET\b", "sertraline-50mg-tablet", None, -6.0),
+    "amoxicillin-500": (r"^AMOXICILLIN 500 MG CAPSULE\b", "amoxicillin-500mg-capsule", None, -3.0),
+    "albuterol-90": (r"^ALBUTEROL\b.* 90 MCG.* INHALER\b", None, 21.85, 9.0),
+    "omeprazole-20": (r"^OMEPRAZOLE DR 20 MG CAPSULE\b", "omeprazole-20mg-dr-capsule", None, 21.0),
+    "levothyroxine-50": (r"^LEVOTHYROXINE\b.* 50 MCG TABLET\b", "levothyroxine-50mcg-tablet", None, -9.0),
+    "gabapentin-300": (r"^GABAPENTIN 300 MG CAPSULE\b", "gabapentin-300mg-capsule", None, 7.0),
 }
 
 
@@ -65,9 +67,10 @@ def real_nadac(drug_id: str, cache: dict) -> float:
 
 
 def markup_pct(drug_id: str, month: str) -> float:
-    """Base markup +/- up to 2 points by month, deterministic, inside 8..18 percent."""
+    """Base markup +/- up to 2 points by month, deterministic, around the base."""
     base = DRUGS[drug_id][3]
-    lo, hi = max(MIN_MARKUP, base - SPREAD), min(MAX_MARKUP, base + SPREAD)
+    spread = SPREAD_NEAR_ZERO if abs(base) < 3.0 else SPREAD
+    lo, hi = base - spread, base + spread
     u = zlib.crc32(f"{drug_id}|{month}".encode()) / 2**32
     return lo + (hi - lo) * u
 
@@ -84,9 +87,13 @@ def fmt(x: float) -> str:
     return repr(round(x, 2))
 
 
+def original_text(path: Path) -> str:
+    """Always start from Nathan's original export (git commit 115d55c) so reruns are idempotent."""
+    rel = path.relative_to(REPO).as_posix()
+    return subprocess.run(["git", "show", f"{ORIGINAL_COMMIT}:{rel}"], cwd=REPO, check=True,
+                          capture_output=True, text=True, encoding="utf-8").stdout
 def rebase(path: Path, labeled: bool, cache: dict) -> int:
-    with path.open(newline="", encoding="utf-8") as f:
-        raw = f.read()
+    raw = original_text(path)
     eol = "\r\n" if "\r\n" in raw[:5000] else "\n"
     reader = csv.DictReader(raw.splitlines(keepends=False))
     fields = reader.fieldnames or []

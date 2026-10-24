@@ -73,10 +73,10 @@ describe("spend, benchmark and gap", () => {
     expect(gapPct(0.1, undefined)).toBeNull();
   });
 
-  it("generic spend of the 10 sample drugs is $694,348.56 a year (real NADAC plus 8 to 18 percent; the design's hand-typed prices gave $899,848.80)", () => {
+  it("generic spend of the 10 sample drugs is $678,589.20 a year (real NADAC plus -9 to +21 percent; the design's hand-typed prices gave $899,848.80)", () => {
     const drugs = loadDrugs().items;
     const spend = drugs.reduce((s, d) => s + annualSpend(d.paid, d.unitsPerMonth)!, 0);
-    expect(spend).toBeCloseTo(694_348.56, 1);
+    expect(spend).toBeCloseTo(678_589.2, 1);
   });
 });
 
@@ -332,7 +332,7 @@ describe("summary figures, savings by step and monthly series", () => {
     expect(SWAP_EXTRAS_TOTAL).toBe(4370 * 6);
   });
 
-  it("summaryFigures: total spend is about $4.07M (generics $694k + brand $3.1M + OTC $280k)", () => {
+  it("summaryFigures: total spend is about $4.06M (generics $679k + brand $3.1M + OTC $280k)", () => {
     const f = summaryFigures(input);
     expect(f.totalSpend).toBeCloseTo(gSpend + BRAND + OTC, 4);
     expect(f.totalSpend).toBeGreaterThan(4_050_000);

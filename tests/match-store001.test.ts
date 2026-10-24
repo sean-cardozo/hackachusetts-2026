@@ -34,6 +34,7 @@ const text = readFileSync(
 const nadacCache = JSON.parse(
   readFileSync(path.join(__dirname, "..", "data", "cache", "nadac.json"), "utf8"),
 ) as { byDrug: Record<string, { nadac: number }> };
+const BASE_MARKUP: Record<string, number> = {"atorvastatin-20":18,"lisinopril-10":15,"amlodipine-5":12,"metformin-500":4,"sertraline-50":-6,"amoxicillin-500":-3,"albuterol-90":9,"omeprazole-20":21,"levothyroxine-50":-9,"gabapentin-300":7};
 const NADAC_UNIT: Record<string, number> = {
   "atorvastatin-20": nadacCache.byDrug["atorvastatin-20mg-tablet"].nadac,
   "lisinopril-10": nadacCache.byDrug["lisinopril-10mg-tablet"].nadac,
@@ -120,12 +121,15 @@ describe("store-001 upload export", () => {
       expect(hit!.product.unitsPerMonth, c.id).toBeGreaterThan(0);
       expect(hit!.product.avgUnitPrice, c.id).toBeGreaterThan(0);
       expect(hit!.product.avgUnitPrice, c.id).toBeLessThan(50);
-      // Task 7: the export is priced at the real NADAC (week of the cache) plus 8 to 18 percent.
-      // A little slack (7.5 to 18.5) covers rounding of the package price to cents.
+      // The export is priced at the real NADAC (week of the cache) times the drug's base markup
+      // (-9 to +21 percent), +/- 2.2 points for the monthly wobble and package-price rounding.
       const nadac = NADAC_UNIT[c.id];
       const ratio = hit!.product.avgUnitPrice / nadac;
-      expect(ratio, c.id).toBeGreaterThanOrEqual(1.075);
-      expect(ratio, c.id).toBeLessThanOrEqual(1.185);
+      const base = BASE_MARKUP[c.id];
+      expect(ratio, c.id).toBeGreaterThanOrEqual(1 + (base - 2.2) / 100);
+      expect(ratio, c.id).toBeLessThanOrEqual(1 + (base + 2.2) / 100);
+      if (['sertraline-50', 'amoxicillin-500', 'levothyroxine-50'].includes(c.id)) expect(ratio, c.id).toBeLessThan(1);
+      if (['atorvastatin-20', 'omeprazole-20'].includes(c.id)) expect(ratio, c.id).toBeGreaterThan(1);
     }
     // Different strengths are not matched to the 20 mg entry.
     const a40 = matches.find((m) => m.product.drugName === "ATORVASTATIN" && m.product.strength === "40 mg");
